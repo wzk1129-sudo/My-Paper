@@ -1,0 +1,17 @@
+{
+  "git_commit": "c85a3a0e87ae2e4587650f0fb7efc15f3311d8e2",
+  "git_branch": "audit/rddm-rleb-table-v-20260921",
+  "git_status": "?? ARCHITECTURE_AUDIT.md\n?? acceptance/\n?? mayo2016_smallset_v1/\n?? smoke_rddm_rleb.py\n?? src/__init__.py\n?? src/rddm_rleb.py\n?? train_rddm_rleb.py",
+  "source_hashes": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "mayo2016_smallset_v1/__init__.py": "6d7ff225d825e2b023e0796a22ee495f247a4bec415e10913efb3f408b046a7e",
+    "mayo2016_smallset_v1/acceptance.py": "21df0aeec36a06c361ea75a69cf458ed6685d13c70de48f2f5494898d5edda92",
+    "mayo2016_smallset_v1/data.py": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+    "mayo2016_smallset_v1/train.py": "b995dede786995684de6529297ba96fe6aa3bcc0ea0cfa72ef04b9af140cec34"
+  },
+  "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+  "torch": "1.10.1+cu111",
+  "cuda": "11.1"
+}

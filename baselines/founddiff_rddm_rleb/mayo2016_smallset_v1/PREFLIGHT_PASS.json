@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "smoke_steps": 20,
+  "benchmark_steps": 200,
+  "model_hash": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "formal_config_sha256": "2eb687f8eb28901704b9d7d6e53f099530f7b8297ec91e3929282b3682d9af0e",
+  "source_hashes": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "mayo2016_smallset_v1/__init__.py": "6d7ff225d825e2b023e0796a22ee495f247a4bec415e10913efb3f408b046a7e",
+    "mayo2016_smallset_v1/acceptance.py": "21df0aeec36a06c361ea75a69cf458ed6685d13c70de48f2f5494898d5edda92",
+    "mayo2016_smallset_v1/data.py": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+    "mayo2016_smallset_v1/train.py": "b995dede786995684de6529297ba96fe6aa3bcc0ea0cfa72ef04b9af140cec34"
+  },
+  "data_counts": {
+    "train": 4800,
+    "validation": 610
+  },
+  "data_audit": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/DATA_AUDIT.json",
+  "resume_and_validation_checks": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/checks/acceptance.json",
+  "smoke": {
+    "optimizer_steps_executed": 20,
+    "all_steps_mean_seconds": 0.3501068991026841,
+    "post_20_warmup_mean_seconds": 0.3501068991026841,
+    "peak_vram_bytes": 4470513664,
+    "training_wall_seconds": 10.877011088014115,
+    "estimated_60000_compute_hours": 5.8351149850447355,
+    "loss_first": 0.06808610260486603,
+    "loss_last": 0.004273354075849056,
+    "gradient_norm_min": 0.6023762226104736,
+    "gradient_norm_max": 46.26458740234375,
+    "all_finite": true,
+    "gradient_norm_gt_100_count": 0,
+    "note": "Estimate excludes validation, checkpoint I/O, interruptions; raw pre-clip gradient statistics retained."
+  },
+  "benchmark": {
+    "optimizer_steps_executed": 200,
+    "all_steps_mean_seconds": 0.3502815500026918,
+    "post_20_warmup_mean_seconds": 0.35639697439134277,
+    "peak_vram_bytes": 4470513664,
+    "training_wall_seconds": 72.00437128200429,
+    "estimated_60000_compute_hours": 5.939949573189046,
+    "loss_first": 0.06808610260486603,
+    "loss_last": 0.00038645381573587656,
+    "gradient_norm_min": 0.008449683897197247,
+    "gradient_norm_max": 46.26458740234375,
+    "all_finite": true,
+    "gradient_norm_gt_100_count": 0,
+    "note": "Estimate excludes validation, checkpoint I/O, interruptions; raw pre-clip gradient statistics retained."
+  },
+  "timestamp": "2026-09-21T17:15:16.723078+08:00"
+}

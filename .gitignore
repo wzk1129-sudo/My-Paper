@@ -1,0 +1,65 @@
+# Private datasets and medical images (at any depth)
+data/
+datasets/
+dataset/
+data_preprocess/
+*.npy
+*.npz
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+*.mha
+*.mhd
+*.raw
+*.h5
+*.hdf5
+# Model weights and runtime outputs
+checkpoints/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+runs/
+results/
+predictions/
+outputs/
+logs/
+*.log
+train.jsonl
+events.out.tfevents.*
+wandb/
+# Python / environments / build products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+# Secrets and machine credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+.ssh/
+id_rsa*
+id_ed25519*
+credentials*
+secrets*
+*token*.json
+# Large archives and local scratch
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.tmp
+.DS_Store
+Thumbs.db

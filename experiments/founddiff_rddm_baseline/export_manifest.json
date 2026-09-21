@@ -1,0 +1,140 @@
+[
+  {
+    "path": "baselines/founddiff_rddm_rleb/src/rddm_rleb.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source/src/rddm_rleb.py",
+    "bytes": 38353,
+    "sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/__init__.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source/mayo2016_smallset_v1/__init__.py",
+    "bytes": 76,
+    "sha256": "6d7ff225d825e2b023e0796a22ee495f247a4bec415e10913efb3f408b046a7e"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/acceptance.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source/mayo2016_smallset_v1/acceptance.py",
+    "bytes": 3853,
+    "sha256": "21df0aeec36a06c361ea75a69cf458ed6685d13c70de48f2f5494898d5edda92"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/data.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source/mayo2016_smallset_v1/data.py",
+    "bytes": 5387,
+    "sha256": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/frozen_protocol.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source/mayo2016_smallset_v1/frozen_protocol.py",
+    "bytes": 3145,
+    "sha256": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/runtime.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source/mayo2016_smallset_v1/runtime.py",
+    "bytes": 12424,
+    "sha256": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/train.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source/mayo2016_smallset_v1/train.py",
+    "bytes": 10199,
+    "sha256": "b995dede786995684de6529297ba96fe6aa3bcc0ea0cfa72ef04b9af140cec34"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/src/__init__.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/src/__init__.py",
+    "bytes": 67,
+    "sha256": "cd131b9c188192743c94036d75362e9727664ebb381e206146926cdd6c9ad04c"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/smoke_rddm_rleb.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/smoke_rddm_rleb.py",
+    "bytes": 8126,
+    "sha256": "df7326eacd55f1a1ced5a14bc1e64e8053eeba1c678781ceeae68dbb9ee8d379"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/train_rddm_rleb.py",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/train_rddm_rleb.py",
+    "bytes": 3379,
+    "sha256": "6d3d24f691bccf710e3dc5d98a2f313ceef1a49d5cc2e7029bf0b9c3b7263fc9"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/CONFIG.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/CONFIG.json",
+    "bytes": 2961,
+    "sha256": "2eb687f8eb28901704b9d7d6e53f099530f7b8297ec91e3929282b3682d9af0e"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/CONFIG_smoke.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/CONFIG_smoke.json",
+    "bytes": 2950,
+    "sha256": "67d282fba2f787611c9bf4bdfb0daae26ec8be26cbc7c2cf7ca1602b4bc0b16e"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/CONFIG_benchmark.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/CONFIG_benchmark.json",
+    "bytes": 2956,
+    "sha256": "3381cfbff48d652cd9fa938f08e1ba84d99feb8334a16c3c9acbbe28f3cb7cda"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/PREFLIGHT_PASS.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/PREFLIGHT_PASS.json",
+    "bytes": 2727,
+    "sha256": "1f4b66d88708d4ce6aa24a9d2e441839d3743644944d2e1807f9581b1c866316"
+  },
+  {
+    "path": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/protocol_provenance.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/protocol_provenance.json",
+    "bytes": 582,
+    "sha256": "e70b0632833359be78fc29ff5b870af95ed8f34f202c3f153049c3fb23afa680"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/CONFIG.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/CONFIG.json",
+    "bytes": 2961,
+    "sha256": "2eb687f8eb28901704b9d7d6e53f099530f7b8297ec91e3929282b3682d9af0e"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/source_manifest.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/source_manifest.json",
+    "bytes": 1169,
+    "sha256": "71f5085bc346aaa3d8e2e0336dc2c8ae2262fde91277f3e318473e924efbbe2f"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/validation_metrics.csv",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/validation_metrics.csv",
+    "bytes": 2576,
+    "sha256": "8ca5169364e7f73ac3040aac73f2257c91e3f2d7be420b9375932f66951e23d9"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/checkpoint_manifest.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoint_manifest.json",
+    "bytes": 8930,
+    "sha256": "9ac8501301139d9dcb9d8e1c6f0310c63fad8665309cb5ffbc9143ff5efd072d"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/final_training_summary.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/final_training_summary.json",
+    "bytes": 4846,
+    "sha256": "5ba56a6ecb4ec082b9c9c15851a036b705e56624eb2461d10ccb8b46369aa31a"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/timing.json",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/timing.json",
+    "bytes": 612,
+    "sha256": "d988b4efd0f2d22d0fd29d83c85618a607bf1464089d57bbe6ca0ca1d80f55e0"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/historical/ARCHITECTURE_AUDIT.md",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/ARCHITECTURE_AUDIT.md",
+    "bytes": 17301,
+    "sha256": "5de15841d50ad5079a7eede0a206a2ea106c97f44219f0d8e23b35ed272bab3c"
+  },
+  {
+    "path": "experiments/founddiff_rddm_baseline/historical/TRAINING_ADAPTATION_AUDIT.md",
+    "source": "experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/TRAINING_ADAPTATION_AUDIT.md",
+    "bytes": 10617,
+    "sha256": "f05110cc34bfcb12457a4dc37cb22bc7863f22cc7754879ef13a181688e50d67"
+  }
+]

@@ -1,0 +1,2 @@
+# Preserve exact exported bytes: source/config hashes identify the trained run.
+* -text

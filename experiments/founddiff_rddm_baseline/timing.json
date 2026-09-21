@@ -1,0 +1,15 @@
+{
+  "optimizer_steps_executed": 60000,
+  "all_steps_mean_seconds": 0.30425405741068534,
+  "post_20_warmup_mean_seconds": 0.3042597662996507,
+  "peak_vram_bytes": 4470513664,
+  "training_wall_seconds": 19051.515536108986,
+  "estimated_60000_compute_hours": 5.070996104994178,
+  "loss_first": 0.06808610260486603,
+  "loss_last": 0.0001130880118580535,
+  "gradient_norm_min": 8.13697261037305e-05,
+  "gradient_norm_max": 46.26458740234375,
+  "all_finite": true,
+  "gradient_norm_gt_100_count": 0,
+  "note": "Estimate excludes validation, checkpoint I/O, interruptions; raw pre-clip gradient statistics retained."
+}

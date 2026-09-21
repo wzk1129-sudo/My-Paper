@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETE",
+  "experiment": "FoundDiff RDDM+RLEB backbone adapted to our fixed Mayo-2016 protocol",
+  "optimizer_step": 60000,
+  "max_optimizer_steps": 60000,
+  "matched_L333_metrics": [
+    {
+      "step": 30000,
+      "psnr": 40.63218634124514,
+      "ssim": 0.9459917025955557,
+      "rmse_hu": 18.701319795242753,
+      "mae_hu": 12.216416570006825,
+      "validation_loss": 9.008007002164243e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 99.71347674302524,
+      "train_loss": 9.172316640615463e-05,
+      "gradient_norm": 0.003181667998433113,
+      "learning_rate": 0.0002,
+      "peak_vram_bytes": 4470513664,
+      "seconds_per_step": 0.29586692482815125,
+      "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_30000.pt"
+    },
+    {
+      "step": 40000,
+      "psnr": 40.63317531963282,
+      "ssim": 0.9458913437897527,
+      "rmse_hu": 18.69765916370991,
+      "mae_hu": 12.21351927460217,
+      "validation_loss": 8.976940136234902e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 106.47147117403802,
+      "train_loss": 7.873379945522174e-05,
+      "gradient_norm": 0.00034619640791788697,
+      "learning_rate": 0.0002,
+      "peak_vram_bytes": 4470513664,
+      "seconds_per_step": 0.3185669102403335,
+      "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_40000.pt"
+    },
+    {
+      "step": 50000,
+      "psnr": 40.63501612087308,
+      "ssim": 0.945868029750823,
+      "rmse_hu": 18.698034031496814,
+      "mae_hu": 12.21535973158039,
+      "validation_loss": 8.875966066953566e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 106.0909404840204,
+      "train_loss": 0.0001275792164960876,
+      "gradient_norm": 0.003350366372615099,
+      "learning_rate": 0.0002,
+      "peak_vram_bytes": 4470513664,
+      "seconds_per_step": 0.31492624891747256,
+      "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_50000.pt"
+    },
+    {
+      "step": 60000,
+      "psnr": 40.658050390663206,
+      "ssim": 0.9461320590945359,
+      "rmse_hu": 18.64887881895969,
+      "mae_hu": 12.18173656307283,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 107.29469836398493,
+      "train_loss": 0.0001130880118580535,
+      "gradient_norm": 0.0030593397095799446,
+      "learning_rate": 0.0002,
+      "peak_vram_bytes": 4470513664,
+      "seconds_per_step": 0.3165812560624909,
+      "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_60000.pt"
+    }
+  ],
+  "best_psnr": 40.658050390663206,
+  "best_step": 60000,
+  "best_checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_60000.pt",
+  "weights": "EMA",
+  "trend": {
+    "30000-40000": {
+      "psnr": 0.0009889783876815272,
+      "ssim": -0.00010035880580294698,
+      "rmse_hu": -0.003660631532842018,
+      "mae_hu": -0.002897295404654443
+    },
+    "40000-50000": {
+      "psnr": 0.0018408012402630902,
+      "ssim": -2.3314038929744818e-05,
+      "rmse_hu": 0.0003748677869026551,
+      "mae_hu": 0.0018404569782202174
+    },
+    "50000-60000": {
+      "psnr": 0.023034269790123574,
+      "ssim": 0.00026402934371294595,
+      "rmse_hu": -0.04915521253712285,
+      "mae_hu": -0.03362316850756031
+    }
+  },
+  "plateau_heuristic_abs_delta_under_0_05db_for_two_intervals": true,
+  "extension_worth_discussing_delta_at_least_0_1db_and_ssim_non_decreasing": false,
+  "automatic_extension": false,
+  "total_training_compute_seconds": 18255.24344464112,
+  "total_wall_seconds": 19051.87659520097,
+  "peak_vram_bytes": 4470513664,
+  "gradient_statistics_pre_clip": {
+    "min": 8.13697261037305e-05,
+    "max": 46.26458740234375,
+    "gt_100_count": 0,
+    "nonfinite_count": 0
+  },
+  "nonfinite_or_abnormal_failure": null,
+  "amp_overflow": "not applicable; AMP disabled",
+  "test_access": false,
+  "checkpoint_manifest": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoint_manifest.json"
+}
