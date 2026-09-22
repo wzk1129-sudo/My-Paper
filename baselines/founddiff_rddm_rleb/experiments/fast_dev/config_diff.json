@@ -1,0 +1,89 @@
+[
+  {
+    "field": "data.train_patients",
+    "formal": [
+      "L067",
+      "L096",
+      "L109",
+      "L143",
+      "L192",
+      "L286",
+      "L291",
+      "L310"
+    ],
+    "fast_dev": [
+      "L067",
+      "L143"
+    ]
+  },
+  {
+    "field": "description",
+    "formal": "FoundDiff RDDM+RLEB backbone adapted to our fixed Mayo-2016 protocol",
+    "fast_dev": "Fast development screening of the fixed FoundDiff RDDM+RLEB backbone"
+  },
+  {
+    "field": "evaluation.expected_slices",
+    "formal": 610,
+    "fast_dev": 64
+  },
+  {
+    "field": "evaluation.indices_file",
+    "formal": null,
+    "fast_dev": "splits/L333_fast64.txt"
+  },
+  {
+    "field": "evaluation.validation_mode",
+    "formal": null,
+    "fast_dev": "FAST"
+  },
+  {
+    "field": "experiment_name",
+    "formal": "FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1",
+    "fast_dev": "FoundDiff_RDDM_RLEB_fast_dev_v1"
+  },
+  {
+    "field": "fast_dev",
+    "formal": null,
+    "fast_dev": {
+      "protocol": "configs/fast_dev_protocol.json",
+      "protocol_sha256": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+      "automatic_early_stop": false,
+      "external_memory_enabled": false
+    }
+  },
+  {
+    "field": "mode",
+    "formal": "formal",
+    "fast_dev": "fast_dev"
+  },
+  {
+    "field": "safety.maximum_steps",
+    "formal": 60000,
+    "fast_dev": 8000
+  },
+  {
+    "field": "training.matched_checkpoint_steps",
+    "formal": [
+      30000,
+      40000,
+      50000,
+      60000
+    ],
+    "fast_dev": [
+      2000,
+      4000,
+      6000,
+      8000
+    ]
+  },
+  {
+    "field": "training.max_optimizer_steps",
+    "formal": 60000,
+    "fast_dev": 8000
+  },
+  {
+    "field": "training.validation_every",
+    "formal": 10000,
+    "fast_dev": 2000
+  }
+]

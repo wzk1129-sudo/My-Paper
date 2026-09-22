@@ -1,0 +1,43 @@
+{
+  "changes": [
+    {
+      "file": "configs/fast_dev_protocol.json",
+      "original_sha256": "453aff341e3a688eee274af0bb765a83762aa171ebaec4a6fcde5457a61555b5",
+      "frozen_sha256": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a"
+    },
+    {
+      "file": "configs/rddm_fast_dev.json",
+      "original_sha256": "934f7482b89ba785290151cbb5be9eebe38f4e26a25e9c0bfb17b7908532dfd4",
+      "frozen_sha256": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223"
+    },
+    {
+      "file": "fast_dev/data.py",
+      "original_sha256": "da0e0ce23fd91863266efe93f3f8f6c63fb7e8a6c6eaaaaadc741d379dd608de",
+      "frozen_sha256": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976"
+    },
+    {
+      "file": "fast_dev/reporting.py",
+      "original_sha256": "8f88375c243db093db7afee65892f7ed9f5868a6bf0d845281ce2c60a6d7c40f",
+      "frozen_sha256": "33600b91749a458cb7946eb5005fb62e13bbc7393af7c4f7ddad0062db6a5238"
+    },
+    {
+      "file": "fast_dev/check_protocol.py",
+      "original_sha256": "bcd5e26634056015686e554b1d015bf3d5403dda590a7f9b857b71bbf499663d",
+      "frozen_sha256": "52f262e45407a1ee07808435b35064c02738b53246f5abbaff33fde1aee803b3"
+    },
+    {
+      "file": "experiments/fast_dev/README.md",
+      "original_sha256": "9b8aa1dd4f473ec607745851cc76d5d11986bc6f65caa9b3ac80d231491bbf25",
+      "frozen_sha256": "fce217fbe52a4775392fc1edbfcb0ec209bcda71a4808f0820387cd8903a7437"
+    },
+    {
+      "file": "experiments/fast_dev/config_diff.json",
+      "original_sha256": "97b9cf7c5289317d3fab8974047fd62f7d721efa25a5d583291b0eb543dfb8ca",
+      "frozen_sha256": "9cf325b81fd9ff575164a1d3ae99a273af618bef2261f5e611144e933e73aea7"
+    }
+  ],
+  "numerical_training_config_unchanged": true,
+  "model_training_runtime_evaluator_and_split_unchanged": true,
+  "original_smoke_records_preserved": true,
+  "documentation_finalized_after_8k_completion": true
+}

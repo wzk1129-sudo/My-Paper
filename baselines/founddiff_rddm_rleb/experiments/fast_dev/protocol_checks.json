@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "formal_update_resume_payload_reused": true,
+  "formal_load_metrics_reused": true,
+  "train_pairs": 1145,
+  "fast_slices": 64,
+  "full_slices": 610,
+  "external_memory_pairs": 3655,
+  "invalid_roles_rejected_before_io": true,
+  "images_read": 0,
+  "plateau_and_promotion_cases": "PASS",
+  "formal_output_path_rejected_before_write": true
+}

@@ -1,0 +1,29 @@
+{
+  "source_root": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb",
+  "archived_50step_smoke_unchanged": true,
+  "baseline_parent_commit": "d961c30f311911b893e190b526603e9369ea45e1",
+  "original_fast_files_sha256": {
+    "configs/fast_dev_protocol.json": "453aff341e3a688eee274af0bb765a83762aa171ebaec4a6fcde5457a61555b5",
+    "configs/rddm_fast_dev.json": "934f7482b89ba785290151cbb5be9eebe38f4e26a25e9c0bfb17b7908532dfd4",
+    "splits/fast_train_2patients.txt": "a9037f4f1b4c106bc539b465eb412c721e9872515ec8a879d9dc8a458fc0585c",
+    "splits/external_memory_6patients.txt": "8bf4a8c59269324910ce64217e2f6ffdf86b6aaaad157dc3244361747c75c950",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "fast_dev/__init__.py": "84e568c3cd795f454e147a96dc9059379503268e0f82c342bf252bdc939acd5c",
+    "fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+    "fast_dev/data.py": "da0e0ce23fd91863266efe93f3f8f6c63fb7e8a6c6eaaaaadc741d379dd608de",
+    "fast_dev/runtime.py": "736a8bea8a1b77783d3181dd70bbbe85c013975b2ba04e17828294cb6be0f1c3",
+    "fast_dev/train.py": "bfe7b7c185429332618723160661654a827667a6974b03369fd81fe8e25e2e69",
+    "fast_dev/evaluate.py": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+    "fast_dev/reporting.py": "8f88375c243db093db7afee65892f7ed9f5868a6bf0d845281ce2c60a6d7c40f",
+    "fast_dev/check_protocol.py": "bcd5e26634056015686e554b1d015bf3d5403dda590a7f9b857b71bbf499663d",
+    "fast_dev/.gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+    "experiments/fast_dev/README.md": "9b8aa1dd4f473ec607745851cc76d5d11986bc6f65caa9b3ac80d231491bbf25",
+    "experiments/fast_dev/data_audit.json": "e7cc3acac946d0d5e2d0c4ad0d0d264f8a5cfcd12bb05a92f4a9a02c7952ac13",
+    "experiments/fast_dev/config_diff.json": "97b9cf7c5289317d3fab8974047fd62f7d721efa25a5d583291b0eb543dfb8ca",
+    "experiments/fast_dev/FINAL_AUDIT.json": "1e22a5f609e971ac65c2d40312ea6827051653c541fa1ae74a21bd15ff28ca9f",
+    "experiments/fast_dev/formal_source_pins.json": "e633f491113355fb7cbada2ed2f18fbe43d46a280085df68954fe6d4788e5ebb",
+    "experiments/fast_dev/protocol_checks.json": "45d5c20ee5ae5b4de5bae4f323309a0c40f52f682c987407b1ae04bb5db085ce",
+    "experiments/fast_dev/.gitignore": "2d161a2f53d6ca6b4ec8855e25217a638e4ac9644b83a4576f4895ad87a96476"
+  },
+  "smoke50_summary_sha256": "d02954ee5782713dba6a78dc72ec5903c6d8f11af6bb55facdcdd8c3729b7696"
+}

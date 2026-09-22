@@ -1,0 +1,23 @@
+{
+  "session": "founddiff_rddm_fast_baseline_8k_20260922",
+  "command": "env CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 PYTHONDONTWRITEBYTECODE=1 /home/xujian/miniconda3/envs/corediff/bin/python -m fast_dev.train --config configs/rddm_fast_dev.json --output /home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/runs/rddm_fast_baseline_8k_20260922 --device cuda:0",
+  "cwd": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb",
+  "output": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/runs/rddm_fast_baseline_8k_20260922",
+  "log": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/launches/baseline_8k_20260922.log",
+  "start": "2026-09-22T10:31:01.446300+08:00",
+  "termination": "8000 optimizer steps after fixed L333-fast64 validations at 2000/4000/6000/8000; never auto extend",
+  "initialization": "random from fixed seed; no checkpoint loaded",
+  "git_commit": "d961c30f311911b893e190b526603e9369ea45e1",
+  "git_branch": "protocol/founddiff-rddm-fast-dev",
+  "git_status": "?? baselines/founddiff_rddm_rleb/configs/\n?? baselines/founddiff_rddm_rleb/experiments/\n?? baselines/founddiff_rddm_rleb/fast_dev/\n?? baselines/founddiff_rddm_rleb/splits/\n",
+  "environment": {
+    "conda": "corediff",
+    "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+    "torch": "1.10.1+cu111",
+    "cuda": "11.1",
+    "numpy": "1.23.1",
+    "einops": "0.4.1",
+    "skimage": "0.21.0",
+    "gpu": 0
+  }
+}

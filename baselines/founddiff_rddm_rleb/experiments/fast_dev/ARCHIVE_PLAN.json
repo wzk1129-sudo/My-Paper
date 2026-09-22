@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "baseline_parent": "d961c30f311911b893e190b526603e9369ea45e1",
+  "tracked_baseline_diff_empty": true,
+  "ignored_weight_data_secret_cache_probes": true,
+  "allowed_existing_files": [
+    "configs/fast_dev_protocol.json",
+    "configs/rddm_fast_dev.json",
+    "splits/fast_train_2patients.txt",
+    "splits/external_memory_6patients.txt",
+    "splits/L333_fast64.txt",
+    "fast_dev/__init__.py",
+    "fast_dev/.gitignore",
+    "fast_dev/protocol.py",
+    "fast_dev/data.py",
+    "fast_dev/runtime.py",
+    "fast_dev/train.py",
+    "fast_dev/evaluate.py",
+    "fast_dev/reporting.py",
+    "fast_dev/check_protocol.py",
+    "experiments/fast_dev/.gitignore",
+    "experiments/fast_dev/README.md",
+    "experiments/fast_dev/data_audit.json",
+    "experiments/fast_dev/config_diff.json",
+    "experiments/fast_dev/FINAL_AUDIT.json",
+    "experiments/fast_dev/formal_source_pins.json",
+    "experiments/fast_dev/protocol_checks.json",
+    "experiments/fast_dev/smoke50_summary.json",
+    "experiments/fast_dev/archive_origin.json",
+    "experiments/fast_dev/freeze_changes.json"
+  ],
+  "result_files_allowed_after_verified_completion": [
+    "baseline_8k/CONFIG.json",
+    "baseline_8k/validation_metrics.csv",
+    "baseline_8k/final_summary.json",
+    "baseline_8k/checkpoint_manifest.json",
+    "baseline_8k/source_manifest.json",
+    "baseline_8k/data_access.json",
+    "baseline_8k/VERIFICATION.json",
+    "baseline_8k/RESULTS.md",
+    "baseline_8k/launch.json"
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "L067": {
+    "expected_slices": 560,
+    "complete_pairs": 560,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      3392
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.3482666015625,
+      0.518880353655134,
+      0.574951171875
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.39730224609375,
+      0.5466823032924107,
+      0.5163931710379465,
+      0.4960667201450893,
+      0.50667724609375,
+      0.5524169921875,
+      0.5692548479352678,
+      0.5662493024553571
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      21.93890380859375,
+      26.32019775390625,
+      26.8204345703125
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 18.427958011627197
+  },
+  "L096": {
+    "expected_slices": 823,
+    "complete_pairs": 823,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      4095
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.38909912109375,
+      0.5288815689550426,
+      0.6734619140625
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.4501307218977549,
+      0.4546698412848908,
+      0.4139350965185073,
+      0.5016301719887742,
+      0.550610588592233,
+      0.6648109213819782,
+      0.6237870003413228,
+      0.5718958237591911
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      21.4312744140625,
+      29.253160400390623,
+      29.93389892578125
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 25.84068465232849
+  },
+  "L109": {
+    "expected_slices": 318,
+    "complete_pairs": 318,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      4037
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.2763671875,
+      0.4510417434404481,
+      0.50762939453125
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.29286651611328124,
+      0.4379302978515625,
+      0.49998779296875,
+      0.5012588500976562,
+      0.4859832763671875,
+      0.4793792724609375,
+      0.46654334435096156,
+      0.4446113782051282
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      21.3575439453125,
+      23.326171875,
+      23.7945556640625
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 9.60810661315918
+  },
+  "L143": {
+    "expected_slices": 585,
+    "complete_pairs": 585,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      4094
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.409912109375,
+      0.5363932291666667,
+      0.6383056640625
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.5214810758023649,
+      0.4415433700770548,
+      0.4279559409781678,
+      0.4352684543557363,
+      0.5840328686857876,
+      0.622384685359589,
+      0.6333919159353596,
+      0.6252917982127568
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      22.575531005859375,
+      28.305831909179684,
+      29.27081298828125
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 18.341267108917236
+  },
+  "L192": {
+    "expected_slices": 600,
+    "complete_pairs": 600,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      4095
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.3494873046875,
+      0.46746124267578126,
+      0.53314208984375
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.3680851236979167,
+      0.45211588541666664,
+      0.4493107096354167,
+      0.4303336588541667,
+      0.5184309895833333,
+      0.52482177734375,
+      0.5089794921875,
+      0.4876123046875
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      18.4451904296875,
+      26.766529541015625,
+      27.13299560546875
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 18.511940479278564
+  },
+  "L286": {
+    "expected_slices": 525,
+    "complete_pairs": 525,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      4095
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.29925537109375,
+      0.56102783203125,
+      0.63140869140625
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.41462568803267047,
+      0.49745316938920453,
+      0.5413614908854166,
+      0.5803675796046401,
+      0.595327666311553,
+      0.6107065054086539,
+      0.6292940579927885,
+      0.6217942457932693
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      17.85888671875,
+      23.823352050781246,
+      24.56964111328125
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 16.369508028030396
+  },
+  "L291": {
+    "expected_slices": 856,
+    "complete_pairs": 856,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      4095
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.337158203125,
+      0.4785817939544392,
+      0.60418701171875
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.39714834623247663,
+      0.3732419593311916,
+      0.4181855103679907,
+      0.5950608298043224,
+      0.5899304541471962,
+      0.5175113856235397,
+      0.44358012832213783,
+      0.4939957378066589
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      23.507080078125,
+      29.008818359375,
+      30.17034912109375
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 26.150755405426025
+  },
+  "L310": {
+    "expected_slices": 533,
+    "complete_pairs": 533,
+    "normalized_index_range": [
+      0,
+      1
+    ],
+    "physical_z_available": false,
+    "missing": [],
+    "invalid_or_near_empty": [],
+    "duplicate_ndct": [],
+    "dtype": [
+      "uint16"
+    ],
+    "stored_minmax": [
+      0,
+      2534
+    ],
+    "tissue_fraction_min_mean_max": [
+      0.44757080078125,
+      0.580393721417683,
+      0.64349365234375
+    ],
+    "tissue_fraction_8_z_bins": [
+      0.47372390974813433,
+      0.586664456040112,
+      0.6256941610307836,
+      0.6041214217000933,
+      0.6328926655783582,
+      0.6186948834043561,
+      0.570699980764678,
+      0.5303381717566288
+    ],
+    "adjacent_change_median_p99_max_hu": [
+      20.301666259765625,
+      23.67331298828125,
+      24.35772705078125
+    ],
+    "adjacent_change_flag_threshold_hu": 100,
+    "adjacent_change_flags": [],
+    "seconds": 16.241920471191406
+  },
+  "validation": {
+    "patient": "L333",
+    "expected_slices": 610,
+    "complete_pairs": 610,
+    "missing": [],
+    "content_read": false
+  },
+  "held_out_test": {
+    "patient": "L506",
+    "protocol_declared_slices": 526,
+    "filesystem_accessed": false,
+    "count_independently_verified": false
+  }
+}
