@@ -1,0 +1,13 @@
+{
+  "baseline": "configs/rddm_fast_dev.json",
+  "only_changes": {
+    "experiment_name": "FoundDiff_RDDM_RLEB_fast_screen_v1_F2_multiscale_ldct",
+    "variant": {
+      "id": "F2_multiscale_ldct",
+      "kind": "F2",
+      "value": null,
+      "main_change": "zero-gated four-level LDCT conditioning"
+    }
+  },
+  "all_other_fields_identical": true
+}

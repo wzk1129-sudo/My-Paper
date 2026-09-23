@@ -1,0 +1,13 @@
+{
+  "baseline": "configs/rddm_fast_dev.json",
+  "only_changes": {
+    "experiment_name": "FoundDiff_RDDM_RLEB_fast_screen_v1_F3_rleb2conv",
+    "variant": {
+      "id": "F3_rleb2conv",
+      "kind": "F3",
+      "value": null,
+      "main_change": "second WSConv3x3+GroupNorm in each RLEB"
+    }
+  },
+  "all_other_fields_identical": true
+}

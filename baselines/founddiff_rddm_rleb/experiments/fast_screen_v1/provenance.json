@@ -1,0 +1,60 @@
+{
+  "parent_git_commit": "8fa99bf959da6051ec169bd3817b2bedce2788b6",
+  "archive_branch": "experiment/rddm-fast-screen-v1",
+  "runtime_branch": "protocol/founddiff-rddm-fast-dev",
+  "runtime_commit": "8fa99bf959da6051ec169bd3817b2bedce2788b6",
+  "fast_protocol_sha256": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+  "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "baseline_config_sha256": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+  "split_sha256": {
+    "fast_train_2patients.txt": "a9037f4f1b4c106bc539b465eb412c721e9872515ec8a879d9dc8a458fc0585c",
+    "external_memory_6patients.txt": "8bf4a8c59269324910ce64217e2f6ffdf86b6aaaad157dc3244361747c75c950",
+    "L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895"
+  },
+  "variant_source_sha256": {
+    "__init__.py": "a5675889edd24dd6defced2bae4d863c60fac90ede761431cd3bad503fa1c5d4",
+    "candidate.py": "6c3270b7deadd85f67b598eb655049b45d9616ed0e2e95313f01afcb94bfb581",
+    "check_variants.py": "0c08ebec70c088463bc1b578d7e7539fe84ba0d53824e23d60324bae2f920726",
+    "model.py": "5c56798349e364a00ab97f1bc4cebc236a03e1f3310eb079a153ba561cbfd9f0",
+    "protocol.py": "d16ca65488b60947fd2313829ac7ee0122b47e513977bfb549a6139303b93337",
+    "queue.py": "eb8ee2b9781296b16ec6be499c8c807e2fd72a9930809f8ed00cffe083fc0799",
+    "runtime.py": "0f3c0913bf59536c68ce56f2d1b1199f7d2c2f9f317c09fa4236ddfb2b77640e"
+  },
+  "candidate_config_sha256": {
+    "F1_noise_050": "47f5f428a02877b07e4d9b9566618fc56965686b048a194b1bf17c0adfb91185",
+    "F1_noise_025": "8d01ca885649ff5bc231d527b8498418f77a8fd510dd72f0ba3f7e08d759005a",
+    "F1_noise_000": "95b04bc8d5461b5f2ef5348e5f1b429c6159c55f567c486e1946c1aeab2d4c3b",
+    "F2_multiscale_ldct": "cbe63d692fc75f5700ac04d4e9dc1dcc90a96ffb976d317a83e3138c887fbe8f",
+    "F3_rleb2conv": "74a9e4c4aca6e86deeb51ac8dc2996643af67eca8f1bd868e8cadad89f911799",
+    "F4_window_010": "66b8e5427565c0c33ab7a1e91ba3a5ee687087c0db1c448c64b19c40c94110ae",
+    "F4_window_025": "44c3c70bc79e93fa51d3e3b17dca2c3e085d455ade29ab8183091418d8178f31",
+    "F4_window_050": "952da14983722fb6e1d281c852fafd80e42e10a335f71da98260d96d9b7a418b"
+  },
+  "protected_artifact_sha256": {
+    "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_60000.pt": "49aa8ce2ee5c98c4deeaf3067d7059f54f18d7715e30439cd9326b6177867469",
+    "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/runs/rddm_fast_baseline_8k_20260922/final_summary.json": "3299aa561fdf80df0d573bd50a48907aaa7ddae08196c7a0a89f7d4241da9259",
+    "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/runs/rddm_fast_baseline_8k_20260922/validation_metrics.csv": "aa80a373c05a65019ccccc362b97b85bf73b53faa844b0a8a69a8a55303df75c"
+  },
+  "seed": 20260829,
+  "environment": {
+    "python": "3.8.13",
+    "pytorch": "1.10.1+cu111",
+    "cuda": "11.1",
+    "numpy": "1.23.1",
+    "skimage": "0.21.0",
+    "einops": "0.4.1",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "conda_environment": "corediff"
+  },
+  "run_started": "2026-09-23T09:52:12.476713+08:00",
+  "run_completed": "2026-09-23T16:05:32.635169+08:00",
+  "source_code_exact_runtime_copy": true,
+  "candidate_configs_exact_runtime_copy": true,
+  "excluded_artifacts": [
+    "medical NPY/DICOM and other source data",
+    "*.pt/*.pth/*.ckpt and checkpoints",
+    "large train.jsonl and full runtime logs",
+    "cache/temp",
+    "tokens/SSH keys/secrets"
+  ]
+}

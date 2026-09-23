@@ -1,0 +1,23 @@
+{
+  "curve": [
+    {
+      "step": 2000,
+      "delta_psnr": -1.5488259605115147
+    },
+    {
+      "step": 4000,
+      "delta_psnr": -0.9819335494613952
+    },
+    {
+      "step": 6000,
+      "delta_psnr": -0.282226233303291
+    },
+    {
+      "step": 8000,
+      "delta_psnr": -0.1663474845384627
+    }
+  ],
+  "all_below_baseline": true,
+  "gap_narrows_by_8k": true,
+  "convergence_beyond_8k_not_measured": true
+}

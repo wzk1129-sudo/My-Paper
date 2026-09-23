@@ -1,0 +1,60 @@
+{
+  "checkpoint": "step_8000.pt",
+  "checkpoint_sha256": "46740a4d697c302612c9381d90d749483c279d5f267bfe33e037da0148734390",
+  "initialization_method": "Reconstructed from frozen source and seed 20260829; no step-0 weight file was saved",
+  "gamma_levels": [
+    {
+      "level": 0,
+      "initial": 0.0,
+      "final_raw": 0.3981013000011444,
+      "final_ema": 0.39442816376686096,
+      "optimizer_step": 8000,
+      "adam_exp_avg_abs": 1.1476140571176074e-06,
+      "nonzero_gradient_evidence": true
+    },
+    {
+      "level": 1,
+      "initial": 0.0,
+      "final_raw": 0.024578861892223358,
+      "final_ema": 0.02442418783903122,
+      "optimizer_step": 8000,
+      "adam_exp_avg_abs": 2.4786391605857716e-08,
+      "nonzero_gradient_evidence": true
+    },
+    {
+      "level": 2,
+      "initial": 0.0,
+      "final_raw": -0.0011799909407272935,
+      "final_ema": -0.0011708795791491866,
+      "optimizer_step": 8000,
+      "adam_exp_avg_abs": 3.3651004205381696e-09,
+      "nonzero_gradient_evidence": true
+    },
+    {
+      "level": 3,
+      "initial": 0.0,
+      "final_raw": -0.0030617944430559874,
+      "final_ema": -0.0028135429602116346,
+      "optimizer_step": 8000,
+      "adam_exp_avg_abs": 5.297094762823917e-09,
+      "nonzero_gradient_evidence": true
+    }
+  ],
+  "branch_parameters": {
+    "condition_convs": {
+      "tensor_count": 8,
+      "tensors_changed_from_seed_reconstruction": 8,
+      "max_abs_parameter_change": 0.2478182017803192,
+      "nonzero_adam_moment_tensors": 8
+    },
+    "condition_projections": {
+      "tensor_count": 8,
+      "tensors_changed_from_seed_reconstruction": 8,
+      "max_abs_parameter_change": 0.34281671047210693,
+      "nonzero_adam_moment_tensors": 8
+    }
+  },
+  "feature_magnitude_recorded": false,
+  "feature_magnitude": null,
+  "interpretation": "Branch received gradients and parameters changed; near-equal PSNR does not by itself establish raw-LDCT redundancy."
+}

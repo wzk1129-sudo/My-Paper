@@ -1,0 +1,8 @@
+{
+  "optimizer_steps": 8000,
+  "loss_finite": true,
+  "gradient_nonfinite_count": 0,
+  "metrics_finite": true,
+  "8k_psnr": 12.690211523623706,
+  "classification": "performance failure, not numerical/runtime failure"
+}

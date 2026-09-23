@@ -1,0 +1,13 @@
+{
+  "baseline": "configs/rddm_fast_dev.json",
+  "only_changes": {
+    "experiment_name": "FoundDiff_RDDM_RLEB_fast_screen_v1_F4_window_050",
+    "variant": {
+      "id": "F4_window_050",
+      "kind": "F4",
+      "value": 0.5,
+      "main_change": "metric-window loss lambda 0.5"
+    }
+  },
+  "all_other_fields_identical": true
+}

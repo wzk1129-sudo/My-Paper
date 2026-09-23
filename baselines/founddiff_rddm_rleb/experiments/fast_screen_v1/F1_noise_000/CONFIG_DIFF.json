@@ -1,0 +1,13 @@
+{
+  "baseline": "configs/rddm_fast_dev.json",
+  "only_changes": {
+    "experiment_name": "FoundDiff_RDDM_RLEB_fast_screen_v1_F1_noise_000",
+    "variant": {
+      "id": "F1_noise_000",
+      "kind": "F1",
+      "value": 0.0,
+      "main_change": "q_sample noise amplitude 0"
+    }
+  },
+  "all_other_fields_identical": true
+}

@@ -1,0 +1,124 @@
+{
+  "checkpoints": [
+    {
+      "step": 2000,
+      "path": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_2000.pt",
+      "sha256": "5d22127b096c0d906d642fa03ee15e3b8522b2e3929b3f9258bddbb3d33951d6",
+      "validation": {
+        "step": 2000,
+        "psnr": 38.33924882123155,
+        "ssim": 0.9243624547800844,
+        "rmse_hu": 24.319915128609274,
+        "mae_hu": 16.237467169761658,
+        "validation_loss": 0.00016192673137993552,
+        "slices": 64,
+        "patient": "L333",
+        "weights": "ema",
+        "validation_mode": "FAST",
+        "validation_seconds": 12.190116623067297,
+        "best_step": 2000,
+        "delta_psnr": null,
+        "train_loss": 0.00014101408305577934,
+        "gradient_norm_pre_clip": 0.0031337030231952667,
+        "learning_rate": 0.0002,
+        "peak_vram_bytes": 5057427456,
+        "seconds_per_step": 0.3549601500935387,
+        "parameters": 13628165,
+        "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_2000.pt"
+      }
+    },
+    {
+      "step": 4000,
+      "path": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_4000.pt",
+      "sha256": "4be9e936cb31dc73543c27bef73eb9b25c2a082ce6cc38d0e139ee4605e69661",
+      "validation": {
+        "step": 4000,
+        "psnr": 40.20962823870852,
+        "ssim": 0.9424589738039925,
+        "rmse_hu": 19.618550832998125,
+        "mae_hu": 12.887829706072807,
+        "validation_loss": 0.00010149300339890033,
+        "slices": 64,
+        "patient": "L333",
+        "weights": "ema",
+        "validation_mode": "FAST",
+        "validation_seconds": 11.857307623024099,
+        "best_step": 4000,
+        "delta_psnr": 1.8703794174769683,
+        "train_loss": 0.0001501431397628039,
+        "gradient_norm_pre_clip": 0.029928652569651604,
+        "learning_rate": 0.0002,
+        "peak_vram_bytes": 5057427456,
+        "seconds_per_step": 0.3473878977424465,
+        "parameters": 13628165,
+        "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_4000.pt"
+      }
+    },
+    {
+      "step": 6000,
+      "path": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_6000.pt",
+      "sha256": "5f5bc2a040a6b3a938dc58dca06275ad2f18e43bd7ad99341985d56210d816ef",
+      "validation": {
+        "step": 6000,
+        "psnr": 40.39994798563568,
+        "ssim": 0.9441212896922522,
+        "rmse_hu": 19.199945648590678,
+        "mae_hu": 12.59934563934803,
+        "validation_loss": 9.646977287047775e-05,
+        "slices": 64,
+        "patient": "L333",
+        "weights": "ema",
+        "validation_mode": "FAST",
+        "validation_seconds": 11.868755322997458,
+        "best_step": 6000,
+        "delta_psnr": 0.19031974692715892,
+        "train_loss": 0.00015274806355591863,
+        "gradient_norm_pre_clip": 0.03748173639178276,
+        "learning_rate": 0.0002,
+        "peak_vram_bytes": 5057427456,
+        "seconds_per_step": 0.3472317280084826,
+        "parameters": 13628165,
+        "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_6000.pt"
+      }
+    },
+    {
+      "step": 8000,
+      "path": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_8000.pt",
+      "sha256": "46740a4d697c302612c9381d90d749483c279d5f267bfe33e037da0148734390",
+      "validation": {
+        "step": 8000,
+        "psnr": 40.48400802080724,
+        "ssim": 0.9449393782447219,
+        "rmse_hu": 19.01638215880522,
+        "mae_hu": 12.43209956586361,
+        "validation_loss": 9.412254064500303e-05,
+        "slices": 64,
+        "patient": "L333",
+        "weights": "ema",
+        "validation_mode": "FAST",
+        "validation_seconds": 11.757309867069125,
+        "best_step": 8000,
+        "delta_psnr": 0.0840600351715608,
+        "train_loss": 0.0001724282919894904,
+        "gradient_norm_pre_clip": 0.014540725387632847,
+        "learning_rate": 0.0002,
+        "peak_vram_bytes": 5057427456,
+        "seconds_per_step": 0.3444002981379162,
+        "parameters": 13628165,
+        "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_8000.pt"
+      }
+    }
+  ],
+  "latest": {
+    "step": 8000,
+    "path": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/latest.pt",
+    "sha256": "09f3256529c88208ce4454ba6651eec2658be8b46491fd3ee8d9286d36ac8ca7"
+  },
+  "best": {
+    "step": 8000,
+    "path": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/best_psnr.pt",
+    "source": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/checkpoints/step_8000.pt",
+    "sha256": "46740a4d697c302612c9381d90d749483c279d5f267bfe33e037da0148734390",
+    "weights": "ema"
+  }
+}

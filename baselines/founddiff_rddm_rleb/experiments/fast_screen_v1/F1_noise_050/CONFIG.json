@@ -1,0 +1,148 @@
+{
+  "experiment_name": "FoundDiff_RDDM_RLEB_fast_screen_v1_F1_noise_050",
+  "description": "Fast development screening of the fixed FoundDiff RDDM+RLEB backbone",
+  "mode": "fast_dev",
+  "seed": 20260829,
+  "data": {
+    "root": "/home/xujian/projects/CoreDiff/data_preprocess/gen_data/mayo_2016_npy",
+    "dose_label": "25",
+    "train_patients": [
+      "L067",
+      "L143"
+    ],
+    "validation_patients": [
+      "L333"
+    ],
+    "image_size": 512,
+    "stored_value_offset_hu": -1024.0,
+    "hu_min": -1024.0,
+    "hu_max": 3072.0,
+    "normalization": "linear_zero_one"
+  },
+  "allowed_slice_counts": {
+    "L067": 560,
+    "L096": 823,
+    "L109": 318,
+    "L143": 585,
+    "L192": 600,
+    "L286": 525,
+    "L291": 856,
+    "L310": 533,
+    "L333": 610
+  },
+  "model": {
+    "dim": 64,
+    "dim_mults": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "channels": 1,
+    "num_unet": 1,
+    "parameters": 13130945,
+    "rleb_count": 10,
+    "input": "[x_t,center_LDCT]",
+    "source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+  },
+  "diffusion": {
+    "objective": "pred_res",
+    "loss_type": "l2",
+    "timesteps": 1000,
+    "sampling_timesteps": 2,
+    "condition": true,
+    "sum_scale": 0.01
+  },
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.0002,
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "weight_decay": 1e-09,
+    "batch_size": 2,
+    "gradient_accumulation": 1,
+    "effective_batch": 2,
+    "max_optimizer_steps": 8000,
+    "amp": false,
+    "gradient_clip": 1.0,
+    "scheduler": null,
+    "num_workers": 0,
+    "cpu_threads": 2,
+    "validation_every": 2000,
+    "recovery_checkpoint_every": 1000,
+    "matched_checkpoint_steps": [
+      2000,
+      4000,
+      6000,
+      8000
+    ],
+    "log_every": 1,
+    "console_every": 100
+  },
+  "ema": {
+    "decay": 0.995,
+    "update_every": 1,
+    "warmup_steps": 0,
+    "initialization": "copy model at step 0",
+    "dtype": "float32",
+    "validation_weights": "ema"
+  },
+  "augmentation": {
+    "horizontal_flip_probability": 0.5,
+    "rotation_degrees": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "paired": true,
+    "crop": false
+  },
+  "evaluation": {
+    "hu_window": [
+      -1000.0,
+      1000.0
+    ],
+    "metrics": [
+      "psnr",
+      "ssim",
+      "rmse_hu",
+      "mae_hu"
+    ],
+    "protocol_version": "RDDM_CT_MAIN_EVAL_V1_2026-09-04",
+    "patients": [
+      "L333"
+    ],
+    "expected_slices": 64,
+    "stride": 1,
+    "validation_seed": 20260829,
+    "initial_noise": "seed+slice_index; batch=1; RNG isolated/restored",
+    "loss_seed_offset": 1000000,
+    "best_metric": "psnr",
+    "best_weights": "ema",
+    "save_images": false,
+    "validation_mode": "FAST",
+    "indices_file": "splits/L333_fast64.txt"
+  },
+  "safety": {
+    "train_validation_only": true,
+    "automatic_extension": false,
+    "maximum_steps": 8000,
+    "fresh_output_dir_required": true,
+    "network_access": false
+  },
+  "fast_dev": {
+    "protocol": "configs/fast_dev_protocol.json",
+    "protocol_sha256": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+    "automatic_early_stop": false,
+    "external_memory_enabled": false
+  },
+  "variant": {
+    "id": "F1_noise_050",
+    "kind": "F1",
+    "value": 0.5,
+    "main_change": "q_sample noise amplitude 0.5"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "status": "COMPLETE",
+  "started": "2026-09-23T09:52:12.476713+08:00",
+  "order": [
+    "F1_noise_050",
+    "F1_noise_025",
+    "F1_noise_000",
+    "F2_multiscale_ldct",
+    "F3_rleb2conv",
+    "F4_window_010",
+    "F4_window_025",
+    "F4_window_050"
+  ],
+  "jobs": {
+    "F1_noise_050": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T09:52:12.646916+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F1_noise_050/smoke50/final_summary.json",
+      "started_running": "2026-09-23T09:52:56.720139+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F1_noise_050/train8k/final_summary.json",
+      "psnr_8k": 40.482025743487256,
+      "delta_8k": -0.002542398010909608,
+      "completed": "2026-09-23T10:37:49.417448+08:00"
+    },
+    "F1_noise_025": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T10:37:49.584577+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F1_noise_025/smoke50/final_summary.json",
+      "started_running": "2026-09-23T10:38:26.878080+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F1_noise_025/train8k/final_summary.json",
+      "psnr_8k": 40.46362446870398,
+      "delta_8k": -0.020943672794182078,
+      "completed": "2026-09-23T11:22:43.527987+08:00"
+    },
+    "F1_noise_000": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T11:22:43.681981+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F1_noise_000/smoke50/final_summary.json",
+      "started_running": "2026-09-23T11:23:20.521562+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F1_noise_000/train8k/final_summary.json",
+      "psnr_8k": 12.690211523623706,
+      "delta_8k": -27.79435661787446,
+      "completed": "2026-09-23T12:07:42.599772+08:00"
+    },
+    "F2_multiscale_ldct": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T12:07:42.784686+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/smoke50/final_summary.json",
+      "started_running": "2026-09-23T12:08:23.472522+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F2_multiscale_ldct/train8k/final_summary.json",
+      "psnr_8k": 40.48400802080724,
+      "delta_8k": -0.0005601206909275902,
+      "completed": "2026-09-23T12:57:05.369867+08:00"
+    },
+    "F3_rleb2conv": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T12:57:05.559545+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F3_rleb2conv/smoke50/final_summary.json",
+      "started_running": "2026-09-23T12:57:53.440061+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F3_rleb2conv/train8k/final_summary.json",
+      "psnr_8k": 40.3182206569597,
+      "delta_8k": -0.1663474845384627,
+      "completed": "2026-09-23T13:54:50.876923+08:00"
+    },
+    "F4_window_010": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T13:54:51.066259+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F4_window_010/smoke50/final_summary.json",
+      "started_running": "2026-09-23T13:55:28.131390+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F4_window_010/train8k/final_summary.json",
+      "psnr_8k": 40.46076557475852,
+      "delta_8k": -0.02380256673964709,
+      "completed": "2026-09-23T14:38:27.956411+08:00"
+    },
+    "F4_window_025": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T14:38:28.142410+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F4_window_025/smoke50/final_summary.json",
+      "started_running": "2026-09-23T14:39:04.579682+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F4_window_025/train8k/final_summary.json",
+      "psnr_8k": 40.445201662254576,
+      "delta_8k": -0.039366479243589936,
+      "completed": "2026-09-23T15:21:57.796924+08:00"
+    },
+    "F4_window_050": {
+      "status": "COMPLETE",
+      "started_smoke": "2026-09-23T15:21:57.967163+08:00",
+      "smoke_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F4_window_050/smoke50/final_summary.json",
+      "started_running": "2026-09-23T15:22:34.404541+08:00",
+      "running_summary": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/F4_window_050/train8k/final_summary.json",
+      "psnr_8k": 40.48898734130874,
+      "delta_8k": 0.004419199810577368,
+      "completed": "2026-09-23T16:05:28.404015+08:00"
+    }
+  },
+  "baseline_reference": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/runs/rddm_fast_baseline_8k_20260922",
+  "baseline_step_psnr": {
+    "2000": 38.47870036920836,
+    "4000": 40.14538588663511,
+    "6000": 40.38720219986538,
+    "8000": 40.484568141498166
+  },
+  "stopped_on_failure": null,
+  "gpu_concurrency": 1,
+  "retry_count": 0,
+  "completed": "2026-09-23T16:05:32.635169+08:00"
+}

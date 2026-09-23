@@ -1,0 +1,16 @@
+{
+  "session": "rddm_fast_screen_v1",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/launch.sh",
+  "cwd": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb",
+  "git_commit": "8fa99bf959da6051ec169bd3817b2bedce2788b6",
+  "git_branch": "protocol/founddiff-rddm-fast-dev",
+  "git_status": "?? experiments/fast_dev/candidates/\n?? experiments/fast_dev/launches/\n?? fast_dev_variants/\n",
+  "environment": "corediff",
+  "python": "/home/xujian/miniconda3/envs/corediff/bin/python",
+  "gpu": 0,
+  "log": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/queue.log",
+  "process_log": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates/queue_process.log",
+  "output": "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/candidates",
+  "start": "2026-09-23T09:52:11.700659+08:00",
+  "expected_stop": "All eight candidates complete, or first smoke/run/protocol failure; no retry"
+}

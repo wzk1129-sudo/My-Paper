@@ -1,0 +1,5 @@
+{
+  "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_60000.pt": "49aa8ce2ee5c98c4deeaf3067d7059f54f18d7715e30439cd9326b6177867469",
+  "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/runs/rddm_fast_baseline_8k_20260922/final_summary.json": "3299aa561fdf80df0d573bd50a48907aaa7ddae08196c7a0a89f7d4241da9259",
+  "/home/xujian/projects/CoreDiff/experiments/founddiff_fast_dev_20260922/My-Paper/baselines/founddiff_rddm_rleb/experiments/fast_dev/runs/rddm_fast_baseline_8k_20260922/validation_metrics.csv": "aa80a373c05a65019ccccc362b97b85bf73b53faa844b0a8a69a8a55303df75c"
+}
