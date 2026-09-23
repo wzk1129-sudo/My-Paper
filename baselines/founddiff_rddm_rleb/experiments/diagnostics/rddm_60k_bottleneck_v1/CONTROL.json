@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "expected": {
+    "psnr": 40.65805039,
+    "ssim": 0.94613206,
+    "rmse_hu": 18.6488788,
+    "mae_hu": 12.1817366
+  },
+  "observed": {
+    "psnr": 40.658050390663206,
+    "ssim": 0.9461320590945359,
+    "rmse_hu": 18.64887881895969,
+    "mae_hu": 12.18173656307283,
+    "validation_loss": 8.85190109717068e-05,
+    "slices": 610,
+    "patient": "L333",
+    "weights": "ema",
+    "validation_seconds": 133.66332102601882
+  },
+  "difference": {
+    "psnr": 6.632063787037623e-10,
+    "ssim": -9.054641481043291e-10,
+    "rmse_hu": 1.895969248266738e-08,
+    "mae_hu": -3.692717065462148e-08
+  },
+  "tolerance": {
+    "psnr": 0.0001,
+    "ssim": 1e-05,
+    "rmse_hu": 0.001,
+    "mae_hu": 0.001
+  },
+  "patient": "L333",
+  "slices": 610,
+  "weights": "ema_state_dict",
+  "sampling_timesteps": 2,
+  "sum_scale": 0.01
+}

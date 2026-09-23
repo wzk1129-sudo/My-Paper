@@ -1,0 +1,57 @@
+{
+  "control_pass": true,
+  "flags": [
+    "SAMPLER_TIMESTEP_WEAKNESS_SIGNAL_t499",
+    "SAMPLER_TIMESTEP_WEAKNESS_SIGNAL_t999",
+    "STRONG_DIAGNOSTIC_CORRELATION"
+  ],
+  "strong_correlations": [
+    [
+      "prediction_rmse",
+      "raw_ldct_rmse",
+      0.8236773317730223
+    ],
+    [
+      "prediction_rmse",
+      "input_residual_rms",
+      0.8236773317730223
+    ],
+    [
+      "prediction_rmse",
+      "gt_high_frequency_energy",
+      0.8400541474089457
+    ],
+    [
+      "psnr_gain",
+      "high_frequency_remaining_ratio",
+      -0.9613759585134204
+    ]
+  ],
+  "within_stack_only": true,
+  "patient_population_significance": false,
+  "invalid_structure_slices": [],
+  "full_validation_slices": 610,
+  "timestep_probe_rows": 2304,
+  "seconds": 449.8798682689667,
+  "specificity_review": {
+    "timestep_flag_trigger": "comparison to unusually easy t=0",
+    "t_100_to_999_median_psnr_spread_db": 0.00788802558720647,
+    "t_100_to_999_median_nmse_spread": 0.001218155026435852,
+    "actual_sampler_timesteps_uniquely_weak": false,
+    "interpretation": "The preregistered flag triggers, but t=499/999 are not materially worse than t=100/250/750.",
+    "supported_specific_bottleneck": "none-clear",
+    "exploratory_mechanism_categories": [
+      "Structure",
+      "Frequency"
+    ],
+    "exploratory_caveat": "Neither structure nor frequency preregistered signal threshold passed; no module gain is implied.",
+    "coupling_note": "high_frequency_remaining_ratio shares prediction error with PSNR gain, so their Spearman rho is not an independent causal predictor.",
+    "duplicate_predictor_note": "raw_ldct_rmse and input_residual_rms are identical under this evaluation-window definition."
+  },
+  "flag_only_categories": [
+    "Timestep"
+  ],
+  "mechanism_categories": [
+    "none-clear"
+  ]
+}

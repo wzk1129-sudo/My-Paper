@@ -1,0 +1,48 @@
+{
+  "git_commit": "6a3cb1955b3d223bcb8c401b43a1e643feb86ddf",
+  "git_branch": "diagnostic/rddm-60k-bottleneck-v1",
+  "source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "checkpoint_sha256": "49aa8ce2ee5c98c4deeaf3067d7059f54f18d7715e30439cd9326b6177867469",
+  "diagnostic_code_sha256": {
+    "diagnose.py": "3de57a8bf01987092a856f3bebe30b8d5374e24f6c2979d42333ad6f606ef3c3",
+    "protocol.py": "3f48c47cbb8593762ece92c4ad44bee0bc8fbb9d5297d7a3488bc2a05a78f6d4"
+  },
+  "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+  "pytorch": "1.10.1+cu111",
+  "cuda": "11.1",
+  "scipy": "1.10.1",
+  "skimage": "0.21.0",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "seed_control": 20260829,
+  "seed_bootstrap": 20260923,
+  "started_unix": 1790156707.088474,
+  "ended_unix": 1790157157.2070801,
+  "runtime_seconds": 450.11860632896423,
+  "interpretation_pass": {
+    "code_sha256": "27a6b5cac420fe2fd66555847741ab78e363a22ebe2ff63d300c6daacef134e1",
+    "completed_utc": "2026-09-23T09:54:54.436272+00:00",
+    "opened_medical_images": 0,
+    "model_forwards": 0,
+    "input_files": [
+      "CONTROL.json",
+      "STRUCTURE_REGION_SUMMARY.json",
+      "FREQUENCY_SUMMARY.json",
+      "TIMESTEP_SUMMARY.json",
+      "HARD_SLICE_SUMMARY.json",
+      "DIAGNOSTIC_SUMMARY.json",
+      "DATA_ACCESS_AUDIT.json"
+    ]
+  },
+  "report_finalizer": {
+    "code_sha256": "9ce8c587666023c64e193beea69b14ffc8f4f9e71dc5f1a6658c66b118e353dd",
+    "completed_utc": "2026-09-23T09:55:37.055625+00:00",
+    "opened_medical_images": 0,
+    "model_forwards": 0
+  },
+  "distribution_report_pass": {
+    "code_sha256": "3cfe8cce9c8b858a29c08bb7c45203d689814369e3019fb50a81d3a201741698",
+    "completed_utc": "2026-09-23T09:58:06.234433+00:00",
+    "opened_medical_images": 0,
+    "model_forwards": 0
+  }
+}
