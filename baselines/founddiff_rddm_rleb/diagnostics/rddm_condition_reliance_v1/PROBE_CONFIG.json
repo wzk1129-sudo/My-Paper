@@ -1,0 +1,43 @@
+{
+  "name": "RDDM Condition Reliance Probe V1",
+  "mode": "inference_only_forward_only",
+  "patient": "L333",
+  "probe_index_rule": "round(linspace(0,609,128))",
+  "probe_count": 128,
+  "true_timesteps": [
+    100,
+    499,
+    999
+  ],
+  "feed_timesteps": [
+    100,
+    499,
+    999
+  ],
+  "noise_replicates": [
+    0,
+    1,
+    2
+  ],
+  "noise_seed_base": 20260829,
+  "noise_seed_replicate_stride": 1000000,
+  "donor_position_offset": 37,
+  "validation_weights": "ema_state_dict",
+  "sampling_loop": false,
+  "optimizer_steps": 0,
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "formal_checkpoint_sha256": "49aa8ce2ee5c98c4deeaf3067d7059f54f18d7715e30439cd9326b6177867469",
+  "control_reference": "experiments/diagnostics/rddm_60k_bottleneck_v1/TIMESTEP_PROBE.csv",
+  "control_tolerances": {
+    "psnr": 1E-05,
+    "ssim": 1E-07,
+    "rmse_hu": 0.0001,
+    "mae_hu": 0.0001,
+    "residual_mse": 1E-09,
+    "residual_nmse": 1E-05
+  },
+  "forbidden_patients": [
+    "L506"
+  ],
+  "external_memory": false
+}

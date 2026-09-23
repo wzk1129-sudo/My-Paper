@@ -1,0 +1,16 @@
+{
+  "flags": [
+    "TIME_CONDITION_WEAK_SIGNAL",
+    "XT_SAMPLE_SPECIFIC_WEAK_SIGNAL",
+    "LDCT_CONDITION_DOMINANT_SIGNAL"
+  ],
+  "engineering_heuristics_only": true,
+  "condition_to_xt_drop_ratio": 806.0289198727866,
+  "median_psnr_drop_time": 0.00035151805960254023,
+  "median_nmse_ratio_time": 1.0001070658451154,
+  "median_psnr_drop_xt": 0.002649863624363036,
+  "median_nmse_ratio_xt": 1.0009365417630107,
+  "median_psnr_drop_ldct": 8.060289198727865,
+  "median_nmse_ratio_ldct": 6.414553766494455,
+  "ldct_conditioned_residual_regression": "supported"
+}

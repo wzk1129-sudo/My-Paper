@@ -1,0 +1,30 @@
+{
+  "git_commit": "a7d2cb0a47b57ebdb17083b554bb9be73e9d119f",
+  "git_branch": "diagnostic/rddm-condition-reliance-v1",
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "formal_checkpoint_sha256": "49aa8ce2ee5c98c4deeaf3067d7059f54f18d7715e30439cd9326b6177867469",
+  "formal_config_sha256": "2eb687f8eb28901704b9d7d6e53f099530f7b8297ec91e3929282b3682d9af0e",
+  "bottleneck_reference_sha256": "d69e1ad169f9d33f08133aa5dec6789c0db90a1db7e506925e04d5286ac40ede",
+  "probe_source_sha256": {
+    "forward.py": "7fdb5a4390829d580df3ea5ba6aec766b4380e83f418df9c0be5aabb2d3a6eef",
+    "probe.py": "47c459a57a827fe49f919e07e3ce9e86f40dd409151b4cbc41afaa9a2f98871c"
+  },
+  "probe_config_sha256": "6f86cf729051b15a1962acbd6fa7b2c80b8d0bc02593428088cb6a3fe13e8001",
+  "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+  "torch": "1.10.1+cu111",
+  "cuda": "11.1",
+  "numpy": "1.23.1",
+  "scipy": "1.10.1",
+  "skimage": "0.21.0",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "seed_base": 20260829,
+  "replicate_stride": 1000000,
+  "started_unix": 1790180300.7172651,
+  "ended_unix": 1790180711.9602137,
+  "seconds": 411.24294877052307,
+  "weights": "ema_state_dict",
+  "optimizer_updates": 0,
+  "launcher_sha256": "10d233462d839091d030b9752755cc11dcc9b367c06bbaa3f9a3d59a66d3033f",
+  "console_log_sha256": "820b3e19f4cdf66379ef93ed5cbd027a27249cd1c3993428cd9cdb41af355d55",
+  "separate_preflight_control_pass": true
+}
