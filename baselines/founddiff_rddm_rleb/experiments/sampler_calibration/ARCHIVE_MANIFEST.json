@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "d961c30f311911b893e190b526603e9369ea45e1",
+  "original_remote_directory": "/home/xujian/projects/CoreDiff/experiments/founddiff_rddm_sampler_calibration",
+  "archived_files_sha256": {
+    "sweep_sampler.py": "4b6f4426abdb4d8562ad6d1ac0578c48bab70ac264f6aceecd2a6c3771046720",
+    "sampler_sweep.csv": "7706bcf611d25d4afe87e470397701c3f351e1dadd733d1bbd820bcd057c4cdb",
+    "sampler_sweep.json": "00e69b22989aaf227d0690c89b120785408cf950803d29af6b81448806304758",
+    "SAMPLER_CALIBRATION_REPORT.md": "3bbcfde1e37cb9270e4bbebb588d1af0383d469d8a81055e2fd9f39b364080ac"
+  },
+  "excluded": [
+    "step_60000.pt",
+    "all *.pt/*.pth/*.ckpt",
+    "medical NPY/DICOM data",
+    "per-slice metric JSON",
+    "sweep.log",
+    "runtime checkpoints and caches"
+  ],
+  "validation_patient": "L333",
+  "validation_slices": 610,
+  "test_access_count": 0,
+  "optimizer_steps_performed": 0
+}

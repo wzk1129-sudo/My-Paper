@@ -1,0 +1,369 @@
+{
+  "status": "COMPLETE",
+  "checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_60000.pt",
+  "checkpoint_sha256": "49aa8ce2ee5c98c4deeaf3067d7059f54f18d7715e30439cd9326b6177867469",
+  "weights": "ema_state_dict",
+  "optimizer_steps_performed": 0,
+  "source_hashes": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "mayo2016_smallset_v1/__init__.py": "6d7ff225d825e2b023e0796a22ee495f247a4bec415e10913efb3f408b046a7e",
+    "mayo2016_smallset_v1/acceptance.py": "21df0aeec36a06c361ea75a69cf458ed6685d13c70de48f2f5494898d5edda92",
+    "mayo2016_smallset_v1/data.py": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+    "mayo2016_smallset_v1/train.py": "b995dede786995684de6529297ba96fe6aa3bcc0ea0cfa72ef04b9af140cec34"
+  },
+  "config": {
+    "experiment_name": "FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1",
+    "description": "FoundDiff RDDM+RLEB backbone adapted to our fixed Mayo-2016 protocol",
+    "mode": "formal",
+    "seed": 20260829,
+    "data": {
+      "root": "/home/xujian/projects/CoreDiff/data_preprocess/gen_data/mayo_2016_npy",
+      "dose_label": "25",
+      "train_patients": [
+        "L067",
+        "L096",
+        "L109",
+        "L143",
+        "L192",
+        "L286",
+        "L291",
+        "L310"
+      ],
+      "validation_patients": [
+        "L333"
+      ],
+      "image_size": 512,
+      "stored_value_offset_hu": -1024.0,
+      "hu_min": -1024.0,
+      "hu_max": 3072.0,
+      "normalization": "linear_zero_one"
+    },
+    "allowed_slice_counts": {
+      "L067": 560,
+      "L096": 823,
+      "L109": 318,
+      "L143": 585,
+      "L192": 600,
+      "L286": 525,
+      "L291": 856,
+      "L310": 533,
+      "L333": 610
+    },
+    "model": {
+      "dim": 64,
+      "dim_mults": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "channels": 1,
+      "num_unet": 1,
+      "parameters": 13130945,
+      "rleb_count": 10,
+      "input": "[x_t,center_LDCT]",
+      "source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+    },
+    "diffusion": {
+      "objective": "pred_res",
+      "loss_type": "l2",
+      "timesteps": 1000,
+      "sampling_timesteps": 2,
+      "condition": true,
+      "sum_scale": 0.01
+    },
+    "training": {
+      "optimizer": "Adam",
+      "learning_rate": 0.0002,
+      "betas": [
+        0.9,
+        0.99
+      ],
+      "weight_decay": 1e-09,
+      "batch_size": 2,
+      "gradient_accumulation": 1,
+      "effective_batch": 2,
+      "max_optimizer_steps": 60000,
+      "amp": false,
+      "gradient_clip": 1.0,
+      "scheduler": null,
+      "num_workers": 0,
+      "cpu_threads": 2,
+      "validation_every": 10000,
+      "recovery_checkpoint_every": 1000,
+      "matched_checkpoint_steps": [
+        30000,
+        40000,
+        50000,
+        60000
+      ],
+      "log_every": 1,
+      "console_every": 100
+    },
+    "ema": {
+      "decay": 0.995,
+      "update_every": 1,
+      "warmup_steps": 0,
+      "initialization": "copy model at step 0",
+      "dtype": "float32",
+      "validation_weights": "ema"
+    },
+    "augmentation": {
+      "horizontal_flip_probability": 0.5,
+      "rotation_degrees": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "paired": true,
+      "crop": false
+    },
+    "evaluation": {
+      "hu_window": [
+        -1000.0,
+        1000.0
+      ],
+      "metrics": [
+        "psnr",
+        "ssim",
+        "rmse_hu",
+        "mae_hu"
+      ],
+      "protocol_version": "RDDM_CT_MAIN_EVAL_V1_2026-09-04",
+      "patients": [
+        "L333"
+      ],
+      "expected_slices": 610,
+      "stride": 1,
+      "validation_seed": 20260829,
+      "initial_noise": "seed+slice_index; batch=1; RNG isolated/restored",
+      "loss_seed_offset": 1000000,
+      "best_metric": "psnr",
+      "best_weights": "ema",
+      "save_images": false
+    },
+    "safety": {
+      "train_validation_only": true,
+      "automatic_extension": false,
+      "maximum_steps": 60000,
+      "fresh_output_dir_required": true,
+      "network_access": false
+    }
+  },
+  "environment": {
+    "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+    "torch": "1.10.1+cu111",
+    "cuda": "11.1",
+    "numpy": "1.23.1",
+    "skimage": "0.21.0",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "protocol": {
+    "patient": "L333",
+    "slices": 610,
+    "stride": 1,
+    "seed": "20260829 + original slice_index",
+    "original_validation_function": true,
+    "timing_includes_validation_loss": true,
+    "sum_scale_semantics": "Runtime initial-noise scale only; loaded diffusion coefficient buffers remain unchanged"
+  },
+  "control_tolerances": {
+    "psnr": 1e-05,
+    "ssim": 1e-07,
+    "rmse_hu": 0.0001,
+    "mae_hu": 0.0001
+  },
+  "rows": [
+    {
+      "stage": "control",
+      "sampling_timesteps": 2,
+      "sum_scale": 0.01,
+      "psnr": 40.658050390663206,
+      "ssim": 0.9461320590945359,
+      "rmse_hu": 18.64887881895969,
+      "mae_hu": 12.18173656307283,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 119.62360017898027
+    },
+    {
+      "stage": "timesteps",
+      "sampling_timesteps": 1,
+      "sum_scale": 0.01,
+      "psnr": 40.65660906809515,
+      "ssim": 0.9461363555470713,
+      "rmse_hu": 18.651707199700528,
+      "mae_hu": 12.183542925412537,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 70.00651753204875
+    },
+    {
+      "stage": "timesteps",
+      "sampling_timesteps": 2,
+      "sum_scale": 0.01,
+      "psnr": 40.658050390663206,
+      "ssim": 0.9461320590945359,
+      "rmse_hu": 18.64887881895969,
+      "mae_hu": 12.18173656307283,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 119.62360017898027,
+      "reused_from": "control"
+    },
+    {
+      "stage": "timesteps",
+      "sampling_timesteps": 4,
+      "sum_scale": 0.01,
+      "psnr": 40.659435327963195,
+      "ssim": 0.9461155721956106,
+      "rmse_hu": 18.646315273828144,
+      "mae_hu": 12.180429186586474,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 163.13690779497847
+    },
+    {
+      "stage": "timesteps",
+      "sampling_timesteps": 8,
+      "sum_scale": 0.01,
+      "psnr": 40.66300034933144,
+      "ssim": 0.9461794446142504,
+      "rmse_hu": 18.6384118468924,
+      "mae_hu": 12.17606463666822,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 285.2522102089133
+    },
+    {
+      "stage": "sum_scale",
+      "sampling_timesteps": 8,
+      "sum_scale": 0.0,
+      "psnr": 40.67628429159227,
+      "ssim": 0.9462777691220253,
+      "rmse_hu": 18.61057029663567,
+      "mae_hu": 12.16186451052056,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 284.32214720605407
+    },
+    {
+      "stage": "sum_scale",
+      "sampling_timesteps": 8,
+      "sum_scale": 0.0025,
+      "psnr": 40.671520044097264,
+      "ssim": 0.946241226363612,
+      "rmse_hu": 18.620563344376574,
+      "mae_hu": 12.16697819975556,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 283.60812101198826
+    },
+    {
+      "stage": "sum_scale",
+      "sampling_timesteps": 8,
+      "sum_scale": 0.005,
+      "psnr": 40.66790164276285,
+      "ssim": 0.9462141713171072,
+      "rmse_hu": 18.628152568050062,
+      "mae_hu": 12.170854742018903,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 281.38568495295476
+    },
+    {
+      "stage": "sum_scale",
+      "sampling_timesteps": 8,
+      "sum_scale": 0.01,
+      "psnr": 40.66300034933144,
+      "ssim": 0.9461794446142504,
+      "rmse_hu": 18.6384118468924,
+      "mae_hu": 12.17606463666822,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 285.2522102089133,
+      "reused_from": "timesteps"
+    },
+    {
+      "stage": "sum_scale",
+      "sampling_timesteps": 8,
+      "sum_scale": 0.02,
+      "psnr": 40.658356037469936,
+      "ssim": 0.94615214442263,
+      "rmse_hu": 18.648060287661593,
+      "mae_hu": 12.1808440052095,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 282.8336226530373
+    },
+    {
+      "stage": "sum_scale",
+      "sampling_timesteps": 8,
+      "sum_scale": 0.04,
+      "psnr": 40.65688363315501,
+      "ssim": 0.9461586854861547,
+      "rmse_hu": 18.650905760997514,
+      "mae_hu": 12.181859610510655,
+      "validation_loss": 8.85190109717068e-05,
+      "slices": 610,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_seconds": 279.7982456870377
+    }
+  ],
+  "control_deltas": {
+    "psnr": 0.0,
+    "ssim": 0.0,
+    "rmse_hu": 0.0,
+    "mae_hu": 0.0
+  },
+  "control_pass": true,
+  "best": {
+    "stage": "sum_scale",
+    "sampling_timesteps": 8,
+    "sum_scale": 0.0,
+    "psnr": 40.67628429159227,
+    "ssim": 0.9462777691220253,
+    "rmse_hu": 18.61057029663567,
+    "mae_hu": 12.16186451052056,
+    "validation_loss": 8.85190109717068e-05,
+    "slices": 610,
+    "patient": "L333",
+    "weights": "ema",
+    "validation_seconds": 284.32214720605407
+  },
+  "deltas_vs_control": {
+    "psnr": 0.01823390092906152,
+    "ssim": 0.00014571002748942075,
+    "rmse_hu": -0.03830852232401938,
+    "mae_hu": -0.019872052552269537
+  },
+  "model_weights_unchanged": true,
+  "source_config_checkpoint_unchanged": true,
+  "L506_untouched": true,
+  "no_training_performed": true,
+  "evaluation_protocol_unchanged": true
+}
