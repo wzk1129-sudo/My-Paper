@@ -1,0 +1,6 @@
+runs/
+smoke/
+smoke_pass/
+smoke_pass_v2/
+smoke_pass_v3/
+*.log

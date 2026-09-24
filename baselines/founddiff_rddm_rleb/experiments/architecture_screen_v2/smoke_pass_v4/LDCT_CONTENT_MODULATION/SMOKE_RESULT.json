@@ -1,0 +1,100 @@
+{
+  "arm": "LDCT_CONTENT_MODULATION",
+  "status": "SMOKE_PASS",
+  "optimizer_steps": 2,
+  "parameter_count": 13183169,
+  "init_audit": {
+    "arm": "LDCT_CONTENT_MODULATION",
+    "seed": 20260829,
+    "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+    "shared_tensor_count": 106,
+    "shared_bitwise_identical": true,
+    "new_parameter_keys": [
+      "model.unet0.variant_modules.pyramid.high.0.weight",
+      "model.unet0.variant_modules.pyramid.high.0.bias",
+      "model.unet0.variant_modules.pyramid.half_scale.0.weight",
+      "model.unet0.variant_modules.pyramid.half_scale.0.bias",
+      "model.unet0.variant_modules.encoder.0.to_gamma_beta.weight",
+      "model.unet0.variant_modules.encoder.0.to_gamma_beta.bias",
+      "model.unet0.variant_modules.encoder.1.to_gamma_beta.weight",
+      "model.unet0.variant_modules.encoder.1.to_gamma_beta.bias",
+      "model.unet0.variant_modules.decoder.0.to_gamma_beta.weight",
+      "model.unet0.variant_modules.decoder.0.to_gamma_beta.bias",
+      "model.unet0.variant_modules.decoder.1.to_gamma_beta.weight",
+      "model.unet0.variant_modules.decoder.1.to_gamma_beta.bias"
+    ],
+    "new_parameter_count": 52224,
+    "total_parameter_count": 13183169,
+    "rleb_count": 10,
+    "canonical_rng_restored_before_training": true,
+    "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+  },
+  "step0_output_bitwise_equal": true,
+  "losses": [
+    0.06816790997982025,
+    1.2959742546081543
+  ],
+  "gradient_norms": [
+    6.45084810256958,
+    46.082767486572266
+  ],
+  "new_parameter_nonzero_gradients": {
+    "model.unet0.variant_modules.pyramid.high.0.weight": 0.11345724761486053,
+    "model.unet0.variant_modules.pyramid.high.0.bias": 0.015246053226292133,
+    "model.unet0.variant_modules.pyramid.half_scale.0.weight": 0.3422917127609253,
+    "model.unet0.variant_modules.pyramid.half_scale.0.bias": 0.006742955185472965,
+    "model.unet0.variant_modules.encoder.0.to_gamma_beta.weight": 16.63441562652588,
+    "model.unet0.variant_modules.encoder.0.to_gamma_beta.bias": 2.9014585614204407,
+    "model.unet0.variant_modules.encoder.1.to_gamma_beta.weight": 3.320450782775879,
+    "model.unet0.variant_modules.encoder.1.to_gamma_beta.bias": 0.988308772444725,
+    "model.unet0.variant_modules.decoder.0.to_gamma_beta.weight": 7.509825348854065,
+    "model.unet0.variant_modules.decoder.0.to_gamma_beta.bias": 2.246957927942276,
+    "model.unet0.variant_modules.decoder.1.to_gamma_beta.weight": 31.661356925964355,
+    "model.unet0.variant_modules.decoder.1.to_gamma_beta.bias": 5.47687566280365
+  },
+  "output_shape": [
+    2,
+    1,
+    512,
+    512
+  ],
+  "initial_training_rng_sha256": "a66233e816c3d9396894d1b52a2c59e85b9428d4d4a52a4e5b6e92af2e362e11",
+  "post_smoke_rng_sha256": "6e87a21351481fb1487ca212e09a7d557f12778ffdcf5bc201782a02b203a9cc",
+  "train_stream_sha256": "9b991c18c7991f79a68274951aabc7914aea6dd52d2a6aa4113868783e6ee97e",
+  "training_state_discarded": true,
+  "data_access": {
+    "patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "opens": 8,
+    "blocked_attempts": 0,
+    "validation_indices_opened": [],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "external_memory_opens": 0,
+    "test_opens": 0,
+    "external_memory_enabled": false,
+    "mode": "FAST"
+  },
+  "source_manifest": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+    "configs/fast_dev_protocol.json": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "splits/fast_train_2patients.txt": "a9037f4f1b4c106bc539b465eb412c721e9872515ec8a879d9dc8a458fc0585c",
+    "fast_dev/data.py": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+    "fast_dev/evaluate.py": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+    "fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+    "mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "experiments/rddm_vs_ldct_regression_v1/CONTROL_HISTORY.csv": "0634122f7b23d97f55e7c143f0c38c80879e7e5418190f4362796d8885c4a42b",
+    "experiments/rddm_vs_ldct_regression_v1/FULL_L333_PER_SLICE.csv": "400f366e7ea910e7cbd2e3a99cef7bd206ca0236e28eb768d04f53b68ef44969",
+    "architecture_screen_v2/variants.py": "90299a9dc2000c33ff1a3bc2c040fcae1f5bc4b8ec4bfe5177922a69e00d135c",
+    "architecture_screen_v2/protocol.py": "f73a09c45e538ee06197937ab4fbebd2d11b057b348fc1719eb8630d539459b4",
+    "architecture_screen_v2/runtime.py": "c1f25fe07a2cbfdb5fce6df14660b80ccae2dc0c45206b232ee77e170cea80c9",
+    "architecture_screen_v2/train.py": "d15e75a895d61eb6ba4b801f31a715c0d41fb5b419d3eaa18cff73ff103cc644"
+  }
+}

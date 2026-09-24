@@ -1,0 +1,9 @@
+# RDDM Architecture Fast Screen V2
+
+This isolated screen tests four independent additions to the frozen FoundDiff RDDM+RLEB backbone: GATED_SKIP, BOTTLENECK_CONTEXT, LDCT_CONTENT_MODULATION, and PARTIAL_NAF_REFINEMENT. No combinations are run. The baseline source and its formal 60k checkpoint are never modified.
+
+The optimization patients are L067 and L143. Validation uses only the fixed 64 indices of L333 at 2k, 4k, 6k, 8k, 10k, and 12k optimizer steps. L506 and the six external-memory patients are forbidden. The original HU transform, metrics, Adam, batch 2, EMA, diffusion and two-step sampler remain unchanged. The only protocol budget change is 12k steps. Each arm starts from shared baseline tensors with bitwise identical initialization, zero-output added branches, and the canonical post-baseline-construction RNG state. The archived 12k CONTROL_RDDM is the matched baseline reference.
+
+A two-step smoke is required before each fresh 12k training process. The serial queue runs A, B, C, then D with one GPU process at a time, no automatic retry. An arm stops at 4k only if PSNR falls at least 0.5 dB below its matched control, or on numerical/structural/runtime failure. Other arms continue after a failure. Promotion to Full-L333 requires positive delta at 8k, 10k and 12k plus at least +0.05 dB at 12k. These engineering thresholds do not establish statistical significance. Only promoted arms are evaluated on all 610 L333 slices with 12k EMA weights and paired against archived control per-slice metrics.
+
+Run source: `architecture_screen_v2/variants.py`, `protocol.py`, `runtime.py`, `train.py`, `queue.py`, `report.py`. Candidate outputs are under `experiments/architecture_screen_v2/`. Checkpoints and full train logs are in ignored `runs/`; only lightweight metrics and provenance belong in Git. No test images, medical arrays, checkpoint weights, or credentials are archived.
