@@ -1,0 +1,24 @@
+{
+  "session": "rddm_2p5d_screen_v1_20260924",
+  "planned_start_utc": "2026-09-24T13:35:08.141214+00:00",
+  "previous_attempt": "launch_queue.sh failed before queue_status or optimizer steps; original log retained",
+  "branch": "experiment/rddm-2p5d-screen-v1",
+  "git_commit": "b96b93d5c84f6073fb067234de39fd1694a5ca85",
+  "git_status_short_before_launch": [
+    "?? experiments/rddm_2p5d_screen_v1/launch_queue.sh",
+    "?? experiments/rddm_2p5d_screen_v1/launch_queue_v2.sh",
+    "?? experiments/rddm_2p5d_screen_v1/launch_record.json",
+    "?? experiments/rddm_2p5d_screen_v1/smoke/",
+    "?? experiments/rddm_2p5d_screen_v1/smoke_pass/",
+    "?? experiments/rddm_2p5d_screen_v1/smoke_verified/"
+  ],
+  "conda_environment": "corediff",
+  "gpu_index": 0,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "command": "export CUBLAS_WORKSPACE_CONFIG=:4096:8; exec /home/xujian/miniconda3/envs/corediff/bin/python -m context_2p5d.queue",
+  "launch_script": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_screen_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_2p5d_screen_v1/launch_queue_v2.sh",
+  "launch_script_sha256": "8fef02b22e5722cb2abfdd3b7596eb978ca10b2a5456d9b491619c4091d35547",
+  "log": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_screen_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_2p5d_screen_v1/queue_attempt2.log",
+  "output_directory": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_screen_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_2p5d_screen_v1",
+  "expected_termination": "A then B; each up to 12000 optimizer steps or permitted 4k performance early stop; conditional Full-L333; exit after report or fatal failure"
+}

@@ -1,0 +1,159 @@
+{
+  "arm": "2P5D_CONTEXT_BRANCH",
+  "status": "SMOKE_PASS",
+  "optimizer_steps": 5,
+  "losses": [
+    0.06816790997982025,
+    1.2894811630249023,
+    0.2928178012371063,
+    0.09623485803604126,
+    0.04466553404927254
+  ],
+  "gradient_norms": [
+    6.448862552642822,
+    45.9611930847168,
+    17.869348526000977,
+    10.570879936218262,
+    5.107579231262207
+  ],
+  "output_shapes": [
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ]
+  ],
+  "initialization_audit": {
+    "arm": "2P5D_CONTEXT_BRANCH",
+    "seed": 20260829,
+    "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+    "shared_tensor_count": 106,
+    "shared_bitwise_identical": true,
+    "new_tensor_keys": [
+      "model.unet0.context0.0.bias",
+      "model.unet0.context0.0.weight",
+      "model.unet0.context1.0.bias",
+      "model.unet0.context1.0.weight",
+      "model.unet0.context2.0.bias",
+      "model.unet0.context2.0.weight",
+      "model.unet0.context3.0.bias",
+      "model.unet0.context3.0.weight",
+      "model.unet0.projections.0.bias",
+      "model.unet0.projections.0.weight",
+      "model.unet0.projections.1.bias",
+      "model.unet0.projections.1.weight",
+      "model.unet0.projections.2.bias",
+      "model.unet0.projections.2.weight"
+    ],
+    "step_zero_max_abs_output_difference": 0.0,
+    "step_zero_equivalent": true,
+    "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "parameter_count": 13276609,
+    "rleb_count": 10,
+    "canonical_training_rng_restored": true,
+    "initial_projection_norms": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "gradient_audit": {
+    "first_step_projection_gradient_abs": [
+      0.42013877630233765,
+      0.3254401683807373,
+      0.24068376421928406
+    ],
+    "first_step_context_encoder_gradient_abs": 0.0,
+    "later_context_encoder_gradient_abs": 0.004555237537715584,
+    "neighbor_stem_gradient_abs": 0.0,
+    "parameter_usage": {
+      "projection_weight_norms": [
+        0.023658394813537598,
+        0.050310611724853516,
+        0.09870191663503647
+      ]
+    },
+    "projection_optimizer_states_present": [
+      true,
+      true,
+      true
+    ],
+    "context_encoder_optimizer_state_present": true
+  },
+  "initial_training_rng_sha256": "a66233e816c3d9396894d1b52a2c59e85b9428d4d4a52a4e5b6e92af2e362e11",
+  "train_stream_sha256": "05c21be41711a8741c3a726286c6927face83fe5f3f066887e94272691854bf6",
+  "training_state_discarded": true,
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 10,
+    "total_opens": 40,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  },
+  "source_manifest": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+    "configs/fast_dev_protocol.json": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "splits/fast_train_2patients.txt": "a9037f4f1b4c106bc539b465eb412c721e9872515ec8a879d9dc8a458fc0585c",
+    "fast_dev/data.py": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+    "fast_dev/evaluate.py": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+    "fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+    "mayo2016_smallset_v1/data.py": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+    "mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "experiments/rddm_vs_ldct_regression_v1/CONTROL_HISTORY.csv": "0634122f7b23d97f55e7c143f0c38c80879e7e5418190f4362796d8885c4a42b",
+    "experiments/rddm_vs_ldct_regression_v1/FULL_L333_PER_SLICE.csv": "400f366e7ea910e7cbd2e3a99cef7bd206ca0236e28eb768d04f53b68ef44969",
+    "experiments/rddm_2p5d_screen_v1/ADJACENCY_AUDIT.json": "86dfd99b06784c68730708bd64135909fd206f0bee477404ede8f8df44dc856f",
+    "experiments/rddm_2p5d_screen_v1/DICOM_SPATIAL_AUDIT.json": "bbe718b67cd73d941aa476639d8d4c7c77216d788da4bcf2df1d8bd97f9c6138",
+    "context_2p5d/model.py": "e1134238da30bb02f7d9c07f3cceb3858744ff7e018fa20073938f2da46e979b",
+    "context_2p5d/data.py": "e537da48096964a1c5fef3f1565ff947cb93c21c07ec021e40a3f30c67ac8c35",
+    "context_2p5d/protocol.py": "7e7e161a453655f71808b788ba1d388e4c022146b6246186e5d3fccfc65172b0",
+    "context_2p5d/runtime.py": "894b46ec0add7a7948f48fdb667e266084f2ebf975555723f1de165276c44d9c",
+    "context_2p5d/evaluate.py": "5c5662695c1bb4f5220704964c22e06252c8133601de1725d512d283cedf3bf1",
+    "context_2p5d/train.py": "b705f4423d5ed88d17ec89838eee567b1b4f39ba0a0fb3587a544ed854abd6f4",
+    "context_2p5d/queue.py": "029d655808391948d3defb92d53cf2b23272392e24e810df2c8746392f34521c",
+    "context_2p5d/report.py": "2bfb4984fc472716a33105869a9b4d3564d48a7ddf04976b7af55ebf9fa15af3"
+  }
+}

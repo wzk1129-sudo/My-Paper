@@ -1,0 +1,19 @@
+{
+  "arm": "2P5D_DIRECT_CONCAT",
+  "seed": 20260829,
+  "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+  "shared_tensor_count": 105,
+  "shared_bitwise_identical": true,
+  "new_tensor_keys": [],
+  "step_zero_max_abs_output_difference": 0.0,
+  "step_zero_equivalent": true,
+  "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "parameter_count": 13137217,
+  "rleb_count": 10,
+  "canonical_training_rng_restored": true,
+  "mapped_init_conv_equal": true,
+  "initial_neighbor_channel_norms": [
+    0.0,
+    0.0
+  ]
+}

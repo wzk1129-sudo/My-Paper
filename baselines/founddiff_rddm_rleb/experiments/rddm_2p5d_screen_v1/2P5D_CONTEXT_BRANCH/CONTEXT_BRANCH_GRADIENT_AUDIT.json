@@ -1,0 +1,54 @@
+{
+  "smoke_steps": 5,
+  "smoke_gradient_audit": {
+    "first_step_projection_gradient_abs": [
+      0.42013877630233765,
+      0.3254401683807373,
+      0.24068376421928406
+    ],
+    "first_step_context_encoder_gradient_abs": 0.0,
+    "later_context_encoder_gradient_abs": 0.004555237537715584,
+    "neighbor_stem_gradient_abs": 0.0,
+    "parameter_usage": {
+      "projection_weight_norms": [
+        0.023658394813537598,
+        0.050310611724853516,
+        0.09870191663503647
+      ]
+    },
+    "projection_optimizer_states_present": [
+      true,
+      true,
+      true
+    ],
+    "context_encoder_optimizer_state_present": true
+  },
+  "final_gradient_audit": {
+    "first_step_projection_gradient_abs": [
+      0.42013877630233765,
+      0.3254401683807373,
+      0.24068376421928406
+    ],
+    "first_step_context_encoder_gradient_abs": 0.0,
+    "later_context_encoder_gradient_abs": 3.652482812461983,
+    "neighbor_stem_gradient_abs": 0.0,
+    "parameter_usage": {
+      "projection_weight_norms": [
+        1.9084898233413696,
+        0.5545899271965027,
+        0.4460459053516388
+      ]
+    },
+    "projection_optimizer_states_present": [
+      true,
+      true,
+      true
+    ],
+    "context_encoder_optimizer_state_present": true
+  },
+  "final_projection_weight_norms": [
+    1.9084898233413696,
+    0.5545899271965027,
+    0.4460459053516388
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "arm": "2P5D_DIRECT_CONCAT",
+  "status": "SMOKE_PASS",
+  "optimizer_steps": 2,
+  "losses": [
+    0.06816790997982025,
+    1.3862667083740234
+  ],
+  "gradient_norms": [
+    6.573770999908447,
+    48.15779495239258
+  ],
+  "output_shapes": [
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ]
+  ],
+  "initialization_audit": {
+    "arm": "2P5D_DIRECT_CONCAT",
+    "seed": 20260829,
+    "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+    "shared_tensor_count": 105,
+    "shared_bitwise_identical": true,
+    "new_tensor_keys": [],
+    "step_zero_max_abs_output_difference": 0.0,
+    "step_zero_equivalent": true,
+    "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "parameter_count": 13137217,
+    "rleb_count": 10,
+    "canonical_training_rng_restored": true,
+    "mapped_init_conv_equal": true,
+    "initial_neighbor_channel_norms": [
+      0.0,
+      0.0
+    ]
+  },
+  "gradient_audit": {
+    "first_step_projection_gradient_abs": [],
+    "first_step_context_encoder_gradient_abs": null,
+    "later_context_encoder_gradient_abs": 0.0,
+    "neighbor_stem_gradient_abs": 701.4467926025391,
+    "parameter_usage": {
+      "prev_stem_weight_norm": 0.01372219156473875,
+      "next_stem_weight_norm": 0.013731468468904495
+    }
+  },
+  "initial_training_rng_sha256": "a66233e816c3d9396894d1b52a2c59e85b9428d4d4a52a4e5b6e92af2e362e11",
+  "train_stream_sha256": "9b991c18c7991f79a68274951aabc7914aea6dd52d2a6aa4113868783e6ee97e",
+  "training_state_discarded": true,
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 4,
+    "total_opens": 16,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  },
+  "source_manifest": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+    "configs/fast_dev_protocol.json": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "splits/fast_train_2patients.txt": "a9037f4f1b4c106bc539b465eb412c721e9872515ec8a879d9dc8a458fc0585c",
+    "fast_dev/data.py": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+    "fast_dev/evaluate.py": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+    "fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+    "mayo2016_smallset_v1/data.py": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+    "mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "experiments/rddm_vs_ldct_regression_v1/CONTROL_HISTORY.csv": "0634122f7b23d97f55e7c143f0c38c80879e7e5418190f4362796d8885c4a42b",
+    "experiments/rddm_vs_ldct_regression_v1/FULL_L333_PER_SLICE.csv": "400f366e7ea910e7cbd2e3a99cef7bd206ca0236e28eb768d04f53b68ef44969",
+    "experiments/rddm_2p5d_screen_v1/ADJACENCY_AUDIT.json": "86dfd99b06784c68730708bd64135909fd206f0bee477404ede8f8df44dc856f",
+    "experiments/rddm_2p5d_screen_v1/DICOM_SPATIAL_AUDIT.json": "bbe718b67cd73d941aa476639d8d4c7c77216d788da4bcf2df1d8bd97f9c6138",
+    "context_2p5d/model.py": "e1134238da30bb02f7d9c07f3cceb3858744ff7e018fa20073938f2da46e979b",
+    "context_2p5d/data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+    "context_2p5d/protocol.py": "7e7e161a453655f71808b788ba1d388e4c022146b6246186e5d3fccfc65172b0",
+    "context_2p5d/runtime.py": "894b46ec0add7a7948f48fdb667e266084f2ebf975555723f1de165276c44d9c",
+    "context_2p5d/evaluate.py": "5c5662695c1bb4f5220704964c22e06252c8133601de1725d512d283cedf3bf1",
+    "context_2p5d/train.py": "b01b6723ab88d84e4beee3ca73932f0d83cb592acd456f00baa87e9d1d42b8b4",
+    "context_2p5d/queue.py": "52368fd9198924c293829e9fd329f5abb722a037fd01d0038fbcaf18a8d723a5",
+    "context_2p5d/report.py": "2bfb4984fc472716a33105869a9b4d3564d48a7ddf04976b7af55ebf9fa15af3"
+  }
+}
