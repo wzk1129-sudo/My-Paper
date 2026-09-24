@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment": "RDDM 2.5D Context Fast Screen V1",
+  "result": "PASS",
+  "reason": "DICOM header geometry confirms patient-local same-series spatial adjacency and exact full/quarter positional pairing for L067, L143, L333; deterministic preprocessing maps natural-sort ranks to NPY indices.",
+  "evidence": [
+    {
+      "file": "/home/xujian/projects/CoreDiff/data_preprocess/prep_mayo2016.py",
+      "sha256": "ce2cb391a1e2b778dbf000f2208c33c8124fd2cd9355c8f390128bce8d80f9eb",
+      "lines": "15-38",
+      "observed": "For each patient, target/full_1mm and 25/quarter_1mm are independently globbed as *.IMA, natural-filename-sorted, then enumerated and written as patient_view_index_img.npy. No DICOM ImagePositionPatient, ImageOrientationPatient, SeriesInstanceUID, InstanceNumber, or alignment check is performed."
+    },
+    {
+      "file": "baselines/founddiff_rddm_rleb/mayo2016_smallset_v1/data.py",
+      "lines": "22-52",
+      "observed": "CenterPairs constructs pairs using the same patient and numeric index, but the NPY files contain no retained DICOM spatial or series metadata."
+    },
+    {
+      "file": "baselines/founddiff_rddm_rleb/experiments/rddm_2p5d_screen_v1/DICOM_SPATIAL_AUDIT.json",
+      "sha256": "bbe718b67cd73d941aa476639d8d4c7c77216d788da4bcf2df1d8bd97f9c6138",
+      "method_script": "baselines/founddiff_rddm_rleb/experiments/rddm_2p5d_screen_v1/dicom_spatial_audit.py",
+      "method_script_sha256": "358555df4a29514caecc0130768d97a950d2399f5367c524b27d3f25e3e6045b",
+      "observed": "All six dose series have one SeriesInstanceUID, strict monotonic natural-filename spatial order, stable 0.8 mm center spacing, constant 1.0 mm SliceThickness, monotonic InstanceNumber, and every expected indexed NPY path. Full/quarter positions match exactly at every index."
+    }
+  ],
+  "ordering_rule": "DICOM natural filename sort is strictly decreasing along the ImageOrientationPatient-derived normal for all six dose sequences; center spacing 0.8 mm with max deviation below 1e-12 mm.",
+  "patient_local_indexing": "PASS: preprocessing enumerates separately within each explicit patient/dose directory; DICOM series is unique within each of the six checked directories.",
+  "same_series": "PASS: one SeriesInstanceUID per patient and dose, six of six.",
+  "physical_neighbor_relation": "PASS: all adjacent coordinates are strictly monotonic and uniformly spaced at 0.8 mm for L067, L143, L333.",
+  "center_pair_alignment": "PASS: full/quarter matched-index ImagePositionPatient normal coordinates differ by 0 mm across all 1755 center indices.",
+  "no_random_shuffle": "PASS in preprocessing source: no random shuffle appears before numeric output naming.",
+  "boundary_rule_if_later_authorized": "Clamp to patient-local [0,N-1]; never wrap or cross patient.",
+  "access_audit": {
+    "medical_image_opens": 0,
+    "validation_image_opens": 0,
+    "test_image_opens": 0,
+    "external_memory_image_opens": 0
+  },
+  "decision": "Spatial adjacency gate PASS for the specified L067/L143/L333 source and indexed NPY protocol. No model implementation, inference, or training was performed in this audit task.",
+  "npy_index_mapping": "PASS by deterministic prep_mayo2016.py natural-sort enumerate rule and existence of all expected exact indexed NPY paths. Actual NPY binary provenance cannot be independently checked without opening pixels; prohibited in this metadata-only task."
+}
