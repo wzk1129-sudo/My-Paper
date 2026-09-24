@@ -1,0 +1,36 @@
+{
+  "parent_git_commit": "906585e668d5d0b6eb7d0d2fa3e3abce508cea48",
+  "git_branch": "experiment/rddm-vs-ldct-regression-v1",
+  "source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "source_manifest": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+    "configs/fast_dev_protocol.json": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "splits/fast_train_2patients.txt": "a9037f4f1b4c106bc539b465eb412c721e9872515ec8a879d9dc8a458fc0585c",
+    "mayo2016_smallset_v1/data.py": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "fast_dev/data.py": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+    "fast_dev/evaluate.py": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+    "fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+    "mechanism_ablation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mechanism_ablation/evaluate.py": "9c0df0f67cef2ed7b239eb37a07b5d72ca1510d2a0daf55c86a2305bc0dd5ba7",
+    "mechanism_ablation/protocol.py": "e1eea18199e88a43ffffa102322b6295fcc55839df4959652e4a44ac63d8e001",
+    "mechanism_ablation/queue.py": "966ed27deec7f0b380b80689a51702e9fca85a046b087a8657caaa1e57345998",
+    "mechanism_ablation/report.py": "d1c990f69d48f0952875abb9011412c4799e10a17d837581d7d921b161a1f3e0",
+    "mechanism_ablation/runtime.py": "71a39b1f225c15f5fe8813dbd28412aa9ae6a6ae0a7124eab8e06c0c805ace65",
+    "mechanism_ablation/train.py": "6ccbe701b0de51cf1c7f30b9530f39cf735bae54a25124da39ac5c27ae31c8cd"
+  },
+  "experiment_config_sha256": "03eb7262f0a6379b5904be8e4d1c66fbe19d0175f3fbbd7bcb00cddf4d4dba32",
+  "fast_protocol_sha256": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+  "fast_indices_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "seed": 20260829,
+  "python": "3.8.13",
+  "pytorch": "1.10.1+cu111",
+  "cuda": "11.1",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "training_order": [
+    "CONTROL_RDDM",
+    "MATCHED_LDCT_REGRESSION"
+  ]
+}

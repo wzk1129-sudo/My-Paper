@@ -1,0 +1,90 @@
+{
+  "patient": "L333",
+  "slices": 610,
+  "weights": "ema",
+  "checkpoint_step": 12000,
+  "control": {
+    "psnr": 40.58001578802044,
+    "ssim": 0.9457844451538199,
+    "rmse_hu": 18.81029389304558,
+    "mae_hu": 12.343139925159392,
+    "validation_loss": 9.206927416762185e-05,
+    "slices": 610,
+    "patient": "L333",
+    "weights": "ema",
+    "validation_mode": "FULL",
+    "validation_seconds": 139.01905735803302
+  },
+  "regression": {
+    "psnr": 40.61032845892993,
+    "ssim": 0.9461138633584637,
+    "rmse_hu": 18.74664373167385,
+    "mae_hu": 12.325075135465529,
+    "validation_loss": 9.15303813092235e-05,
+    "slices": 610,
+    "patient": "L333",
+    "weights": "ema",
+    "validation_mode": "FULL",
+    "validation_seconds": 55.01054491905961
+  },
+  "paired_regression_minus_control": {
+    "psnr": {
+      "mean": 0.030312670909490018,
+      "median": 0.026632522285943594,
+      "iqr": [
+        0.017207875447528664,
+        0.04056028706746595
+      ],
+      "win_fraction": 0.9885245901639345,
+      "within_L333_block_bootstrap_95_interval": [
+        0.026239113760256654,
+        0.03428727317484207
+      ]
+    },
+    "ssim": {
+      "mean": 0.0003294182046436564,
+      "median": 0.0002822836230681469,
+      "iqr": [
+        0.00018610129944160447,
+        0.0004081664028199594
+      ],
+      "win_fraction": 0.980327868852459,
+      "within_L333_block_bootstrap_95_interval": [
+        0.0002804363049927657,
+        0.00037608396877733075
+      ]
+    },
+    "rmse_hu": {
+      "mean": -0.06365016137172975,
+      "median": -0.05581722036611758,
+      "iqr": [
+        -0.08305762517654802,
+        -0.038566145149353304
+      ],
+      "win_fraction": 0.9885245901639345,
+      "within_L333_block_bootstrap_95_interval": [
+        -0.07144163049352306,
+        -0.05580177066112564
+      ]
+    },
+    "mae_hu": {
+      "mean": -0.018064789693863666,
+      "median": -0.017632484436035156,
+      "iqr": [
+        -0.031091690063476562,
+        -0.0016176700592041016
+      ],
+      "win_fraction": 0.7672131147540984,
+      "within_L333_block_bootstrap_95_interval": [
+        -0.022985128926449133,
+        -0.012954816935492344
+      ]
+    }
+  },
+  "bootstrap": {
+    "block_length_slices": 10,
+    "replicates": 1000,
+    "seed": 20260924,
+    "interpretation": "within one patient stack only; not patient-population significance"
+  }
+}

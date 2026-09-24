@@ -1,0 +1,9 @@
+{
+  "flag": "DYNAMIC_DIFFUSION_VALUE_SMALL_OR_TIED",
+  "engineering_thresholds_not_statistical_significance": true,
+  "full_delta_psnr": 0.030312670909490018,
+  "fast_10k_12k_delta_psnr": [
+    0.05313575507530288,
+    0.029427982815306564
+  ]
+}

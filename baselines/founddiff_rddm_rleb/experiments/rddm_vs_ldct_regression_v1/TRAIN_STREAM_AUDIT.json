@@ -1,0 +1,13 @@
+{
+  "match": true,
+  "control_sha256": "a70a45b842cbc261ad7eddce01256b5a13de568879c6413fc3415d4109a8700c",
+  "regression_sha256": "a70a45b842cbc261ad7eddce01256b5a13de568879c6413fc3415d4109a8700c",
+  "samples_per_arm": 24000,
+  "batch_stream_seed": 20260829,
+  "fields": [
+    "patient_id",
+    "slice_index",
+    "horizontal_flip",
+    "rotation_degrees"
+  ]
+}

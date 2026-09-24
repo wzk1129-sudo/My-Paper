@@ -1,0 +1,208 @@
+{
+  "CONTROL_RDDM": {
+    "arm": "CONTROL_RDDM",
+    "recovery": [
+      {
+        "step": 1000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "795a4fb3409499e22cea881f4545d8f580624b210e21268d8bbdf82c2b505218"
+      },
+      {
+        "step": 2000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "1ab0798b95d19c7b93b95a3026867880f481f40c757914fcc5db60beeb5e0b39"
+      },
+      {
+        "step": 3000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "eb5f84677770da1a6fcbd1cd70d0b3c9adf539ec7cbeb6491d08bf03bfcab98a"
+      },
+      {
+        "step": 4000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "ff7629ee2a39440df180583e880f2f2d768e654b2993347e8e3088b142742a73"
+      },
+      {
+        "step": 5000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "731ea573b84a6d635b523e013ec15a358c01a85ce852729769b529b7f9db5a40"
+      },
+      {
+        "step": 6000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "26619b7464931fee24fb61ff6c081fb21cd92170f7e9915ee8682eb6f75446e8"
+      },
+      {
+        "step": 7000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "94b3ec729867042c2870c9ed8868f3d48391df5e4d12bd562f8412c826f739cf"
+      },
+      {
+        "step": 8000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "6f3659a19fc774aeed7e5e29cc87f340c37507d5f27bb36df838a5aa09bc7b3d"
+      },
+      {
+        "step": 9000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "23ffbe6879a04b558bf16274bcdceb083a6c1c88617f7616e2a12d4d5ddccc16"
+      },
+      {
+        "step": 10000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "01bedf63124984b347febe19bb61a05e75e859c8f802be8f9de01e82c42c2a6d"
+      },
+      {
+        "step": 11000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "9770365d85fe358c7c99061315e41b31194848c308bf5b88e0f66bc78fb6702f"
+      },
+      {
+        "step": 12000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/latest.pt",
+        "sha256": "6783e8925f20fb8dbfafa4ff0a6cea01116f41e46ecc98ec1db1aa09decf7160"
+      }
+    ],
+    "matched": [
+      {
+        "step": 2000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/step_2000.pt",
+        "sha256": "1ab0798b95d19c7b93b95a3026867880f481f40c757914fcc5db60beeb5e0b39",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 4000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/step_4000.pt",
+        "sha256": "ff7629ee2a39440df180583e880f2f2d768e654b2993347e8e3088b142742a73",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 6000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/step_6000.pt",
+        "sha256": "26619b7464931fee24fb61ff6c081fb21cd92170f7e9915ee8682eb6f75446e8",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 8000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/step_8000.pt",
+        "sha256": "6f3659a19fc774aeed7e5e29cc87f340c37507d5f27bb36df838a5aa09bc7b3d",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 10000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/step_10000.pt",
+        "sha256": "01bedf63124984b347febe19bb61a05e75e859c8f802be8f9de01e82c42c2a6d",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 12000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/CONTROL_RDDM/checkpoints/step_12000.pt",
+        "sha256": "6783e8925f20fb8dbfafa4ff0a6cea01116f41e46ecc98ec1db1aa09decf7160",
+        "weights": "ema_in_payload"
+      }
+    ]
+  },
+  "MATCHED_LDCT_REGRESSION": {
+    "arm": "MATCHED_LDCT_REGRESSION",
+    "recovery": [
+      {
+        "step": 1000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "67a236ed7b5fcc6211f2a1182de3dda15fe20a5ed9843517e5822d4a8caefa8c"
+      },
+      {
+        "step": 2000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "28d436844ebb82f8ab0da5fa9096ea7f019f5e7413b1baeeba208931a47741e5"
+      },
+      {
+        "step": 3000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "d860f456750d6194de120ca9ab74d5afa90126f3f3d5720fdef7fce09d7d460c"
+      },
+      {
+        "step": 4000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "db3625195aa6f4d731fdbff7846162bfbbc9a42992d1b02dcb32c8baec966fc4"
+      },
+      {
+        "step": 5000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "7f3c665d26bb0ccbf595a6d5b83d879d1e35df6abc3bed64a307e83ccb3b11b6"
+      },
+      {
+        "step": 6000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "64c07c6a92c4b38d9cfeed11e49d5c537f65ce4bd52060806c752f140f1ccc9b"
+      },
+      {
+        "step": 7000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "ebdb303e620ea49c9e041c0ae6fb39434359b0be06cd04fe7482912ee9af91ea"
+      },
+      {
+        "step": 8000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "dec3473fa946b9ac35a2d40d52763f508186f8fe7892cad9bb108b25201076c5"
+      },
+      {
+        "step": 9000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "6b117ef9a300ba5403696600945efd69f61dc90447a595db6ece6bce4567e38f"
+      },
+      {
+        "step": 10000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "ef0ccfc9b1991103199f3dda704e8547697be26677190890c755b253600207da"
+      },
+      {
+        "step": 11000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "a5fb4fb5a86ed9dd2f48e925fc3975cad53aa26be9bfecdcbc053ccbe2d3994f"
+      },
+      {
+        "step": 12000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/latest.pt",
+        "sha256": "aebb00a1e07cd585ddadb5ed00509f9dc0cc76522190f9e1d1e33820d8201d4a"
+      }
+    ],
+    "matched": [
+      {
+        "step": 2000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/step_2000.pt",
+        "sha256": "28d436844ebb82f8ab0da5fa9096ea7f019f5e7413b1baeeba208931a47741e5",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 4000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/step_4000.pt",
+        "sha256": "db3625195aa6f4d731fdbff7846162bfbbc9a42992d1b02dcb32c8baec966fc4",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 6000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/step_6000.pt",
+        "sha256": "64c07c6a92c4b38d9cfeed11e49d5c537f65ce4bd52060806c752f140f1ccc9b",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 8000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/step_8000.pt",
+        "sha256": "dec3473fa946b9ac35a2d40d52763f508186f8fe7892cad9bb108b25201076c5",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 10000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/step_10000.pt",
+        "sha256": "ef0ccfc9b1991103199f3dda704e8547697be26677190890c755b253600207da",
+        "weights": "ema_in_payload"
+      },
+      {
+        "step": 12000,
+        "path": "/home/xujian/projects/CoreDiff/experiments/rddm_vs_ldct_regression_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_vs_ldct_regression_v1/runs/MATCHED_LDCT_REGRESSION/checkpoints/step_12000.pt",
+        "sha256": "aebb00a1e07cd585ddadb5ed00509f9dc0cc76522190f9e1d1e33820d8201d4a",
+        "weights": "ema_in_payload"
+      }
+    ]
+  }
+}
