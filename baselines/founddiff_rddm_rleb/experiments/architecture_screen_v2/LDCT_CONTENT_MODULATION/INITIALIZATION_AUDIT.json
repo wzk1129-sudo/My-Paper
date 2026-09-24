@@ -1,0 +1,26 @@
+{
+  "arm": "LDCT_CONTENT_MODULATION",
+  "seed": 20260829,
+  "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+  "shared_tensor_count": 106,
+  "shared_bitwise_identical": true,
+  "new_parameter_keys": [
+    "model.unet0.variant_modules.pyramid.high.0.weight",
+    "model.unet0.variant_modules.pyramid.high.0.bias",
+    "model.unet0.variant_modules.pyramid.half_scale.0.weight",
+    "model.unet0.variant_modules.pyramid.half_scale.0.bias",
+    "model.unet0.variant_modules.encoder.0.to_gamma_beta.weight",
+    "model.unet0.variant_modules.encoder.0.to_gamma_beta.bias",
+    "model.unet0.variant_modules.encoder.1.to_gamma_beta.weight",
+    "model.unet0.variant_modules.encoder.1.to_gamma_beta.bias",
+    "model.unet0.variant_modules.decoder.0.to_gamma_beta.weight",
+    "model.unet0.variant_modules.decoder.0.to_gamma_beta.bias",
+    "model.unet0.variant_modules.decoder.1.to_gamma_beta.weight",
+    "model.unet0.variant_modules.decoder.1.to_gamma_beta.bias"
+  ],
+  "new_parameter_count": 52224,
+  "total_parameter_count": 13183169,
+  "rleb_count": 10,
+  "canonical_rng_restored_before_training": true,
+  "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+}

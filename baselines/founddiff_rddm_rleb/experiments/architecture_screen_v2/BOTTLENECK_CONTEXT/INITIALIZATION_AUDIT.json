@@ -1,0 +1,28 @@
+{
+  "arm": "BOTTLENECK_CONTEXT",
+  "seed": 20260829,
+  "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+  "shared_tensor_count": 106,
+  "shared_bitwise_identical": true,
+  "new_parameter_keys": [
+    "model.unet0.variant_modules.context.branches.0.0.weight",
+    "model.unet0.variant_modules.context.branches.0.0.bias",
+    "model.unet0.variant_modules.context.branches.0.1.weight",
+    "model.unet0.variant_modules.context.branches.0.1.bias",
+    "model.unet0.variant_modules.context.branches.1.0.weight",
+    "model.unet0.variant_modules.context.branches.1.0.bias",
+    "model.unet0.variant_modules.context.branches.1.1.weight",
+    "model.unet0.variant_modules.context.branches.1.1.bias",
+    "model.unet0.variant_modules.context.branches.2.0.weight",
+    "model.unet0.variant_modules.context.branches.2.0.bias",
+    "model.unet0.variant_modules.context.branches.2.1.weight",
+    "model.unet0.variant_modules.context.branches.2.1.bias",
+    "model.unet0.variant_modules.context.last.weight",
+    "model.unet0.variant_modules.context.last.bias"
+  ],
+  "new_parameter_count": 883200,
+  "total_parameter_count": 14014145,
+  "rleb_count": 10,
+  "canonical_rng_restored_before_training": true,
+  "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+}
