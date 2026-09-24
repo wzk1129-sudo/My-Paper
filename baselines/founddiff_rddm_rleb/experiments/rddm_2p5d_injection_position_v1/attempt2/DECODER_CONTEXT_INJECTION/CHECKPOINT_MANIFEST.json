@@ -1,0 +1,33 @@
+{
+  "arm": "DECODER_CONTEXT_INJECTION",
+  "matched": [
+    {
+      "step": 2000,
+      "sha256": "73224c5d216034172d5cc8533934723a64c57767cc3a44870da864d9d90b3074"
+    },
+    {
+      "step": 4000,
+      "sha256": "ceea3768504aa8ff23d70bb5ee548999518cb65b5edf112402404463fd2752c3"
+    },
+    {
+      "step": 6000,
+      "sha256": "dbfafc0ab170d96c0bc0d31082ce64f1d61bfccfb79e4b189cd8e50244056617"
+    },
+    {
+      "step": 8000,
+      "sha256": "9701ecb5b50652e89bace2fb96c63fff32fa6029ea3ce0f83d9e9d27703d2f13"
+    },
+    {
+      "step": 10000,
+      "sha256": "6463c2e2b727afc8d6efa51a1b411f3609d551e706af179e1c96f4a1bf97727b"
+    },
+    {
+      "step": 12000,
+      "sha256": "a343aa24e40f1d68c9679a3778ae36b888f995e52de8b76967bfff4439ff97fb"
+    }
+  ],
+  "latest": {
+    "step": 12000,
+    "sha256": "a343aa24e40f1d68c9679a3778ae36b888f995e52de8b76967bfff4439ff97fb"
+  }
+}

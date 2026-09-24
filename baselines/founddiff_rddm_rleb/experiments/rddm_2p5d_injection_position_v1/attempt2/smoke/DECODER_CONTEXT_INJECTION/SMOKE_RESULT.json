@@ -1,0 +1,171 @@
+{
+  "arm": "DECODER_CONTEXT_INJECTION",
+  "status": "SMOKE_PASS",
+  "optimizer_steps": 5,
+  "losses": [
+    0.06816790997982025,
+    1.2905945777893066,
+    0.292660653591156,
+    0.09664887934923172,
+    0.044964950531721115
+  ],
+  "gradient_norms": [
+    6.449233055114746,
+    45.98371505737305,
+    17.873249053955078,
+    10.606884002685547,
+    5.145174980163574
+  ],
+  "output_shapes": [
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ],
+    [
+      2,
+      1,
+      512,
+      512
+    ]
+  ],
+  "initialization_audit": {
+    "arm": "DECODER_CONTEXT_INJECTION",
+    "seed": 20260829,
+    "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+    "direct_concat_step0_canonical_hash_match": true,
+    "shared_tensor_count": 106,
+    "shared_bitwise_identical": true,
+    "new_tensor_keys": [
+      "model.unet0.context0.0.bias",
+      "model.unet0.context0.0.weight",
+      "model.unet0.context1.0.bias",
+      "model.unet0.context1.0.weight",
+      "model.unet0.context2.0.bias",
+      "model.unet0.context2.0.weight",
+      "model.unet0.context3.0.bias",
+      "model.unet0.context3.0.weight",
+      "model.unet0.projections.0.bias",
+      "model.unet0.projections.0.weight",
+      "model.unet0.projections.1.bias",
+      "model.unet0.projections.1.weight",
+      "model.unet0.projections.2.bias",
+      "model.unet0.projections.2.weight"
+    ],
+    "new_parameter_count": 431584,
+    "initial_projection_norms": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "step_zero_max_abs_output_difference": 0.0,
+    "step_zero_equivalent": true,
+    "baseline_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "parameter_count": 13562529,
+    "rleb_count": 10,
+    "canonical_training_rng_restored": true,
+    "context_stage4_active": false
+  },
+  "gradient_audit": {
+    "first_step_projection_gradient_abs": [
+      0.525092601776123,
+      1.038720965385437,
+      1.7255818843841553
+    ],
+    "first_step_context_encoder_gradient_abs": 0.0,
+    "later_context_encoder_gradient_abs": 0.05757638905197382,
+    "parameter_usage": {
+      "context_stage_weight_norms": [
+        3.3097102642059326,
+        4.60303258895874,
+        6.530735969543457,
+        9.222437858581543
+      ],
+      "projection_weight_norms": [
+        0.1006823480129242,
+        0.04875946789979935,
+        0.02082323655486107
+      ],
+      "context_stage4_active": false
+    },
+    "projection_optimizer_states_present": [
+      true,
+      true,
+      true
+    ],
+    "context_encoder_optimizer_state_present": true,
+    "context_stage4_optimizer_state_present": false,
+    "context_stage4_expected_active": false
+  },
+  "initial_training_rng_sha256": "a66233e816c3d9396894d1b52a2c59e85b9428d4d4a52a4e5b6e92af2e362e11",
+  "train_stream_sha256": "05c21be41711a8741c3a726286c6927face83fe5f3f066887e94272691854bf6",
+  "training_state_discarded": true,
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 10,
+    "total_opens": 40,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  },
+  "source_manifest": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+    "configs/fast_dev_protocol.json": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "splits/fast_train_2patients.txt": "a9037f4f1b4c106bc539b465eb412c721e9872515ec8a879d9dc8a458fc0585c",
+    "fast_dev/data.py": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+    "fast_dev/evaluate.py": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+    "fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+    "mayo2016_smallset_v1/data.py": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+    "mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+    "mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "experiments/rddm_2p5d_screen_v1/ADJACENCY_AUDIT.json": "86dfd99b06784c68730708bd64135909fd206f0bee477404ede8f8df44dc856f",
+    "experiments/rddm_2p5d_screen_v1/DICOM_SPATIAL_AUDIT.json": "bbe718b67cd73d941aa476639d8d4c7c77216d788da4bcf2df1d8bd97f9c6138",
+    "experiments/rddm_2p5d_screen_v1/2P5D_DIRECT_CONCAT/INITIALIZATION_AUDIT.json": "221c2a522441d1d2fda7cbdafe911ce28744933732c7e296f2a2cf6ebfebef61",
+    "experiments/rddm_2p5d_screen_v1/2P5D_DIRECT_CONCAT/validation_history.csv": "3bce1ea621c8187ddae9332649071682171aa586009a969f7e459600f65c45b6",
+    "experiments/rddm_2p5d_screen_v1/full_l333/2P5D_DIRECT_CONCAT/full_l333_paired.csv": "2ab5d36536b4abb97ffb277d26d6a57d3244b54829a32512cb1609a76cb0adda",
+    "experiments/rddm_2p5d_injection_position_v1/model.py": "06291cfab8e6d284c40e216a9b9099ccaf31417fcfcc16f1f5b5b8d0a57bd2f2",
+    "experiments/rddm_2p5d_injection_position_v1/data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+    "experiments/rddm_2p5d_injection_position_v1/protocol.py": "27afe3cab883155c9e7988814c65b8c69bf9ad0b1ab703d6761fab2a1ab9a7a8",
+    "experiments/rddm_2p5d_injection_position_v1/runtime.py": "39764474a13fe1dc49a4d657feee23af6929829824177ccf82433434af596efa",
+    "experiments/rddm_2p5d_injection_position_v1/evaluate.py": "5c5662695c1bb4f5220704964c22e06252c8133601de1725d512d283cedf3bf1",
+    "experiments/rddm_2p5d_injection_position_v1/train.py": "339a4dc2739ce199efdf8d1b73d3f07d9ce151b3bbb386601a503830c06db9e2",
+    "experiments/rddm_2p5d_injection_position_v1/queue.py": "cd41615b0bcca61da18703a400a43516e7c4d1e77c5ff5978d88a277b7a0e00b",
+    "experiments/rddm_2p5d_injection_position_v1/report.py": "a454e452250517729f717c2b5a442e943e466fb810aa52055e6f7782537a51bc"
+  }
+}

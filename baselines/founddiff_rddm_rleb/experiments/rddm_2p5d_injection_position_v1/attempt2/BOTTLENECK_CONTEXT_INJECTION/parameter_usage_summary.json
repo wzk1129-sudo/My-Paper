@@ -1,0 +1,12 @@
+{
+  "context_stage_weight_norms": [
+    2.6190929412841797,
+    3.6290621757507324,
+    5.1460723876953125,
+    7.264420032501221
+  ],
+  "projection_weight_norms": [
+    0.31539496779441833
+  ],
+  "context_stage4_active": true
+}
