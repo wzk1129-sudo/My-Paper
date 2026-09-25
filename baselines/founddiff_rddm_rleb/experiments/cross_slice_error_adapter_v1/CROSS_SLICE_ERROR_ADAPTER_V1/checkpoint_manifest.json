@@ -1,0 +1,29 @@
+{
+  "arm": "CROSS_SLICE_ERROR_ADAPTER_V1",
+  "matched": [
+    {
+      "step": 500,
+      "sha256": "ba73586ccf23ae710c6619ba6b59d90b9acd0160e4bc19a129e0d1e226b721c2"
+    },
+    {
+      "step": 1000,
+      "sha256": "80ce893354e99fa8c6212e2200aa2df4e5c0010403f812d7d132f53e0de9e21d"
+    },
+    {
+      "step": 2000,
+      "sha256": "5bd96974c93c8db1d1784f4fd9da83a4545c3d00302ce221ebf4d36846d1de8f"
+    },
+    {
+      "step": 4000,
+      "sha256": "0e7b038bbe50673527313673a56c6f9dd94871b52ba342e1d723f4b610c8fb15"
+    },
+    {
+      "step": 6000,
+      "sha256": "34072d7c068ad24e9b148bf8cf5f6ea25bb998da2b449e61542c3b6c88636ec0"
+    }
+  ],
+  "latest": {
+    "step": 6000,
+    "sha256": "34072d7c068ad24e9b148bf8cf5f6ea25bb998da2b449e61542c3b6c88636ec0"
+  }
+}
