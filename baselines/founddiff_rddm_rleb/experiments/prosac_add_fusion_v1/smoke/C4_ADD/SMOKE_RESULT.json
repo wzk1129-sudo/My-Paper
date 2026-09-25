@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "arm": "C4_ADD",
+  "steps": 20,
+  "initialization": {
+    "arm": "C4_ADD",
+    "input_size": 512,
+    "direct_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+    "main_state_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+    "control_copy_hash": "60781d03765d6a432b018e1536c3715b66d3604c40ccad6eba48dd5fd5a6e385",
+    "zero_conv_norms": [
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      },
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      },
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      },
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      }
+    ],
+    "step_zero_max_abs_difference": 0.0,
+    "step_zero_equivalent": true,
+    "canonical_training_rng_restored": true,
+    "canonical_training_rng_sha256": "647eb4cf23b2322b20f2e0033e39d32d23c8ffb3e1f9be611b01bc5de1aa8dc6",
+    "meddino_frozen": true,
+    "meddino_eval": true,
+    "total_parameters": 105040737,
+    "frozen_parameters": 98779201,
+    "trainable_parameters": 6261536
+  },
+  "loss": [
+    0.00012756155047100037,
+    7.204076973721385e-05,
+    0.00011904479470103979,
+    0.00010660431871656328,
+    0.00010909206321230158,
+    0.0001334516127826646,
+    9.137870802078396e-05,
+    0.00012747976870741695,
+    8.290568075608462e-05,
+    0.00015233215526677668,
+    9.281333768740296e-05,
+    9.639820200391114e-05,
+    0.00011894000635948032,
+    0.00013972970191389322,
+    0.0001319430157309398,
+    0.00014239424490369856,
+    0.00011798093328252435,
+    8.530277409590781e-05,
+    9.55814030021429e-05,
+    0.00011475701467134058
+  ],
+  "grad_norm": [
+    4.6714490054000635e-06,
+    4.1775851968850475e-06,
+    4.516344233707059e-06,
+    4.334055574872764e-06,
+    9.104124728764873e-06,
+    6.155877144919941e-06,
+    3.6506885408016387e-06,
+    4.033115601487225e-06,
+    4.467663075047312e-06,
+    1.2159310244896915e-05,
+    5.136591425980441e-06,
+    6.923934961378109e-06,
+    3.7086558677401626e-06,
+    3.94523294744431e-06,
+    5.2033792599104345e-06,
+    9.954672350431792e-06,
+    4.16065267927479e-06,
+    4.0099344005284365e-06,
+    4.666367203753907e-06,
+    3.6673504837381188e-06
+  ],
+  "peak_vram_bytes": 5325701120,
+  "seconds_per_step": 0.6154498286021408,
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 40,
+    "total_opens": 160,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  }
+}

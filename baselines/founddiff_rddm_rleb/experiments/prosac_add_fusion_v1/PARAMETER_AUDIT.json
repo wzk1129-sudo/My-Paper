@@ -1,0 +1,13 @@
+{
+  "C4_ADD": {
+    "total_parameters": 105040737,
+    "frozen_parameters": 98779201,
+    "trainable_parameters": 6261536
+  },
+  "C4_APGC": {
+    "total_parameters": 105040961,
+    "frozen_parameters": 98779201,
+    "trainable_parameters": 6261760
+  },
+  "trainable_parameter_delta": -224
+}

@@ -1,0 +1,28 @@
+{
+  "session": "rddm_prosac_add_fusion_v1_20260926",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/prosac_add_fusion_v1/run_queue.sh > /home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/prosac_add_fusion_v1/queue.log 2>&1",
+  "git_commit": "6595ca325b204769400653836ac447d919aaa40e",
+  "git_branch": "experiment/rddm-prosac-add-fusion-v1",
+  "workspace_status_before_launch": [
+    "?? experiments/prosac_add_fusion_v1/",
+    "?? prosac_add_fusion_v1/"
+  ],
+  "conda_environment": "flexict",
+  "python_executable": "/home/xujian/miniconda3/envs/flexict/bin/python",
+  "gpu_visible_devices": "0",
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "log_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/prosac_add_fusion_v1/queue.log",
+  "output_directory": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/prosac_add_fusion_v1",
+  "source_sha256": {
+    "runtime.py": "720551540ec32e7a07676c99db3dc3c6cdaad02f6af4320c310465f0b6f0077d",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "train.py": "0fe7e3158c4a0e548b663db6126fd30129bda5da2ed44ca3fda1c7d301f4d3c0",
+    "model.py": "96bc1083d81874d45ac25f3ffcb508b394c68fa57e9d3fdb9bdedfdbb78dd14f",
+    "protocol.py": "5d8c0636f3861002643e1f3f30d82f0f7702723ce43f3dbb4836cd1d8a0d74e2",
+    "structure.py": "39cbe698dc0c5e0f27eded99bffa2199bd50ee3463299e3c199da3da8d2a2557",
+    "report.py": "9f224679747a897a2a2d027768efcc8bb2e32c608c77d9a7ba1304ebaf64923d",
+    "queue.py": "ba86ae157a729ff8284de25038cba8ed534917b91226522db752d1899de05bf1"
+  },
+  "recorded_at_utc": "2026-09-25T16:35:53.478425+00:00",
+  "expected_termination": "C4_ADD 2000 steps, matched C3 gate, optional 4000/6000, final report; no Full-L333 or formal training"
+}
