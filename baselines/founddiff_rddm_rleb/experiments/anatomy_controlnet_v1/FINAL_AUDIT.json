@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "source_hashes_match_launch": true,
+  "direct_checkpoint_unchanged": true,
+  "frozen_source_unchanged": true,
+  "arms": {
+    "C1_CAPACITY": {
+      "smoke_steps": 20,
+      "optimizer_steps": 6000,
+      "validation_steps": [
+        0,
+        500,
+        1000,
+        2000,
+        4000,
+        6000
+      ],
+      "matched_checkpoints_sha256_verified": true,
+      "main_hash_unchanged": true,
+      "nonfinite_count": 0,
+      "L506_opens": 0,
+      "external_memory_opens": 0
+    },
+    "C2_EDGE": {
+      "smoke_steps": 20,
+      "optimizer_steps": 6000,
+      "validation_steps": [
+        0,
+        500,
+        1000,
+        2000,
+        4000,
+        6000
+      ],
+      "matched_checkpoints_sha256_verified": true,
+      "main_hash_unchanged": true,
+      "nonfinite_count": 0,
+      "L506_opens": 0,
+      "external_memory_opens": 0
+    }
+  },
+  "L506_opens": 0,
+  "external_memory_opens": 0,
+  "neighbor_target_opens": 0,
+  "paired_train_stream_equal": true
+}

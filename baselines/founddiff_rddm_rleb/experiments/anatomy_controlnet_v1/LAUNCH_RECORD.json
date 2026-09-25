@@ -1,0 +1,14 @@
+{
+  "session": "rddm_anatomy_controlnet_v1_20260925",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/rddm_anatomy_controlnet_v1_20260925/baselines/founddiff_rddm_rleb/anatomy_controlnet_v1/run_queue.sh",
+  "branch": "experiment/rddm-anatomy-controlnet-v1",
+  "git_commit": "058ed8455ca386966b9f82ba7e12cee2116cedc4",
+  "git_status_at_launch": "?? anatomy_controlnet_v1/\n?? experiments/anatomy_controlnet_v1/",
+  "conda_environment": "corediff",
+  "python": "/home/xujian/miniconda3/envs/corediff/bin/python",
+  "gpu": "cuda:0 NVIDIA GeForce RTX 3090",
+  "log": "/home/xujian/projects/CoreDiff/experiments/rddm_anatomy_controlnet_v1_20260925/baselines/founddiff_rddm_rleb/experiments/anatomy_controlnet_v1/queue.log",
+  "output": "/home/xujian/projects/CoreDiff/experiments/rddm_anatomy_controlnet_v1_20260925/baselines/founddiff_rddm_rleb/experiments/anatomy_controlnet_v1",
+  "start_time_utc": "2026-09-25T09:46:32.265207Z",
+  "termination": "C1 and C2 each exactly 6000 optimizer steps or first failure; no C3/C4"
+}

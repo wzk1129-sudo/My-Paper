@@ -1,0 +1,25 @@
+{
+  "parent_commit": "058ed8455ca386966b9f82ba7e12cee2116cedc4",
+  "branch": "experiment/rddm-anatomy-controlnet-v1",
+  "git_head": "058ed8455ca386966b9f82ba7e12cee2116cedc4",
+  "source_sha256": {
+    "anatomy_controlnet_v1/model.py": "7043a4c6822edf7425e4f5de18957c82884f89dfed9adf147b7628794591b2e8",
+    "anatomy_controlnet_v1/structure.py": "2876d4bbd46fa4e83ab063f1bbddce336d06c898d29cd2edbfbd7b69dffe1c02",
+    "anatomy_controlnet_v1/runtime.py": "f71ec758b5400b8867b214268d5da7a72594200da8b7936d84d631ea17992e90",
+    "anatomy_controlnet_v1/train.py": "0edc5e9b6743f07efb89de40f2c77dfd5a28f354ef10a5ac91afe24cb784b2cd",
+    "anatomy_controlnet_v1/evaluate.py": "eacbede48f38d47b810ad432802a528ccc64db77cdeb549cf7edd8cc477d564f",
+    "anatomy_controlnet_v1/protocol.py": "6e1183d2872f8f9aae458f79de52b5ab4cc767f0e561fe256786469f2c60a664",
+    "context_2p5d/model.py": "e1134238da30bb02f7d9c07f3cceb3858744ff7e018fa20073938f2da46e979b",
+    "context_2p5d/data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+    "configs/fast_dev_protocol.json": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a"
+  },
+  "checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+  "torch": "1.10.1+cu111",
+  "cuda": "11.1",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "seed": 20260829
+}

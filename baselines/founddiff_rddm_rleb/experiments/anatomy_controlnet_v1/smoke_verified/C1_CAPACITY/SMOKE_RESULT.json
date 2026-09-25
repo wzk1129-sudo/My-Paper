@@ -1,0 +1,83 @@
+{
+  "status": "SMOKE_PASS",
+  "arm": "C1_CAPACITY",
+  "steps": 20,
+  "initialization": {
+    "arm": "C1_CAPACITY",
+    "checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+    "main_state_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+    "control_copy_hash": "60781d03765d6a432b018e1536c3715b66d3604c40ccad6eba48dd5fd5a6e385",
+    "zero_conv_norms": [
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      },
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      },
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      },
+      {
+        "weight_norm": 0.0,
+        "bias_norm": 0.0
+      }
+    ],
+    "step_zero_max_abs_difference": 0.0,
+    "step_zero_equivalent": true,
+    "canonical_training_rng_restored": true,
+    "canonical_training_rng_sha256": "0ae7c7622df9f1815e35648220c5fea3fe03f73bb1f8c2b8562b95f1ef1e33aa",
+    "total_parameters": 19225601,
+    "frozen_parameters": 13137217,
+    "trainable_parameters": 6088384
+  },
+  "parameter_audit": {
+    "total_parameters": 19225601,
+    "frozen_parameters": 13137217,
+    "trainable_parameters": 6088384
+  },
+  "initial_zero_norms": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "final_zero_norms": [
+    0.039631396532058716,
+    0.07944998890161514,
+    0.11525247246026993,
+    0.13475976884365082
+  ],
+  "loss_first": 0.00012756155047100037,
+  "loss_last": 0.0001147800576291047,
+  "gradient_norm_max": 1.1265146895311773e-05,
+  "peak_vram_bytes": 4442529792,
+  "seconds_per_step": 0.4012581021001097,
+  "main_hash_unchanged": true,
+  "ema_updates": 20,
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 40,
+    "total_opens": 160,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "TRAINING_COMPLETE",
+  "completed": [
+    "C0_DIRECT",
+    "C1_CAPACITY",
+    "C2_EDGE"
+  ],
+  "medical_arms": "BLOCKED"
+}

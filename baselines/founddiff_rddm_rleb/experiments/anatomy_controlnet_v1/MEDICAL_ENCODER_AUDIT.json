@@ -1,0 +1,33 @@
+{
+  "status": "MEDICAL_ENCODER_BLOCKED",
+  "observed_weights": [
+    {
+      "path": "/home/xujian/models/ct_foundation/meddinov3/model.pth",
+      "sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2"
+    },
+    {
+      "path": "/home/xujian/models/ct_foundation/flexict/model.safetensors",
+      "sha256": "8c9a75174d8500e041c8e8b205559a48d592911ea9275ff1fbdbe5f1ad8d3063"
+    }
+  ],
+  "official_source_commit_verified": false,
+  "checkpoint_origin_verified": true,
+  "input_preprocessing_verified": false,
+  "layer_mapping_verified": false,
+  "note": "Local MedDINOv3 weight SHA256 matches author Hugging Face release. C3/C4 remain blocked because official source is absent on server, exact source commit and input size/layer mapping are not pinned, and runtime compatibility is untested. No package was installed.",
+  "verified_model": "MedDINOv3 ViT-B/16 pretrained on CT-3M",
+  "official_weight_url": "https://huggingface.co/ricklisz123/MedDINOv3-ViTB-16-CT-3M/blob/main/model.pth",
+  "official_source_url": "https://github.com/ricklisz/MedDINOv3",
+  "official_inference_example": "https://raw.githubusercontent.com/ricklisz/MedDINOv3/main/inference/demo.ipynb",
+  "official_preprocessing_documented": {
+    "HU_clip": [
+      -1000,
+      1000
+    ],
+    "HU_mean": 65.1084213256836,
+    "HU_std": 178.01663208007812,
+    "channels": "repeat grayscale to 3",
+    "resize": "official notebook resizes to chosen input_size; V1 size not frozen"
+  },
+  "runtime_compatibility_verified": false
+}

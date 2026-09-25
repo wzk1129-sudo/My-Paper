@@ -1,0 +1,25 @@
+{
+  "status": "FAILED",
+  "arm": "C1_CAPACITY",
+  "error": "AssertionError('Use the frozen fast-dev config; variants need an explicit new configuration contract')",
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 0,
+    "total_opens": 0,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  }
+}

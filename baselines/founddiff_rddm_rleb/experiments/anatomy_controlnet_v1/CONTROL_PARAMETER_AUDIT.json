@@ -1,0 +1,58 @@
+{
+  "C1_CAPACITY": {
+    "control_vs_main": {
+      "init_conv.weight": {
+        "control_minus_frozen_l2": 0.4285321533679962,
+        "ema_control_minus_frozen_l2": 0.4143107831478119
+      },
+      "time_mlp.1.weight": {
+        "control_minus_frozen_l2": 0.9333740472793579,
+        "ema_control_minus_frozen_l2": 0.9040181636810303
+      },
+      "downs.0.0.block1.proj.weight": {
+        "control_minus_frozen_l2": 0.6870989203453064,
+        "ema_control_minus_frozen_l2": 0.6661409139633179
+      },
+      "mid_block.block1.proj.weight": {
+        "control_minus_frozen_l2": 1.994008183479309,
+        "ema_control_minus_frozen_l2": 1.9134461879730225
+      }
+    },
+    "zero_conv_weight_norms": [
+      0.550555408000946,
+      1.0121773481369019,
+      1.7169080972671509,
+      2.989051342010498
+    ],
+    "optimizer_step": 6000,
+    "optimizer_state_tensors": 55
+  },
+  "C2_EDGE": {
+    "control_vs_main": {
+      "init_conv.weight": {
+        "control_minus_frozen_l2": 0.4287358522415161,
+        "ema_control_minus_frozen_l2": 0.41454648971557617
+      },
+      "time_mlp.1.weight": {
+        "control_minus_frozen_l2": 0.9342198967933655,
+        "ema_control_minus_frozen_l2": 0.9051238298416138
+      },
+      "downs.0.0.block1.proj.weight": {
+        "control_minus_frozen_l2": 0.6874644160270691,
+        "ema_control_minus_frozen_l2": 0.666648805141449
+      },
+      "mid_block.block1.proj.weight": {
+        "control_minus_frozen_l2": 1.9976319074630737,
+        "ema_control_minus_frozen_l2": 1.9167876243591309
+      }
+    },
+    "zero_conv_weight_norms": [
+      0.5503819584846497,
+      1.0108721256256104,
+      1.7174949645996094,
+      2.9909214973449707
+    ],
+    "optimizer_step": 6000,
+    "optimizer_state_tensors": 63
+  }
+}

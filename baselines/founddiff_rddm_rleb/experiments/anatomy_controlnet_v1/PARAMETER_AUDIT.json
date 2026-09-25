@@ -1,0 +1,12 @@
+{
+  "C1_CAPACITY": {
+    "total_parameters": 19225601,
+    "frozen_parameters": 13137217,
+    "trainable_parameters": 6088384
+  },
+  "C2_EDGE": {
+    "total_parameters": 19328097,
+    "frozen_parameters": 13137217,
+    "trainable_parameters": 6190880
+  }
+}

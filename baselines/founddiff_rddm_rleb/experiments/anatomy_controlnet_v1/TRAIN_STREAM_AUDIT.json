@@ -1,0 +1,12 @@
+{
+  "C1_CAPACITY": {
+    "sha256": "3d673980d96b8ac2fa02b67e9ca682b88fc2cf426c80d02032d2d6d5402eaada",
+    "samples": 12000,
+    "initial_rng_sha256": "0ae7c7622df9f1815e35648220c5fea3fe03f73bb1f8c2b8562b95f1ef1e33aa"
+  },
+  "C2_EDGE": {
+    "sha256": "3d673980d96b8ac2fa02b67e9ca682b88fc2cf426c80d02032d2d6d5402eaada",
+    "samples": 12000,
+    "initial_rng_sha256": "0ae7c7622df9f1815e35648220c5fea3fe03f73bb1f8c2b8562b95f1ef1e33aa"
+  }
+}
