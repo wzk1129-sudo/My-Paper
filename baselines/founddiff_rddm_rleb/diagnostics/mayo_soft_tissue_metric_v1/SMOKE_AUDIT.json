@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "indices": [
+    206,
+    484,
+    568
+  ],
+  "rows": 18,
+  "sanity": [
+    {
+      "method": "RAW_QUARTER",
+      "slice_index": 206,
+      "formula_psnr_data_range_1": 21.831933948318802,
+      "formula_rmse_hu": 32.393904185530765,
+      "psnr_abs_error": 2.976628863393671e-07,
+      "rmse_abs_error": 5.887986347374863e-07
+    },
+    {
+      "method": "FORMAL_RDDM_60K",
+      "slice_index": 206,
+      "formula_psnr_data_range_1": 27.18516092845407,
+      "formula_rmse_hu": 17.490488697937796,
+      "psnr_abs_error": 1.0498515479184789e-07,
+      "rmse_abs_error": 3.1210840489848124e-07
+    },
+    {
+      "method": "RAW_QUARTER",
+      "slice_index": 484,
+      "formula_psnr_data_range_1": 22.32177612364465,
+      "formula_rmse_hu": 30.617602829039804,
+      "psnr_abs_error": 1.6406784908440386e-07,
+      "rmse_abs_error": 3.1147909140827323e-07
+    },
+    {
+      "method": "FORMAL_RDDM_60K",
+      "slice_index": 484,
+      "formula_psnr_data_range_1": 28.75830712593619,
+      "formula_rmse_hu": 14.593001758603219,
+      "psnr_abs_error": 4.436564893239847e-08,
+      "rmse_abs_error": 1.167941654500737e-07
+    },
+    {
+      "method": "RAW_QUARTER",
+      "slice_index": 568,
+      "formula_psnr_data_range_1": 22.663643154263934,
+      "formula_rmse_hu": 29.435934879625428,
+      "psnr_abs_error": 2.584984066800189e-07,
+      "rmse_abs_error": 3.2398302707292714e-07
+    },
+    {
+      "method": "FORMAL_RDDM_60K",
+      "slice_index": 568,
+      "formula_psnr_data_range_1": 28.97416958683927,
+      "formula_rmse_hu": 14.234804620649363,
+      "psnr_abs_error": 9.707915893386598e-08,
+      "rmse_abs_error": 8.400602187208506e-07
+    },
+    {
+      "method": "DIRECT_CONCAT_DEV_12K",
+      "slice_index": 206,
+      "formula_psnr_data_range_1": 27.42375780997594,
+      "formula_rmse_hu": 17.01657296355506,
+      "psnr_abs_error": 5.9124744211658253e-08,
+      "rmse_abs_error": 1.0202074527398963e-06
+    },
+    {
+      "method": "DIRECT_CONCAT_DEV_12K",
+      "slice_index": 484,
+      "formula_psnr_data_range_1": 28.749848525173334,
+      "formula_rmse_hu": 14.607219835629959,
+      "psnr_abs_error": 2.2248177344863507e-07,
+      "rmse_abs_error": 2.210638765376416e-07
+    },
+    {
+      "method": "DIRECT_CONCAT_DEV_12K",
+      "slice_index": 568,
+      "formula_psnr_data_range_1": 29.094343881198732,
+      "formula_rmse_hu": 14.039214083348769,
+      "psnr_abs_error": 1.7011159059165948e-07,
+      "rmse_abs_error": 5.077147822163397e-07
+    }
+  ],
+  "data_access": {
+    "patients_opened": [
+      "L333"
+    ],
+    "center_target_indices_opened": [
+      206,
+      484,
+      568
+    ],
+    "opens": 18,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  },
+  "optimizer_steps": 0,
+  "elapsed_seconds": 29.449111477006227
+}

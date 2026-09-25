@@ -1,0 +1,12 @@
+{
+  "session": "mayo_soft_tissue_metric_v1_retry1_20260925",
+  "started_utc": "2026-09-25T07:26:33.876326Z",
+  "reason": "First inference-only pass completed both 610-slice loops; final summary assert failed because two archived PSNR config keys were missing. No model/checkpoint/data changes.",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/mayo_soft_tissue_metric_v1_20260925/baselines/founddiff_rddm_rleb/diagnostics/mayo_soft_tissue_metric_v1/run_full_retry1.sh",
+  "log": "/home/xujian/projects/CoreDiff/experiments/mayo_soft_tissue_metric_v1_20260925/baselines/founddiff_rddm_rleb/diagnostics/mayo_soft_tissue_metric_v1/evaluation_retry1.log",
+  "output": "/home/xujian/projects/CoreDiff/experiments/mayo_soft_tissue_metric_v1_20260925/baselines/founddiff_rddm_rleb/diagnostics/mayo_soft_tissue_metric_v1",
+  "git_branch": "diagnostic/mayo-soft-tissue-metric-v1",
+  "gpu": "cuda:0",
+  "conda_environment": "corediff",
+  "stop_condition": "Complete both 610-slice read-only evaluations and write summary/report; zero optimizer steps"
+}

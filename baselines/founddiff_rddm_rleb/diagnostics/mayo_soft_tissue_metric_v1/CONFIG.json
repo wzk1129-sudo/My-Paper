@@ -1,0 +1,50 @@
+{
+  "experiment": "Mayo-2016 Soft-Tissue Metric Comparison V1",
+  "patient": "L333",
+  "full_slices": 610,
+  "common_interior_indices": "1..608",
+  "original_hu_window": [
+    -1000,
+    1000
+  ],
+  "soft_hu_window": [
+    -160,
+    240
+  ],
+  "formal_checkpoint": "/home/xujian/projects/CoreDiff/experiments/founddiff_table_v_20260921/rddm_rleb/mayo2016_smallset_v1/runs/FoundDiff_RDDM_RLEB_Mayo2016_smallset_v1_60k_20260921/checkpoints/step_60000.pt",
+  "direct_checkpoint": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_screen_v1_20260924/baselines/founddiff_rddm_rleb/experiments/rddm_2p5d_screen_v1/runs/2P5D_DIRECT_CONCAT/checkpoints/step_12000.pt",
+  "expected_formal_checkpoint_sha256": "49aa8ce2ee5c98c4deeaf3067d7059f54f18d7715e30439cd9326b6177867469",
+  "expected_direct_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "expected_formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "expected_frozen_protocol_sha256": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+  "inference": {
+    "sampling_timesteps": 2,
+    "sum_scale": 0.01,
+    "weights": "EMA",
+    "validation_seed": 20260829
+  },
+  "formal_train_patients": [
+    "L067",
+    "L096",
+    "L109",
+    "L143",
+    "L192",
+    "L286",
+    "L291",
+    "L310"
+  ],
+  "direct_train_patients": [
+    "L067",
+    "L143"
+  ],
+  "literature_reference_source": "User-provided task, not independently source-verified",
+  "prohibited": [
+    "training",
+    "L506",
+    "external_memory",
+    "checkpoint_modification",
+    "medical_image_output"
+  ],
+  "archived_formal_original_psnr": 40.658050390663206,
+  "archived_direct_original_psnr": 40.7778295618984
+}

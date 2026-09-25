@@ -1,0 +1,15 @@
+{
+  "session": "mayo_soft_tissue_metric_v1_20260925",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/mayo_soft_tissue_metric_v1_20260925/baselines/founddiff_rddm_rleb/diagnostics/mayo_soft_tissue_metric_v1/run_full.sh",
+  "git_parent": "0b91dedb120a2d83681743218936df7cd80b9a34",
+  "branch": "diagnostic/mayo-soft-tissue-metric-v1",
+  "git_status_at_launch": "untracked new diagnostics/mayo_soft_tissue_metric_v1 files only",
+  "conda_environment": "corediff",
+  "python": "/home/xujian/miniconda3/envs/corediff/bin/python",
+  "gpu": "cuda:0 / NVIDIA GeForce RTX 3090",
+  "gpu_memory_used_before_launch_mib": 770,
+  "log": "diagnostics/mayo_soft_tissue_metric_v1/evaluation.log",
+  "output": "diagnostics/mayo_soft_tissue_metric_v1",
+  "started_utc": "2026-09-25T07:21:13.218Z",
+  "stop_condition": "610 L333 slices formal and 610 L333 slices DEV-only, both protocols, summary and report; no optimizer step"
+}
