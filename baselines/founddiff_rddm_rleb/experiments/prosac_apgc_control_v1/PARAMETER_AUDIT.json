@@ -1,0 +1,12 @@
+{
+  "C3_ANATOMY": {
+    "total_parameters": 105039841,
+    "frozen_parameters": 98779201,
+    "trainable_parameters": 6260640
+  },
+  "C4_APGC": {
+    "total_parameters": 105040961,
+    "frozen_parameters": 98779201,
+    "trainable_parameters": 6261760
+  }
+}

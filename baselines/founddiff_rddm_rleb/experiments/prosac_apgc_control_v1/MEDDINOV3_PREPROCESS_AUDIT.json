@@ -1,0 +1,21 @@
+{
+  "main_rddm_preprocessing": "unchanged HU [-1024,3072] to [0,1]; diffusion internal [-1,1]",
+  "copy_only": "center LDCT; never prev/next or NDCT",
+  "hu_conversion_from_model_value": "HU=(center_neg1_pos1+1)*2048-1024",
+  "meddino_clip_hu": [
+    -1000,
+    1000
+  ],
+  "meddino_mean_hu": 65.1084213256836,
+  "meddino_std_hu": 178.01663208007812,
+  "normalization": "(clipped_HU-mean)/(std+1e-8)",
+  "channel_repeat": 3,
+  "resize": "bilinear antialias to [512,512]",
+  "input_size": 512,
+  "size_choice": "user-selected native 512; official demo example uses 2048",
+  "patch_token_grid": [
+    32,
+    32
+  ],
+  "preprocessing_source": "official inference/demo.ipynb at pinned commit"
+}

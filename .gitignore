@@ -63,3 +63,5 @@ secrets*
 *.tmp
 .DS_Store
 Thumbs.db
+# Pinned upstream research source is fetched separately, not vendored
+official_source/

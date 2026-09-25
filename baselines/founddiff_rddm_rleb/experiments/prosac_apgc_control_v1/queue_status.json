@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "first_stage_completed": [
+    "C3_ANATOMY",
+    "C4_APGC"
+  ],
+  "promoted": [
+    "C3_ANATOMY",
+    "C4_APGC"
+  ],
+  "decisions": {
+    "C3_ANATOMY": {
+      "delta_psnr_vs_C1": {
+        "500": 0.004260654707884726,
+        "1000": 0.00939761859891064,
+        "2000": 0.016741039415848036
+      },
+      "positive_slice_fraction_vs_C1": 0.984375,
+      "clear_monotonic_delta": true,
+      "continue_to_6k": true
+    },
+    "C4_APGC": {
+      "delta_psnr_vs_C1": {
+        "500": 0.001111082702855981,
+        "1000": 0.004875636210243783,
+        "2000": 0.010715417952624762
+      },
+      "positive_slice_fraction_vs_C1": 0.953125,
+      "clear_monotonic_delta": true,
+      "continue_to_6k": true
+    }
+  }
+}

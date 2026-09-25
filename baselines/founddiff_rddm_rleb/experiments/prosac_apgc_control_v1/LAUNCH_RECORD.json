@@ -1,0 +1,19 @@
+{
+  "session": "rddm_prosac_apgc_control_v1_20260925",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/baselines/founddiff_rddm_rleb/prosac_apgc_control_v1/run_queue.sh > /home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/baselines/founddiff_rddm_rleb/experiments/prosac_apgc_control_v1/queue.log 2>&1",
+  "git_commit": "092433bdf4bb13fc99968a20e53c958d120fac4e",
+  "git_branch": "experiment/rddm-prosac-apgc-control-v1",
+  "workspace_status_before_launch": [
+    "?? experiments/prosac_apgc_control_v1/",
+    "?? prosac_apgc_control_v1/",
+    "?? ../../official_source/"
+  ],
+  "conda_environment": "flexict",
+  "python_executable": "/home/xujian/miniconda3/envs/flexict/bin/python",
+  "gpu_visible_devices": "0",
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "log_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/baselines/founddiff_rddm_rleb/experiments/prosac_apgc_control_v1/queue.log",
+  "output_directory": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/baselines/founddiff_rddm_rleb/experiments/prosac_apgc_control_v1",
+  "recorded_at_utc": "2026-09-25T11:43:32.801405+00:00",
+  "expected_termination": "C3 and C4 each 2000 steps; only gate-promoted arms continue to 6000; final report; no 8-patient training"
+}

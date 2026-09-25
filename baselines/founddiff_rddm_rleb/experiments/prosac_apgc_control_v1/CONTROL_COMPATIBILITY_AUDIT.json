@@ -1,0 +1,17 @@
+{
+  "protocol_sha256": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+  "fast64_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "evaluator_sha256": "eacbede48f38d47b810ad432802a528ccc64db77cdeb549cf7edd8cc477d564f",
+  "all_match_archived": true,
+  "C0_archived_psnr": 40.76762726155266,
+  "C0_reproduced_flexict_psnr": 40.76762732777537,
+  "C0_abs_difference_db": 6.622271087053377e-08,
+  "C0_reproduced_full_fast64_slices": 64,
+  "C0_reproduction_access": {
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "neighbor_target_opens": 0,
+    "blocked_attempts": 0
+  },
+  "cross_runtime_note": "Archived C1/C2 used PyTorch 1.10.1+cu111 / scikit-image 0.21.0; new C3/C4 use flexict runtime. C0 reproduced numerically within 1e-7 dB."
+}

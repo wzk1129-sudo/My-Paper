@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "arms": {
+    "C3_ANATOMY": {
+      "optimizer_steps": 6000,
+      "nonfinite_count": 0,
+      "L506_opens": 0,
+      "external_memory_opens": 0,
+      "neighbor_target_opens": 0,
+      "blocked_attempts": 0,
+      "main_hash_unchanged": true
+    },
+    "C4_APGC": {
+      "optimizer_steps": 6000,
+      "nonfinite_count": 0,
+      "L506_opens": 0,
+      "external_memory_opens": 0,
+      "neighbor_target_opens": 0,
+      "blocked_attempts": 0,
+      "main_hash_unchanged": true
+    }
+  },
+  "control_hashes": {
+    "configs/fast_dev_protocol.json": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "anatomy_controlnet_v1/evaluate.py": "eacbede48f38d47b810ad432802a528ccc64db77cdeb549cf7edd8cc477d564f",
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+  },
+  "direct_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "input_size": 512,
+  "evaluation_weights": "ema",
+  "validation_indices_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895"
+}
