@@ -1,0 +1,61 @@
+{
+  "seed": 20260829,
+  "initialization": {
+    "canonical_main_state_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+    "direct_checkpoint": "same canonical Direct 12k EMA as D1/E12",
+    "warm_start_from_trained_D1_or_E12_6k": false,
+    "alpha128_init": 0.10000000149011612,
+    "alpha64_init": 0.10000000149011612,
+    "meddino_frozen": true,
+    "main_trainable": true,
+    "parameter_counts": {
+      "total_parameters": 99643055,
+      "frozen_parameters": 85641984,
+      "trainable_parameters": 14001071
+    }
+  },
+  "nodes": [
+    {
+      "step": 0,
+      "bca_train_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "d1_train_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    {
+      "step": 500,
+      "bca_train_stream_sha256": "4e184829fd76a26fcffd83b0dc0d11776f72a807d8d8515f011a0e84e67535d8",
+      "d1_train_stream_sha256": "4e184829fd76a26fcffd83b0dc0d11776f72a807d8d8515f011a0e84e67535d8",
+      "match": true
+    },
+    {
+      "step": 1000,
+      "bca_train_stream_sha256": "ca35c821a16425bf94508053431064d124ba3fde1a64d11394af7c4fb421b465",
+      "d1_train_stream_sha256": "ca35c821a16425bf94508053431064d124ba3fde1a64d11394af7c4fb421b465",
+      "match": true
+    },
+    {
+      "step": 2000,
+      "bca_train_stream_sha256": "f4cc704354e69a2607cfff11a5a4b140f86c9068346258b49b5fe2e8dbf7ad0e",
+      "d1_train_stream_sha256": "f4cc704354e69a2607cfff11a5a4b140f86c9068346258b49b5fe2e8dbf7ad0e",
+      "match": true
+    },
+    {
+      "step": 4000,
+      "bca_train_stream_sha256": "97f0cdbdf350a43462162aff51c672d4480b50be9d1599f61a5945e482dc459a",
+      "d1_train_stream_sha256": "97f0cdbdf350a43462162aff51c672d4480b50be9d1599f61a5945e482dc459a",
+      "match": true
+    },
+    {
+      "step": 6000,
+      "bca_train_stream_sha256": "3d673980d96b8ac2fa02b67e9ca682b88fc2cf426c80d02032d2d6d5402eaada",
+      "d1_train_stream_sha256": "3d673980d96b8ac2fa02b67e9ca682b88fc2cf426c80d02032d2d6d5402eaada",
+      "match": true
+    }
+  ],
+  "all_nodes_match_d1": true,
+  "formal_optimizer_steps": 6000,
+  "formal_train_stream_sha256": "3d673980d96b8ac2fa02b67e9ca682b88fc2cf426c80d02032d2d6d5402eaada",
+  "rng_state_saved_in_checkpoint": true,
+  "checkpoint_sha256": "2f0ae94bf4129703046cc3d54449157725bc6923a50f6a9555067225eb49f7c9",
+  "smoke_independent_from_formal": true
+}

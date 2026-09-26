@@ -1,0 +1,43 @@
+{
+  "parameter_counts": {
+    "total_parameters": 99643055,
+    "frozen_parameters": 85641984,
+    "trainable_parameters": 14001071
+  },
+  "gradient_nonzero_step_counts": {
+    "bca128": 6000,
+    "bca64": 6000,
+    "alpha128": 6000,
+    "alpha64": 6000,
+    "main": 6000,
+    "structure": 6000
+  },
+  "steps": 6000,
+  "meddino_frozen": true,
+  "backbone_trainable": true,
+  "control_encoder_absent": true,
+  "alpha_initial": [
+    0.10000000149011612,
+    0.10000000149011612
+  ],
+  "alpha_final": [
+    0.20217378437519073,
+    0.16179870069026947
+  ],
+  "attention128_last_full_slice": {
+    "q_rms": 0.48078814148902893,
+    "k_rms": 0.4941866993904114,
+    "v_rms": 0.6288653016090393,
+    "output_rms": 0.45826053619384766,
+    "weighted_residual_rms": 0.09264826774597168
+  },
+  "attention64_last_full_slice": {
+    "q_rms": 0.4877849817276001,
+    "k_rms": 0.4839909076690674,
+    "v_rms": 0.6313095092773438,
+    "output_rms": 0.3010770082473755,
+    "weighted_residual_rms": 0.04871387034654617
+  },
+  "unused_h256_note": "H256 is computed by the unchanged E12 provider but not consumed by BCA; up128_256 has no loss path here (source-level inference, not an individually instrumented gradient observation).",
+  "note": "Gradient counters are group-level nonzero checks for each optimizer step, not per-parameter gradient counts."
+}

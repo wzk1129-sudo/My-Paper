@@ -1,0 +1,14 @@
+{
+  "canonical_main_state_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+  "direct_checkpoint": "same canonical Direct 12k EMA as D1/E12",
+  "warm_start_from_trained_D1_or_E12_6k": false,
+  "alpha128_init": 0.10000000149011612,
+  "alpha64_init": 0.10000000149011612,
+  "meddino_frozen": true,
+  "main_trainable": true,
+  "parameter_counts": {
+    "total_parameters": 99643055,
+    "frozen_parameters": 85641984,
+    "trainable_parameters": 14001071
+  }
+}

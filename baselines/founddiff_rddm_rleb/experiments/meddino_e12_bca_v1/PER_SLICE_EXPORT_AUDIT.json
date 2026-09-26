@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "purpose": "GitHub metric-only per-slice export; original experiment CSVs unchanged",
+  "exports": [
+    {
+      "original_file": "FAST64_PER_SLICE.csv",
+      "metric_only_file": "FAST64_METRICS.csv",
+      "rows": 384,
+      "columns": [
+        "step",
+        "slice_index",
+        "psnr",
+        "ssim",
+        "rmse_hu",
+        "mae_hu",
+        "soft_psnr",
+        "soft_ssim",
+        "soft_rmse_hu",
+        "soft_mae_hu",
+        "validation_loss"
+      ],
+      "omitted_columns": [
+        "patient_id",
+        "slice_name"
+      ],
+      "original_sha256": "41ea0dd42d9f1a1962fd689eb50b8fdfbf2e7d9b0e7436e2fa674f05de806e20",
+      "export_sha256": "0d5e577e6f73335fc43cd5e2138825f91f2ff0eff76c59c48b2d593ce0fafd7e"
+    },
+    {
+      "original_file": "FULL_L333_PER_SLICE.csv",
+      "metric_only_file": "FULL_L333_METRICS.csv",
+      "rows": 610,
+      "columns": [
+        "slice_index",
+        "psnr",
+        "ssim",
+        "rmse_hu",
+        "mae_hu",
+        "soft_psnr",
+        "soft_ssim",
+        "soft_rmse_hu",
+        "soft_mae_hu",
+        "inference_seconds"
+      ],
+      "omitted_columns": [
+        "patient_id",
+        "slice_name"
+      ],
+      "original_sha256": "c9fdaf8453f92b5ee23e5656c1624c7f873fdfc37985a68a12d6076e89371a0a",
+      "export_sha256": "d57a00ebec5d75516472011fe79281de3e896ab677d231597a07d343ba2e1617"
+    },
+    {
+      "original_file": "PAIRED_VS_D1.csv",
+      "metric_only_file": "PAIRED_D1_METRICS.csv",
+      "rows": 610,
+      "columns": [
+        "slice_index",
+        "delta_psnr",
+        "delta_ssim",
+        "delta_rmse_hu",
+        "delta_mae_hu"
+      ],
+      "omitted_columns": [
+        "patient_id",
+        "slice_name"
+      ],
+      "original_sha256": "e76c0fe922c115e9c86cbe7c6b492d54e05e1b92c31c980c9d81d75c232d83f5",
+      "export_sha256": "5188c6eb3e96c4bf3b52ca1201b8e35de5f0c0d22a35d8ab3b8e9f85abdaf3ad"
+    },
+    {
+      "original_file": "PAIRED_VS_E12_HAF.csv",
+      "metric_only_file": "PAIRED_E12_HAF_METRICS.csv",
+      "rows": 610,
+      "columns": [
+        "slice_index",
+        "delta_psnr",
+        "delta_ssim",
+        "delta_rmse_hu",
+        "delta_mae_hu"
+      ],
+      "omitted_columns": [
+        "patient_id",
+        "slice_name"
+      ],
+      "original_sha256": "bac0c5fd7ea171943bff08171a6405cf9f47a7b3d49e6efdf95195f4082ff2cb",
+      "export_sha256": "3fbd5545fc70cb4e500a86dfae11c8924f13c25125e0a7d117b42ffff43ebe14"
+    }
+  ]
+}

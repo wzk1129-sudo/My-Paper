@@ -1,0 +1,40 @@
+{
+  "session": "meddino_e12_bca_v1_20260926",
+  "command": "bash meddino_e12_bca_v1/launch.sh",
+  "queue_command": "/home/xujian/miniconda3/envs/flexict/bin/python -u -m meddino_e12_bca_v1.queue",
+  "cwd": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb",
+  "conda_environment": "flexict",
+  "gpu_index": 0,
+  "log": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_bca_v1/QUEUE.log",
+  "output": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_bca_v1",
+  "started_utc": "2026-09-26T09:08:24.121073+00:00",
+  "expected_end": "6000 optimizer steps, Full-L333 610 EMA slices, FINAL_AUDIT PASS or first failure",
+  "branch": "experiment/rddm-meddino-e12-bca-v1",
+  "parent_commit": "b9e31c586f88b3796173190f0ed5f38f698f2f5c",
+  "git_status_before": [
+    "?? experiments/meddino_e12_bca_v1/",
+    "?? experiments/meddino_e12_haf_v1/progress.json",
+    "?? experiments/meddino_salf_v1/progress.json",
+    "?? meddino_e12_bca_v1/"
+  ],
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "torch_cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "source_hashes": {
+    "meddino_e12_bca_v1/__init__.py": "294872957f36338b7f5f40c0b6ea01ffd322eb8f5c7786a68572ed7be15402b7",
+    "meddino_e12_bca_v1/full.py": "6201b5ca561a2836e99ae53bf3aa2876ea393664ce5d5b67ed7d9cc530af7049",
+    "meddino_e12_bca_v1/model.py": "fb6334de267c683ba3a9de18c9a447ea80905976ee93d5c97520e867c3415728",
+    "meddino_e12_bca_v1/protocol.py": "786dd371b8e2fc01688c8c572959787f7806d3ef5ec1234799c34707bf9d8076",
+    "meddino_e12_bca_v1/queue.py": "decc6de41333c12ce0b057909937ac015665c0e8d1c7c0b9cea7630a217c8666",
+    "meddino_e12_bca_v1/runtime.py": "207c6334a9cde4e6a95cda87d85ef1034deb11fde513fc52b09819dc2b4b7b93",
+    "meddino_e12_bca_v1/smoke.py": "e3f90e341e31613ead35c9ca8ff6c32fe89d2c24013b5648b201d3f344fe5e99",
+    "meddino_e12_bca_v1/structure_audit.py": "ebb2813305ec8b3a42b771b9bd4f27f2d3f41169f7c649cbd3ed0ef8ff9df1be",
+    "meddino_e12_bca_v1/train.py": "6c38e73d5637ce689b2beaad70fdc7044b37751c6d1cbcfa85e44bdc9839c073",
+    "meddino_e12_bca_v1/launch.sh": "bd82cbdf8d27cc987921b3d6a4c3a41dcbc90f36489af9d504b7433463134608",
+    "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_bca_v1/EXPERIMENT_CONFIG.json": "64ef6f90a73556ae84a589aeffdc2ba5b6040e0f0e5cb9ceb0fb42806afa3ed8"
+  },
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "fast64_split_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "full_evaluator_sha256": "94ddc8b2d9e9bae08457bb0f4e57c20f2d282eb80ef5b77c50304818f3f29366"
+}

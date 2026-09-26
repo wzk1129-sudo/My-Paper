@@ -1,0 +1,6 @@
+# Original runtime metrics retain experiment-only slice labels.
+FAST64_PER_SLICE.csv
+FULL_L333_PER_SLICE.csv
+PAIRED_VS_D1.csv
+PAIRED_VS_E12_HAF.csv
+progress.json

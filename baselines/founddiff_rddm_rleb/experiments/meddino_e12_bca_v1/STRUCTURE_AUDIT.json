@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "shapes": {
+    "bca128": {
+      "H": [
+        2,
+        128,
+        128,
+        128
+      ],
+      "S": [
+        2,
+        64,
+        128,
+        128
+      ],
+      "out": [
+        2,
+        128,
+        128,
+        128
+      ],
+      "window": 8,
+      "heads": 4,
+      "dim_head": 32
+    },
+    "bca64": {
+      "H": [
+        2,
+        256,
+        64,
+        64
+      ],
+      "S": [
+        2,
+        128,
+        64,
+        64
+      ],
+      "out": [
+        2,
+        256,
+        64,
+        64
+      ],
+      "window": 16,
+      "heads": 4,
+      "dim_head": 32
+    }
+  },
+  "Q_source": "RDDM encoder main feature, argument 0 to each BCA module",
+  "K_V_source": "E12 HierarchicalSALFProvider hint, argument 1",
+  "step_zero_training_loss_finite": true,
+  "meddino_frozen": true,
+  "controlnet_absent": true,
+  "access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 2,
+    "total_opens": 8,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  }
+}

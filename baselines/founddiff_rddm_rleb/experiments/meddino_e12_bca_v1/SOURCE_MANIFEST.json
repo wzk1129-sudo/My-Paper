@@ -1,0 +1,105 @@
+{
+  "branch": "experiment/rddm-meddino-e12-bca-v1",
+  "parent_commit": "b9e31c586f88b3796173190f0ed5f38f698f2f5c",
+  "package_root": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb",
+  "new_experiment_files": [
+    {
+      "path": "meddino_e12_bca_v1/__init__.py",
+      "sha256": "294872957f36338b7f5f40c0b6ea01ffd322eb8f5c7786a68572ed7be15402b7"
+    },
+    {
+      "path": "meddino_e12_bca_v1/model.py",
+      "sha256": "fb6334de267c683ba3a9de18c9a447ea80905976ee93d5c97520e867c3415728"
+    },
+    {
+      "path": "meddino_e12_bca_v1/protocol.py",
+      "sha256": "786dd371b8e2fc01688c8c572959787f7806d3ef5ec1234799c34707bf9d8076"
+    },
+    {
+      "path": "meddino_e12_bca_v1/runtime.py",
+      "sha256": "207c6334a9cde4e6a95cda87d85ef1034deb11fde513fc52b09819dc2b4b7b93"
+    },
+    {
+      "path": "meddino_e12_bca_v1/train.py",
+      "sha256": "6c38e73d5637ce689b2beaad70fdc7044b37751c6d1cbcfa85e44bdc9839c073"
+    },
+    {
+      "path": "meddino_e12_bca_v1/full.py",
+      "sha256": "6201b5ca561a2836e99ae53bf3aa2876ea393664ce5d5b67ed7d9cc530af7049"
+    },
+    {
+      "path": "meddino_e12_bca_v1/smoke.py",
+      "sha256": "e3f90e341e31613ead35c9ca8ff6c32fe89d2c24013b5648b201d3f344fe5e99"
+    },
+    {
+      "path": "meddino_e12_bca_v1/structure_audit.py",
+      "sha256": "ebb2813305ec8b3a42b771b9bd4f27f2d3f41169f7c649cbd3ed0ef8ff9df1be"
+    },
+    {
+      "path": "meddino_e12_bca_v1/queue.py",
+      "sha256": "decc6de41333c12ce0b057909937ac015665c0e8d1c7c0b9cea7630a217c8666"
+    },
+    {
+      "path": "meddino_e12_bca_v1/launch.sh",
+      "sha256": "bd82cbdf8d27cc987921b3d6a4c3a41dcbc90f36489af9d504b7433463134608"
+    }
+  ],
+  "reused_tracked_files": [
+    {
+      "path": "meddino_e12_haf_v1/model.py",
+      "sha256": "7010ca9339c09bed59955e0335d87eabaf4140fc6f698926e72f457b7753ac9a",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "meddino_salf_v1/model.py",
+      "sha256": "cc48211931a08e4d0c1e0cae5dd96aa2b453edd9b59465c6a28c41fe12507bb5",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "meddino_four_arm_v1/structure.py",
+      "sha256": "ce9801194215007af6c51986144663864e9f721da3833166eccacb7f97b03309",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "prosac_add_fusion_v1/structure.py",
+      "sha256": "39cbe698dc0c5e0f27eded99bffa2199bd50ee3463299e3c199da3da8d2a2557",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "context_2p5d/model.py",
+      "sha256": "e1134238da30bb02f7d9c07f3cceb3858744ff7e018fa20073938f2da46e979b",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "context_2p5d/data.py",
+      "sha256": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "src/rddm_rleb.py",
+      "sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "mayo2016_smallset_v1/frozen_protocol.py",
+      "sha256": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "meddino_full_l333_v1/evaluate.py",
+      "sha256": "94ddc8b2d9e9bae08457bb0f4e57c20f2d282eb80ef5b77c50304818f3f29366",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "anatomy_controlnet_v1/evaluate.py",
+      "sha256": "eacbede48f38d47b810ad432802a528ccc64db77cdeb549cf7edd8cc477d564f",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    },
+    {
+      "path": "fast_dev/protocol.py",
+      "sha256": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+      "at_parent": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+    }
+  ],
+  "note": "Reused source is already tracked by the parent branch and is not duplicated in this commit."
+}

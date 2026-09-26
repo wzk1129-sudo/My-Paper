@@ -1,0 +1,199 @@
+{
+  "bca_config_sha256": "64ef6f90a73556ae84a589aeffdc2ba5b6040e0f0e5cb9ceb0fb42806afa3ed8",
+  "references": {
+    "D1": {
+      "config_path": "experiments/meddino_four_arm_v1/runs/D1_MULTI_512/CONFIG.json",
+      "config_sha256": "ac32944db16f2c6793778ddb48db95b9ddf1060a21135dd41ae5155ceafda057",
+      "changes": [
+        {
+          "path": "arm",
+          "reference": "D1_MULTI_512",
+          "bca": "E12_BCA"
+        },
+        {
+          "path": "backbone_cross_attention",
+          "reference": "<ABSENT>",
+          "bca": {
+            "tap": "post-downsample encoder stages at 128x128 and 64x64",
+            "query": "RDDM backbone",
+            "key_value": "E12 structure",
+            "window_128": 8,
+            "window_64": 16,
+            "heads": 4,
+            "dim_head": 32,
+            "prenorm": true,
+            "alpha_init": 0.1,
+            "zero_conv": false
+          }
+        },
+        {
+          "path": "backbone_trainable",
+          "reference": "<ABSENT>",
+          "bca": true
+        },
+        {
+          "path": "controlnet",
+          "reference": "<ABSENT>",
+          "bca": false
+        },
+        {
+          "path": "description",
+          "reference": "Multi-layer MedDINO [2,5,8,11] on frozen Direct RDDM ControlNet",
+          "bca": "Canonical Direct RDDM + E12 topology + encoder window cross-attention"
+        },
+        {
+          "path": "experiment_name",
+          "reference": "RDDM_MedDINO_Four_Arm_V1_D1_MULTI_512",
+          "bca": "RDDM_MedDINO_E12_BCA_V1"
+        },
+        {
+          "path": "initialization",
+          "reference": "<ABSENT>",
+          "bca": "same Direct 12k EMA canonical state as D1/E12; no trained D1/E12 6k weights"
+        },
+        {
+          "path": "layer_fusion",
+          "reference": "<ABSENT>",
+          "bca": {
+            "name": "SALF",
+            "layers": [
+              2,
+              5,
+              8,
+              11
+            ],
+            "scales": [
+              "s256",
+              "s128",
+              "s64"
+            ],
+            "scorer_per_scale_layer": "Linear(768,1)",
+            "scorer_weight_and_bias_initialization": 0,
+            "normalized_weights": "softmax over four layers",
+            "effective_multiplier": "4 * softmax weight",
+            "extra_trainable_parameters": 9228,
+            "meddino_trainable": false
+          }
+        },
+        {
+          "path": "meddino_frozen",
+          "reference": "<ABSENT>",
+          "bca": true
+        },
+        {
+          "path": "parent_commit",
+          "reference": "<ABSENT>",
+          "bca": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+        },
+        {
+          "path": "structure_topology",
+          "reference": "<ABSENT>",
+          "bca": "E12 frozen MedDINO 2/5/8/11 + SALF + zero-init hierarchical reassembly; no Edge branch in actual E12 source"
+        }
+      ]
+    },
+    "E12_HAF": {
+      "config_path": "experiments/meddino_e12_haf_v1/EXPERIMENT_CONFIG.json",
+      "config_sha256": "7ae1bafc066574c92a8c2581ed01f16597522e8b909dc48ddf373851539eed59",
+      "changes": [
+        {
+          "path": "arm",
+          "reference": "E12_HAF",
+          "bca": "E12_BCA"
+        },
+        {
+          "path": "backbone_cross_attention",
+          "reference": "<ABSENT>",
+          "bca": {
+            "tap": "post-downsample encoder stages at 128x128 and 64x64",
+            "query": "RDDM backbone",
+            "key_value": "E12 structure",
+            "window_128": 8,
+            "window_64": 16,
+            "heads": 4,
+            "dim_head": 32,
+            "prenorm": true,
+            "alpha_init": 0.1,
+            "zero_conv": false
+          }
+        },
+        {
+          "path": "backbone_trainable",
+          "reference": "<ABSENT>",
+          "bca": true
+        },
+        {
+          "path": "controlnet",
+          "reference": "<ABSENT>",
+          "bca": false
+        },
+        {
+          "path": "description",
+          "reference": "SALF + zero-initialized hierarchy + local256/cross128/cross64 Control hint fusion",
+          "bca": "Canonical Direct RDDM + E12 topology + encoder window cross-attention"
+        },
+        {
+          "path": "experiment_name",
+          "reference": "RDDM_MedDINO_E12_HAF_V1",
+          "bca": "RDDM_MedDINO_E12_BCA_V1"
+        },
+        {
+          "path": "hierarchy",
+          "reference": {
+            "H64": "A64",
+            "H128": "A128 + ZeroConv(upsample H64)",
+            "H256": "A256 + ZeroConv(upsample H128)",
+            "upsample": "bilinear align_corners=False"
+          },
+          "bca": "<ABSENT>"
+        },
+        {
+          "path": "hybrid_injection",
+          "reference": {
+            "s256": "local 1x1/GELU/depthwise3x3/ZeroConv",
+            "s128": "16x16 anatomy KV via deterministic exact avg-pool equivalent to adaptive pooling, 128 channels, 4 heads, ZeroConv",
+            "s64": "16x16 anatomy KV via deterministic exact avg-pool equivalent to adaptive pooling, 256 channels, 8 heads, ZeroConv",
+            "existing_controlnet_residual_taps_unchanged": true
+          },
+          "bca": "<ABSENT>"
+        },
+        {
+          "path": "independent_from_E1_checkpoint",
+          "reference": true,
+          "bca": "<ABSENT>"
+        },
+        {
+          "path": "initialization",
+          "reference": "<ABSENT>",
+          "bca": "same Direct 12k EMA canonical state as D1/E12; no trained D1/E12 6k weights"
+        },
+        {
+          "path": "meddino_frozen",
+          "reference": "<ABSENT>",
+          "bca": true
+        },
+        {
+          "path": "parent_commit",
+          "reference": "a75418c4d3465f425f6cced85cb4676331cf70ec",
+          "bca": "b9e31c586f88b3796173190f0ed5f38f698f2f5c"
+        },
+        {
+          "path": "structure_topology",
+          "reference": "<ABSENT>",
+          "bca": "E12 frozen MedDINO 2/5/8/11 + SALF + zero-init hierarchical reassembly; no Edge branch in actual E12 source"
+        }
+      ]
+    }
+  },
+  "frozen_protocol_equal_fields": [
+    "seed",
+    "training",
+    "augmentation",
+    "data",
+    "evaluation",
+    "ema",
+    "diffusion",
+    "fast_dev",
+    "safety"
+  ]
+}
