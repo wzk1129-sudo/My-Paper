@@ -1,0 +1,9 @@
+{
+  "arm": "D4_MULTI_FT_512",
+  "matched": [
+    {
+      "step": 6000,
+      "sha256": "8674b99e9273f1e28f2f82ae91e394ad3c0c6d8bd9eaaac008c6d90468d9e353"
+    }
+  ]
+}

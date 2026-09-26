@@ -1,0 +1,9 @@
+{
+  "arm": "D2_MULTI_ADD_512",
+  "matched": [
+    {
+      "step": 6000,
+      "sha256": "026a1c77ab4ab56b089eb859069dc6ca8eea3e1ca29226287d988e4bf1c23b38"
+    }
+  ]
+}

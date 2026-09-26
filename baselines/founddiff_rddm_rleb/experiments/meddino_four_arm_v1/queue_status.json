@@ -1,0 +1,32 @@
+{
+  "status": "FAILED",
+  "base_commit": "38582515ea26ac84fe3f76a9eb7345e753230bd7",
+  "branch": "experiment/rddm-meddino-four-arm-v1",
+  "started_unix": 1790358193.0513196,
+  "arms": {
+    "D1_MULTI_512": {
+      "status": "COMPLETE",
+      "optimizer_steps": 6000
+    },
+    "D2_MULTI_ADD_512": {
+      "status": "COMPLETE",
+      "optimizer_steps": 6000
+    },
+    "D3_MULTI_1024": {
+      "status": "COMPLETE",
+      "optimizer_steps": 6000
+    },
+    "D4_MULTI_FT_512": {
+      "status": "SMOKE_RUNNING"
+    }
+  },
+  "order": [
+    "D1_MULTI_512",
+    "D2_MULTI_ADD_512",
+    "D3_MULTI_1024",
+    "D4_MULTI_FT_512"
+  ],
+  "single_gpu_serial": true,
+  "error": "RuntimeError('D4_MULTI_FT_512 smoke failed; see /home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1/logs/D4_MULTI_FT_512_smoke.log')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/meddino_four_arm_v1/queue.py\", line 80, in main\n    raise RuntimeError(arm + \" smoke failed; see \" + str(log))\nRuntimeError: D4_MULTI_FT_512 smoke failed; see /home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1/logs/D4_MULTI_FT_512_smoke.log\n"
+}

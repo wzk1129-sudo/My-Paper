@@ -1,0 +1,12 @@
+{
+  "status": "FAILED",
+  "arm": "D4_MULTI_FT_512",
+  "from_step": 2000,
+  "to_step": 6000,
+  "previous_queue_status": "FAILED",
+  "previous_failure": "instrumentation-only BF16 NumPy conversion",
+  "scientific_protocol_changed": false,
+  "started_unix": 1790383897.830981,
+  "error": "AssertionError('Use the frozen fast-dev config; variants need an explicit new configuration contract')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/meddino_four_arm_v1/retry.py\", line 46, in main\n    build_report()\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/meddino_four_arm_v1/report.py\", line 251, in build_report\n    \"cross_arm\": feature_diagnostics(available),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/meddino_four_arm_v1/report.py\", line 84, in feature_diagnostics\n    dataset = ContextPairs(config(\"D1_MULTI_512\"), \"validation\", \"FAST\")\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/context_2p5d/data.py\", line 18, in __init__\n    super().__init__(cfg,split,mode)\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/fast_dev/data.py\", line 17, in __init__\n    check_config(cfg)\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/fast_dev/protocol.py\", line 33, in check_config\n    assert cfg == canonical, 'Use the frozen fast-dev config; variants need an explicit new configuration contract'\n           ^^^^^^^^^^^^^^^^\nAssertionError: Use the frozen fast-dev config; variants need an explicit new configuration contract\n"
+}

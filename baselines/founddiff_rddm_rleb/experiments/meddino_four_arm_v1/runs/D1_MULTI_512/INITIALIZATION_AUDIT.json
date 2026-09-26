@@ -1,0 +1,33 @@
+{
+  "arm": "D1_MULTI_512",
+  "input_size": 512,
+  "direct_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "main_state_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+  "control_copy_hash": "60781d03765d6a432b018e1536c3715b66d3604c40ccad6eba48dd5fd5a6e385",
+  "zero_conv_norms": [
+    {
+      "weight_norm": 0.0,
+      "bias_norm": 0.0
+    },
+    {
+      "weight_norm": 0.0,
+      "bias_norm": 0.0
+    },
+    {
+      "weight_norm": 0.0,
+      "bias_norm": 0.0
+    },
+    {
+      "weight_norm": 0.0,
+      "bias_norm": 0.0
+    }
+  ],
+  "step_zero_max_abs_difference": 0.0,
+  "step_zero_equivalent": true,
+  "canonical_training_rng_restored": true,
+  "canonical_training_rng_sha256": "647eb4cf23b2322b20f2e0033e39d32d23c8ffb3e1f9be611b01bc5de1aa8dc6",
+  "meddino_frozen_at_initialization": true,
+  "total_parameters": 105555937,
+  "frozen_parameters": 98779201,
+  "trainable_parameters": 6776736
+}

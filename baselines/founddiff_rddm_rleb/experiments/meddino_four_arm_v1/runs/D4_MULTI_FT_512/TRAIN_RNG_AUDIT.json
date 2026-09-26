@@ -1,0 +1,17 @@
+{
+  "initial_rng_sha256": "647eb4cf23b2322b20f2e0033e39d32d23c8ffb3e1f9be611b01bc5de1aa8dc6",
+  "smoke_initial_rng_sha256": "647eb4cf23b2322b20f2e0033e39d32d23c8ffb3e1f9be611b01bc5de1aa8dc6",
+  "fork": {
+    "fork_step": 2000,
+    "output_max_abs_difference": 0.0,
+    "blocks_0_7_initial_hash": "04468fe6b2dc7d7fdc43ffbfc33924efef44a2408330d618c4a77977a0704cd3",
+    "blocks_8_11_initial_hash": "121bcbc46bc4b4c43703c9ad6be1702eefc861dcc3dda1a2c6ea2892b3a45c4c",
+    "blocks_8_11_initial_parameter_norm": 881.7544152897866,
+    "D1_model_state_hash_at_fork": "b365e6f355c05307e058e82aff73a4fa128f6683ecdeca1240ce590aaa7699e3",
+    "D1_ema_state_hash_at_fork": "d4656a566cfe438ac7aa4865655d9be49299c59abed6220850f6f9d8934cce6e",
+    "d1_train_seconds_before_fork": 601.1692723870219,
+    "d1_stream_sha256_at_fork": "f4cc704354e69a2607cfff11a5a4b140f86c9068346258b49b5fe2e8dbf7ad0e",
+    "existing_optimizer_state_restored": true,
+    "rng_and_stream_restored": true
+  }
+}

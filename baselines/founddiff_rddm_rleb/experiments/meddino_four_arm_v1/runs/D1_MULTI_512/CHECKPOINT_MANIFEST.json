@@ -1,0 +1,13 @@
+{
+  "arm": "D1_MULTI_512",
+  "matched": [
+    {
+      "step": 2000,
+      "sha256": "c54d7099e1209e98ce389c1e8b8764e2d7be4eb9ba612cda238947d5f84eb110"
+    },
+    {
+      "step": 6000,
+      "sha256": "9cc39acf0bfe2c10a5c93d882ac480851efa46fe28cb8f2b19bc20dc36812a3b"
+    }
+  ]
+}

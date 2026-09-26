@@ -1,0 +1,63 @@
+{
+  "D1_MULTI_512": {
+    "total_parameters": 105555937,
+    "trainable_parameters_at_end": 6776736,
+    "peak_vram_bytes": 5237267456,
+    "seconds_per_step": 0.28997751044389347,
+    "training_seconds_including_D1_shared": 1739.8650626633607,
+    "training_seconds_after_fork": null,
+    "validation_seconds": {
+      "0": 16.761526684014825,
+      "500": 17.345985460007796,
+      "1000": 17.714307524001924,
+      "2000": 17.320126525999513,
+      "4000": 17.267217694985447,
+      "6000": 17.102287340007024
+    }
+  },
+  "D2_MULTI_ADD_512": {
+    "total_parameters": 105556833,
+    "trainable_parameters_at_end": 6777632,
+    "peak_vram_bytes": 5356210176,
+    "seconds_per_step": 0.29207545274911295,
+    "training_seconds_including_D1_shared": 1752.4527164946776,
+    "training_seconds_after_fork": null,
+    "validation_seconds": {
+      "0": 17.189570043992717,
+      "500": 18.383178393996786,
+      "1000": 18.06899530699593,
+      "2000": 18.241365905996645,
+      "4000": 18.049984878016403,
+      "6000": 17.833375727990642
+    }
+  },
+  "D3_MULTI_1024": {
+    "total_parameters": 105555937,
+    "trainable_parameters_at_end": 6776736,
+    "peak_vram_bytes": 5313289216,
+    "seconds_per_step": 0.5199530627459075,
+    "training_seconds_including_D1_shared": 3119.7183764754445,
+    "training_seconds_after_fork": null,
+    "validation_seconds": {
+      "0": 39.28870342200389,
+      "500": 39.5926849579846,
+      "1000": 39.83241561500472,
+      "2000": 39.77269202299067,
+      "4000": 39.9013351520116,
+      "6000": 39.45557629497489
+    }
+  },
+  "D4_MULTI_FT_512": {
+    "total_parameters": 105555937,
+    "trainable_parameters_at_end": 35125152,
+    "peak_vram_bytes": 5776093184,
+    "seconds_per_step": 0.3567704276645309,
+    "training_seconds_including_D1_shared": 2028.2509830451454,
+    "training_seconds_after_fork": 1427.0817106581235,
+    "validation_seconds": {
+      "2000": 20.805559667001944,
+      "4000": 16.353950087999692,
+      "6000": 16.84096183400834
+    }
+  }
+}

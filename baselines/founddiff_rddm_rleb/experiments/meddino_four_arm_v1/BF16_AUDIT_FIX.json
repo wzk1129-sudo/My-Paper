@@ -1,0 +1,26 @@
+{
+  "original_exception": "TypeError('Got unsupported ScalarType BFloat16')",
+  "original_failure_location": "context_2p5d/model.py:67 state_hash() called from meddino_four_arm_v1/runtime.py fork_d1 audit",
+  "original_dtype": "torch.bfloat16",
+  "new_conversion_path": "tensor.detach().to(dtype=torch.float32).cpu().contiguous().numpy().tobytes()",
+  "scope": "D4 audit_state_hash and med_block_hash only; original context_2p5d state_hash unchanged",
+  "scientific_protocol_changed": false,
+  "original_failure_record_preserved": true,
+  "smoke_retry_steps": 20,
+  "smoke_retry_nonzero_grad_steps": 20,
+  "fork_output_max_abs_difference": 0.0,
+  "fork_psnr": 40.79716392361085,
+  "old_data_access": {
+    "total_opens": 0,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "neighbor_target_opens": 0,
+    "blocked_attempts": 0
+  },
+  "retry_data_access": {
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "neighbor_target_opens": 0,
+    "blocked_attempts": 0
+  }
+}

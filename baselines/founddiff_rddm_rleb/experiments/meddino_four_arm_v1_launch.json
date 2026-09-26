@@ -1,0 +1,32 @@
+{
+  "session": "rddm_meddino_four_arm_v1_20260926",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/meddino_four_arm_v1/run_queue.sh",
+  "git_commit": "38582515ea26ac84fe3f76a9eb7345e753230bd7",
+  "git_branch": "experiment/rddm-meddino-four-arm-v1",
+  "workspace_status_before_launch": [
+    "?? baselines/founddiff_rddm_rleb/meddino_four_arm_v1/"
+  ],
+  "conda_environment": "flexict",
+  "python_executable": "/home/xujian/miniconda3/envs/flexict/bin/python",
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu_visible_devices": "0",
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "log_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1/queue.log",
+  "output_directory": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1",
+  "source_sha256": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model.py": "2cd7051b817fb45e0dc96b03bf4512d16bd3674a8d042ad52c56b35e0425bd9e",
+    "protocol.py": "d7841970003706cf3d1b6d3733734c40460466f4bcb53f36ccb79d80bd1f1942",
+    "queue.py": "e431e308c2baa4550805c61700112b88f821ca198ba27e6ac04e12b61cfdb0e8",
+    "report.py": "bc310893cb4dd18cd3f6f40f9cb03d87a03427b2e27fad91a2d5d86d54025e79",
+    "runtime.py": "ef290f172a23fa859439f0e7eb2620582fabc485c8b476eba5ca76e7651515ce",
+    "structure.py": "ce9801194215007af6c51986144663864e9f721da3833166eccacb7f97b03309",
+    "train.py": "ee72cc9da62bf531f942536c4714f1c90f48596b6445fdc4e1172b73148dfa55",
+    "run_queue.sh": "4f0b43798b70855cbda42161ed92114b39469614694c33b575cb0cfbbb1fe346"
+  },
+  "recorded_at_utc": "2026-09-25T17:42:39.130223+00:00",
+  "expected_termination": "D1,D2,D3,D4 serial to 6000 optimizer steps; D3 genuine OOM recorded then D4 continues; final audit/report; no Full L333, formal, L506, push",
+  "prelaunch_retry_note": "Initial tmux command exited before output creation because run_queue.sh had CRLF; corrected line endings; no experiment started."
+}
