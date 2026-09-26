@@ -1,0 +1,27 @@
+{
+  "C3_FINAL": {
+    "total_inference_wall_seconds": 134.6641462519765,
+    "peak_vram_bytes": 1023186944,
+    "model_load_seconds": 9.38704612199217,
+    "mean_sampling_seconds_per_slice": 0.13627889568723744,
+    "mean_seconds_per_slice": 0.22076089549504344
+  },
+  "D1_MULTI_512": {
+    "total_inference_wall_seconds": 100.39564256198355,
+    "peak_vram_bytes": 1025775616,
+    "model_load_seconds": 1.1155760760011617,
+    "mean_sampling_seconds_per_slice": 0.1279182105826607,
+    "mean_seconds_per_slice": 0.16458302059341565
+  },
+  "D3_MULTI_1024": {
+    "total_inference_wall_seconds": 235.0060144889867,
+    "peak_vram_bytes": 1025775616,
+    "model_load_seconds": 1.0222618260013405,
+    "mean_sampling_seconds_per_slice": 0.34809566185176066,
+    "mean_seconds_per_slice": 0.38525576145735524
+  },
+  "D3_vs_D1": {
+    "wall_time_ratio": 2.340798947961269,
+    "vram_ratio": 1.0
+  }
+}

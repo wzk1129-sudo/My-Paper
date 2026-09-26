@@ -1,0 +1,42 @@
+{
+  "C3_D1": {
+    "first_third": {
+      "start_index": 0,
+      "end_index": 203,
+      "n": 204,
+      "mean_delta_psnr": 0.007834415794826945
+    },
+    "middle_third": {
+      "start_index": 204,
+      "end_index": 406,
+      "n": 203,
+      "mean_delta_psnr": 0.009773527749681436
+    },
+    "last_third": {
+      "start_index": 407,
+      "end_index": 609,
+      "n": 203,
+      "mean_delta_psnr": 0.013722596104632362
+    }
+  },
+  "D1_D3": {
+    "first_third": {
+      "start_index": 0,
+      "end_index": 203,
+      "n": 204,
+      "mean_delta_psnr": 0.005154214788280214
+    },
+    "middle_third": {
+      "start_index": 204,
+      "end_index": 406,
+      "n": 203,
+      "mean_delta_psnr": 0.006928747172457917
+    },
+    "last_third": {
+      "start_index": 407,
+      "end_index": 609,
+      "n": 203,
+      "mean_delta_psnr": 0.0017038084176666428
+    }
+  }
+}

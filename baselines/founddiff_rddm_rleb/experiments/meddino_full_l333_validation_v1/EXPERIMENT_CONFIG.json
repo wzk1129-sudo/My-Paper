@@ -1,0 +1,58 @@
+{
+  "experiment": "MedDINO Full-L333 Validation V1",
+  "parent_commit": "f90c38cee8759d75177c3ccf69f02ecddca78528",
+  "models": [
+    "C3_FINAL",
+    "D1_MULTI_512",
+    "D3_MULTI_1024"
+  ],
+  "patient": "L333",
+  "slices": 610,
+  "stride": 1,
+  "slice_list_sha256": "e154c96ad98b3baf554262ca4f94d23b978336a0de23c8082626b0c35e9524ef",
+  "weights": "EMA",
+  "optimizer_steps": 0,
+  "sampling_timesteps": 2,
+  "sum_scale": 0.01,
+  "batch_size": 1,
+  "validation_seed_per_slice": "20260829 + slice_index",
+  "preprocessing": {
+    "stored_value_offset_hu": -1024,
+    "clip_hu": [
+      -1024,
+      3072
+    ],
+    "normalize": [
+      0,
+      1
+    ]
+  },
+  "primary_window_hu": [
+    -1000,
+    1000
+  ],
+  "secondary_window_hu": [
+    -160,
+    240
+  ],
+  "secondary_label": "SECONDARY_SOFT_TISSUE_METRIC",
+  "metric_implementation": {
+    "wide": "mayo2016_smallset_v1.frozen_protocol.slice_metrics",
+    "soft": "anatomy_controlnet_v1.evaluate.soft_metrics"
+  },
+  "frozen_evaluator_sha256": "eacbede48f38d47b810ad432802a528ccc64db77cdeb549cf7edd8cc477d564f",
+  "frozen_protocol_sha256": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+  "fast64_split_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "python": "3.11.16",
+  "pytorch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "dataset_manifest_sha256": "4dc71cda739038f1404483faa3f1a94ffc9060a7d0a520e688feba8710a74e74",
+  "source_hashes": {
+    "src/rddm_rleb.py": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+    "meddino_four_arm_v1/model.py": "2cd7051b817fb45e0dc96b03bf4512d16bd3674a8d042ad52c56b35e0425bd9e",
+    "meddino_four_arm_v1/structure.py": "ce9801194215007af6c51986144663864e9f721da3833166eccacb7f97b03309",
+    "prosac_apgc_control_v1/model.py": "e17eed778f61525429f1ae5ca8d4f9025d485714be1f4d6ef82864a61d5c35d4",
+    "prosac_apgc_control_v1/structure.py": "716a1715f7f7dd538d2167cfcf62df270d53c90393b12f8b2d9dcca40d29555e"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "C3_D1": {
+    "mean_delta": 0.010439236007492456,
+    "ci_95_low": 0.009851021479347351,
+    "ci_95_high": 0.011036829938190882,
+    "positive_slice_fraction": 0.9557377049180328,
+    "n_bootstrap": 10000,
+    "seed": 20260926,
+    "bootstrap_unit": "L333 slice",
+    "interpretation": "Within-patient development validation; not cross-patient generalization"
+  },
+  "D1_D3": {
+    "mean_delta": 0.004596505904269589,
+    "ci_95_low": 0.004177633134330283,
+    "ci_95_high": 0.005023699179499091,
+    "positive_slice_fraction": 0.8508196721311475,
+    "n_bootstrap": 10000,
+    "seed": 20260926,
+    "bootstrap_unit": "L333 slice",
+    "interpretation": "Within-patient development validation; not cross-patient generalization"
+  },
+  "C3_D3": {
+    "mean_delta": 0.015035741911762044,
+    "ci_95_low": 0.014471804852437051,
+    "ci_95_high": 0.015610468074990782,
+    "positive_slice_fraction": 0.9934426229508196,
+    "n_bootstrap": 10000,
+    "seed": 20260926,
+    "bootstrap_unit": "L333 slice",
+    "interpretation": "Within-patient development validation; not cross-patient generalization"
+  }
+}

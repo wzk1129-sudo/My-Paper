@@ -1,0 +1,21 @@
+{
+  "session": "meddino_full_l333_validation_v1_20260926",
+  "command": "bash meddino_full_l333_v1/run_full.sh",
+  "git_commit": "f90c38cee8759d75177c3ccf69f02ecddca78528",
+  "git_branch": "experiment/rddm-meddino-four-arm-v1",
+  "git_status_short": [
+    "?? baselines/founddiff_rddm_rleb/experiments/meddino_full_l333_validation_v1/",
+    "?? baselines/founddiff_rddm_rleb/meddino_full_l333_v1/"
+  ],
+  "conda_environment": "flexict",
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu_index": 0,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "log_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_full_l333_validation_v1/full_inference.log",
+  "output_directory": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_full_l333_validation_v1",
+  "start_utc": "2026-09-26T04:04:48+00:00",
+  "stop_condition": "Three 610-slice L333 EMA inference runs complete, or immediate failure; no training.",
+  "initial_attempt_note": "Initial tmux shell exited before inference because the new shell wrapper had CRLF; it produced an empty log. The wrapper was converted to LF before this live session. No model evaluation was run in that attempt."
+}

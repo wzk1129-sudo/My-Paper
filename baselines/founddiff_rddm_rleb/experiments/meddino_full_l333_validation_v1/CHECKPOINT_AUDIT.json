@@ -1,0 +1,26 @@
+{
+  "C3_FINAL": {
+    "absolute_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/baselines/founddiff_rddm_rleb/experiments/prosac_apgc_control_v1/runs/C3_ANATOMY/checkpoints/step_6000.pt",
+    "bytes": 890848929,
+    "sha256": "def8a6490918aaeaf0ff018185b945220e62aeea2de1f347edb352bc83c19887",
+    "training_step": 6000,
+    "ema_state_dict_available": true,
+    "manifest_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/baselines/founddiff_rddm_rleb/experiments/prosac_apgc_control_v1/runs/C3_ANATOMY/CHECKPOINT_MANIFEST.json"
+  },
+  "D1_MULTI_512": {
+    "absolute_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1/runs/D1_MULTI_512/checkpoints/step_6000.pt",
+    "bytes": 899106849,
+    "sha256": "9cc39acf0bfe2c10a5c93d882ac480851efa46fe28cb8f2b19bc20dc36812a3b",
+    "training_step": 6000,
+    "ema_state_dict_available": true,
+    "manifest_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1/runs/D1_MULTI_512/CHECKPOINT_MANIFEST.json"
+  },
+  "D3_MULTI_1024": {
+    "absolute_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1/runs/D3_MULTI_1024/checkpoints/step_6000.pt",
+    "bytes": 899106849,
+    "sha256": "248aaac7a26b67b69d9a1edc828c75c2990e045a1cb5b1d228755520749113b0",
+    "training_step": 6000,
+    "ema_state_dict_available": true,
+    "manifest_path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_four_arm_v1/runs/D3_MULTI_1024/CHECKPOINT_MANIFEST.json"
+  }
+}
