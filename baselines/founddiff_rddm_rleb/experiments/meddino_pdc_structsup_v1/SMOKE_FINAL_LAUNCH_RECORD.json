@@ -1,0 +1,16 @@
+{
+  "stage": "SMOKE20_FINAL",
+  "session": "meddino_pdc_structsup_smoke_final_20260927",
+  "command": "#!/usr/bin/env bash\nset -euo pipefail\ncd /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb\nexport CUBLAS_WORKSPACE_CONFIG=:4096:8\n/home/xujian/miniconda3/envs/flexict/bin/python -u -m meddino_pdc_structsup_v1.smoke > /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/SMOKE20_FINAL.log 2>&1\n",
+  "git_commit": "33d32b0d42b207ac5e8726ac427e2fc06093cffc",
+  "worktree_status_before": [
+    "?? baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/",
+    "?? baselines/founddiff_rddm_rleb/meddino_pdc_structsup_v1/"
+  ],
+  "environment": "flexict; Python3.11.16 torch2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX3090 GPU0",
+  "log": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/SMOKE20_FINAL.log",
+  "output": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1",
+  "start_unix": 1790444638.842569,
+  "stop_condition": "20 optimizer steps and PASS or nonzero exit"
+}

@@ -1,0 +1,39 @@
+{
+  "experiment": "PDC-StructSup-BCA-V1",
+  "session": "meddino_pdc_structsup_v1_20260927",
+  "command": "#!/usr/bin/env bash\nset -euo pipefail\ncd /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb\nexport CUBLAS_WORKSPACE_CONFIG=:4096:8\n/home/xujian/miniconda3/envs/flexict/bin/python -u -m meddino_pdc_structsup_v1.queue > /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/QUEUE.log 2>&1\n",
+  "git_parent_commit": "33d32b0d42b207ac5e8726ac427e2fc06093cffc",
+  "branch": "experiment/rddm-meddino-pdc-structsup-v1",
+  "worktree_status_before": [
+    "?? baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/",
+    "?? baselines/founddiff_rddm_rleb/meddino_pdc_structsup_v1/"
+  ],
+  "python": "/home/xujian/miniconda3/envs/flexict/bin/python 3.11.16",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX3090 GPU0",
+  "logs": [
+    "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/QUEUE.log",
+    "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/TRAIN_6K.log",
+    "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/FULL_L333.log"
+  ],
+  "output": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1",
+  "start_unix": 1790444788.9229372,
+  "stop_condition": "6000 optimizer steps plus Full-L333 610-slice EMA and FINAL_AUDIT PASS; or first failure",
+  "source_manifest": {
+    "__init__.py": "294872957f36338b7f5f40c0b6ea01ffd322eb8f5c7786a68572ed7be15402b7",
+    "full.py": "25445c7e5af3fe990257c92da34db2e1551390059841ce9b330b9b136dbdc16c",
+    "model.py": "51be4566a36a9254ad89e032a6818853744f5352eb18198ca99a1b39928a9e03",
+    "protocol.py": "ebdbf7a4442c07f86ce50f367fd085744028f877df81b5bb97e8e81e23688286",
+    "queue.py": "3a9135158e3e3adb99a82f47b5f7ddc63a0110187073d6da1eea43cf29592f9c",
+    "runtime.py": "cf483b18d634bffd12a1aff9deea58132f1256eee1bfdb56f2272e201c454134",
+    "smoke.py": "395b287e92d32072da4c2eb5759a22b5bab77ec4f3dcdbe3053f3684131a00cd",
+    "structure_target.py": "672f3df3b139269107a76f96f4cea11fb5d1e19b712971135bace46e26ee2eb5",
+    "train.py": "1170b7a06801e50deefc58f30bd4be57affa22f3fe8623c66d165cb5a93ec24f"
+  },
+  "lambdas": {
+    "structure128": 0.02,
+    "structure64": 0.02,
+    "image_aux": 0.02
+  }
+}

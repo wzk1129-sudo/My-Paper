@@ -1,0 +1,9 @@
+# Loss audit before PDC structure supervision
+
+Read-only source audit on parent commit 33d32b0d42b207ac5e8726ac427e2fc06093cffc.
+
+Call chain: meddino_pdc_gated_bca_v1/runtime.py PDCTrainState.update -> context_2p5d/model.py training_loss -> diffusion([NDCT, center LDCT])[0] -> src/rddm_rleb.py ResidualDiffusion.forward -> p_losses. The diffusion objective is pred_res, loss_type l2, timesteps 1000. Images stored in [0,1] are internally mapped to [-1,1]. In p_losses, x_res=x_input-x_start, x_t=q_sample(x_start,x_res,t,noise), model_out[0]=pred_res, and the sole returned training loss is mean MSE(pred_res,x_res). No separate noise loss, pred_x0 loss, L1 image loss, edge loss or perceptual loss is active. The commented perceptual expression is not executed. Typical archived PDC-Gated-BCA train losses are on the order of 1e-4 (for example step6000 1.266477775e-4).
+
+The existing residual MSE is algebraically equal to clean-image MSE in normalized coordinates: MSE(pred_res, LDCT-NDCT)=MSE(LDCT-pred_res, NDCT). This is not a separately implemented clean-image L1 item. Under the requested explicit-item rule, this experiment adds one light L1 auxiliary using the actual residual prediction from the same training forward: pred_clean=(2*LDCT-1)-pred_res and target_clean=2*NDCT-1. A forward hook captures pred_res without a second diffusion call or changed timestep/noise. The default lambda_img is 0.05 and receives one smoke-only scale calibration. This L1 is a deliberately different penalty on the same reconstruction error; residual MSE remains unchanged.
+
+New terms: L1 at 128/64 from PDC-gated side heads to paired NDCT-derived structure targets, plus calibrated L1(pred_clean,target_clean). No second noise, output-edge, perceptual, or Scharr-on-output loss. Total: L_base+lambda128*L_struct_128+lambda64*L_struct_64+lambda_img*L_img_aux. The preliminary 20-step smoke without this explicit L1 is retained separately; it is not final acceptance.

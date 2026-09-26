@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "train_rows": 6000,
+  "fast64_nodes": [
+    0,
+    500,
+    1000,
+    2000,
+    4000,
+    6000
+  ],
+  "fast64_per_slice_rows": 384,
+  "full_l333_rows": 610,
+  "paired_comparisons": [
+    "PDC_GATED_BCA",
+    "E12_BCA"
+  ],
+  "bootstrap_draws": [
+    10000,
+    10000
+  ],
+  "access": {
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "neighbor_target_opens": 0,
+    "blocked_attempts": 0
+  },
+  "source_manifest": "SOURCE_MANIFEST_FINAL.json",
+  "sanitized_metrics": [
+    "ARCHIVE_FAST64_PER_SLICE.csv",
+    "ARCHIVE_FULL_L333_PER_SLICE.csv"
+  ],
+  "checkpoint_in_archive": false
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "smoke_steps": 20,
+  "lambda128_initial": 0.05,
+  "lambda64_initial": 0.05,
+  "contribution_to_base_initial": {
+    "128": 4.9167635481301115,
+    "64": 4.806526099175914
+  },
+  "lambda128_final": 0.02,
+  "lambda64_final": 0.02,
+  "lambda_img_initial": 0.05,
+  "lambda_img_final": 0.02,
+  "image_contribution_to_base_initial": 2.9404893011748205,
+  "image_contribution_to_base_final_estimated": 1.1761956997004623,
+  "estimated_contribution_to_base_final": {
+    "128": 1.9667053934692593,
+    "64": 1.9226104138875801
+  },
+  "decision": "at least one 0.05-weighted structure contribution exceeds 20% of base",
+  "image_auxiliary_loss": true,
+  "formal_freeze": true
+}

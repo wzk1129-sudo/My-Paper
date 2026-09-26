@@ -1,0 +1,250 @@
+{
+  "status": "PASS",
+  "steps": 20,
+  "initialization": {
+    "canonical_main_state_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+    "direct_checkpoint": "same canonical Direct 12k EMA as E12-BCA",
+    "warm_start_from_trained_E12_BCA_6k": false,
+    "alpha128_init": 0.10000000149011612,
+    "alpha64_init": 0.10000000149011612,
+    "beta128_init": 0.10000000149011612,
+    "beta64_init": 0.10000000149011612,
+    "meddino_frozen": true,
+    "pdc_pretrained": false,
+    "main_trainable": true,
+    "parameter_counts": {
+      "total_parameters": 99737431,
+      "frozen_parameters": 85641984,
+      "trainable_parameters": 14095447
+    },
+    "pdc_parameters": 72780,
+    "projection_parameters": 15552,
+    "gate_parameters": 5848,
+    "added_parameters_vs_E12_BCA": 94182,
+    "parent_pdc_model_parameters": {
+      "total_parameters": 99737237,
+      "frozen_parameters": 85641984,
+      "trainable_parameters": 14095253
+    },
+    "added_side_head_parameters": 194,
+    "no_pdc_6k_warm_start": true,
+    "target_has_trainable_parameters": false
+  },
+  "loss_means": {
+    "base_loss": 0.00016254844340437557,
+    "structure_loss_128": 0.015984245017170905,
+    "structure_loss_64": 0.01562586650252342,
+    "weighted_structure_128": 0.0007992122613359242,
+    "weighted_structure_64": 0.0007812933356035501,
+    "image_aux_loss": 0.009559439006261527,
+    "weighted_image_aux": 0.0004779719587531872,
+    "train_loss": 0.002221026027109474
+  },
+  "loss_first": {
+    "step": 1,
+    "train_loss": 0.0022403171751648188,
+    "base_loss": 0.00012762733967974782,
+    "structure_loss_128": 0.016900477930903435,
+    "structure_loss_64": 0.017220214009284973,
+    "weighted_structure_128": 0.0008450238965451717,
+    "weighted_structure_64": 0.0008610106888227165,
+    "image_aux_loss": 0.008133105002343655,
+    "weighted_image_aux": 0.00040665525011718273,
+    "gradient_norm_pre_clip": 0.08338450640439987,
+    "learning_rate": 0.0002,
+    "seconds_per_step": 5.037186178000411,
+    "peak_vram_bytes": 5998378496,
+    "train_stream_sha256": "847baa1fc0b25d5f8e6a1d67d0976339609cb792f448d5dda06495745ded24da"
+  },
+  "loss_last": {
+    "step": 20,
+    "train_loss": 0.0020776151213794947,
+    "base_loss": 0.0001257951371371746,
+    "structure_loss_128": 0.015520811080932617,
+    "structure_loss_64": 0.01505803968757391,
+    "weighted_structure_128": 0.0007760405424050987,
+    "weighted_structure_64": 0.0007529020076617599,
+    "image_aux_loss": 0.0084575479850173,
+    "weighted_image_aux": 0.0004228774050716311,
+    "gradient_norm_pre_clip": 0.032616693526506424,
+    "learning_rate": 0.0002,
+    "seconds_per_step": 0.48757564401603304,
+    "peak_vram_bytes": 6152533504,
+    "train_stream_sha256": "01918ff7beb566cc0cd04187af6e5498a192bb720ad418b24b8c57a675829287"
+  },
+  "gradient_usage": {
+    "pdc": 20,
+    "shape_proj128": 20,
+    "shape_proj64": 20,
+    "gate128": 20,
+    "gate64": 20,
+    "beta128": 20,
+    "beta64": 20,
+    "bca128": 20,
+    "bca64": 20,
+    "alpha128": 20,
+    "alpha64": 20,
+    "main": 20,
+    "anatomy": 20,
+    "head128": 20,
+    "head64": 20
+  },
+  "shapes": {
+    "x1": [
+      2,
+      20,
+      512,
+      512
+    ],
+    "x2": [
+      2,
+      40,
+      256,
+      256
+    ],
+    "x3": [
+      2,
+      80,
+      128,
+      128
+    ],
+    "x4": [
+      2,
+      80,
+      64,
+      64
+    ],
+    "H128": [
+      2,
+      64,
+      128,
+      128
+    ],
+    "H64": [
+      2,
+      128,
+      64,
+      64
+    ],
+    "S128": [
+      2,
+      64,
+      128,
+      128
+    ],
+    "S64": [
+      2,
+      128,
+      64,
+      64
+    ]
+  },
+  "pred_structure_shapes": {
+    "128": [
+      2,
+      1,
+      128,
+      128
+    ],
+    "64": [
+      2,
+      1,
+      64,
+      64
+    ]
+  },
+  "structure_activity": {
+    "128": {
+      "anatomy_rms": 1.176613450050354,
+      "raw_shape_rms": 0.12692192196846008,
+      "projected_shape_rms": 0.052054453641176224,
+      "gate_mean": 0.41002345085144043,
+      "gate_std": 0.026604030281305313,
+      "gate_min": 0.3466358482837677,
+      "gate_max": 0.45964664220809937,
+      "gate_spatial_std": 0.02659076638519764,
+      "gated_shape_rms": 0.07342192530632019,
+      "weighted_shape_rms": 0.007424643728882074,
+      "fused_structure_rms": 1.177349328994751,
+      "pred_struct_rms": 0.008320833556354046,
+      "pred_struct_spatial_std": 0.000459025613963604
+    },
+    "64": {
+      "anatomy_rms": 1.4246550798416138,
+      "raw_shape_rms": 0.09833962470293045,
+      "projected_shape_rms": 0.03690490499138832,
+      "gate_mean": 0.45812278985977173,
+      "gate_std": 0.0020424246322363615,
+      "gate_min": 0.45512089133262634,
+      "gate_max": 0.4670417606830597,
+      "gate_spatial_std": 0.0020391501020640135,
+      "gated_shape_rms": 0.05381307750940323,
+      "weighted_shape_rms": 0.005393832456320524,
+      "fused_structure_rms": 1.4248167276382446,
+      "pred_struct_rms": 0.008223402313888073,
+      "pred_struct_spatial_std": 0.00029337324667721987
+    }
+  },
+  "target_stats": {
+    "full": {
+      "mean": 0.019544508308172226,
+      "std": 0.037841010838747025,
+      "max": 0.3456169366836548
+    },
+    "128": {
+      "mean": 0.019544508308172226,
+      "std": 0.03271375596523285,
+      "max": 0.21133117377758026
+    },
+    "64": {
+      "mean": 0.019544506445527077,
+      "std": 0.027993647381663322,
+      "max": 0.16434794664382935
+    }
+  },
+  "beta128": 0.10115543752908707,
+  "beta64": 0.10024581104516983,
+  "alpha128": 0.09859181940555573,
+  "alpha64": 0.09798022359609604,
+  "bca128": {
+    "q_rms": 0.6004183888435364,
+    "k_rms": 0.588493824005127,
+    "v_rms": 0.647483766078949,
+    "output_rms": 0.41584673523902893,
+    "weighted_residual_rms": 0.04104048013687134
+  },
+  "bca64": {
+    "q_rms": 0.6002839803695679,
+    "k_rms": 0.6082754731178284,
+    "v_rms": 0.5916303396224976,
+    "output_rms": 0.3365074098110199,
+    "weighted_residual_rms": 0.032993171364068985
+  },
+  "train_stream_sha256": "01918ff7beb566cc0cd04187af6e5498a192bb720ad418b24b8c57a675829287",
+  "seconds_per_step": 0.8204691233506309,
+  "peak_vram_bytes": 6152533504,
+  "nonfinite_count": 0,
+  "access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 40,
+    "total_opens": 160,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  }
+}

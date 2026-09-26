@@ -1,0 +1,32 @@
+{
+  "parent_commit": "33d32b0d42b207ac5e8726ac427e2fc06093cffc",
+  "branch": "experiment/rddm-meddino-pdc-structsup-v1",
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "seed": 20260829,
+  "source_sha256": {
+    "__init__.py": "294872957f36338b7f5f40c0b6ea01ffd322eb8f5c7786a68572ed7be15402b7",
+    "full.py": "25445c7e5af3fe990257c92da34db2e1551390059841ce9b330b9b136dbdc16c",
+    "model.py": "51be4566a36a9254ad89e032a6818853744f5352eb18198ca99a1b39928a9e03",
+    "protocol.py": "ebdbf7a4442c07f86ce50f367fd085744028f877df81b5bb97e8e81e23688286",
+    "queue.py": "fbb70e92c59d290894b0318cf76ff2ade60a001a5d84abceccf8a37966517f06",
+    "runtime.py": "cf483b18d634bffd12a1aff9deea58132f1256eee1bfdb56f2272e201c454134",
+    "smoke.py": "395b287e92d32072da4c2eb5759a22b5bab77ec4f3dcdbe3053f3684131a00cd",
+    "structure_target.py": "672f3df3b139269107a76f96f4cea11fb5d1e19b712971135bace46e26ee2eb5",
+    "train.py": "8ae043fd5f6a074f4b5e49bb8f6273c7ad76754c8093afdfa35200ef686134ef"
+  },
+  "reference_sha256": {
+    "pdc_fast": "6af0728f6452629261ff6578410fcef210a1f4dc8469e2f6680b5832c3cdebe1",
+    "bca_fast": "3c483bf943546851ecdb66e83dad9e6b9d12b773521f4759ff67016660d90526",
+    "pdc_full": "7694690e2c013a22cd9341dd7713b07c796be2c00fbf27f802510785d0753777",
+    "bca_full": "c9fdaf8453f92b5ee23e5656c1624c7f873fdfc37985a68a12d6076e89371a0a"
+  },
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "fast64_split_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "evaluator_sha256": "94ddc8b2d9e9bae08457bb0f4e57c20f2d282eb80ef5b77c50304818f3f29366",
+  "checkpoint_sha256": "ce858038eb7ec53f96451f664e71165ba35f8c6defbf227549111198c60c6e21",
+  "first_queue_failed_pretraining": true,
+  "effective_retry_queue_status": "QUEUE_STATUS_RETRY.json"
+}

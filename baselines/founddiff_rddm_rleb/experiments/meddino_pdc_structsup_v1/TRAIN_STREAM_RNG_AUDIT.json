@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "nodes": [
+    {
+      "step": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "equal_pdc": true,
+      "equal_bca": true
+    },
+    {
+      "step": 500,
+      "sha256": "4e184829fd76a26fcffd83b0dc0d11776f72a807d8d8515f011a0e84e67535d8",
+      "equal_pdc": true,
+      "equal_bca": true
+    },
+    {
+      "step": 1000,
+      "sha256": "ca35c821a16425bf94508053431064d124ba3fde1a64d11394af7c4fb421b465",
+      "equal_pdc": true,
+      "equal_bca": true
+    },
+    {
+      "step": 2000,
+      "sha256": "f4cc704354e69a2607cfff11a5a4b140f86c9068346258b49b5fe2e8dbf7ad0e",
+      "equal_pdc": true,
+      "equal_bca": true
+    },
+    {
+      "step": 4000,
+      "sha256": "97f0cdbdf350a43462162aff51c672d4480b50be9d1599f61a5945e482dc459a",
+      "equal_pdc": true,
+      "equal_bca": true
+    },
+    {
+      "step": 6000,
+      "sha256": "3d673980d96b8ac2fa02b67e9ca682b88fc2cf426c80d02032d2d6d5402eaada",
+      "equal_pdc": true,
+      "equal_bca": true
+    }
+  ],
+  "smoke_steps": 20,
+  "formal_optimizer_steps": 6000,
+  "nonfinite": 0
+}

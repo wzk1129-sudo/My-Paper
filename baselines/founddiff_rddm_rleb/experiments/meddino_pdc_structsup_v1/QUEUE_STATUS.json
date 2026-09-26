@@ -1,0 +1,9 @@
+{
+  "arm": "PDC_STRUCTSUP_BCA",
+  "state": "FAILED",
+  "stage": "TRAIN_FAST6K",
+  "started_unix": 1790444799.5424469,
+  "pid": 107745,
+  "error": "RuntimeError('TRAIN_FAST6K exit code 1')",
+  "finished_unix": 1790444800.6441045
+}

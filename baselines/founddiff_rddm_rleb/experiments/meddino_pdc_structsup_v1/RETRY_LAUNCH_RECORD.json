@@ -1,0 +1,22 @@
+{
+  "reason": "first launch failed during import, before any optimizer step; fixed train.py numeric_activity import",
+  "original_status": "QUEUE_STATUS.json",
+  "original_log": "QUEUE.log",
+  "retry_session": "meddino_pdc_structsup_retry_20260927",
+  "command": "#!/usr/bin/env bash\nset -euo pipefail\ncd /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb\nexport CUBLAS_WORKSPACE_CONFIG=:4096:8\n/home/xujian/miniconda3/envs/flexict/bin/python -u -m meddino_pdc_structsup_v1.queue > /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1/QUEUE_RETRY.log 2>&1\n",
+  "start_unix": 1790444908.5538375,
+  "parent_git_commit": "33d32b0d42b207ac5e8726ac427e2fc06093cffc",
+  "source_manifest": {
+    "__init__.py": "294872957f36338b7f5f40c0b6ea01ffd322eb8f5c7786a68572ed7be15402b7",
+    "full.py": "25445c7e5af3fe990257c92da34db2e1551390059841ce9b330b9b136dbdc16c",
+    "model.py": "51be4566a36a9254ad89e032a6818853744f5352eb18198ca99a1b39928a9e03",
+    "protocol.py": "ebdbf7a4442c07f86ce50f367fd085744028f877df81b5bb97e8e81e23688286",
+    "queue.py": "fbb70e92c59d290894b0318cf76ff2ade60a001a5d84abceccf8a37966517f06",
+    "runtime.py": "cf483b18d634bffd12a1aff9deea58132f1256eee1bfdb56f2272e201c454134",
+    "smoke.py": "395b287e92d32072da4c2eb5759a22b5bab77ec4f3dcdbe3053f3684131a00cd",
+    "structure_target.py": "672f3df3b139269107a76f96f4cea11fb5d1e19b712971135bace46e26ee2eb5",
+    "train.py": "8ae043fd5f6a074f4b5e49bb8f6273c7ad76754c8093afdfa35200ef686134ef"
+  },
+  "output": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_structsup_v1_20260927/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_structsup_v1",
+  "stop_condition": "6000 optimizer steps + Full-L333 610 EMA + FINAL_AUDIT PASS or first failure"
+}
