@@ -1,0 +1,38 @@
+{
+  "session": "meddino_salf_v1_20260926",
+  "command": "bash meddino_salf_v1/run_queue.sh",
+  "phases": [
+    "independent E1 6000 optimizer steps",
+    "EMA Full-L333 610-slice inference",
+    "report/final audit"
+  ],
+  "git_branch": "experiment/rddm-meddino-salf-v1",
+  "git_commit": "a4c2cf837743f869d4e6baffa00df14a91a61378",
+  "git_status_short": [
+    "?? experiments/meddino_salf_v1/",
+    "?? meddino_salf_v1/"
+  ],
+  "conda_environment": "flexict",
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu_index": 0,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "output_directory": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_salf_v1",
+  "log_paths": [
+    "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_salf_v1/queue_process.log",
+    "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_salf_v1/TRAIN_6K.log",
+    "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_salf_v1/FULL_L333.log"
+  ],
+  "recorded_utc": "2026-09-26T05:50:00.833380+00:00",
+  "expected_termination": "6000 optimizer steps then Full L333 and FINAL_AUDIT PASS, or first failure",
+  "source_sha256": {
+    "meddino_salf_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "meddino_salf_v1/full.py": "1fa9564fcbaf67631b3a1ccc448d1eafac8b51b05e43028e3c36ded324d0a944",
+    "meddino_salf_v1/model.py": "d641f99c1da1f1b8699dcd8ba0c9fda69ff15754b6693307b44b8210ef2ed467",
+    "meddino_salf_v1/protocol.py": "f99220353bcee97c6c2df5f2fb2f175acea596f604a31082893ef8e515ed3d3d",
+    "meddino_salf_v1/queue.py": "2b1ca41d1888fbdd3ab3ba253dcb7047f68216d9fe333e1c8ab1b2c9898a4a6a",
+    "meddino_salf_v1/runtime.py": "f6f5644e081dddca5c5337140e2b37b0531433768b83b0f174ca7fe228804ef2",
+    "meddino_salf_v1/train.py": "68f3782df42e87d507236647dc78b07e04981356b2af4aac07409abd6de82987"
+  }
+}

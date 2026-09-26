@@ -1,0 +1,63 @@
+{
+  "arm": "E1_SALF_512",
+  "fresh_d1_initialization": true,
+  "D1_trained_6k_checkpoint_loaded_as_initialization": false,
+  "shared_state_tensors_bitwise_identical": true,
+  "shared_state_tensor_count": 331,
+  "new_tensor_keys": [
+    "model.unet0.structure.scorers.s128.0.bias",
+    "model.unet0.structure.scorers.s128.0.weight",
+    "model.unet0.structure.scorers.s128.1.bias",
+    "model.unet0.structure.scorers.s128.1.weight",
+    "model.unet0.structure.scorers.s128.2.bias",
+    "model.unet0.structure.scorers.s128.2.weight",
+    "model.unet0.structure.scorers.s128.3.bias",
+    "model.unet0.structure.scorers.s128.3.weight",
+    "model.unet0.structure.scorers.s256.0.bias",
+    "model.unet0.structure.scorers.s256.0.weight",
+    "model.unet0.structure.scorers.s256.1.bias",
+    "model.unet0.structure.scorers.s256.1.weight",
+    "model.unet0.structure.scorers.s256.2.bias",
+    "model.unet0.structure.scorers.s256.2.weight",
+    "model.unet0.structure.scorers.s256.3.bias",
+    "model.unet0.structure.scorers.s256.3.weight",
+    "model.unet0.structure.scorers.s64.0.bias",
+    "model.unet0.structure.scorers.s64.0.weight",
+    "model.unet0.structure.scorers.s64.1.bias",
+    "model.unet0.structure.scorers.s64.1.weight",
+    "model.unet0.structure.scorers.s64.2.bias",
+    "model.unet0.structure.scorers.s64.2.weight",
+    "model.unet0.structure.scorers.s64.3.bias",
+    "model.unet0.structure.scorers.s64.3.weight"
+  ],
+  "added_parameters": 9228,
+  "baseline_parameter_count": {
+    "total_parameters": 105555937,
+    "frozen_parameters": 98779201,
+    "trainable_parameters": 6776736
+  },
+  "E1_parameter_count": {
+    "total_parameters": 105565165,
+    "frozen_parameters": 98779201,
+    "trainable_parameters": 6785964
+  },
+  "step_zero_max_abs_output_difference": 0.0,
+  "step_zero_equivalent": true,
+  "scorer_weights_zero": true,
+  "scorer_biases_zero": true,
+  "initial_softmax_weight": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "initial_effective_gate": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "main_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+  "meddino_frozen": true,
+  "canonical_training_rng_sha256": "647eb4cf23b2322b20f2e0033e39d32d23c8ffb3e1f9be611b01bc5de1aa8dc6"
+}

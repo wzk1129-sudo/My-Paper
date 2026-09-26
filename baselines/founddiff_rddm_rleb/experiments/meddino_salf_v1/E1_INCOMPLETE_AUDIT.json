@@ -1,0 +1,20 @@
+{
+  "status": "INCOMPLETE_CHECKPOINT_ARCHIVAL",
+  "arm": "E1_SALF_512",
+  "parent_commit": "a4c2cf837743f869d4e6baffa00df14a91a61378",
+  "optimizer_steps_completed": 6000,
+  "fast64_ema_6k_psnr_db": 40.81096394406511,
+  "d1_matched_6k_psnr_db": 40.81315596632438,
+  "delta_psnr_db": -0.002192022259272619,
+  "checkpoint_saved": false,
+  "full_l333_run": false,
+  "failure": "FileNotFoundError opening checkpoints/step_6000.pt.tmp because checkpoints directory was not created",
+  "smoke_access_audit": {
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "neighbor_target_opens": 0,
+    "blocked_attempts": 0
+  },
+  "full_training_access_audit": "not_written_before_checkpoint_failure",
+  "e1_used_as_e12_initialization": false
+}

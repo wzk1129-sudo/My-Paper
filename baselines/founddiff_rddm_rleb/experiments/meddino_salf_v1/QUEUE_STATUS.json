@@ -1,0 +1,21 @@
+{
+  "status": "FAILED",
+  "arm": "E1_SALF_512",
+  "parent_commit": "a4c2cf837743f869d4e6baffa00df14a91a61378",
+  "started_unix": 1790401832.658827,
+  "phases": {
+    "TRAIN_6K": {
+      "status": "RUNNING",
+      "command": [
+        "/home/xujian/miniconda3/envs/flexict/bin/python",
+        "-m",
+        "meddino_salf_v1.train",
+        "train"
+      ]
+    }
+  },
+  "phase": "TRAIN_6K",
+  "error": "RuntimeError('TRAIN_6K exited 1')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/meddino_salf_v1/queue.py\", line 33, in main\n    raise RuntimeError(f\"{phase} exited {result.returncode}\")\nRuntimeError: TRAIN_6K exited 1\n",
+  "finished_unix": 1790403804.0593672
+}

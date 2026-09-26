@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "steps": 2,
+  "initialization": {
+    "arm": "E1_SALF_512",
+    "fresh_d1_initialization": true,
+    "D1_trained_6k_checkpoint_loaded_as_initialization": false,
+    "shared_state_tensors_bitwise_identical": true,
+    "shared_state_tensor_count": 331,
+    "new_tensor_keys": [
+      "model.unet0.structure.scorers.s128.0.bias",
+      "model.unet0.structure.scorers.s128.0.weight",
+      "model.unet0.structure.scorers.s128.1.bias",
+      "model.unet0.structure.scorers.s128.1.weight",
+      "model.unet0.structure.scorers.s128.2.bias",
+      "model.unet0.structure.scorers.s128.2.weight",
+      "model.unet0.structure.scorers.s128.3.bias",
+      "model.unet0.structure.scorers.s128.3.weight",
+      "model.unet0.structure.scorers.s256.0.bias",
+      "model.unet0.structure.scorers.s256.0.weight",
+      "model.unet0.structure.scorers.s256.1.bias",
+      "model.unet0.structure.scorers.s256.1.weight",
+      "model.unet0.structure.scorers.s256.2.bias",
+      "model.unet0.structure.scorers.s256.2.weight",
+      "model.unet0.structure.scorers.s256.3.bias",
+      "model.unet0.structure.scorers.s256.3.weight",
+      "model.unet0.structure.scorers.s64.0.bias",
+      "model.unet0.structure.scorers.s64.0.weight",
+      "model.unet0.structure.scorers.s64.1.bias",
+      "model.unet0.structure.scorers.s64.1.weight",
+      "model.unet0.structure.scorers.s64.2.bias",
+      "model.unet0.structure.scorers.s64.2.weight",
+      "model.unet0.structure.scorers.s64.3.bias",
+      "model.unet0.structure.scorers.s64.3.weight"
+    ],
+    "added_parameters": 9228,
+    "baseline_parameter_count": {
+      "total_parameters": 105555937,
+      "frozen_parameters": 98779201,
+      "trainable_parameters": 6776736
+    },
+    "E1_parameter_count": {
+      "total_parameters": 105565165,
+      "frozen_parameters": 98779201,
+      "trainable_parameters": 6785964
+    },
+    "step_zero_max_abs_output_difference": 0.0,
+    "step_zero_equivalent": true,
+    "scorer_weights_zero": true,
+    "scorer_biases_zero": true,
+    "initial_softmax_weight": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "initial_effective_gate": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "main_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+    "meddino_frozen": true,
+    "canonical_training_rng_sha256": "647eb4cf23b2322b20f2e0033e39d32d23c8ffb3e1f9be611b01bc5de1aa8dc6"
+  },
+  "train_rows": [
+    {
+      "step": 1,
+      "train_loss": 0.00012756155047100037,
+      "gradient_norm_pre_clip": 1.0076016224047635e-05,
+      "learning_rate": 0.0002,
+      "meddino_learning_rate": null,
+      "seconds_per_step": 3.7414877240080386,
+      "peak_vram_bytes": 5229196800,
+      "stream_sha256": "847baa1fc0b25d5f8e6a1d67d0976339609cb792f448d5dda06495745ded24da",
+      "salf_gradient_norm": 0.0
+    },
+    {
+      "step": 2,
+      "train_loss": 7.218282553367317e-05,
+      "gradient_norm_pre_clip": 2.137658157153055e-05,
+      "learning_rate": 0.0002,
+      "meddino_learning_rate": null,
+      "seconds_per_step": 0.8223188820120413,
+      "peak_vram_bytes": 5320727040,
+      "stream_sha256": "9b991c18c7991f79a68274951aabc7914aea6dd52d2a6aa4113868783e6ee97e",
+      "salf_gradient_norm": 3.343701198729507e-06
+    }
+  ],
+  "salf_nonzero_gradient_steps": 1,
+  "peak_vram_bytes": 5320727040,
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 4,
+    "total_opens": 16,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  }
+}
