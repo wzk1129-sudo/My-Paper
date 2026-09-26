@@ -1,0 +1,32 @@
+{
+  "experiment": "E12_HAF",
+  "session": "meddino_e12_haf_v1_20260926",
+  "command": "/bin/bash meddino_e12_haf_v1/run_queue.sh",
+  "git_branch": "experiment/rddm-meddino-e12-haf-v1",
+  "git_head": "a75418c4d3465f425f6cced85cb4676331cf70ec",
+  "git_status": "?? experiments/meddino_e12_haf_v1/\n?? experiments/meddino_salf_v1/progress.json\n?? meddino_e12_haf_v1/\n",
+  "conda_environment": "flexict",
+  "python": "3.11.16",
+  "pytorch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu_index": 0,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "output_directory": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_haf_v1",
+  "queue_log": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_haf_v1/queue_process.log",
+  "train_log": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_haf_v1/TRAIN_6K.log",
+  "full_log": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_haf_v1/FULL_L333.log",
+  "start_time": "2026-09-26T15:12:28.055813+08:00",
+  "terminal_condition": "6000 independent optimizer steps then Full-L333 610-slice EMA and FINAL_AUDIT PASS, or first failure",
+  "source_sha256": {
+    "meddino_e12_haf_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "meddino_e12_haf_v1/full.py": "4d7fc658c38e94c49f76db09158114e8574e56337fd49ab8805af2021bdeb920",
+    "meddino_e12_haf_v1/model.py": "7010ca9339c09bed59955e0335d87eabaf4140fc6f698926e72f457b7753ac9a",
+    "meddino_e12_haf_v1/protocol.py": "f876c21cdc2366fb78f93557c5f3ff8773b7282dc02a8e660113ce0e1ee8be93",
+    "meddino_e12_haf_v1/queue.py": "d16717eeffe9d3077805d89f7562859d9bd5e134d997fa3c84220102d6efddbf",
+    "meddino_e12_haf_v1/runtime.py": "7f6fafe5db47a74ad3170bb296d43734b2cc09aaed342f923fc1a3d93287f070",
+    "meddino_e12_haf_v1/train.py": "843694d1ca805237eff61a3b4acbb7839ec13b7814b02ad65ea25fd2f2f464b0"
+  },
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "fast64_split_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "full_evaluator_sha256": "94ddc8b2d9e9bae08457bb0f4e57c20f2d282eb80ef5b77c50304818f3f29366"
+}

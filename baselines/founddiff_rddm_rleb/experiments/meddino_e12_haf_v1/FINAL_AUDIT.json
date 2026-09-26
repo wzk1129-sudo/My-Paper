@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "arm": "E12_HAF",
+  "optimizer_steps_train": 6000,
+  "optimizer_steps_full_inference": 0,
+  "ema": true,
+  "fast64_nodes": [
+    0,
+    500,
+    1000,
+    2000,
+    4000,
+    6000
+  ],
+  "full_L333_slices": 610,
+  "L506_opens": 0,
+  "external_memory_opens": 0,
+  "neighbor_target_opens": 0,
+  "blocked_attempts": 0,
+  "nonfinite_count": 0,
+  "main_unchanged": true,
+  "step_zero_equal": true,
+  "shared_state_bitwise_equal": true,
+  "checkpoint_sha256": "42c24c314503c492fb579e9dfba648e146f2019f89a26e4a8ee51bffe237ef49",
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "fast64_split_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "full_evaluator_sha256": "94ddc8b2d9e9bae08457bb0f4e57c20f2d282eb80ef5b77c50304818f3f29366",
+  "source_sha256": {
+    "meddino_e12_haf_v1/runtime.py": "7f6fafe5db47a74ad3170bb296d43734b2cc09aaed342f923fc1a3d93287f070",
+    "meddino_e12_haf_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "meddino_e12_haf_v1/train.py": "843694d1ca805237eff61a3b4acbb7839ec13b7814b02ad65ea25fd2f2f464b0",
+    "meddino_e12_haf_v1/model.py": "7010ca9339c09bed59955e0335d87eabaf4140fc6f698926e72f457b7753ac9a",
+    "meddino_e12_haf_v1/protocol.py": "f876c21cdc2366fb78f93557c5f3ff8773b7282dc02a8e660113ce0e1ee8be93",
+    "meddino_e12_haf_v1/full.py": "4d7fc658c38e94c49f76db09158114e8574e56337fd49ab8805af2021bdeb920",
+    "meddino_e12_haf_v1/queue.py": "d16717eeffe9d3077805d89f7562859d9bd5e134d997fa3c84220102d6efddbf"
+  },
+  "hierarchy_nonzero": true,
+  "conditioning_nonzero": true,
+  "bootstrap": {
+    "mean_delta_psnr": -0.0020253352175928063,
+    "median_delta_psnr": -0.002268312559621677,
+    "positive_slice_fraction": 0.260655737704918,
+    "p10": -0.006910171088610894,
+    "p25": -0.0045311869118265236,
+    "p50": -0.002268312559621677,
+    "p75": 7.245714453318897e-05,
+    "p90": 0.002843752891723739,
+    "ci_95_low": -0.0023735802343693288,
+    "ci_95_high": -0.0016769714233160402,
+    "n_bootstrap": 10000,
+    "seed": 20260926,
+    "unit": "L333 slice, not independent patient",
+    "z_thirds": {
+      "first": {
+        "start": 0,
+        "end": 203,
+        "n": 204,
+        "mean_delta_psnr": -0.0005930225125230618
+      },
+      "middle": {
+        "start": 204,
+        "end": 406,
+        "n": 203,
+        "mean_delta_psnr": -0.0022929627138477205
+      },
+      "last": {
+        "start": 407,
+        "end": 609,
+        "n": 203,
+        "mean_delta_psnr": -0.0031970761540188177
+      }
+    }
+  }
+}

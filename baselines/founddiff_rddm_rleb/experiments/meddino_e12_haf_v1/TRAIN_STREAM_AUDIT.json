@@ -1,0 +1,16 @@
+{
+  "sha256": "3d673980d96b8ac2fa02b67e9ca682b88fc2cf426c80d02032d2d6d5402eaada",
+  "samples": 12000,
+  "matched_to_D1_at_every_validation": true,
+  "gradient_nonzero_steps": {
+    "SALF": 5999,
+    "E2_64to128_zero": 5999,
+    "E2_128to256_zero": 5999,
+    "local256_zero": 5999,
+    "cross128_zero": 5999,
+    "cross64_zero": 5999,
+    "cross128_QKV": 5998,
+    "cross64_QKV": 5998,
+    "ControlNet": 5999
+  }
+}

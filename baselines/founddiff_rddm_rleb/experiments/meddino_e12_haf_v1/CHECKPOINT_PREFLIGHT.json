@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "path": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_haf_v1/checkpoints",
+  "temporary_write_read_delete": true,
+  "checked_before_training": true
+}

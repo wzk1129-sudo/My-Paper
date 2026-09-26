@@ -1,0 +1,16 @@
+{
+  "E12_trainable_parameters": 7385900,
+  "D1_trainable_parameters": 6776736,
+  "added_trainable_parameters": 609164,
+  "E12_train_peak_vram_bytes": 5710479872,
+  "D1_train_peak_vram_bytes": 5237267456,
+  "E12_seconds_per_step": 0.36168482171784855,
+  "D1_seconds_per_step": 0.28997751044389347,
+  "training_step_time_ratio": 1.2472857676589697,
+  "total_training_seconds": 2170.108930307091,
+  "E12_full_inference_seconds": 122.82377116801217,
+  "D1_full_inference_seconds": 100.39564256198355,
+  "full_inference_ratio": 1.2233974307418936,
+  "full_peak_vram_bytes": 1028221952,
+  "attention_cost": "included in end-to-end time; per-module forward timing not recorded"
+}

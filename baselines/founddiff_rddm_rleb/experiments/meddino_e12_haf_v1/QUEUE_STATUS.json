@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "arm": "E12_HAF",
+  "parent_commit": "a75418c4d3465f425f6cced85cb4676331cf70ec",
+  "started_unix": 1790406762.237784,
+  "phases": {
+    "TRAIN_6K": {
+      "status": "COMPLETE",
+      "command": [
+        "/home/xujian/miniconda3/envs/flexict/bin/python",
+        "-m",
+        "meddino_e12_haf_v1.train",
+        "train"
+      ]
+    },
+    "FULL_L333": {
+      "status": "COMPLETE",
+      "command": [
+        "/home/xujian/miniconda3/envs/flexict/bin/python",
+        "-m",
+        "meddino_e12_haf_v1.full"
+      ]
+    }
+  },
+  "phase": "FULL_L333",
+  "finished_unix": 1790409468.1216729
+}

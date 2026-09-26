@@ -1,0 +1,235 @@
+{
+  "step0": {
+    "hybrid.s128_attention.K_rms": {
+      "mean": 0.5294399037957191,
+      "std": 0.011792560636151498,
+      "min": 0.5131881833076477,
+      "max": 0.549608588218689
+    },
+    "hybrid.s128_attention.Q_rms": {
+      "mean": 0.4961835057474673,
+      "std": 0.006766467430188623,
+      "min": 0.48364877700805664,
+      "max": 0.510935366153717
+    },
+    "hybrid.s128_attention.V_rms": {
+      "mean": 0.5548594975844026,
+      "std": 0.00882549938946463,
+      "min": 0.5425671935081482,
+      "max": 0.5700246095657349
+    },
+    "hybrid.s128_attention.attention_output_rms": {
+      "mean": 0.15593516058288515,
+      "std": 0.006250203038057368,
+      "min": 0.14684081077575684,
+      "max": 0.16680726408958435
+    },
+    "hybrid.s128_attention.conditioning_residual_rms": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "hybrid.s128_attention.heads": {
+      "mean": 4.0,
+      "std": 0.0,
+      "min": 4.0,
+      "max": 4.0
+    },
+    "hybrid.s128_attention.key_value_tokens": {
+      "mean": 256.0,
+      "std": 0.0,
+      "min": 256.0,
+      "max": 256.0
+    },
+    "hybrid.s128_attention.query_tokens": {
+      "mean": 16384.0,
+      "std": 0.0,
+      "min": 16384.0,
+      "max": 16384.0
+    },
+    "hybrid.s128_conditioning_residual_rms": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "hybrid.s256_conditioning_residual_rms": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "hybrid.s64_attention.K_rms": {
+      "mean": 0.559062353335321,
+      "std": 0.005709444896176475,
+      "min": 0.5498932003974915,
+      "max": 0.5728093385696411
+    },
+    "hybrid.s64_attention.Q_rms": {
+      "mean": 0.5939764520153403,
+      "std": 0.007845997682875874,
+      "min": 0.5768628120422363,
+      "max": 0.6070557236671448
+    },
+    "hybrid.s64_attention.V_rms": {
+      "mean": 0.532911155372858,
+      "std": 0.0072608336610157104,
+      "min": 0.5209198594093323,
+      "max": 0.5484738349914551
+    },
+    "hybrid.s64_attention.attention_output_rms": {
+      "mean": 0.1665498586371541,
+      "std": 0.005104907323541411,
+      "min": 0.15746496617794037,
+      "max": 0.17448662221431732
+    },
+    "hybrid.s64_attention.conditioning_residual_rms": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "hybrid.s64_attention.heads": {
+      "mean": 8.0,
+      "std": 0.0,
+      "min": 8.0,
+      "max": 8.0
+    },
+    "hybrid.s64_attention.key_value_tokens": {
+      "mean": 256.0,
+      "std": 0.0,
+      "min": 256.0,
+      "max": 256.0
+    },
+    "hybrid.s64_attention.query_tokens": {
+      "mean": 4096.0,
+      "std": 0.0,
+      "min": 4096.0,
+      "max": 4096.0
+    },
+    "hybrid.s64_conditioning_residual_rms": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "step6000": {
+    "hybrid.s128_attention.K_rms": {
+      "mean": 0.23433387093245983,
+      "std": 0.007620805034266583,
+      "min": 0.22120487689971924,
+      "max": 0.25287190079689026
+    },
+    "hybrid.s128_attention.Q_rms": {
+      "mean": 0.24460797081701458,
+      "std": 0.005466760278464951,
+      "min": 0.23249222338199615,
+      "max": 0.25284844636917114
+    },
+    "hybrid.s128_attention.V_rms": {
+      "mean": 0.23670641682110727,
+      "std": 0.007329303791587187,
+      "min": 0.22513210773468018,
+      "max": 0.2539849877357483
+    },
+    "hybrid.s128_attention.attention_output_rms": {
+      "mean": 0.04105402500135824,
+      "std": 0.004489441050917029,
+      "min": 0.03228062763810158,
+      "max": 0.05012059211730957
+    },
+    "hybrid.s128_attention.conditioning_residual_rms": {
+      "mean": 0.0030295505130197853,
+      "std": 0.0001097554663766424,
+      "min": 0.002863257424905896,
+      "max": 0.0033583163749426603
+    },
+    "hybrid.s128_attention.heads": {
+      "mean": 4.0,
+      "std": 0.0,
+      "min": 4.0,
+      "max": 4.0
+    },
+    "hybrid.s128_attention.key_value_tokens": {
+      "mean": 256.0,
+      "std": 0.0,
+      "min": 256.0,
+      "max": 256.0
+    },
+    "hybrid.s128_attention.query_tokens": {
+      "mean": 16384.0,
+      "std": 0.0,
+      "min": 16384.0,
+      "max": 16384.0
+    },
+    "hybrid.s128_conditioning_residual_rms": {
+      "mean": 0.0030295505130197853,
+      "std": 0.0001097554663766424,
+      "min": 0.002863257424905896,
+      "max": 0.0033583163749426603
+    },
+    "hybrid.s256_conditioning_residual_rms": {
+      "mean": 0.01704461988992989,
+      "std": 0.00010854468331869569,
+      "min": 0.01672646589577198,
+      "max": 0.017305713146924973
+    },
+    "hybrid.s64_attention.K_rms": {
+      "mean": 0.3350880644284189,
+      "std": 0.008536023641398814,
+      "min": 0.3104028105735779,
+      "max": 0.34572669863700867
+    },
+    "hybrid.s64_attention.Q_rms": {
+      "mean": 0.2997315698303282,
+      "std": 0.006939609798083384,
+      "min": 0.28637969493865967,
+      "max": 0.3175213634967804
+    },
+    "hybrid.s64_attention.V_rms": {
+      "mean": 0.33059426257386804,
+      "std": 0.008772779415353888,
+      "min": 0.30379799008369446,
+      "max": 0.34009844064712524
+    },
+    "hybrid.s64_attention.attention_output_rms": {
+      "mean": 0.04798968153772876,
+      "std": 0.0019041496163450988,
+      "min": 0.042230021208524704,
+      "max": 0.0516064427793026
+    },
+    "hybrid.s64_attention.conditioning_residual_rms": {
+      "mean": 0.002494572901923675,
+      "std": 0.00020778030007480736,
+      "min": 0.0021185497753322124,
+      "max": 0.0029341529589146376
+    },
+    "hybrid.s64_attention.heads": {
+      "mean": 8.0,
+      "std": 0.0,
+      "min": 8.0,
+      "max": 8.0
+    },
+    "hybrid.s64_attention.key_value_tokens": {
+      "mean": 256.0,
+      "std": 0.0,
+      "min": 256.0,
+      "max": 256.0
+    },
+    "hybrid.s64_attention.query_tokens": {
+      "mean": 4096.0,
+      "std": 0.0,
+      "min": 4096.0,
+      "max": 4096.0
+    },
+    "hybrid.s64_conditioning_residual_rms": {
+      "mean": 0.002494572901923675,
+      "std": 0.00020778030007480736,
+      "min": 0.0021185497753322124,
+      "max": 0.0029341529589146376
+    }
+  },
+  "entropy": "not computed; need_weights=False avoids dense maps"
+}

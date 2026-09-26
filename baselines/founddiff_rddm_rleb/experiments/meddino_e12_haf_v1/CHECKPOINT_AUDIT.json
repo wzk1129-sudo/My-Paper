@@ -1,0 +1,9 @@
+{
+  "arm": "E12_HAF",
+  "step": 6000,
+  "sha256": "42c24c314503c492fb579e9dfba648e146f2019f89a26e4a8ee51bffe237ef49",
+  "bytes": 908960318,
+  "ema": true,
+  "optimizer_steps": 6000,
+  "preflight": "PASS"
+}

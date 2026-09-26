@@ -1,0 +1,7 @@
+{
+  "total_inference_wall_seconds": 122.82377116801217,
+  "mean_seconds_per_slice": 0.14301613807791774,
+  "peak_vram_bytes": 1028221952,
+  "gate_diagnostic_seconds": 19.290091198985465,
+  "full_evaluator_source_sha256": "94ddc8b2d9e9bae08457bb0f4e57c20f2d282eb80ef5b77c50304818f3f29366"
+}
