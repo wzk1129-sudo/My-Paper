@@ -1,0 +1,20 @@
+{
+  "session": "meddino_pdc_gated_bca_smoke_20260926",
+  "command": "cd /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926/baselines/founddiff_rddm_rleb && /home/xujian/miniconda3/envs/flexict/bin/python -u -m meddino_pdc_gated_bca_v1.smoke",
+  "branch": "experiment/rddm-meddino-pdc-gated-bca-v1",
+  "parent_commit": "48a78da568be3bb35ec33d9ca864ccb9b795c4c5",
+  "git_status_short": "?? baselines/founddiff_rddm_rleb/experiments/meddino_pdc_gated_bca_v1/\n?? baselines/founddiff_rddm_rleb/meddino_pdc_gated_bca_v1/\n",
+  "python": "3.11.16",
+  "pytorch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "conda_environment": "flexict",
+  "gpu_index": 0,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "log_path": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_gated_bca_v1/SMOKE_20.log",
+  "output_dir": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_gated_bca_v1",
+  "start_utc": "2026-09-26T14:57:20.145199+00:00",
+  "stop_condition": "20 smoke optimizer steps then exit",
+  "first_attempt": "failed before optimizer step: missing CUBLAS_WORKSPACE_CONFIG with deterministic algorithms",
+  "retry_log_path": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_gated_bca_v1/SMOKE_20_RETRY.log",
+  "retry_utc": "2026-09-26T14:59:41.153655+00:00"
+}

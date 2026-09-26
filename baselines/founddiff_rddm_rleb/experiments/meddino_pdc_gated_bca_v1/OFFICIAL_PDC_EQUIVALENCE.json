@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "official_ops": "/tmp/pidinet_official_d21aa881/models/ops.py",
+  "cases": [
+    {
+      "op": "cv",
+      "groups": 1,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    },
+    {
+      "op": "cv",
+      "groups": 3,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    },
+    {
+      "op": "cd",
+      "groups": 1,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    },
+    {
+      "op": "cd",
+      "groups": 3,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    },
+    {
+      "op": "ad",
+      "groups": 1,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    },
+    {
+      "op": "ad",
+      "groups": 3,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    },
+    {
+      "op": "rd",
+      "groups": 1,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    },
+    {
+      "op": "rd",
+      "groups": 3,
+      "differences": {
+        "forward": 0.0,
+        "input_grad": 0.0,
+        "weight_grad": 0.0
+      }
+    }
+  ],
+  "tolerance": 1e-06
+}

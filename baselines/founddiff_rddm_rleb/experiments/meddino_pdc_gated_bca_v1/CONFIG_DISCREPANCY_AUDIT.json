@@ -1,0 +1,10 @@
+{
+  "status": "DOCUMENTED_NO_SOURCE_OR_RESULT_CHANGE",
+  "inherited_config_field_model_input": "[x_t,center_LDCT]",
+  "actual_diffusion_api_input": "[x_t,center_LDCT] two channels",
+  "actual_unet_init_conv_input": "[x_t,prev_LDCT,center_LDCT,next_LDCT] four channels, constructed inside BCAUnet.forward via DirectUnet.neighbors",
+  "inherited_config_field_cross_attention_key_value": "E12 structure",
+  "actual_cross_attention_key_value": "S128/S64 = E12 anatomy H128/H64 + beta * PDC projected shape * (1+MedDINO-guided gate)",
+  "interpretation": "model.input describes diffusion API; four-channel U-Net input and fused K/V need explicit runtime supplement",
+  "original_experiment_config_modified": false
+}

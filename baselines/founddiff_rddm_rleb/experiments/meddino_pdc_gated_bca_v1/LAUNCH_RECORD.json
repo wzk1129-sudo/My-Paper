@@ -1,0 +1,25 @@
+{
+  "session": "meddino_pdc_gated_bca_v1_20260926",
+  "command": "cd /home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926/baselines/founddiff_rddm_rleb && /home/xujian/miniconda3/envs/flexict/bin/python -u -m meddino_pdc_gated_bca_v1.queue",
+  "env_exports": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "worktree": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926",
+  "branch": "experiment/rddm-meddino-pdc-gated-bca-v1",
+  "head": "48a78da568be3bb35ec33d9ca864ccb9b795c4c5",
+  "git_status_short": "?? baselines/founddiff_rddm_rleb/experiments/meddino_pdc_gated_bca_v1/\n?? baselines/founddiff_rddm_rleb/meddino_pdc_gated_bca_v1/\n",
+  "conda_environment": "flexict",
+  "python": "3.11.16",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu_index": 0,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "log_path": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_gated_bca_v1/QUEUE.log",
+  "output_dir": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_pdc_gated_bca_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_pdc_gated_bca_v1",
+  "start_utc": "2026-09-26T15:02:32.626506+00:00",
+  "stop_condition": "independent 6000 optimizer steps and 610-slice Full-L333 then exit",
+  "source_manifest_sha256": "a033b2b60644b6dddba06ebf4559749bb3bac0e8b5c2a6a8f4a0d2259a2d23a2",
+  "config_sha256": "7e09de89bc6b3ad1298b1b5b26ffce56133407e0d5c9b1e309780cb577b9150b",
+  "bca_reference_csv": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_add_fusion_v1_20260926/baselines/founddiff_rddm_rleb/experiments/meddino_e12_bca_v1/FULL_L333_PER_SLICE.csv",
+  "bca_reference_sha256": "c9fdaf8453f92b5ee23e5656c1624c7f873fdfc37985a68a12d6076e89371a0a"
+}

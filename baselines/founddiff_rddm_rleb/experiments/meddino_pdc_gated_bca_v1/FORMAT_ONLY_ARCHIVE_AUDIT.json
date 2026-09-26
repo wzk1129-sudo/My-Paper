@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "runtime_manifest_preserved": true,
+  "archive_differences": {
+    "meddino_pdc_gated_bca_v1/full.py": {
+      "runtime_sha256": "69a54eee665a6760447f4364e6008df31703a8b1b9885b367f0548f302312562",
+      "archive_sha256": "eb9374131dfbf5045f961e01653c1c6da022eac718a597ba1d0e97ed0017a979",
+      "difference": "one extra trailing LF removed; no executable token changed"
+    },
+    "meddino_pdc_gated_bca_v1/model.py": {
+      "runtime_sha256": "b6fcfdfd751c4261ac010ad0e5bc26ad14b3a6088a57d7a016104872a3391658",
+      "archive_sha256": "f14c5ee9e3c9149776673f14893ea8ed604a4945ee1fa2cef191206ad3cd7e87",
+      "difference": "one extra trailing LF removed; no executable token changed"
+    },
+    "meddino_pdc_gated_bca_v1/protocol.py": {
+      "runtime_sha256": "296ede3cc76a82384b9e42f384ed238bac6215b6fd34375828638a5c10164d80",
+      "archive_sha256": "2ad9ab2f66dc16520f8950568c12b896bc6b7c3bb0bd3721984e659ba44e7ea9",
+      "difference": "one extra trailing LF removed; no executable token changed"
+    },
+    "meddino_pdc_gated_bca_v1/runtime.py": {
+      "runtime_sha256": "e14554c9bdc89058a38d224f57d23edf4ba1621d2768fb4a0a8be13433bcce07",
+      "archive_sha256": "8b852c68547f05ea43e14418f192ad1f9f66c6dd9272356caf41c863b881830a",
+      "difference": "one extra trailing LF removed; no executable token changed"
+    },
+    "meddino_pdc_gated_bca_v1/smoke.py": {
+      "runtime_sha256": "a4f954d8268e16d859bcc94f1ccb7b1064f6cbbd722bfb8cbd01d0cc83287a70",
+      "archive_sha256": "c12c490f3ecfcff4404dec7a1d80cb9e743b49c4478c7fc0928caea176350b5a",
+      "difference": "one extra trailing LF removed; no executable token changed"
+    }
+  },
+  "all_changed_source_files_differ_by_exactly_one_trailing_LF": true,
+  "model_logic_or_results_modified": false,
+  "note": "Runtime hashes in SOURCE_MANIFEST.json and LAUNCH_RECORD.json identify exactly executed bytes; archive source removes only an extra blank line at EOF to pass git diff --cached --check."
+}

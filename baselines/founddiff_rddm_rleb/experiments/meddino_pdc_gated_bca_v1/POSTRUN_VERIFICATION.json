@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "queue_state": "COMPLETE",
+  "smoke_steps": 20,
+  "optimizer_steps": 6000,
+  "ema_updates": 6000,
+  "fast64_steps": [
+    0,
+    500,
+    1000,
+    2000,
+    4000,
+    6000
+  ],
+  "fast64_slices_per_step": 64,
+  "full_l333_slices": 610,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20260926,
+  "source_manifest_files": 9,
+  "gradient_groups_active_all_steps": 13,
+  "all_grad_usage_6000": true,
+  "source_and_config_unchanged_from_launch": true,
+  "formal_source_split_evaluator_checkpoint_hashes_match": true,
+  "per_slice_means_deltas_bootstrap_recomputed_match": true,
+  "training_patients_opened": [
+    "L067",
+    "L143"
+  ],
+  "L506_opens": 0,
+  "external_memory_opens": 0,
+  "neighbor_target_opens": 0,
+  "blocked_attempts": 0,
+  "archive_fast64_rows": 384,
+  "archive_full_rows": 610,
+  "archive_dropped_columns": [
+    "patient_id",
+    "slice_name"
+  ]
+}

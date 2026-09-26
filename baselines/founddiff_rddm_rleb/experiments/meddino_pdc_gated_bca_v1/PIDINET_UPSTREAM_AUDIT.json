@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/hellozhuo/pidinet",
+  "upstream_commit": "d21aa881ed9c628571636fad39acfe1fad517ebd",
+  "retrieval": "GitHub contents API pinned to commit, streamed to remote temporary directory; git blob hashes match upstream",
+  "files": {
+    "models/pidinet.py": {
+      "sha256": "3adc1931e74df2d6d5def463f332098efd4ee06f5183d5b80cabeebb86bf7fef",
+      "git_blob_sha": "aa556c811a0ecef1bd8037c54cf99f2c89d3408a"
+    },
+    "models/ops.py": {
+      "sha256": "6336de7811099bb64b54c71f8b5414a6a567a6ab961c649e1cb66fc1f70bd8eb",
+      "git_blob_sha": "713725a7e80a6a6689014078883d29d5ce46b7f6"
+    },
+    "models/config.py": {
+      "sha256": "6c27da794ff832de01f0b6066718b4a306ac740e3252cdac96240ff3b2add827",
+      "git_blob_sha": "f95f92ac162727fe72bf1f29ed490d9251552a46"
+    },
+    "LICENSE": {
+      "sha256": "a6a61f9c094a201639427a73c1317ce13a5412a4e49fefac33f7402ad181e09f",
+      "git_blob_sha": "3c409ce314c21ef0670ad6ff7809a9c3ae7d2dea"
+    }
+  },
+  "license": "Research-purpose/commercial-contact preface followed by MIT-style grant; copyright (c) 2021 Zhuo Su. Full upstream LICENSE copied to new experiment source as PIDINET_LICENSE.txt.",
+  "official_carv4_pdc_pattern": [
+    "cd",
+    "ad",
+    "rd",
+    "cv",
+    "cd",
+    "ad",
+    "rd",
+    "cv",
+    "cd",
+    "ad",
+    "rd",
+    "cv",
+    "cd",
+    "ad",
+    "rd",
+    "cv"
+  ],
+  "official_tiny_base_channels": 20,
+  "official_feature_layout": {
+    "x1": "20 @ input resolution, init cd + three PDC blocks ad/rd/cv",
+    "x2": "40 @ 1/2, first block MaxPool2d stride2 + 1x1 shortcut",
+    "x3": "80 @ 1/4, same stride block",
+    "x4": "80 @ 1/8, same stride block"
+  },
+  "official_pdc_block": "depthwise PDC 3x3 -> ReLU -> pointwise 1x1 -> residual; stride block maxpools before both depthwise and shortcut",
+  "concepts_used": [
+    "PDC Conv2d wrapper",
+    "createConvFunc cd/ad/rd/cv formulas",
+    "PDCBlock residual/maxpool stride",
+    "carv4 ordering",
+    "PiDiNet-Tiny 20/40/80/80 layout"
+  ],
+  "excluded": [
+    "RGB init (adapted to 1-channel CT with random initialization)",
+    "pretrained BSDS weights",
+    "edge classifier",
+    "four side heads",
+    "CDCM",
+    "CSAM",
+    "official datasets/training pipeline"
+  ],
+  "original_source_copied_to_project": false
+}
