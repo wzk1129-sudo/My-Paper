@@ -1,0 +1,27 @@
+{
+  "source": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/src/rddm_rleb.py",
+  "source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "convert_to_ddim": true,
+  "sum_scale": 0.01,
+  "sqrt_sum_scale": 0.1,
+  "sampling_timesteps": 2,
+  "ddim_sampling_eta": 0.0,
+  "training_q_sample": "x_t = x0 + A_t * (LDCT-NDCT) + B_t * epsilon, epsilon~N(0,I)",
+  "sampling_initialization_current": "LDCT + sqrt(sum_scale)*z",
+  "timesteps": {
+    "999": {
+      "A_t": 0.9936471581459045,
+      "B_t": 0.9999797940254211,
+      "abs_A_t_minus_1": 0.006352841854095459
+    },
+    "499": {
+      "A_t": 0.7196658849716187,
+      "B_t": 0.9599024653434753,
+      "abs_A_t_minus_1": 0.28033411502838135
+    }
+  },
+  "B_999_over_sqrt_sum_scale": 9.999797940254211,
+  "sqrt_sum_scale_over_B_999": 0.10000202063828685,
+  "sqrt_sum_scale_over_B_499": 0.1041772509295699,
+  "A_999_init_approximation_error_coefficient": 0.006352841854095459
+}

@@ -1,0 +1,490 @@
+{
+  "status": "PASS",
+  "primary_case": "CASE_2_INIT_SCALE_MISMATCH_PRIMARY",
+  "steps": [
+    {
+      "step": 4000,
+      "checkpoint_sha256": "6fcb743668aea0490c025a2fea3e23b14853645d04f9410e13277233eeec1e78",
+      "control_reproduced": true,
+      "paths": [
+        {
+          "checkpoint": 4000,
+          "path": "CURRENT_JOINT",
+          "slices": 64,
+          "validation_seconds": 63.432738328992855,
+          "psnr": 9.581861142338813,
+          "ssim": 0.028312991938743703,
+          "rmse_hu": 663.6665521212205,
+          "mae_hu": 481.4207286834717
+        },
+        {
+          "checkpoint": 4000,
+          "path": "RESIDUAL_ONLY",
+          "slices": 64,
+          "validation_seconds": 63.432738328992855,
+          "psnr": 38.908921484862674,
+          "ssim": 0.9237407949032553,
+          "rmse_hu": 22.758010751968772,
+          "mae_hu": 15.02534319460392
+        },
+        {
+          "checkpoint": 4000,
+          "path": "RDDM_UPDATE_ONLY",
+          "slices": 64,
+          "validation_seconds": 63.432738328992855,
+          "psnr": 9.728545019884749,
+          "ssim": 0.02949782984210527,
+          "rmse_hu": 652.5578410832791,
+          "mae_hu": 472.27367305755615
+        },
+        {
+          "checkpoint": 4000,
+          "path": "FULL_CONSISTENT_JOINT",
+          "slices": 64,
+          "validation_seconds": 63.432738328992855,
+          "psnr": 35.6789776104729,
+          "ssim": 0.871449820964713,
+          "rmse_hu": 32.972368142095256,
+          "mae_hu": 22.356992840766907
+        },
+        {
+          "checkpoint": 4000,
+          "path": "ORACLE_INIT_DIAGNOSTIC_ONLY",
+          "slices": 64,
+          "validation_seconds": 63.432738328992855,
+          "psnr": 35.679276733435486,
+          "ssim": 0.871457466311393,
+          "rmse_hu": 32.97120796554712,
+          "mae_hu": 22.355706095695496
+        }
+      ]
+    },
+    {
+      "step": 8000,
+      "checkpoint_sha256": "591aee62821ce69786da21c8e3a0203d56eed521d1382cb69ed75512a6ea2066",
+      "control_reproduced": true,
+      "paths": [
+        {
+          "checkpoint": 8000,
+          "path": "CURRENT_JOINT",
+          "slices": 64,
+          "validation_seconds": 48.51167768595042,
+          "psnr": 7.910282255463393,
+          "ssim": 0.015798730993364457,
+          "rmse_hu": 804.4844734039558,
+          "mae_hu": 592.7572193145752
+        },
+        {
+          "checkpoint": 8000,
+          "path": "RESIDUAL_ONLY",
+          "slices": 64,
+          "validation_seconds": 48.51167768595042,
+          "psnr": 39.72932080524599,
+          "ssim": 0.9355738647130781,
+          "rmse_hu": 20.719680290384602,
+          "mae_hu": 13.572407901287079
+        },
+        {
+          "checkpoint": 8000,
+          "path": "RDDM_UPDATE_ONLY",
+          "slices": 64,
+          "validation_seconds": 48.51167768595042,
+          "psnr": 7.8179401436675775,
+          "ssim": 0.0152909290754941,
+          "rmse_hu": 813.0832758130905,
+          "mae_hu": 598.6152849197388
+        },
+        {
+          "checkpoint": 8000,
+          "path": "FULL_CONSISTENT_JOINT",
+          "slices": 64,
+          "validation_seconds": 48.51167768595042,
+          "psnr": 38.88365777014339,
+          "ssim": 0.9275798467210332,
+          "rmse_hu": 22.82374937441061,
+          "mae_hu": 15.504411518573761
+        },
+        {
+          "checkpoint": 8000,
+          "path": "ORACLE_INIT_DIAGNOSTIC_ONLY",
+          "slices": 64,
+          "validation_seconds": 48.51167768595042,
+          "psnr": 38.88403485276123,
+          "ssim": 0.9275850132056523,
+          "rmse_hu": 22.82272079196755,
+          "mae_hu": 15.503152564167976
+        }
+      ]
+    }
+  ],
+  "baseline_fast64_8k_psnr": 40.484568141498166,
+  "delta_8k_psnr_vs_current": {
+    "CURRENT_JOINT": 0.0,
+    "RESIDUAL_ONLY": 31.819038549782597,
+    "RDDM_UPDATE_ONLY": -0.09234211179581564,
+    "FULL_CONSISTENT_JOINT": 30.973375514679994,
+    "ORACLE_INIT_DIAGNOSTIC_ONLY": 30.97375259729784
+  },
+  "full_consistent_vs_baseline_8k": -1.6009103713547788,
+  "full_consistent_gt_free_approximation": true,
+  "oracle_is_diagnostic_only": true,
+  "training_performed": false,
+  "optimizer_steps": 0,
+  "checkpoints_modified": false,
+  "L506_opens": 0,
+  "external_memory_opens": 0,
+  "validation_patient": "L333",
+  "validation_indices": [
+    0,
+    10,
+    19,
+    29,
+    39,
+    48,
+    58,
+    68,
+    77,
+    87,
+    97,
+    106,
+    116,
+    126,
+    135,
+    145,
+    155,
+    164,
+    174,
+    184,
+    193,
+    203,
+    213,
+    222,
+    232,
+    242,
+    251,
+    261,
+    271,
+    280,
+    290,
+    300,
+    309,
+    319,
+    329,
+    338,
+    348,
+    358,
+    367,
+    377,
+    387,
+    396,
+    406,
+    416,
+    425,
+    435,
+    445,
+    454,
+    464,
+    474,
+    483,
+    493,
+    503,
+    512,
+    522,
+    532,
+    541,
+    551,
+    561,
+    570,
+    580,
+    590,
+    599,
+    609
+  ],
+  "data_access": {
+    "patients_opened": [
+      "L333"
+    ],
+    "opens": 256,
+    "blocked_attempts": 0,
+    "validation_indices_opened": [
+      0,
+      10,
+      19,
+      29,
+      39,
+      48,
+      58,
+      68,
+      77,
+      87,
+      97,
+      106,
+      116,
+      126,
+      135,
+      145,
+      155,
+      164,
+      174,
+      184,
+      193,
+      203,
+      213,
+      222,
+      232,
+      242,
+      251,
+      261,
+      271,
+      280,
+      290,
+      300,
+      309,
+      319,
+      329,
+      338,
+      348,
+      358,
+      367,
+      377,
+      387,
+      396,
+      406,
+      416,
+      425,
+      435,
+      445,
+      454,
+      464,
+      474,
+      483,
+      493,
+      503,
+      512,
+      522,
+      532,
+      541,
+      551,
+      561,
+      570,
+      580,
+      590,
+      599,
+      609
+    ],
+    "training_patients_opened": [],
+    "external_memory_opens": 0,
+    "test_opens": 0,
+    "external_memory_enabled": false,
+    "mode": "FAST"
+  },
+  "trajectory_mean_over_64_slices": {
+    "4000": {
+      "CURRENT_JOINT": {
+        "999": {
+          "pred_noise_mean": -0.01734730318234401,
+          "pred_noise_std": 0.5538865994848367,
+          "epsilon_eff_mean": -1.6986579886691674e-05,
+          "epsilon_eff_std": 0.09999857314768792,
+          "noise_MSE": 0.20745877854926462,
+          "noise_corr": 0.9897959300395439,
+          "pred_res_MSE": 0.00013222836162185558,
+          "x0_PSNR": 9.540099433401677
+        },
+        "499": {
+          "pred_noise_mean": -0.01733070746188392,
+          "pred_noise_std": 0.5749303039113662,
+          "epsilon_eff_mean": -0.00011419155365894855,
+          "epsilon_eff_std": 0.10485647307343712,
+          "noise_MSE": 0.22207976180516423,
+          "noise_corr": 0.9933696225678209,
+          "pred_res_MSE": 0.00013787669774956157,
+          "x0_PSNR": 9.581861142338813
+        }
+      },
+      "RDDM_UPDATE_ONLY": {
+        "999": {
+          "pred_noise_mean": -0.01734730318234401,
+          "pred_noise_std": 0.5538865994848367,
+          "epsilon_eff_mean": -1.6986579886691674e-05,
+          "epsilon_eff_std": 0.09999857314768792,
+          "noise_MSE": 0.20745877854926462,
+          "noise_corr": 0.9897959300395439,
+          "pred_res_MSE": 0.00013222836162185558,
+          "x0_PSNR": 9.540099433401677
+        },
+        "499": {
+          "pred_noise_mean": -0.01799132569277906,
+          "pred_noise_std": 0.5385510405713804,
+          "epsilon_eff_mean": 0.000610083637193312,
+          "epsilon_eff_std": 0.08207415647011952,
+          "noise_MSE": 0.20969145446318377,
+          "noise_corr": 0.9891769959573208,
+          "pred_res_MSE": 0.0001402423143872511,
+          "x0_PSNR": 9.72854501988475
+        }
+      },
+      "FULL_CONSISTENT_JOINT": {
+        "999": {
+          "pred_noise_mean": -0.0011091204696525025,
+          "pred_noise_std": 0.998621611555688,
+          "epsilon_eff_mean": -0.000240030315336764,
+          "epsilon_eff_std": 0.999964835885039,
+          "noise_MSE": 0.00022203922426802743,
+          "noise_corr": 0.9998932404786047,
+          "pred_res_MSE": 0.00011790055089022644,
+          "x0_PSNR": 35.56363643821027
+        },
+        "499": {
+          "pred_noise_mean": -0.0009251007026208624,
+          "pred_noise_std": 0.9960928681170839,
+          "epsilon_eff_mean": -1.3812791909256038e-05,
+          "epsilon_eff_std": 1.0000196662987,
+          "noise_MSE": 0.00024069092612818822,
+          "noise_corr": 0.9998907684408765,
+          "pred_res_MSE": 0.00011736495616787579,
+          "x0_PSNR": 35.6789776104729
+        }
+      },
+      "ORACLE_INIT_DIAGNOSTIC_ONLY": {
+        "999": {
+          "pred_noise_mean": -0.0011132511163827186,
+          "pred_noise_std": 0.9986212982216371,
+          "epsilon_eff_mean": -0.00024782644405028556,
+          "epsilon_eff_std": 0.9999648299717073,
+          "noise_MSE": 0.00022203506761679043,
+          "noise_corr": 0.9998932399216237,
+          "pred_res_MSE": 0.00011790088626639772,
+          "x0_PSNR": 35.56396296330656
+        },
+        "499": {
+          "pred_noise_mean": -0.0009291800062474209,
+          "pred_noise_std": 0.9960926514641996,
+          "epsilon_eff_mean": -2.1708474042155582e-05,
+          "epsilon_eff_std": 1.0000194593057374,
+          "noise_MSE": 0.000240683937231314,
+          "noise_corr": 0.9998907684556296,
+          "pred_res_MSE": 0.00011736385522453929,
+          "x0_PSNR": 35.679276733435486
+        }
+      }
+    },
+    "8000": {
+      "CURRENT_JOINT": {
+        "999": {
+          "pred_noise_mean": -0.027373598597422943,
+          "pred_noise_std": 0.734064786795502,
+          "epsilon_eff_mean": -1.6986579886691674e-05,
+          "epsilon_eff_std": 0.09999857314768792,
+          "noise_MSE": 0.4042937960465712,
+          "noise_corr": 0.9897621218533713,
+          "pred_res_MSE": 0.00011255117249220348,
+          "x0_PSNR": 7.838552569132364
+        },
+        "499": {
+          "pred_noise_mean": -0.025629314067203146,
+          "pred_noise_std": 0.7544343948529612,
+          "epsilon_eff_mean": -0.0003331121695522582,
+          "epsilon_eff_std": 0.10500380309831049,
+          "noise_MSE": 0.42342908607907587,
+          "noise_corr": 0.9935211852246661,
+          "pred_res_MSE": 0.00011493473220980377,
+          "x0_PSNR": 7.910282255463394
+        }
+      },
+      "RDDM_UPDATE_ONLY": {
+        "999": {
+          "pred_noise_mean": -0.027373598597422943,
+          "pred_noise_std": 0.734064786795502,
+          "epsilon_eff_mean": -1.6986579886691674e-05,
+          "epsilon_eff_std": 0.09999857314768792,
+          "noise_MSE": 0.4042937960465712,
+          "noise_corr": 0.9897621218533713,
+          "pred_res_MSE": 0.00011255117249220348,
+          "x0_PSNR": 7.838552569132364
+        },
+        "499": {
+          "pred_noise_mean": -0.02441150108871859,
+          "pred_noise_std": 0.7375960842765288,
+          "epsilon_eff_mean": 0.0008097754737766558,
+          "epsilon_eff_std": 0.0748478189933445,
+          "noise_MSE": 0.44130032042882983,
+          "noise_corr": 0.9871057232129193,
+          "pred_res_MSE": 0.00011971796777743293,
+          "x0_PSNR": 7.8179401436675775
+        }
+      },
+      "FULL_CONSISTENT_JOINT": {
+        "999": {
+          "pred_noise_mean": -0.0008882666014355944,
+          "pred_noise_std": 0.9980656370881702,
+          "epsilon_eff_mean": -0.000240030315336764,
+          "epsilon_eff_std": 0.999964835885039,
+          "noise_MSE": 5.36175176813434e-05,
+          "noise_corr": 0.999976028075093,
+          "pred_res_MSE": 9.688462125723163e-05,
+          "x0_PSNR": 38.719420391993204
+        },
+        "499": {
+          "pred_noise_mean": -0.001742621082034157,
+          "pred_noise_std": 1.0009583955100212,
+          "epsilon_eff_mean": -6.728172021160531e-05,
+          "epsilon_eff_std": 1.0000642075676187,
+          "noise_MSE": 5.948435738413453e-05,
+          "noise_corr": 0.9999730322544917,
+          "pred_res_MSE": 9.672772057456314e-05,
+          "x0_PSNR": 38.88365777014339
+        }
+      },
+      "ORACLE_INIT_DIAGNOSTIC_ONLY": {
+        "999": {
+          "pred_noise_mean": -0.0008926019821547948,
+          "pred_noise_std": 0.9980672286016192,
+          "epsilon_eff_mean": -0.00024782644405028556,
+          "epsilon_eff_std": 0.9999648299717073,
+          "noise_MSE": 5.3607600084640856e-05,
+          "noise_corr": 0.999976027778309,
+          "pred_res_MSE": 9.688460988854786e-05,
+          "x0_PSNR": 38.71997528141587
+        },
+        "499": {
+          "pred_noise_mean": -0.001746921845564131,
+          "pred_noise_std": 1.0009600230128073,
+          "epsilon_eff_mean": -7.519534966814055e-05,
+          "epsilon_eff_std": 1.0000639565688911,
+          "noise_MSE": 5.9474714114029005e-05,
+          "noise_corr": 0.9999730324886146,
+          "pred_res_MSE": 9.672720364051202e-05,
+          "x0_PSNR": 38.88403485276123
+        }
+      }
+    }
+  },
+  "schedule": {
+    "sum_scale": 0.01,
+    "sqrt_sum_scale": 0.1,
+    "timesteps": {
+      "999": {
+        "A_t": 0.9936471581459045,
+        "B_t": 0.9999797940254211,
+        "abs_A_t_minus_1": 0.006352841854095459
+      },
+      "499": {
+        "A_t": 0.7196658849716187,
+        "B_t": 0.9599024653434753,
+        "abs_A_t_minus_1": 0.28033411502838135
+      }
+    },
+    "B_999_over_sqrt_sum_scale": 9.999797940254211,
+    "sqrt_sum_scale_over_B_999": 0.10000202063828685,
+    "sqrt_sum_scale_over_B_499": 0.1041772509295699
+  },
+  "primary_cause": "train-sampling initialization noise-scale mismatch: current effective noise std ~0.1 vs q_sample training target std 1",
+  "secondary_finding": "current sampler omits pred_noise intermediate update; restoring it alone has negligible or adverse effect at 8k",
+  "learned_noise_usable_on_matched_state": true,
+  "basis": "At full-consistent 8k t499, noise MSE 0.000059 and corr 0.999973 vs effective noise; at current t499, MSE 0.423429 and effective-noise std 0.105004.",
+  "continuation_recommendation": "STOP residual+noise training: repaired 8k joint 38.883658 dB remains below matched 40.484568 dB; no further training or sweeps authorized.",
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "training_target_epsilon_std": "1 by construction; epsilon is standard normal in q_sample",
+  "official_rddm_sampler_source": "https://github.com/nachifur/RDDM/blob/main/experiments/2_Image_Restoration_deraing_raindrop_noise1/src/residual_denoising_diffusion_pytorch.py"
+}

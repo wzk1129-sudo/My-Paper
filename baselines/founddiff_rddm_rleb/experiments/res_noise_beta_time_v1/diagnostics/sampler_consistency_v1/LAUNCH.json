@@ -1,0 +1,20 @@
+{
+  "experiment": "train-sampling consistency diagnosis",
+  "session": "rddm_sampler_consistency_v1_20260929",
+  "command": "bash experiments/res_noise_beta_time_v1/diagnostics/sampler_consistency_v1/launch.sh",
+  "worktree": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929",
+  "package_root": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb",
+  "git_commit": "8fa99bf959da6051ec169bd3817b2bedce2788b6",
+  "git_branch": "experiment/rddm-res-noise-beta-time-v1",
+  "git_status_short": [
+    "?? experiments/res_noise_beta_time_v1/",
+    "?? res_noise_beta_time_v1/"
+  ],
+  "conda_environment": "flexict",
+  "python": "/home/xujian/miniconda3/envs/flexict/bin/python",
+  "gpu": 0,
+  "log": "experiments/res_noise_beta_time_v1/diagnostics/sampler_consistency_v1/run.log",
+  "output": "experiments/res_noise_beta_time_v1/diagnostics/sampler_consistency_v1",
+  "started_utc": "2026-09-28T18:28:03.894091+00:00",
+  "stop_condition": "script exits after 4k/8k Fast64 EMA inference; no training; EXIT_STATUS=0 and FINAL_DIAGNOSIS status PASS"
+}

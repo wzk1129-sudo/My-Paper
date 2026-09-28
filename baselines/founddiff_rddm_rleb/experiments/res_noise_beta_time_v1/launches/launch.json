@@ -1,0 +1,29 @@
+{
+  "session": "rddm_res_noise_beta_time_v1_20260929",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/launch.sh",
+  "git_branch": "experiment/rddm-res-noise-beta-time-v1",
+  "git_commit": "8fa99bf959da6051ec169bd3817b2bedce2788b6",
+  "git_status_before_launch": "?? experiments/res_noise_beta_time_v1/\n?? res_noise_beta_time_v1/",
+  "environment": "flexict",
+  "python": "3.11.16",
+  "pytorch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu_id": 0,
+  "log": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/launches/calibration_fast8k_diagnostic.log",
+  "smoke_output": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/runs/smoke_20260929/SMOKE.json",
+  "calibration_output": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/runs/calibration_100step_20260929",
+  "formal_output": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/runs/beta_time_fast8k_20260929",
+  "diagnostic_output": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/diagnostics/beta_time_4k8k_20260929",
+  "start_time_utc": "2026-09-28T16:40:56.859647+00:00",
+  "termination": "100-step calibration PASS then fresh 8000 optimizer steps; 4k/8k paired diagnostic; Full-L333 only if 8k matched delta >=0.05 dB; no further experiments",
+  "physical_batch": 2,
+  "gradient_accumulation": 1,
+  "effective_batch": 2,
+  "source_sha256": {
+    "res_noise_beta_time_v1/model.py": "c0a2b3c22b8321583c7f0f5593db212531f8a4e6e3a666a8a1d30ad0178a65a3",
+    "res_noise_beta_time_v1/run.py": "ae483e10d08a12494f03de5d82554a1adbbdfc0855b25f2ea3f353501e0cda9d",
+    "res_noise_beta_time_v1/diagnose_noise_path.py": "7768a15d2f3565649b581f700893e90748803fed24e83415bd06d6878f4bc367",
+    "res_noise_beta_time_v1/smoke.py": "6763769c2223cc9e8f5b2568194eba071746356766021e3ba963b0328306acce",
+    "res_noise_beta_time_v1/CONFIG.json": "d0ed1a21304c4d39afbaa7a2038248399ee54dad8bf808c5bbfad6b80b134878"
+  }
+}

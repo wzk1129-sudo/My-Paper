@@ -1,0 +1,22 @@
+{
+  "session": "rddm_res_noise_beta_time_v1_20260929",
+  "command": "bash /home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/launch.sh",
+  "git_branch": "experiment/rddm-res-noise-beta-time-v1",
+  "git_commit": "8fa99bf959da6051ec169bd3817b2bedce2788b6",
+  "git_status_before_launch": "?? experiments/res_noise_beta_time_v1/\n?? res_noise_beta_time_v1/",
+  "environment": "flexict",
+  "python": "3.11.16",
+  "pytorch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu_id": 0,
+  "log": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/launches/calibration_fast8k_diagnostic.log",
+  "calibration_output": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/runs/calibration_100step_20260929",
+  "formal_output": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/runs/beta_time_fast8k_20260929",
+  "diagnostic_output": "/home/xujian/projects/CoreDiff/experiments/rddm_res_noise_beta_time_v1_20260929/baselines/founddiff_rddm_rleb/experiments/res_noise_beta_time_v1/diagnostics/beta_time_4k8k_20260929",
+  "retry_time_utc": "2026-09-28T16:43:43.070915+00:00",
+  "previous_attempt": "SSH timed out during banner exchange before remote launch command executed; confirmed tmux absent and output paths free.",
+  "termination": "calibration PASS then fresh 8k optimizer steps; 4k/8k inference diagnostic; Full-L333 only if 8k delta >=+0.05 dB",
+  "physical_batch": 2,
+  "gradient_accumulation": 1,
+  "effective_batch": 2
+}
