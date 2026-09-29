@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "original_failure_preserved": true,
+  "retry_complete": true,
+  "control_steps": 6000,
+  "A_steps": 6000,
+  "teacher_steps": 8000,
+  "B_steps": 4000,
+  "matched_starting_main_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+  "manifest_sha256": "ca176a324db9ce0547f0a5ad863108028e2b49dde2a554fc952cd059c3ca4768",
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "fast64_split_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "MedDINO_frozen": true,
+  "teacher_NDCT_only_donors": [
+    "L096",
+    "L109",
+    "L192",
+    "L286",
+    "L291",
+    "L310"
+  ],
+  "A_full_promotion": false,
+  "B_full_promotion": false,
+  "Full_L333_run": false,
+  "L506_opens": 0,
+  "unauthorized_external_memory_opens": 0,
+  "neighbor_target_opens": 0,
+  "blocked_attempts": 0,
+  "nonfinite_counts": {
+    "control": 0,
+    "A": 0,
+    "teacher": 0,
+    "B": 0
+  },
+  "B_prior_loss_median_first10_logged": 0.019379494711756706,
+  "B_prior_loss_median_last10_logged": 0.0218573696911335,
+  "per_slice_row_counts": {
+    "A_MEDDINO_BCA": 320,
+    "B_NDCT_DETAIL_PRIOR": 256
+  }
+}

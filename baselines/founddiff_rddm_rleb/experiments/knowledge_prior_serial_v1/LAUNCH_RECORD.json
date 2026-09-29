@@ -1,0 +1,20 @@
+{
+  "session": "knowledge_prior_serial_v1_20260929",
+  "command": "cd /home/xujian/projects/CoreDiff/experiments/rddm_knowledge_prior_serial_v1_20260929/baselines/founddiff_rddm_rleb && export CUBLAS_WORKSPACE_CONFIG=:4096:8 && /home/xujian/miniconda3/envs/flexict/bin/python -m knowledge_prior_v1.queue",
+  "launch_script": "knowledge_prior_v1/run_queue.sh",
+  "git_branch": "experiment/rddm-knowledge-prior-serial-v1",
+  "git_parent_commit": "058ed8455ca386966b9f82ba7e12cee2116cedc4",
+  "git_worktree_status_before_launch": "only new knowledge_prior_v1 source and experiments/knowledge_prior_serial_v1 lightweight preflight outputs",
+  "conda_environment": "flexict",
+  "python": "3.11.16",
+  "pytorch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "gpu_index": 0,
+  "log": "experiments/knowledge_prior_serial_v1/QUEUE.log",
+  "output_directory": "experiments/knowledge_prior_serial_v1",
+  "launch_time_utc": "2026-09-29 07:15:20 UTC",
+  "termination": "after B_NDCT_DETAIL_PRIOR and any gate-approved Full-L333, or immediately on protocol/numeric failure",
+  "step0_parity_psnr": 40.76762732777537,
+  "smoke_status": "PASS",
+  "data_smoke_status": "PASS"
+}

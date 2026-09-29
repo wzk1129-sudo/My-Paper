@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "phase": "COMPLETE",
+  "started_at": 1790689001.2089314,
+  "preserved_original_queue_status": "FAILED",
+  "preserved_control_6000": true,
+  "repair": "dtype-safe exact state hash for BFloat16 model audit",
+  "finished_at": 1790694565.989577
+}

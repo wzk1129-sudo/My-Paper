@@ -1,0 +1,17 @@
+{
+  "session": "knowledge_prior_serial_retry_20260929",
+  "command": "cd /home/xujian/projects/CoreDiff/experiments/rddm_knowledge_prior_serial_v1_20260929/baselines/founddiff_rddm_rleb && export CUBLAS_WORKSPACE_CONFIG=:4096:8 && /home/xujian/miniconda3/envs/flexict/bin/python -m knowledge_prior_v1.resume_after_control",
+  "launch_script": "knowledge_prior_v1/run_retry.sh",
+  "branch": "experiment/rddm-knowledge-prior-serial-v1",
+  "parent_commit": "058ed8455ca386966b9f82ba7e12cee2116cedc4",
+  "environment": "flexict Python 3.11.16 PyTorch 2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 3090 index 0",
+  "log": "experiments/knowledge_prior_serial_v1/QUEUE_RETRY.log",
+  "output_directory": "experiments/knowledge_prior_serial_v1",
+  "launch_time_utc": "2026-09-29 13:35:28 UTC",
+  "expected_termination": "A, donor teacher, B, and only gate-approved Full-L333; or immediate protocol failure",
+  "preserved_original_queue_failure": true,
+  "preserved_control_6000": true,
+  "A_initialization_recheck": "PASS",
+  "repair": "dtype-safe exact state hash of mixed-precision tensors; no model or checkpoint change"
+}

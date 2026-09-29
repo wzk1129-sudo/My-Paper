@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "main_hash_equal": true,
+  "step0_max_abs_diff": 0.0,
+  "A_BCA_grad_sum": 0.07232867181301117,
+  "med_frozen": true,
+  "teacher_grad_sum": 20.708370208740234,
+  "teacher_loss": 0.743990421295166,
+  "peak_vram_bytes": 2704744448
+}

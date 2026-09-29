@@ -1,0 +1,8 @@
+{
+  "phase": "A_MEDDINO_BCA",
+  "status": "FAILED",
+  "started_at": 1790666199.6955695,
+  "error": "TypeError('Got unsupported ScalarType BFloat16')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_knowledge_prior_serial_v1_20260929/baselines/founddiff_rddm_rleb/knowledge_prior_v1/queue.py\", line 175, in main\n    a=train_arm(ARMS[1],cfg,base,manifest,h,control[\"history\"])\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_knowledge_prior_serial_v1_20260929/baselines/founddiff_rddm_rleb/knowledge_prior_v1/engine.py\", line 85, in train_arm\n    model,ema,opt,init=init_arm(arm,device)\n                       ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_knowledge_prior_serial_v1_20260929/baselines/founddiff_rddm_rleb/knowledge_prior_v1/engine.py\", line 58, in init_arm\n    \"starting_model_state_hash\":state_hash(model.model.unet0.state_dict()),\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_knowledge_prior_serial_v1_20260929/baselines/founddiff_rddm_rleb/context_2p5d/model.py\", line 67, in state_hash\n    h.update(t.detach().cpu().contiguous().numpy().tobytes())\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: Got unsupported ScalarType BFloat16\n",
+  "finished_at": 1790667831.2209983
+}

@@ -1,0 +1,16 @@
+{
+  "arm": "A_MEDDINO_BCA",
+  "starting_direct_ema_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "starting_main_hash": "cf38b0b7a50d5ac5bc6579d64f7031e7e00e8f1824867debf6ec3b38ca1ddab9",
+  "starting_model_state_hash": "5bac3f62fe2b9ed9de6d4416c8d2943b2fe85bc23d54edb3c30b1033176a1a11",
+  "starting_ema_equal_model": true,
+  "fresh_adam_state_count": 0,
+  "trainable_parameters": 13896203,
+  "total_parameters": 99538187,
+  "meddino_frozen": true,
+  "meddino_eval": true,
+  "bca128_out_zero": true,
+  "bca64_out_zero": true,
+  "alpha128": 0.10000000149011612,
+  "alpha64": 0.10000000149011612
+}

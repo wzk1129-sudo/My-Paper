@@ -1,0 +1,15 @@
+{
+  "donor_patients_opened": [
+    "L096",
+    "L109",
+    "L192",
+    "L286",
+    "L291",
+    "L310"
+  ],
+  "donor_ndct_opens": 64000,
+  "donor_ldct_opens": 0,
+  "L333_opens": 0,
+  "L506_opens": 0,
+  "blocked_attempts": 0
+}
