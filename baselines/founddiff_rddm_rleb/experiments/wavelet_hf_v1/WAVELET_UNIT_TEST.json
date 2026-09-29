@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "input_shape": [
+    2,
+    1,
+    512,
+    512
+  ],
+  "kernel_shape": [
+    4,
+    1,
+    2,
+    2
+  ],
+  "kernel_requires_grad": false,
+  "max_abs_idwt_dwt_error": 4.76837158203125e-07,
+  "image_mse": 1.997846245765686,
+  "mean_four_subband_mse": 1.997846245765686,
+  "mse_parseval_error": 0.0,
+  "band_order": [
+    "LL",
+    "LH",
+    "HL",
+    "HH"
+  ]
+}

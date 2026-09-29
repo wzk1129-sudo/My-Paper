@@ -1,0 +1,13 @@
+fast8k/checkpoints/
+fast8k/train.jsonl
+fast8k/progress.json
+*.pt
+*.pth
+*.ckpt
+*.log
+__pycache__/
+EXIT_STATUS*
+launches/MATCHED_FREQ_EXIT_STATUS
+launches/LAUNCH_RECORD.json
+launches/MATCHED_FREQ_LAUNCH_RECORD.json
+launches/MATCHED_FREQ_RETRY_RECORD.json
