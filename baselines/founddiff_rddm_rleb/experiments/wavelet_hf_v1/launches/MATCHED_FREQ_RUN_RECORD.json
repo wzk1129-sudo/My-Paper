@@ -1,0 +1,16 @@
+{
+  "attempt": 3,
+  "previous_attempts": [
+    "attempt 1: CRLF shell line ending, zero checkpoint reads",
+    "attempt 2: reference-history assertion expected exactly four rows but Direct has six; zero checkpoint reads"
+  ],
+  "fix": "validate first four historical rows and independently confirm both 2k/4k/6k/8k references",
+  "session": "rddm_wavelet_matched_frequency_v1_run_20260929",
+  "command": "bash experiments/wavelet_hf_v1/launches/matched_frequency_v1.sh",
+  "script_sha256": "191234a70ec1fb82442dfd40880b8aa1faba48bdf02c7f9ba6ab978af2aecfcc",
+  "environment": "corediff Python 3.8.13 torch 1.10.1+cu111 CUDA 11.1",
+  "gpu": 0,
+  "output": "experiments/wavelet_hf_v1/diagnostics/matched_frequency_v1",
+  "log": "experiments/wavelet_hf_v1/launches/matched_frequency_v1.log",
+  "training": false
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "step": 2000,
+    "checkpoint": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_wavelet_hf_v1_20260929/baselines/founddiff_rddm_rleb/experiments/wavelet_hf_v1/fast8k/checkpoints/step_2000.pt",
+    "sha256": "453ab6097b8b10ec57afca81d9d5f104fc3e5c8b291543e76d0548f169978411",
+    "optimizer_step": 2000,
+    "ema_updates": 2000
+  },
+  {
+    "step": 4000,
+    "checkpoint": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_wavelet_hf_v1_20260929/baselines/founddiff_rddm_rleb/experiments/wavelet_hf_v1/fast8k/checkpoints/step_4000.pt",
+    "sha256": "f4d3c05d42151350fb14e30df5e21558ea051fec3356f75d5a619a9c96d3378b",
+    "optimizer_step": 4000,
+    "ema_updates": 4000
+  },
+  {
+    "step": 6000,
+    "checkpoint": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_wavelet_hf_v1_20260929/baselines/founddiff_rddm_rleb/experiments/wavelet_hf_v1/fast8k/checkpoints/step_6000.pt",
+    "sha256": "76ecb5293c7adb9822f15d0bff7603e376a60b6003912f9d3d6aba9d645ecaeb",
+    "optimizer_step": 6000,
+    "ema_updates": 6000
+  },
+  {
+    "step": 8000,
+    "checkpoint": "/home/xujian/projects/CoreDiff/experiments/rddm_2p5d_wavelet_hf_v1_20260929/baselines/founddiff_rddm_rleb/experiments/wavelet_hf_v1/fast8k/checkpoints/step_8000.pt",
+    "sha256": "06732f81d7be6908f7d738b58c3a6723946b1f5db4aee1d773e8f67a1d8e6e40",
+    "optimizer_step": 8000,
+    "ema_updates": 8000
+  }
+]

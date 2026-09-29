@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "matched_direct_initialization_audit": true,
+  "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+  "direct_initial_model_sha256": "e49abb905f368f584c1c800fc5a66972f3755eaed8b3b08d0e13bae609bf955e",
+  "parameter_count": 13137217,
+  "network_topology_unchanged": true,
+  "sampler_unchanged": true,
+  "inference_path_unchanged": true,
+  "wavelet_model_parameters": 0
+}

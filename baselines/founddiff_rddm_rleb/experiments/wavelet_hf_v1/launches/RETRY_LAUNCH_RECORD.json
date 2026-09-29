@@ -1,0 +1,20 @@
+{
+  "attempt": 2,
+  "reason": "original Direct Concat used corediff torch 1.10.1; flexict torch 2.8.0 produced a different canonical initial hash before any optimizer step",
+  "previous_exit_status": 1,
+  "previous_optimizer_steps": 0,
+  "environment": "corediff",
+  "python": "3.8.13",
+  "torch": "1.10.1+cu111",
+  "cuda": "11.1",
+  "canonical_state_sha256": "4ed6f3dfae251f4821a31cea8877557d0a0646026e51d8886ea9dcc19baf6e7e",
+  "session": "rddm_2p5d_wavelet_hf_v1_corediff_20260929",
+  "command": "bash experiments/wavelet_hf_v1/launches/serial_wavelet.sh",
+  "calibration_log": "experiments/wavelet_hf_v1/calibration_100/retry_corediff.log",
+  "training_log": "experiments/wavelet_hf_v1/launches/formal_train.log",
+  "output": "experiments/wavelet_hf_v1",
+  "gpu": 0,
+  "termination": "calibration failure or gated 8k/12k completion",
+  "branch": "experiment/rddm-2p5d-wavelet-hf-v1",
+  "base_commit": "058ed8455ca386966b9f82ba7e12cee2116cedc4"
+}
