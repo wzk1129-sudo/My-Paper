@@ -1,0 +1,16 @@
+session: fulltoken_ca_recovery_20261001
+command: bash /home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/fulltoken_ca_v1/run_recovery.sh
+worktree: /home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001
+branch: experiment/rddm-meddino-fulltoken-ca-v1
+parent_commit: 51c608b9d2148102611c3e5717fa0f79bdf1b2ae
+working_tree: only untracked new fulltoken source and independent output roots; tracked files unchanged
+environment: flexict; Python 3.11.16; PyTorch 2.8.0+cu128; CUDA 12.8
+gpu: CUDA_VISIBLE_DEVICES=0; RTX 3090 24 GiB; 591 MiB used before launch
+log: experiments/meddino_fulltoken_ca_v1_recovery_20261001/QUEUE.log
+output: experiments/meddino_fulltoken_ca_v1_recovery_20261001
+control_resume: original intact step_2000.pt SHA256 e619d97c445152e2ebb7a103e8e173cb3ea36f352fa4646c280348df390f4b3f
+control_first_2000: original EMA Fast64 metrics copied exactly as lightweight records
+candidate_start: fresh Direct 12k EMA weights, fresh optimizer/EMA, step 0
+expected_termination: matched additional 6000 optimizer steps each; conditional 8000 and Full L333 only if gates pass
+original_partial_output: preserved without overwrite
+launch_utc: 2026-09-30T20:05:43Z

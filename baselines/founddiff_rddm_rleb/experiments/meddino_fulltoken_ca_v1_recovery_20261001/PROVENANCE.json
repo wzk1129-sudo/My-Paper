@@ -1,0 +1,13 @@
+{
+  "parent_commit": "51c608b9d2148102611c3e5717fa0f79bdf1b2ae",
+  "branch": "experiment/rddm-meddino-fulltoken-ca-v1",
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "direct_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "meddino_checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "control_resume_checkpoint_sha256": "e619d97c445152e2ebb7a103e8e173cb3ea36f352fa4646c280348df390f4b3f",
+  "model_source_sha256": "009257760831a45e26bf55c3d6b4a05c368b0daf8609b8d29c7cf0c67a36fdaf",
+  "queue_source_sha256": "ef8b4520540960ed41d2d42a8f34da203684847a6895cab9696a0ca934f303d8",
+  "recovery_source_sha256": "acef65a37418d912b2b30aee9c5df5be9a7840cea155dc679fb5328cb0125cb1",
+  "train_manifest_sha256_6k": "ca176a324db9ce0547f0a5ad863108028e2b49dde2a554fc952cd059c3ca4768",
+  "train_manifest_sha256_8k": "dafa57370c8d4930f5d13fe6e592bb533b791926f7b763102b59e887577214d4"
+}

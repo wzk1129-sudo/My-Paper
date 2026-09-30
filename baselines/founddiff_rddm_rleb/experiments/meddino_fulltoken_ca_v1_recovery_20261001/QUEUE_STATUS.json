@@ -1,0 +1,7 @@
+{
+  "updated_utc": "2026-09-30T21:10:45Z",
+  "state": "COMPLETE",
+  "decision": "STOP_DELTA_6K_NONPOSITIVE",
+  "control_step": 6000,
+  "candidate_step": 6000
+}

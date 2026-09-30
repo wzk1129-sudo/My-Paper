@@ -1,0 +1,13 @@
+session: fulltoken_ca_smoke_20261001
+command: bash fulltoken_ca_v1/run_smoke.sh
+worktree: /home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001
+package: baselines/founddiff_rddm_rleb
+branch: experiment/rddm-meddino-fulltoken-ca-v1
+parent_commit: 51c608b9d2148102611c3e5717fa0f79bdf1b2ae
+working_tree: only new fulltoken_ca_v1 source files
+conda_env: flexict
+python: /home/xujian/miniconda3/envs/flexict/bin/python
+gpu: 0 (RTX 3090, 24 GiB; 699 MiB used before start)
+log: experiments/meddino_fulltoken_ca_v1/SMOKE.log
+output: experiments/meddino_fulltoken_ca_v1
+expected_termination: two throwaway optimizer steps; no saved checkpoint

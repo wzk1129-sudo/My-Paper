@@ -1,0 +1,15 @@
+{
+  "direct_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "meddino_checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "meddino_source_commit": "a2460c2547899283446e520b84523454f7e25608",
+  "formal_source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+  "model_source_sha256": "009257760831a45e26bf55c3d6b4a05c368b0daf8609b8d29c7cf0c67a36fdaf",
+  "queue_source_sha256": "d719584f402d273f4b92fd666f09a0195f717070f56df5dcd18999a53417897d",
+  "split_sha256": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "evaluator_sha256": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+  "pytorch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "train_manifest_sha256_6k": "ca176a324db9ce0547f0a5ad863108028e2b49dde2a554fc952cd059c3ca4768",
+  "train_manifest_sha256_8k": "dafa57370c8d4930f5d13fe6e592bb533b791926f7b763102b59e887577214d4"
+}

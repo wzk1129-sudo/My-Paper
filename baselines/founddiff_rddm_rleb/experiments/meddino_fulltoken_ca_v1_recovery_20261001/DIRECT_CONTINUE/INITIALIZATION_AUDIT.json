@@ -1,0 +1,10 @@
+{
+  "arm": "DIRECT_CONTINUE",
+  "direct_12k_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "main_parameter_count": 13137217,
+  "all_trainable_parameter_count": 13137217,
+  "total_parameter_count": 13137217,
+  "fresh_optimizer": true,
+  "fresh_ema": true,
+  "meddino_frozen_eval": true
+}

@@ -1,0 +1,15 @@
+{
+  "original_output": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/experiments/meddino_fulltoken_ca_v1",
+  "recovery_output": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/experiments/meddino_fulltoken_ca_v1_recovery_20261001",
+  "original_control_last_observed_step": 2800,
+  "last_intact_control_checkpoint_step": 2000,
+  "control_checkpoint_sha256": "e619d97c445152e2ebb7a103e8e173cb3ea36f352fa4646c280348df390f4b3f",
+  "original_failure_cause": "unknown; original error log was overwritten by a second launch",
+  "second_launch_failure": "FileExistsError on existing DIRECT_CONTINUE directory before any optimizer step",
+  "original_results_untouched": true,
+  "control_first_2000_metrics_carried_exactly": true,
+  "control_steps_2001_to_2800_reexecuted_from_step_2000_in_new_output": true,
+  "old_first_2000_file_open_audit": "not persisted because original process disappeared",
+  "guarded_dataset_only_L067_L143": true,
+  "old_checkpoint_manifest_sha256": "dafa57370c8d4930f5d13fe6e592bb533b791926f7b763102b59e887577214d4"
+}

@@ -1,0 +1,211 @@
+{
+  "name": "MedDINO_FullToken_CA_128_64_V1",
+  "branch": "experiment/rddm-meddino-fulltoken-ca-v1",
+  "parent_commit": "51c608b9d2148102611c3e5717fa0f79bdf1b2ae",
+  "environment": "flexict",
+  "seed": 20260829,
+  "direct_checkpoint_sha256": "151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf",
+  "meddino_checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "meddino_source_commit": "a2460c2547899283446e520b84523454f7e25608",
+  "train_patients": [
+    "L067",
+    "L143"
+  ],
+  "validation": "L333-fast64, fixed 64 indices",
+  "batch_size": 2,
+  "grad_accumulation": 1,
+  "optimizer": "Adam",
+  "lr": 0.0002,
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "weight_decay": 1e-09,
+  "ema": 0.995,
+  "amp": false,
+  "grad_clip_max_norm": 1.0,
+  "pred_objective": "pred_res",
+  "loss": "L2",
+  "timesteps": 1000,
+  "sampling_timesteps": 2,
+  "sum_scale": 0.01,
+  "additional_train_steps_initial": 6000,
+  "validation_nodes_initial": [
+    0,
+    1000,
+    2000,
+    4000,
+    6000
+  ],
+  "conditional_extension_step": 8000,
+  "full_l333_only_after_8k_gate": true,
+  "attention": {
+    "stages": [
+      128,
+      64
+    ],
+    "meddino_layer": 11,
+    "patch_tokens": 1024,
+    "meddino_width": 768,
+    "query_channels": [
+      128,
+      256
+    ],
+    "hidden_dim": 256,
+    "heads": 4,
+    "dim_head": 64,
+    "global_keys_per_query": 1024,
+    "query_chunk": 0,
+    "gate_initial": 0.0
+  },
+  "frozen_protocol": {
+    "experiment_name": "FoundDiff_RDDM_RLEB_fast_dev_v1",
+    "description": "Fast development screening of the fixed FoundDiff RDDM+RLEB backbone",
+    "mode": "fast_dev",
+    "seed": 20260829,
+    "data": {
+      "root": "/home/xujian/projects/CoreDiff/data_preprocess/gen_data/mayo_2016_npy",
+      "dose_label": "25",
+      "train_patients": [
+        "L067",
+        "L143"
+      ],
+      "validation_patients": [
+        "L333"
+      ],
+      "image_size": 512,
+      "stored_value_offset_hu": -1024.0,
+      "hu_min": -1024.0,
+      "hu_max": 3072.0,
+      "normalization": "linear_zero_one"
+    },
+    "allowed_slice_counts": {
+      "L067": 560,
+      "L096": 823,
+      "L109": 318,
+      "L143": 585,
+      "L192": 600,
+      "L286": 525,
+      "L291": 856,
+      "L310": 533,
+      "L333": 610
+    },
+    "model": {
+      "dim": 64,
+      "dim_mults": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "channels": 1,
+      "num_unet": 1,
+      "parameters": 13130945,
+      "rleb_count": 10,
+      "input": "[x_t,center_LDCT]",
+      "source_sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574"
+    },
+    "diffusion": {
+      "objective": "pred_res",
+      "loss_type": "l2",
+      "timesteps": 1000,
+      "sampling_timesteps": 2,
+      "condition": true,
+      "sum_scale": 0.01
+    },
+    "training": {
+      "optimizer": "Adam",
+      "learning_rate": 0.0002,
+      "betas": [
+        0.9,
+        0.99
+      ],
+      "weight_decay": 1e-09,
+      "batch_size": 2,
+      "gradient_accumulation": 1,
+      "effective_batch": 2,
+      "max_optimizer_steps": 8000,
+      "amp": false,
+      "gradient_clip": 1.0,
+      "scheduler": null,
+      "num_workers": 0,
+      "cpu_threads": 2,
+      "validation_every": 2000,
+      "recovery_checkpoint_every": 1000,
+      "matched_checkpoint_steps": [
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "log_every": 1,
+      "console_every": 100
+    },
+    "ema": {
+      "decay": 0.995,
+      "update_every": 1,
+      "warmup_steps": 0,
+      "initialization": "copy model at step 0",
+      "dtype": "float32",
+      "validation_weights": "ema"
+    },
+    "augmentation": {
+      "horizontal_flip_probability": 0.5,
+      "rotation_degrees": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "paired": true,
+      "crop": false
+    },
+    "evaluation": {
+      "hu_window": [
+        -1000.0,
+        1000.0
+      ],
+      "metrics": [
+        "psnr",
+        "ssim",
+        "rmse_hu",
+        "mae_hu"
+      ],
+      "protocol_version": "RDDM_CT_MAIN_EVAL_V1_2026-09-04",
+      "patients": [
+        "L333"
+      ],
+      "expected_slices": 64,
+      "stride": 1,
+      "validation_seed": 20260829,
+      "initial_noise": "seed+slice_index; batch=1; RNG isolated/restored",
+      "loss_seed_offset": 1000000,
+      "best_metric": "psnr",
+      "best_weights": "ema",
+      "save_images": false,
+      "validation_mode": "FAST",
+      "indices_file": "splits/L333_fast64.txt"
+    },
+    "safety": {
+      "train_validation_only": true,
+      "automatic_extension": false,
+      "maximum_steps": 8000,
+      "fresh_output_dir_required": true,
+      "network_access": false
+    },
+    "fast_dev": {
+      "protocol": "configs/fast_dev_protocol.json",
+      "protocol_sha256": "c97165401015661b92f1fdcf857ad0fe202aba48d9ae5ae909a8530f3f39987a",
+      "automatic_early_stop": false,
+      "external_memory_enabled": false
+    }
+  },
+  "train_manifest_sha256_6k": "ca176a324db9ce0547f0a5ad863108028e2b49dde2a554fc952cd059c3ca4768",
+  "train_manifest_sha256_8k": "dafa57370c8d4930f5d13fe6e592bb533b791926f7b763102b59e887577214d4",
+  "recovery": {
+    "control_resume_step": 2000,
+    "control_checkpoint_sha256": "e619d97c445152e2ebb7a103e8e173cb3ea36f352fa4646c280348df390f4b3f",
+    "candidate_start_step": 0,
+    "original_root": "/home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/experiments/meddino_fulltoken_ca_v1"
+  }
+}

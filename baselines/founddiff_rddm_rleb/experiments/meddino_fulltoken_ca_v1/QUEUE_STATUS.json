@@ -1,0 +1,6 @@
+{
+  "updated_utc": "2026-09-30T18:35:42Z",
+  "state": "FAILED",
+  "error": "FileExistsError(17, 'File exists')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/fulltoken_ca_v1/queue.py\", line 363, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/fulltoken_ca_v1/queue.py\", line 316, in main\n    control=train_arm(ARMS[0],cfg,base,manifest,manifest_sha,6000)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/fulltoken_ca_v1/queue.py\", line 85, in train_arm\n    if start_step==0:output.mkdir(exist_ok=False)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/xujian/miniconda3/envs/flexict/lib/python3.11/pathlib.py\", line 1116, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [Errno 17] File exists: '/home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/experiments/meddino_fulltoken_ca_v1/DIRECT_CONTINUE'\n"
+}

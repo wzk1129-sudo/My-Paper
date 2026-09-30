@@ -1,0 +1,16 @@
+session: fulltoken_ca_matched_20261001
+command: bash /home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001/baselines/founddiff_rddm_rleb/fulltoken_ca_v1/run_queue.sh
+worktree: /home/xujian/projects/CoreDiff/experiments/rddm_meddino_fulltoken_ca_v1_20261001
+package: baselines/founddiff_rddm_rleb
+branch: experiment/rddm-meddino-fulltoken-ca-v1
+parent_commit: 51c608b9d2148102611c3e5717fa0f79bdf1b2ae
+working_tree: new fulltoken_ca_v1 source and independent experiment output; no tracked changes
+environment: flexict, Python 3.11.16, PyTorch 2.8.0+cu128, CUDA 12.8
+gpu: CUDA_VISIBLE_DEVICES=0, NVIDIA RTX 3090 24GiB
+log: experiments/meddino_fulltoken_ca_v1/QUEUE.log
+output: experiments/meddino_fulltoken_ca_v1
+expected_termination: two matched arms each to 6000 extra optimizer steps; conditional 8000 and Full L333 only if specified gates pass
+direct_checkpoint_sha256: 151b7e58d2ca0d936be0842434e3d17809b325f144d0d48e47c8565287bcdcdf
+meddino_checkpoint_sha256: 492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2
+readiness: PASS, step0 parity 0, L506/external/neighbor-target opens 0
+launch_utc: 2026-09-30T18:12:44Z
