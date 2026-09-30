@@ -1,0 +1,33 @@
+{
+  "actual_q_sample_input_domain": "[-1,1]",
+  "forbidden_test_opens": 0,
+  "ldct_shape": [
+    4,
+    3,
+    512,
+    512
+  ],
+  "ndct_shape": [
+    4,
+    1,
+    512,
+    512
+  ],
+  "normalized_ldct_max": 1.0,
+  "normalized_ldct_min": 0.0,
+  "normalized_ndct_max": 1.0,
+  "normalized_ndct_min": 0.0,
+  "paired_samples_opened": 4,
+  "patient_ids": [
+    "L067"
+  ],
+  "preprocess_domain": "[0,1]",
+  "preprocess_hu_window": [
+    -160,
+    240
+  ],
+  "q_sample_input_ldct_max": 1.0,
+  "q_sample_input_ldct_min": -1.0,
+  "q_sample_input_ndct_max": 1.0,
+  "q_sample_input_ndct_min": -1.0
+}

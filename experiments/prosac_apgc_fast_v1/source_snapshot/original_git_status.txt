@@ -1,0 +1,23 @@
+ M experiments/7_RDDM_CT_Backbone_v1/acceptance.py
+ M experiments/7_RDDM_CT_Backbone_v1/config.json
+ M experiments/7_RDDM_CT_Backbone_v1/evaluate.py
+ M experiments/7_RDDM_CT_Backbone_v1/evaluation.py
+ M experiments/7_RDDM_CT_Backbone_v1/rddm_ct.py
+ M experiments/7_RDDM_CT_Backbone_v1/train.py
+?? .aris/
+?? .worktrees/
+?? diagnostic.log
+?? experiments/7_RDDM_CT_Backbone_v1/config_formal_decoder_safe_fp32_100k.json
+?? experiments/7_RDDM_CT_Backbone_v1/config_formal_fix1.json
+?? experiments/7_RDDM_CT_Backbone_v1/config_nonfinite_debug_fix1.json
+?? experiments/7_RDDM_CT_Backbone_v1/config_nonfinite_debug_run1.json
+?? experiments/7_RDDM_CT_Backbone_v1/config_nonfinite_debug_run2.json
+?? experiments/7_RDDM_CT_Backbone_v1/config_nonfinite_targeted_replay_amp.json
+?? experiments/7_RDDM_CT_Backbone_v1/config_nonfinite_targeted_replay_fp32.json
+?? experiments/7_RDDM_CT_Backbone_v1/diagnose_nonfinite.py
+?? experiments/7_RDDM_CT_Backbone_v1/visualization_protocol.json
+?? experiments/anatomy_edge_condition_v1/
+?? experiments/rddm_eval_protocol_audit_l506_v1/
+?? experiments/rddm_psgm_v11/
+?? experiments/structure_v21_final/
+?? reports/

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+outputs/
+
+# ProSAC APGC fast experiment outputs and private data
+experiments/prosac_apgc_fast_v1/runs/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.dcm
+*.log

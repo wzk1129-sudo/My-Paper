@@ -1,0 +1,222 @@
+{
+  "arms": {
+    "M0_LOSS111": {
+      "gradient_norm_before_clip_max": 1770.338134765625,
+      "gradient_norm_before_clip_median": 0.20875412225723267,
+      "gradient_spikes_gt100": [
+        {
+          "norm": 113.45120239257812,
+          "step": 1996
+        },
+        {
+          "norm": 657.7423706054688,
+          "step": 2002
+        },
+        {
+          "norm": 415.7037048339844,
+          "step": 2003
+        },
+        {
+          "norm": 1770.338134765625,
+          "step": 2004
+        },
+        {
+          "norm": 227.76658630371094,
+          "step": 2013
+        },
+        {
+          "norm": 198.74705505371094,
+          "step": 2014
+        }
+      ],
+      "loss_last100_median": {
+        "2000": {
+          "loss_noise": 0.02169180102646351,
+          "loss_recon": 0.007201022002846003,
+          "loss_res": 0.0074385604821145535,
+          "loss_total": 0.03581604175269604
+        },
+        "4000": {
+          "loss_noise": 0.03299956023693085,
+          "loss_recon": 0.0069266557693481445,
+          "loss_res": 0.006778315640985966,
+          "loss_total": 0.046741848811507225
+        },
+        "8000": {
+          "loss_noise": 0.01683258730918169,
+          "loss_recon": 0.00643307133577764,
+          "loss_res": 0.006425156025215983,
+          "loss_total": 0.032960835844278336
+        }
+      },
+      "median_seconds_per_step": 0.6307103295694105,
+      "nonfinite_count": 0,
+      "optimizer_steps": 8000,
+      "peak_vram_gib": 22.00973653793335,
+      "sum_optimizer_step_seconds": 5197.997473048978,
+      "validation_steps": [
+        2000,
+        4000,
+        8000
+      ]
+    },
+    "M1_APGC_LOSS111": {
+      "apgc_activity_at_8k": {
+        "aefm_mean": -0.21531181037425995,
+        "aefm_std": 0.8800734281539917,
+        "alpha_mean": 1.0693483352661133,
+        "alpha_std": 0.05347278714179993,
+        "gamma_mean": 1.0693483352661133,
+        "gamma_std": 0.053472790867090225
+      },
+      "gradient_norm_before_clip_max": 65.1767807006836,
+      "gradient_norm_before_clip_median": 0.20555055141448975,
+      "gradient_spikes_gt100": [],
+      "loss_last100_median": {
+        "2000": {
+          "loss_noise": 0.01977265067398548,
+          "loss_recon": 0.007302591111510992,
+          "loss_res": 0.007234472082927823,
+          "loss_total": 0.03558198735117912
+        },
+        "4000": {
+          "loss_noise": 0.03302034176886082,
+          "loss_recon": 0.006897067418321967,
+          "loss_res": 0.006897493731230497,
+          "loss_total": 0.045902565121650696
+        },
+        "8000": {
+          "loss_noise": 0.017786093056201935,
+          "loss_recon": 0.00666129169985652,
+          "loss_res": 0.006584313698112965,
+          "loss_total": 0.03417413681745529
+        }
+      },
+      "median_seconds_per_step": 0.6708051715395413,
+      "nonfinite_count": 0,
+      "optimizer_steps": 8000,
+      "peak_vram_gib": 21.504330158233643,
+      "sum_optimizer_step_seconds": 5385.040572885773,
+      "validation_steps": [
+        2000,
+        4000,
+        8000
+      ]
+    }
+  },
+  "branch": "experiment/prosac-apgc-reproduction-fast-v1",
+  "checkpoint_files_present_at_all_validation_steps": true,
+  "comparison": [
+    {
+      "delta_edge_mae_hu": 0.0005466938018798828,
+      "delta_edge_rmse_hu": -0.0016259551048278809,
+      "delta_mae_hu": -0.359746091067791,
+      "delta_psnr": 0.011088928483133031,
+      "delta_rmse_hu": -0.027507748036221358,
+      "delta_ssim": 0.003258782955054773,
+      "m0_edge_mae_hu": 24.936822444200516,
+      "m0_edge_rmse_hu": 32.5707942545414,
+      "m0_mae_hu": 10.813421219587326,
+      "m0_psnr": 25.958313516914213,
+      "m0_rmse_hu": 20.254053871743523,
+      "m0_ssim": 0.789502453315485,
+      "m1_edge_mae_hu": 24.937369138002396,
+      "m1_edge_rmse_hu": 32.56916829943657,
+      "m1_mae_hu": 10.453675128519535,
+      "m1_psnr": 25.969402445397346,
+      "m1_rmse_hu": 20.2265461237073,
+      "m1_ssim": 0.7927612362705397,
+      "positive_slice_fraction": 0.734375,
+      "positive_slices": 47,
+      "step": 2000
+    },
+    {
+      "delta_edge_mae_hu": -0.06270909309387207,
+      "delta_edge_rmse_hu": -0.13572528958320618,
+      "delta_mae_hu": -0.06121540069580078,
+      "delta_psnr": 0.015195469341922063,
+      "delta_rmse_hu": -0.03578345990593235,
+      "delta_ssim": -0.00016362561321403568,
+      "m0_edge_mae_hu": 24.40177634358406,
+      "m0_edge_rmse_hu": 32.16906604170799,
+      "m0_mae_hu": 10.279506005346775,
+      "m0_psnr": 26.088585212591752,
+      "m0_rmse_hu": 19.973583652173073,
+      "m0_ssim": 0.7936650194433603,
+      "m1_edge_mae_hu": 24.33906725049019,
+      "m1_edge_rmse_hu": 32.033340752124786,
+      "m1_mae_hu": 10.218290604650974,
+      "m1_psnr": 26.103780681933674,
+      "m1_rmse_hu": 19.93780019226714,
+      "m1_ssim": 0.7935013938301463,
+      "positive_slice_fraction": 0.640625,
+      "positive_slices": 41,
+      "step": 4000
+    },
+    {
+      "delta_edge_mae_hu": 0.3863058090209961,
+      "delta_edge_rmse_hu": 0.3630684018135071,
+      "delta_mae_hu": 0.16292517632246017,
+      "delta_psnr": -0.10460898771781046,
+      "delta_rmse_hu": 0.22912824365576157,
+      "delta_ssim": -0.002134395604685202,
+      "m0_edge_mae_hu": 23.58562022447586,
+      "m0_edge_rmse_hu": 31.246151000261307,
+      "m0_mae_hu": 9.883333250880241,
+      "m0_psnr": 26.285883899645206,
+      "m0_rmse_hu": 19.532381140492046,
+      "m0_ssim": 0.7981286587542333,
+      "m1_edge_mae_hu": 23.971926033496857,
+      "m1_edge_rmse_hu": 31.609219402074814,
+      "m1_mae_hu": 10.046258427202702,
+      "m1_psnr": 26.181274911927396,
+      "m1_rmse_hu": 19.761509384147807,
+      "m1_ssim": 0.7959942631495481,
+      "positive_slice_fraction": 0.0,
+      "positive_slices": 0,
+      "step": 8000
+    }
+  ],
+  "config_change_scope": "arm, loss L1->MSE 1:1:1, output path, documentation only",
+  "ema_validation_source_checked": true,
+  "external_memory_code_path": false,
+  "forbidden_test_patient_opens_pre_run_audit": 0,
+  "formal_ended": "2026-09-30T22:39:09+08:00",
+  "formal_started": "2026-09-30T19:36:58+08:00",
+  "loss_weights_reproduction_choice_not_explicit_in_paper": [
+    1,
+    1,
+    1
+  ],
+  "matched_train_stream_all_8000_steps": true,
+  "matched_train_stream_sha256": "90cdf493d87a04c4aa4074a76d0148289b951ebca6092b45e7340dcfa0f6ee0d",
+  "runtime_os_file_open_instrumentation": false,
+  "shared_backbone_initial_sha256_smoke": "d429070140ac394c654af01945a49485b2139882a3d1d8c3ad0e283f5a709d4a",
+  "source_hashes_match_launch": true,
+  "source_sha256": {
+    "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/7_RDDM_CT_Backbone_v1/rddm_ct.py": "c7a1b1b92c44a49ad48774b957edd74ec0bcfcc5b86b48afb7805ae2d564727c",
+    "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/CONFIG_M0_LOSS111.json": "05310a5e9bfb325eb92bdee6e61ffd7b6f353c69aae3c5aa05eb2ec8dbf91c16",
+    "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/CONFIG_M1_APGC_LOSS111.json": "2bf075bc6b2b0bf2fc616a86fb1792bc1048f0ae797537eb9d7a842a119e3acc",
+    "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/apgc_model.py": "7f9f75610cf691c2a51590e8a7aa3d9b2ebf1fbf889e90a50c1ce6d22c32bc1d",
+    "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/loss111.py": "c85292574c083fa9803b7072cc081f132095e5b310bfdbbd4cf41beb9165432a",
+    "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/train_matched.py": "0968370fd4e40ce06e759d6b49afaf79cd3649ea8d87ba8c450ecdab444205f5"
+  },
+  "status": "PASS_WITH_FINITE_CLIPPED_GRADIENT_SPIKES",
+  "train_patients": [
+    "L067",
+    "L096",
+    "L109",
+    "L143",
+    "L192",
+    "L286",
+    "L291",
+    "L310"
+  ],
+  "validation_csv_patients": [
+    "L333"
+  ],
+  "validation_indices_match_frozen_fast64": true,
+  "validation_patient": "L333",
+  "validation_slices_each_step": 64,
+  "wall_seconds": 10931.0
+}

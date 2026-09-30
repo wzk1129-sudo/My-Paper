@@ -1,0 +1,63 @@
+{
+  "aefm": {
+    "aefm_rms": 0.1908159852027893,
+    "afm_rms": 0.3213694393634796,
+    "efm_rms": 0.5981547832489014
+  },
+  "alpha_grad_norm": 0.0007574532646685839,
+  "arm": "M1",
+  "context_shape": [
+    4,
+    3,
+    512,
+    512
+  ],
+  "elapsed_seconds": 16.27402644196991,
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "python": "3.11.16",
+    "torch": "2.8.0+cu128"
+  },
+  "external_memory_opens": 0,
+  "forbidden_test_opens": 0,
+  "gamma_grad_norm": 0.0007574532646685839,
+  "grad_norm": 23.11298370361328,
+  "loss_noise": 0.8371391892433167,
+  "loss_res": 0.37709110975265503,
+  "loss_total": 1.2142302989959717,
+  "model_init_backbone_sha256": "d429070140ac394c654af01945a49485b2139882a3d1d8c3ad0e283f5a709d4a",
+  "optimizer_steps": 0,
+  "patient_ids_opened": [
+    "L067"
+  ],
+  "peak_reserved_gib": 22.13671875,
+  "peak_vram_gib": 21.768826007843018,
+  "physical_batch": 4,
+  "sample_max": 1.0,
+  "sample_min": 0.0,
+  "sample_shape": [
+    1,
+    1,
+    512,
+    512
+  ],
+  "sampler_steps": 10,
+  "status": "PASS",
+  "steady_with_adam_ema_gib": 1.08567476272583,
+  "target_shape": [
+    4,
+    1,
+    512,
+    512
+  ],
+  "total_parameters": 122153858,
+  "trainable_parameters": 36511874,
+  "unit": {
+    "A999": 1.0,
+    "B999": 1.0,
+    "q_sample_max_abs_error": 0.0,
+    "sampler_terminal_max_abs_error": 2.384185791015625e-07
+  },
+  "validation_images_opened": 0
+}

@@ -1,0 +1,137 @@
+{
+  "acceptance": {
+    "batch_size": 2,
+    "output_dir": "/home/xujian/projects/RDDM_CVPR2024/RDDM_CT/outputs/rddm_ct_backbone_v1_efficiency/acceptance"
+  },
+  "arm": "M0_LOSS111",
+  "data": {
+    "boundary_policy": "nearest_slice_replication",
+    "dose_label": "25",
+    "hu_max": 240.0,
+    "hu_min": -160.0,
+    "image_size": 512,
+    "normalization": "linear_zero_one",
+    "root": "/home/xujian/projects/CoreDiff/data_preprocess/gen_data/mayo_2016_npy",
+    "stored_value_offset_hu": -1024.0,
+    "test_patients": [
+      "L506"
+    ],
+    "train_patients": [
+      "L067",
+      "L096",
+      "L109",
+      "L143",
+      "L192",
+      "L286",
+      "L291",
+      "L310"
+    ],
+    "validation_patients": [
+      "L333"
+    ]
+  },
+  "diffusion": {
+    "ddim_eta": 0.0,
+    "loss_type": "l2",
+    "objective": "pred_res_noise",
+    "official_source_sha256": "b7c41d56313a5073a88c85cedd9ae2b65167515f6294f42288bba52831ea5c3c",
+    "sampling_timesteps": 10,
+    "sum_scale": 1.0,
+    "timesteps": 1000
+  },
+  "evaluation": {
+    "hu_window": [
+      -160.0,
+      240.0
+    ],
+    "metrics": [
+      "psnr",
+      "ssim",
+      "rmse_hu",
+      "mae_hu",
+      "edge_rmse_hu",
+      "edge_mae_hu"
+    ],
+    "qualitative_slices_per_patient": 3,
+    "qualitative_window": [
+      -160.0,
+      240.0
+    ],
+    "validation_patient": "L333",
+    "validation_seed": 20260829,
+    "validation_subset": "L333_fast64"
+  },
+  "experiment_notes": {
+    "M1_injection": "single 64x64 shared-encoder output residual injection; reconstruction choice",
+    "evaluation_window": "same soft-tissue [-160,240] for both arms",
+    "loss": "MSE(pred_res,r)+MSE(pred_noise,eps)+MSE(x0_hat,x_start)",
+    "loss_weight_status": "RECONSTRUCTION_CHOICE_NOT_EXPLICIT_IN_PAPER",
+    "loss_weights": {
+      "lambda_noise": 1.0,
+      "lambda_recon": 1.0,
+      "lambda_res": 1.0
+    },
+    "meddino": "official checkpoint frozen; center LDCT only",
+    "model_selection": "matched M1 minus M0 on fixed L333-fast64",
+    "paper_status": "RECONSTRUCTION_CHOICE_NOT_EXPLICIT_IN_PAPER",
+    "sampling_timesteps": "10 retained from frozen RDDM-CT; not specified by ProSAC paper"
+  },
+  "model": {
+    "attention_resolutions": [
+      128,
+      64
+    ],
+    "base_dim": 64,
+    "context_stem_channels": 32,
+    "dim_mults": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "fused_channels": 64,
+    "image_size": 512,
+    "max_parameters": 45000000,
+    "resnet_groups": 8,
+    "state_stem_channels": 32
+  },
+  "name": "ProSAC-style RDDM-CT M0/M1 APGC fast matched reproduction",
+  "seed": 20260829,
+  "training": {
+    "amp": true,
+    "amp_init_scale": 32768.0,
+    "augmentation": {
+      "horizontal_flip_p": 0.5,
+      "rotation_degrees": [
+        0,
+        90,
+        180,
+        270
+      ]
+    },
+    "batch_size": 4,
+    "checkpoint_every": 2000,
+    "checkpoint_steps": [
+      2000,
+      4000,
+      8000
+    ],
+    "ema_decay": 0.995,
+    "gradient_accumulation": 1,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.0002,
+    "log_every": 10,
+    "num_workers": 0,
+    "optimizer": "Adam",
+    "output_dir": "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/runs/M0_LOSS111",
+    "total_steps": 8000,
+    "validation_every": 2000,
+    "validation_slice_stride": 1,
+    "validation_steps": [
+      2000,
+      4000,
+      8000
+    ]
+  },
+  "version": "fast-v1"
+}

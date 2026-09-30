@@ -1,0 +1,39 @@
+session=prosac_apgc_loss111_fast8k_20260930
+started=2026-09-30T19:36:58+08:00
+host=DESKTOP-0044
+user=xujian
+worktree=/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930
+branch=experiment/prosac-apgc-reproduction-fast-v1
+head=b2306c668e2d42874a052fcc7eb54aacbe54c591
+environment=/home/xujian/miniconda3/envs/flexict/bin/python
+gpu=0
+log=/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/formal_loss111_queue.log
+output=/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/runs/M0_LOSS111,/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/runs/M1_APGC_LOSS111
+commands=train_matched.py --arm M0_LOSS111 --max-step 8000; train_matched.py --arm M1_APGC_LOSS111 --max-step 8000
+exit_condition=both arms independently finish step 8000 and 2k,4k,8k validation; stop on first failure
+workspace_status:
+ M experiments/prosac_apgc_fast_v1/apgc_model.py
+ M experiments/prosac_apgc_fast_v1/smoke.py
+ M experiments/prosac_apgc_fast_v1/train_matched.py
+?? experiments/prosac_apgc_fast_v1/CONFIG_M0_LOSS111.json
+?? experiments/prosac_apgc_fast_v1/CONFIG_M1_APGC_LOSS111.json
+?? experiments/prosac_apgc_fast_v1/FORMAL_LOSS111_LAUNCH.txt
+?? experiments/prosac_apgc_fast_v1/SANITY100_LAUNCH.txt
+?? experiments/prosac_apgc_fast_v1/SMOKE_M0_LOSS111.json
+?? experiments/prosac_apgc_fast_v1/SMOKE_M1_APGC_LOSS111.json
+?? experiments/prosac_apgc_fast_v1/create_loss111_config.py
+?? experiments/prosac_apgc_fast_v1/launch_formal_loss111.sh
+?? experiments/prosac_apgc_fast_v1/launch_sanity100.sh
+?? experiments/prosac_apgc_fast_v1/loss111.py
+?? experiments/prosac_apgc_fast_v1/sanity100.py
+?? experiments/prosac_apgc_fast_v1/sanity100/
+?? experiments/prosac_apgc_fast_v1/source_snapshot/original_six_file.diff
+source_sha256:
+c85292574c083fa9803b7072cc081f132095e5b310bfdbbd4cf41beb9165432a  /home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/loss111.py
+0968370fd4e40ce06e759d6b49afaf79cd3649ea8d87ba8c450ecdab444205f5  /home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/train_matched.py
+7f9f75610cf691c2a51590e8a7aa3d9b2ebf1fbf889e90a50c1ce6d22c32bc1d  /home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/apgc_model.py
+05310a5e9bfb325eb92bdee6e61ffd7b6f353c69aae3c5aa05eb2ec8dbf91c16  /home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/CONFIG_M0_LOSS111.json
+2bf075bc6b2b0bf2fc616a86fb1792bc1048f0ae797537eb9d7a842a119e3acc  /home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/CONFIG_M1_APGC_LOSS111.json
+c7a1b1b92c44a49ad48774b957edd74ec0bcfcc5b86b48afb7805ae2d564727c  /home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/7_RDDM_CT_Backbone_v1/rddm_ct.py
+environment_versions:
+3.11.16 2.8.0+cu128 12.8

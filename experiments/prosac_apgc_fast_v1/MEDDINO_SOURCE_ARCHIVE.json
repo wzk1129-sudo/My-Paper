@@ -1,0 +1,736 @@
+{
+  "archived_python_and_support_source": [
+    {
+      "bytes": 186,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/__init__.py",
+      "sha256": "cfcd49b9d41705ef9bd6ce61bccc38e8ab8fa52fa365de48c10a7d7e1710b631"
+    },
+    {
+      "bytes": 509,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/checkpointer/__init__.py",
+      "sha256": "2d44449d0cdd2b7c803582def39b61bec1e55bf610a92bc3b072a7a2eddea877"
+    },
+    {
+      "bytes": 13082,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/checkpointer/checkpointer.py",
+      "sha256": "e5d23df56c39705a489746a396c001d5b6451a30d3c3ea7a92ecde5362cfe40a"
+    },
+    {
+      "bytes": 382,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/__init__.py",
+      "sha256": "3e43ad228d86c0be1cf711a1527c40c9f351a5910cfc250a341e18e000183493"
+    },
+    {
+      "bytes": 7688,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/config.py",
+      "sha256": "b070402b1242c97052a9c2de981a0a27bd370e9211252b752cc29d4f0da7be55"
+    },
+    {
+      "bytes": 6751,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/ssl_default_config.yaml",
+      "sha256": "f238c842f51a07bd6bdd567214e95b6d5fd60d7d278edfa99e8ec47e4dd4cf13"
+    },
+    {
+      "bytes": 4354,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/dinov3_vit7b16_gram_anchor.yaml",
+      "sha256": "189f59b48688d844ca4841a1fcce5c100fc46da3aff6734aba53f0eadd6358ad"
+    },
+    {
+      "bytes": 4581,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/dinov3_vit7b16_high_res_adapt.yaml",
+      "sha256": "e05a92dddfc2834696e13034b71c4073b66819b4ae7a710150a44145026a8111"
+    },
+    {
+      "bytes": 3634,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/dinov3_vit7b16_pretrain.yaml",
+      "sha256": "70824221cff7c6308ec53f3066697b34774e289e6f8fdf47abc44c9e14675086"
+    },
+    {
+      "bytes": 5710,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/dinov3_vitl16_lvd1689m_distilled.yaml",
+      "sha256": "5736cde15e88d0ac96f585bbb96a01f1caa4c7e25bef9e847a1a4788d3fba045"
+    },
+    {
+      "bytes": 626,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/multi_distillation_test.yaml",
+      "sha256": "229b410ef483869a528c96f2603bff3909a93194bfe4d68161d60e0e57b6bf80"
+    },
+    {
+      "bytes": 155,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/multidist_tests/vitb_p16.yaml",
+      "sha256": "050f5db7c1a745fbce8826e8eb3dfd13ea2a634e13fca83e4b406ec5769d73f2"
+    },
+    {
+      "bytes": 134,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/multidist_tests/vits_p16.yaml",
+      "sha256": "41864ef0b6cd9a9ec5e234cdf47c595c1b488dc1ab0a5f1f97fc4e7c6e45f8fa"
+    },
+    {
+      "bytes": 3459,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/configs/train/vitl_im1k_lin834.yaml",
+      "sha256": "89ac0e15b07cdc85e3ffe7d6deeaeb8865b875be636ac1c0e69b184cf21bdbe5"
+    },
+    {
+      "bytes": 550,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/__init__.py",
+      "sha256": "d802fa917898098dfeff0d6baf9360620c1e3ab1b856413be0e3d86a993d77ec"
+    },
+    {
+      "bytes": 2610,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/adapters.py",
+      "sha256": "104068a78e6055a3198ee58f0658950d7a081ce8a79514e924d856f0e59ffad2"
+    },
+    {
+      "bytes": 9723,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/augmentations.py",
+      "sha256": "579ca04e5903a52871b44210dc14ea6f693f81c6c927373b04cc97a459020609"
+    },
+    {
+      "bytes": 5053,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/collate.py",
+      "sha256": "49c0f80d055c8e66d4da64f5a3235a45ec3727323dc13d85b752549e4ed2a2a6"
+    },
+    {
+      "bytes": 302,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/datasets/__init__.py",
+      "sha256": "968b4da1ffd79c8a19f094853c9f8d2da647290dafbc10be64b65126fcd3abe1"
+    },
+    {
+      "bytes": 2887,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/datasets/ade20k.py",
+      "sha256": "c1e010b3420b62b811a943a539a9df07a23867b391a54cf4f48faf0d8f2b61cf"
+    },
+    {
+      "bytes": 2768,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/datasets/coco_captions.py",
+      "sha256": "9f602a8bc537db35a99d5c252df64bc9b2c1db606f49b73eb0e7cf163d107eeb"
+    },
+    {
+      "bytes": 938,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/datasets/decoders.py",
+      "sha256": "7a7fc3ed86488c4e5be720be59545a40480ae647499a471c6c3178867aa01222"
+    },
+    {
+      "bytes": 1428,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/datasets/extended.py",
+      "sha256": "b23cbf6245a7cf8c24ce85197aad9edc5123fba5e16a45d672f77a82109b8983"
+    },
+    {
+      "bytes": 11056,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/datasets/image_net.py",
+      "sha256": "7e079b4eb84419499e8d83bff3ff646d495bcd39a96ff4d1b3c2f6e0774ed41b"
+    },
+    {
+      "bytes": 10208,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/datasets/image_net_22k.py",
+      "sha256": "928e8e84e64098e29801ff5e138ea8ff54bb9f126cb1ad5e30dfdf38e5a8ac51"
+    },
+    {
+      "bytes": 6940,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/loaders.py",
+      "sha256": "b85341f785c2b5236ec6cb8ba6b7531bcee46e94a65221cefe71fcbb65d4f464"
+    },
+    {
+      "bytes": 3248,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/masking.py",
+      "sha256": "40f37aa4b4a7b7ac94ebf57000bdce50e24fd8771feb1edca7d8ec40bc5f01b2"
+    },
+    {
+      "bytes": 2926,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/meta_loaders.py",
+      "sha256": "b6301d9381c92a5462a3a4228340a64c660f9e38defcbaf70fc0f9977a2c0b63"
+    },
+    {
+      "bytes": 7560,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/samplers.py",
+      "sha256": "f51e00c1534badb4c0bd3c09258d03eca50111c6a965a011f35c94184673054c"
+    },
+    {
+      "bytes": 8046,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/data/transforms.py",
+      "sha256": "0bb07da5e96c1a075f5365f7d1aaafaece4f94bec43f128a764f3be71188ed4f"
+    },
+    {
+      "bytes": 6227,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/dino_logging/__init__.py",
+      "sha256": "e8cc0c678d892bd242f0bd595b0759f3568e7257aebaa5405e0ca244b170cce0"
+    },
+    {
+      "bytes": 6648,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/dino_logging/helpers.py",
+      "sha256": "9dec29734a5c88d9b8e1763fff2c738ec1ad2c3a1ead40acb216dcf12a94d5aa"
+    },
+    {
+      "bytes": 679,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/distributed/__init__.py",
+      "sha256": "d17e0f68fa38f506ae19347c2b4fc99d1b1cdc7159bebf9a8ed8f863116e58a1"
+    },
+    {
+      "bytes": 3977,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/distributed/torch_distributed_primitives.py",
+      "sha256": "cde664c2bde4021778284b45018561e219d0ef6c93b8d652b9d596fbea689be9"
+    },
+    {
+      "bytes": 11319,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/distributed/torch_distributed_wrapper.py",
+      "sha256": "6dd47e7e8044c98b37ad0d00dc1a2f5732389ae38e779207ec794da35a4e5d52"
+    },
+    {
+      "bytes": 2645,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/accumulators.py",
+      "sha256": "0d637089e3306601fdddcc3941f2f9618184e04b33f94ee6e0f4132a78fea61b"
+    },
+    {
+      "bytes": 10570,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/data.py",
+      "sha256": "16670af49be7251baf6520f4e81d83d489f44772e4bf93f32c99c07e9c397124"
+    },
+    {
+      "bytes": 6368,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/dense/depth/models/__init__.py",
+      "sha256": "696864123d2397f11c15d35034ab13e4b85876c30bf4a5ebc6a1d4fa2c9582e7"
+    },
+    {
+      "bytes": 21353,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/dense/depth/models/dpt_head.py",
+      "sha256": "52451ada1b3ad4ec9ed6227f20e119719e569154b4d6e9c15d51d2179ce3281d"
+    },
+    {
+      "bytes": 1686,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/dense/depth/models/embed.py",
+      "sha256": "975b1add76ecf7516dc46e147e5d7e9c7a4ccb0fc0be6eea27501ebae818fb14"
+    },
+    {
+      "bytes": 5045,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/dense/depth/models/encoder.py",
+      "sha256": "6a0885383983c5136184021594449c38ad7f9f0ea99eac2e979fcd63fec73906"
+    },
+    {
+      "bytes": 661,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/dense/depth/utils.py",
+      "sha256": "a247ebb745d287e66f7e6890abcde8391e97bf5b665617d1646ebeefb7736474"
+    },
+    {
+      "bytes": 2526,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/config.py",
+      "sha256": "b70dcd89651d668ab107fd92203d166dccddbfc002e3afd1e57407daf3a50fa9"
+    },
+    {
+      "bytes": 164,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/__init__.py",
+      "sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+    },
+    {
+      "bytes": 4591,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/backbone.py",
+      "sha256": "e739d35f02af46fed6afd8f824e47060bd4d09b73228460bf0063ad8bb974edc"
+    },
+    {
+      "bytes": 19840,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/detr.py",
+      "sha256": "4e568f73d6cab0d90668163fcb6bbc5b088a4f4bd046be38929daba93a404d23"
+    },
+    {
+      "bytes": 10324,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/global_ape_decoder.py",
+      "sha256": "96be28c2e99e67ede9472bb29cba68109f513a6e6aed482066d8f001ac2f1b84"
+    },
+    {
+      "bytes": 14939,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/global_rpe_decomp_decoder.py",
+      "sha256": "f4c77a15572b6d030b6662cad73cf80b3d4fb94ff449301ef20761d3183caffc"
+    },
+    {
+      "bytes": 4868,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/position_encoding.py",
+      "sha256": "f885b7bfd40df50cb012c8038979042ff2f5c427a5f6bbe36028e84735132d4a"
+    },
+    {
+      "bytes": 18871,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/transformer.py",
+      "sha256": "9f9f83a54396f1acc1fa1ff9b66ddc54fe4990ab15f586f9382a31a599a4e0a3"
+    },
+    {
+      "bytes": 4001,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/transformer_encoder.py",
+      "sha256": "907ac6ed7cca47ef5e7fb04089d644422c31cd30226cdaa59d21279f7668ca73"
+    },
+    {
+      "bytes": 582,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/utils.py",
+      "sha256": "039d5d96267cd6a3201f38846781155b3de106eda63253d6b059de7b74e79952"
+    },
+    {
+      "bytes": 4126,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/models/windows.py",
+      "sha256": "fc1a62a3bafdab4345b6c3232a978d03aef0e72ea1101c7da52ef6eca231e30d"
+    },
+    {
+      "bytes": 164,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/util/__init__.py",
+      "sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+    },
+    {
+      "bytes": 3042,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/util/box_ops.py",
+      "sha256": "09a4981ed1a031c0163d9190c166b125d5546982b8467d2e5a388edeb708edf9"
+    },
+    {
+      "bytes": 9910,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/detection/util/misc.py",
+      "sha256": "fd815910b8dd23f0df3364fa08e194c07e97a1582ae5305b3b575f5d99a92360"
+    },
+    {
+      "bytes": 2713,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/helpers.py",
+      "sha256": "becd0e2de601b45f597a27f2ebfef4adf0a03086f98f67127910a8a7077c2445"
+    },
+    {
+      "bytes": 16178,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/knn.py",
+      "sha256": "44e282054c07e7ad0201e0ff6dc8102470dfb41a94a0b2174af7cb71daa5694b"
+    },
+    {
+      "bytes": 26334,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/linear.py",
+      "sha256": "a66f0815fcc2eb547cf7316f3018a4cf55ade3c006eb60f438db315a9365eb00"
+    },
+    {
+      "bytes": 16836,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/log_regression.py",
+      "sha256": "c7a881b76d76d1fe78390244d1d6c289e6733116d6dc0bfc3e4dee172485f6a3"
+    },
+    {
+      "bytes": 396,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/metrics/__init__.py",
+      "sha256": "5eac7657f2782bf9aeba5f2e0a02d29c20440fdb6e41372c4c0b4b7cdfcd3cfc"
+    },
+    {
+      "bytes": 13925,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/metrics/classification.py",
+      "sha256": "24e5925fb7405787df514ab118a841e5f2dd736337e05fbec343f67ccfb205a0"
+    },
+    {
+      "bytes": 5866,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/metrics/imagenet_c.py",
+      "sha256": "1ececcedb86c0b3efd97333809320ee6f7e8871c993e90bdf4c682d3e4415078"
+    },
+    {
+      "bytes": 7650,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/results.py",
+      "sha256": "9bfbe3a75ee0002fd25f8dcdd1ae9b5d5568cece55fddc824143daa9f0139427"
+    },
+    {
+      "bytes": 8122,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/inference.py",
+      "sha256": "a76460637e26fd4a895529521381a1c8035759b4b3b4d136396d80deac61e5e9"
+    },
+    {
+      "bytes": 2694,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/__init__.py",
+      "sha256": "0ebe033f2b4250322307ebbf175aacb5464365da410dd43da7281199f2f6c6fc"
+    },
+    {
+      "bytes": 17423,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/backbone/dinov3_adapter.py",
+      "sha256": "20922fc0b3e7526920525d25dd7207119e7e6aee6626668f747458e9a91bf827"
+    },
+    {
+      "bytes": 164,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/heads/__init__.py",
+      "sha256": "6e63b883b13efd796cf79dd70364d554efa6c9411bd414b2acb16a81442bb5db"
+    },
+    {
+      "bytes": 3510,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/heads/mask2former_head.py",
+      "sha256": "b7b177f9dc1d77cf98404f60d50d288a76f8eec06ac54eceb0a99392ac8c5733"
+    },
+    {
+      "bytes": 16829,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/heads/mask2former_transformer_decoder.py",
+      "sha256": "c1637e3c873f823f7c2c534b77e7b7b841f0847bb0aa6eed42c04c0f2e71c7dd"
+    },
+    {
+      "bytes": 17231,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/heads/pixel_decoder.py",
+      "sha256": "ecea2f7b5b0ef0078ff80fda8a1cdf0a149df744680f2301d715c4ab141f96f9"
+    },
+    {
+      "bytes": 13780,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/batch_norm.py",
+      "sha256": "ead32bdbdf8163625d2810fd315b0613d2890052e20a57f75a115a3850d5ee6b"
+    },
+    {
+      "bytes": 9352,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ms_deform_attn.py",
+      "sha256": "54be948b54bce71f881ba1347e1eeb4143f626dab1a921f134d8cd7b9792d465"
+    },
+    {
+      "bytes": 761,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/functions/__init__.py",
+      "sha256": "d99e42be9d47c057ba6f9d0c77fd36f823ee2f7aebcce2d34592b83cce4db4fa"
+    },
+    {
+      "bytes": 3559,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/functions/ms_deform_attn_func.py",
+      "sha256": "0b28e5c0e364b9a3e2c7a2e92b05d835203fa1e8ccfad6218018985888237e21"
+    },
+    {
+      "bytes": 748,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/modules/__init__.py",
+      "sha256": "a006f568e2a36e928106a5152cfd39eef97157b6af96861b2a3bb771337f692a"
+    },
+    {
+      "bytes": 6683,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/modules/ms_deform_attn.py",
+      "sha256": "297e3522826afec3fb93692b68b11f9245263626bc0e37042088bc547a2c3821"
+    },
+    {
+      "bytes": 2773,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/setup.py",
+      "sha256": "b6d5d2c156b74e07cb56a2f1cef42e4f57ca96599d621bc5a24dba510c4b7984"
+    },
+    {
+      "bytes": 1424,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/src/cpu/ms_deform_attn_cpu.cpp",
+      "sha256": "af87eb114278fc0d87974bbfdee98daaf808d7dd4ea8d55bcd72a3239ac5e567"
+    },
+    {
+      "bytes": 1307,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/src/cpu/ms_deform_attn_cpu.h",
+      "sha256": "8480de63f38316aeb38f417bfca9883a153ef39e2a14191d933d51672625b972"
+    },
+    {
+      "bytes": 7499,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/src/cuda/ms_deform_attn_cuda.cu",
+      "sha256": "264734d6ad77bede30f7735de043936e566aed9141fb15e16f24515aec053277"
+    },
+    {
+      "bytes": 1308,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/src/cuda/ms_deform_attn_cuda.h",
+      "sha256": "79a2e5a675bf031719eb06169ceac5b84c857bf7240fed0aba8b0a7bf8ccecde"
+    },
+    {
+      "bytes": 54863,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+      "sha256": "f7cc1731808147e21af258f8eed55eab5580f1d0329d5dec7eb017ae6717d9e2"
+    },
+    {
+      "bytes": 2006,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/src/ms_deform_attn.h",
+      "sha256": "02668d87e796e3627bb7bf4d2df6a53db148b187e364864b7c9319737c7d97ac"
+    },
+    {
+      "bytes": 967,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/src/vision.cpp",
+      "sha256": "b13bc96341a805bf5a8e62802c1a26302b6dba5063d64d4ab4a97721ce92e5db"
+    },
+    {
+      "bytes": 4533,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/ops/test.py",
+      "sha256": "08c1605c7987a77504e789afb42619f376b37476bad7e7b813c8d3570c05f19e"
+    },
+    {
+      "bytes": 2635,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/position_encoding.py",
+      "sha256": "a7c1a83ec11f0bbad68c6751fc3a457e8bd0948d6968827611f8a59db7968437"
+    },
+    {
+      "bytes": 11918,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/segmentation/models/utils/transformer.py",
+      "sha256": "42f8c7a6d045dbe95c4d79d3b39080d6a2ccc7bc2c478df649b4d60d81043a86"
+    },
+    {
+      "bytes": 2688,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/setup.py",
+      "sha256": "3ca3120e00d1ca25f47b83383127b70c92ae28de279196efadc720a2b8f14a06"
+    },
+    {
+      "bytes": 6648,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/ac_comp_parallelize.py",
+      "sha256": "939d2a71d35c7135795372f31081d6359d6342a3e0f47c2ad6ca5cfa50e0335c"
+    },
+    {
+      "bytes": 7777,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/build_dinotxt.py",
+      "sha256": "c3797ed848ff8a2cdae2ede553197b26acf38d3b140b6d7a43b63735c93065c1"
+    },
+    {
+      "bytes": 7023,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/clip_loss.py",
+      "sha256": "b9a15a16a6ab5b734272d7e769baa94c44908b3c3622e6a126556eba29ff0f1e"
+    },
+    {
+      "bytes": 2125,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/configs/dinov3_vitl_text.yaml",
+      "sha256": "950449d09eff9749791b22c94fafa7e0013967d617a4a9f8858095ef01d54878"
+    },
+    {
+      "bytes": 167,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/configs/text_backbone.yaml",
+      "sha256": "11bf7227626c17fbefeb5ce33b72b9267db143d963b29387697117aafbf375f6"
+    },
+    {
+      "bytes": 5317,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/dinotxt_model.py",
+      "sha256": "04a9c4bbd58294b8193163c1d1a716b2b834a1e00e0d039e7222f9bfdb7af0e2"
+    },
+    {
+      "bytes": 932,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/gram_loss.py",
+      "sha256": "b32fa04dbb0ba76cbed6c0d4cf98c26180f5c5b0567b986b9f73b885253009d1"
+    },
+    {
+      "bytes": 5470,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/text_tower.py",
+      "sha256": "c131ee186815f533ee93a402720f8208891718edb8e2f1f9b282559df5446d6a"
+    },
+    {
+      "bytes": 2397,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/text_transformer.py",
+      "sha256": "4264fa001ff0062815a0323a107b8d2205f516de790c6775f60cc5daa5e95247"
+    },
+    {
+      "bytes": 2354,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/tokenizer.py",
+      "sha256": "4c63dc45da6d2113795b3ca68fd7c27808124f4530d8090888d28fe389ae7f27"
+    },
+    {
+      "bytes": 12448,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/train_dinotxt.py",
+      "sha256": "3c01705aa1583cf1b7f1b47d73dfdd6ddf809b96f2d872b715dd0320ef754974"
+    },
+    {
+      "bytes": 7246,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/text/vision_tower.py",
+      "sha256": "adb2825d99e883126e9903b0a54fbe7ab4920cedccc894d843efd2078c647f85"
+    },
+    {
+      "bytes": 10267,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/eval/utils.py",
+      "sha256": "7c9b5f64e12cd647c5ee9a826497ecde694667c8b6d03492922558e402de867a"
+    },
+    {
+      "bytes": 6845,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/fsdp/ac_compile_parallelize.py",
+      "sha256": "be33c11b0213f8ad1611e8cce1015932f5b2df8ae95b6a8222de80976f9a99b2"
+    },
+    {
+      "bytes": 17234,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/hub/backbones.py",
+      "sha256": "30360a797a81cf2d096bed070e684b74b99152c5fe11da07744e06afe166ea67"
+    },
+    {
+      "bytes": 3768,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/hub/classifiers.py",
+      "sha256": "26496aaca930535f6f1cc04026a2cf40c1c7a42d0bb0ce8105e6a85003575220"
+    },
+    {
+      "bytes": 4116,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/hub/depthers.py",
+      "sha256": "bb3ce94bfb064aad50f35d229537ab0381c2e24f3541d5b7d313f4615b1c97d3"
+    },
+    {
+      "bytes": 4937,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/hub/detectors.py",
+      "sha256": "a26059435c85ea1b51540ca4a035335cd39bbedeccab3f166dbd0128f34a02fa"
+    },
+    {
+      "bytes": 3365,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/hub/dinotxt.py",
+      "sha256": "8f2bbfaebd1cc584ec3409f4c10e80a2ad151b24123e062471c2771a289a08f0"
+    },
+    {
+      "bytes": 3063,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/hub/segmentors.py",
+      "sha256": "7190cd23e7dcbdc286e8f0031cafb22b6db2b02c91c2f70627706566df7d975e"
+    },
+    {
+      "bytes": 222,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/hub/utils.py",
+      "sha256": "292698a622db0dcf393ed1f987688b25c55822634a48bdd7d883760c5b1f65a6"
+    },
+    {
+      "bytes": 551,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/__init__.py",
+      "sha256": "0707ef3e9c20aff594c3817f64a2c8ff34a21bd3b55e7d03471969fd314dde20"
+    },
+    {
+      "bytes": 6298,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/attention.py",
+      "sha256": "dfc21def6ba17d00cba18ea23a8726e7f1dd5a0dc8e43510852c999a173d37a8"
+    },
+    {
+      "bytes": 10382,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/block.py",
+      "sha256": "809a3615ec93019042ab440f31c21d5242186d9e503c67ac0f42a324ceae1950"
+    },
+    {
+      "bytes": 2089,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/dino_head.py",
+      "sha256": "cd7a83f00ac449f962484bad0f2959be477781e57943508428d32ff88f41fe33"
+    },
+    {
+      "bytes": 2590,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/ffn_layers.py",
+      "sha256": "fa2caadb52ff43a7e6888966a00ee07842fed9fd05c68305962cc1577d221fbe"
+    },
+    {
+      "bytes": 4992,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/fp8_linear.py",
+      "sha256": "f5b4d46e8c159e1830bc99968baf9a2e8070f0c46d0dda235eac46cc11c34f47"
+    },
+    {
+      "bytes": 798,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/layer_scale.py",
+      "sha256": "f9a10ee763a62136f9e814bfe2f2209c2cb501dfdc5573f858ab01ba9a69c23f"
+    },
+    {
+      "bytes": 2874,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/patch_embed.py",
+      "sha256": "c592c7262779c8e1789ed502aee81bdd55eba4607065f8d04ae95eea683d0ef1"
+    },
+    {
+      "bytes": 721,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/rms_norm.py",
+      "sha256": "8509ffc53f0bbe9e353a8b9e57ca2396795640b4ecc85140c27b17127c971869"
+    },
+    {
+      "bytes": 5304,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/rope_position_encoding.py",
+      "sha256": "af8ea35acb76d18ad4d53b844d5057bf01472a848375c51d70583a87f044efd1"
+    },
+    {
+      "bytes": 2864,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/layers/sparse_linear.py",
+      "sha256": "2fb0a34752b34862dd838d62c9c51fb424a6cfe20fc0e62467871de6f97ff7c6"
+    },
+    {
+      "bytes": 336,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/loss/__init__.py",
+      "sha256": "84e8e7856fc08af844accd51f4588fce0c85c33890f72e88c11bbb3b9c1d6caa"
+    },
+    {
+      "bytes": 4874,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/loss/dino_clstoken_loss.py",
+      "sha256": "2ee114321a3c38b4e9426bb200f3c13de4672e6531a7a3e30c4b399881529166"
+    },
+    {
+      "bytes": 2788,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/loss/gram_loss.py",
+      "sha256": "d4ec062c53cc40f039878fb90f88844ceb15c3685e695640038c6f56988a2256"
+    },
+    {
+      "bytes": 5521,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/loss/ibot_patch_loss.py",
+      "sha256": "bfb9e358aaf872949ce3150c22599f89f7dbdafd0137652b7e1944a9853f40d4"
+    },
+    {
+      "bytes": 4949,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/loss/koleo_loss.py",
+      "sha256": "942ccd42b06105c95c04d62ca2105d9e5bf22987b509c19fb81a645fac5a8cf6"
+    },
+    {
+      "bytes": 4773,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/models/__init__.py",
+      "sha256": "4479dfb19068e2599aaf35c6c698a2cf5b1ecb0b639c6b7afdb647570b7dd987"
+    },
+    {
+      "bytes": 13108,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/models/convnext.py",
+      "sha256": "3fd7f32601c487f54d4a95567a06f573ec3f1b211bddb84491949a6e8cb2433a"
+    },
+    {
+      "bytes": 4634,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/models/primus.py",
+      "sha256": "0ab8936917eb775305e5e7d5b9023549517213e131b2346e41f5f7b8fad67062"
+    },
+    {
+      "bytes": 37066,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/models/sam.py",
+      "sha256": "8e4897e5586f056ab473ee60daa894a82c8fcd571c0cd2f1864ba0da8234625f"
+    },
+    {
+      "bytes": 14877,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/models/vision_transformer.py",
+      "sha256": "a0e79d4506a9b166845446268bafeb802cace6e5c008a0b4a1da183befe46e7f"
+    },
+    {
+      "bytes": 984,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/run/init.py",
+      "sha256": "dc28d4f4a0fdb4886af9a3194dcddf7807e9523df0ca58ead5563bb3f4e442b4"
+    },
+    {
+      "bytes": 6799,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/run/submit.py",
+      "sha256": "e3246453a9cef714a44aefa28d558751e82efc713bc9c6c5f9213518fb56253e"
+    },
+    {
+      "bytes": 4952,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/thirdparty/CLIP/clip/simple_tokenizer.py",
+      "sha256": "b03605a8e83952e3202659351cb0d695b0c11927089bb6bf3d0379f5ac1144c7"
+    },
+    {
+      "bytes": 303,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/train/__init__.py",
+      "sha256": "a6040401fdef80c38b7bed37e43c657dc908dfefe481244c99f65eb622e42dd1"
+    },
+    {
+      "bytes": 3076,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/train/cosine_lr_scheduler.py",
+      "sha256": "671d3a7c16fcc7b73a6ff76d702664ccfe141895d89bc9d0137bee6a3ce4b02c"
+    },
+    {
+      "bytes": 6553,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/train/multidist_meta_arch.py",
+      "sha256": "152a46c0143991f2faf7e3346965cd049bd426201c10465e629901755246f589"
+    },
+    {
+      "bytes": 6193,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/train/param_groups.py",
+      "sha256": "b3d638888c03a63b7bc585c2f886ca4cedb6ba24f4e9511bfa3840f97b90716f"
+    },
+    {
+      "bytes": 39101,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/train/ssl_meta_arch.py",
+      "sha256": "8edee1df91691483f36843fc6fac9eaca46306cc64c5c940c37a5738e7280cf9"
+    },
+    {
+      "bytes": 24802,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/train/train.py",
+      "sha256": "b82a7f37fdc3d9c976538752a5e80992c529ad0bea78b40848ed682a45f8b8dd"
+    },
+    {
+      "bytes": 377,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/utils/__init__.py",
+      "sha256": "83e6ec1f0cea862f18ae111560e2eadf2fff1873e3fdd7d358dee8d32d0ade8d"
+    },
+    {
+      "bytes": 2802,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/utils/cluster.py",
+      "sha256": "d1a003ad571ad0f69e1b1a495ada8d079068fbed27ec929cb6b12a4eb1afa82b"
+    },
+    {
+      "bytes": 1340,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/utils/custom_callable.py",
+      "sha256": "4e3508a7e2fb419aae447e4a17049c5aef4603e42bce548ac3b317749c24d1c3"
+    },
+    {
+      "bytes": 1070,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/utils/dtype.py",
+      "sha256": "0c53f5cc155ea7e9899bc611493193fef9b985f23cb7d990401e22c363ac4419"
+    },
+    {
+      "bytes": 3898,
+      "path": "third_party/MedDINOv3_dinov3/dinov3/utils/utils.py",
+      "sha256": "d6fe7fe621b2ae3db89e3af588fbee0c78afe2130f4548dff87c94cbd734fe40"
+    }
+  ],
+  "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "meddino_commit": "a2460c2547899283446e520b84523454f7e25608",
+  "meddino_upstream": "https://github.com/ricklisz/MedDINOv3",
+  "note": "The completed run imported the runtime_source_root. This is an unchanged source-only archive for audit; existing model code was not redirected or edited.",
+  "runtime_checkpoint_excluded": true,
+  "runtime_checkpoint_sha256_recorded_in_apgc_model": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "runtime_source_root": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/official_source/MedDINOv3"
+}

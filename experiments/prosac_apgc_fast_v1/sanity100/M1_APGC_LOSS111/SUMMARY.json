@@ -1,0 +1,28 @@
+{
+  "arm": "M1_APGC_LOSS111",
+  "checkpoint_saved": false,
+  "external_memory_opens": 0,
+  "forbidden_test_opens": 0,
+  "loss_weights": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "median_last50": {
+    "loss_noise": 0.06661948561668396,
+    "loss_recon": 0.014299162197858095,
+    "loss_res": 0.019158043898642063,
+    "loss_total": 0.1012817919254303
+  },
+  "median_last50_shared_gradient_norm": {
+    "loss_noise_shared_grad_norm": 1.0287556052207947,
+    "loss_recon_shared_grad_norm": 0.31082068383693695,
+    "loss_res_shared_grad_norm": 0.36691097915172577
+  },
+  "optimizer_steps": 100,
+  "peak_allocated_gib": 21.292690753936768,
+  "peak_reserved_gib": 22.64453125,
+  "seconds_per_step_median": 1.8767484254203737,
+  "status": "PASS",
+  "train_stream_sha256": "8a0f595f3537ab200707808813688873e6690366d158ea08e974842244ea8998"
+}

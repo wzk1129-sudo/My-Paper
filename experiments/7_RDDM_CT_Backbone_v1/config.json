@@ -1,0 +1,94 @@
+{
+  "name": "RDDM-CT Backbone v1 Efficiency Revision",
+  "version": "1.1",
+  "seed": 20260829,
+  "data": {
+    "root": "/home/xujian/projects/CoreDiff/data_preprocess/gen_data/mayo_2016_npy",
+    "dose_label": "25",
+    "train_patients": [
+      "L067",
+      "L096",
+      "L109",
+      "L143",
+      "L192",
+      "L286",
+      "L291",
+      "L310"
+    ],
+    "validation_patients": [
+      "L333"
+    ],
+    "test_patients": [
+      "L506"
+    ],
+    "image_size": 512,
+    "boundary_policy": "nearest_slice_replication",
+    "stored_value_offset_hu": -1024.0,
+    "hu_min": -1024.0,
+    "hu_max": 3072.0,
+    "normalization": "linear_zero_one"
+  },
+  "model": {
+    "base_dim": 64,
+    "dim_mults": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "state_stem_channels": 32,
+    "context_stem_channels": 32,
+    "fused_channels": 64,
+    "resnet_groups": 8,
+    "image_size": 512,
+    "attention_resolutions": [
+      128,
+      64
+    ],
+    "max_parameters": 45000000
+  },
+  "diffusion": {
+    "timesteps": 1000,
+    "sampling_timesteps": 10,
+    "sum_scale": 1.0,
+    "objective": "pred_res_noise",
+    "loss_type": "l1",
+    "ddim_eta": 0.0,
+    "official_source_sha256": "b7c41d56313a5073a88c85cedd9ae2b65167515f6294f42288bba52831ea5c3c"
+  },
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "total_steps": 100000,
+    "batch_size": 2,
+    "num_workers": 4,
+    "amp": true,
+    "log_every": 10,
+    "validation_every": 5000,
+    "validation_slice_stride": 16,
+    "checkpoint_every": 5000,
+    "output_dir": "/home/xujian/projects/RDDM_CVPR2024/RDDM_CT/outputs/rddm_ct_backbone_v1_efficiency/formal_seed20260829",
+    "amp_init_scale": 32768.0
+  },
+  "evaluation": {
+    "hu_window": [
+      -1000.0,
+      1000.0
+    ],
+    "metrics": [
+      "psnr",
+      "ssim",
+      "rmse_hu",
+      "mae_hu"
+    ],
+    "qualitative_slices_per_patient": 3,
+    "qualitative_window": [
+      -160.0,
+      240.0
+    ]
+  },
+  "acceptance": {
+    "batch_size": 2,
+    "output_dir": "/home/xujian/projects/RDDM_CVPR2024/RDDM_CT/outputs/rddm_ct_backbone_v1_efficiency/acceptance"
+  }
+}

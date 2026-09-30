@@ -1,0 +1,16 @@
+{
+  "frozen_source_sha256": {
+    "acceptance.py": "264abf1187d53832f4ee319d2905c1359fbd47190a9201cf8711e3709138c563",
+    "config.json": "ca651e6ca1e9a46ef68d1f73981bd7c46508e5dbc626503aa76aa3a474e6006f",
+    "evaluate.py": "725ee89869fa63dc257b566396dc0d4b0af4d0881338161e72559dfa6a9f0b33",
+    "evaluation.py": "eb76388504aeafba87d65427a3125e86db42eea582b6965796324a90a6974354",
+    "rddm_ct.py": "c7a1b1b92c44a49ad48774b957edd74ec0bcfcc5b86b48afb7805ae2d564727c",
+    "train.py": "57eb02c89f68248c6472c585d5fd32cafec6f11cb73e2b00883760c53f9caa88"
+  },
+  "meddino_checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "meddino_official_root": "/home/xujian/projects/CoreDiff/experiments/rddm_prosac_apgc_control_v1_20260925/official_source/MedDINOv3",
+  "meddino_source_commit": "a2460c2547899283446e520b84523454f7e25608",
+  "official_rddm_diffusion_sha256": "b7c41d56313a5073a88c85cedd9ae2b65167515f6294f42288bba52831ea5c3c",
+  "original_six_file_diff_saved": "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/source_snapshot/original_six_file.diff",
+  "original_worktree_status_saved": "/home/xujian/projects/RDDM_CVPR2024/experiments/prosac_apgc_reproduction_fast_v1_20260930/experiments/prosac_apgc_fast_v1/source_snapshot/original_git_status.txt"
+}
