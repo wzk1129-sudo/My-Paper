@@ -1,0 +1,35 @@
+{
+  "session": "official_rddm_ct_8k_20261001",
+  "start_time": "2026-10-01T19:14:05.530647+08:00",
+  "worktree": "/home/xujian/projects/CoreDiff_official_rddm_ct_adapt_v1",
+  "branch": "experiment/rddm-official-ct-adapt-v1",
+  "git_commit": "5addef53035ff5e5a24a0546a023ff4a341c50e2",
+  "git_status_before_launch": "",
+  "conda_environment": "corediff",
+  "python": "/home/xujian/miniconda3/envs/corediff/bin/python",
+  "gpu": 0,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8"
+  },
+  "full_command": "bash /home/xujian/projects/CoreDiff_official_rddm_ct_adapt_v1/experiments/rddm_official_ct_adapt_v1/run_queue.sh",
+  "arms": [
+    {
+      "name": "CONTROL_STRIPPED",
+      "steps": 8000,
+      "log": "experiments/rddm_official_ct_adapt_v1/logs/control_8k_20261001.log",
+      "output": "experiments/rddm_official_ct_adapt_v1/runs/control_8k_20261001"
+    },
+    {
+      "name": "CANDIDATE_OFFICIAL_RDDM",
+      "steps": 8000,
+      "log": "experiments/rddm_official_ct_adapt_v1/logs/candidate_8k_20261001.log",
+      "output": "experiments/rddm_official_ct_adapt_v1/runs/candidate_8k_20261001"
+    }
+  ],
+  "termination": "Each arm stops at 8000 optimizer steps; queue stops on any error. No full L333 or L506 access.",
+  "readiness_files": [
+    "experiments/rddm_official_ct_adapt_v1/readiness.json",
+    "experiments/rddm_official_ct_adapt_v1/matched_readiness_audit.json"
+  ]
+}

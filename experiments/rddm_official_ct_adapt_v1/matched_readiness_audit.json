@@ -1,0 +1,97 @@
+{
+  "matches": {
+    "samples": true,
+    "timesteps": true,
+    "noise_sha256": true,
+    "pre_step_rng_sha256": true,
+    "post_step_rng_sha256": true
+  },
+  "arms": {
+    "control": {
+      "samples": [
+        {
+          "patient_id": "L143",
+          "slice_index": 573,
+          "horizontal_flip": true,
+          "rotation_degrees": 270
+        },
+        {
+          "patient_id": "L143",
+          "slice_index": 50,
+          "horizontal_flip": false,
+          "rotation_degrees": 270
+        }
+      ],
+      "timesteps": [
+        102,
+        842
+      ],
+      "noise_sha256": "b757934c1a879c54a87ff260f8997acb10d2dd785ce32e1635971ae0d210255c",
+      "pre_step_rng_sha256": "22471e2df47ebfdef8415ceb7f6905eda2befe77ec78c9fe711a778b79e3e32f",
+      "post_step_rng_sha256": "ba4a246fd0dce5953a5331c0f4356268d27d8544d41f13acf8063536b2048dee",
+      "loss": 0.06816790997982025,
+      "attention_gradient_norm": 0.0,
+      "parameters_finite": true,
+      "peak_vram_bytes": 4360867840,
+      "access": {
+        "patients_opened": [
+          "L143"
+        ],
+        "opens": 4,
+        "blocked_attempts": 0,
+        "validation_indices_opened": [],
+        "training_patients_opened": [
+          "L143"
+        ],
+        "external_memory_opens": 0,
+        "test_opens": 0,
+        "external_memory_enabled": false,
+        "mode": "FAST",
+        "L506_access_count": 0
+      }
+    },
+    "candidate": {
+      "samples": [
+        {
+          "patient_id": "L143",
+          "slice_index": 573,
+          "horizontal_flip": true,
+          "rotation_degrees": 270
+        },
+        {
+          "patient_id": "L143",
+          "slice_index": 50,
+          "horizontal_flip": false,
+          "rotation_degrees": 270
+        }
+      ],
+      "timesteps": [
+        102,
+        842
+      ],
+      "noise_sha256": "b757934c1a879c54a87ff260f8997acb10d2dd785ce32e1635971ae0d210255c",
+      "pre_step_rng_sha256": "22471e2df47ebfdef8415ceb7f6905eda2befe77ec78c9fe711a778b79e3e32f",
+      "post_step_rng_sha256": "ba4a246fd0dce5953a5331c0f4356268d27d8544d41f13acf8063536b2048dee",
+      "loss": 0.23775982856750488,
+      "attention_gradient_norm": 0.17958997189998627,
+      "parameters_finite": true,
+      "peak_vram_bytes": 19910505984,
+      "access": {
+        "patients_opened": [
+          "L143"
+        ],
+        "opens": 4,
+        "blocked_attempts": 0,
+        "validation_indices_opened": [],
+        "training_patients_opened": [
+          "L143"
+        ],
+        "external_memory_opens": 0,
+        "test_opens": 0,
+        "external_memory_enabled": false,
+        "mode": "FAST",
+        "L506_access_count": 0
+      }
+    }
+  }
+}

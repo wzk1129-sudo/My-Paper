@@ -1,0 +1,228 @@
+{
+  "official_commit": "524caea34cedb3733aa5bf6c27dc1cd6e0469216",
+  "candidate_parameters": 36248513,
+  "control_parameters": 13130945,
+  "parameter_delta": 23117568,
+  "encoder_stages": 4,
+  "decoder_stages": 4,
+  "linear_attention_count": 8,
+  "full_attention_count": 1,
+  "feature_shapes": {
+    "downs.0.0": [
+      2,
+      64,
+      512,
+      512
+    ],
+    "downs.0.1": [
+      2,
+      64,
+      512,
+      512
+    ],
+    "downs.0.2.fn.fn": [
+      2,
+      64,
+      512,
+      512
+    ],
+    "downs.1.0": [
+      2,
+      64,
+      256,
+      256
+    ],
+    "downs.1.1": [
+      2,
+      64,
+      256,
+      256
+    ],
+    "downs.1.2.fn.fn": [
+      2,
+      64,
+      256,
+      256
+    ],
+    "downs.2.0": [
+      2,
+      128,
+      128,
+      128
+    ],
+    "downs.2.1": [
+      2,
+      128,
+      128,
+      128
+    ],
+    "downs.2.2.fn.fn": [
+      2,
+      128,
+      128,
+      128
+    ],
+    "downs.3.0": [
+      2,
+      256,
+      64,
+      64
+    ],
+    "downs.3.1": [
+      2,
+      256,
+      64,
+      64
+    ],
+    "downs.3.2.fn.fn": [
+      2,
+      256,
+      64,
+      64
+    ],
+    "mid_block1": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "mid_attn.fn.fn": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "mid_block2": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "ups.0.0": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "ups.0.1": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "ups.0.2.fn.fn": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "ups.1.0": [
+      2,
+      256,
+      128,
+      128
+    ],
+    "ups.1.1": [
+      2,
+      256,
+      128,
+      128
+    ],
+    "ups.1.2.fn.fn": [
+      2,
+      256,
+      128,
+      128
+    ],
+    "ups.2.0": [
+      2,
+      128,
+      256,
+      256
+    ],
+    "ups.2.1": [
+      2,
+      128,
+      256,
+      256
+    ],
+    "ups.2.2.fn.fn": [
+      2,
+      128,
+      256,
+      256
+    ],
+    "ups.3.0": [
+      2,
+      64,
+      512,
+      512
+    ],
+    "ups.3.1": [
+      2,
+      64,
+      512,
+      512
+    ],
+    "ups.3.2.fn.fn": [
+      2,
+      64,
+      512,
+      512
+    ],
+    "final_res_block": [
+      2,
+      64,
+      512,
+      512
+    ]
+  },
+  "forward_calls": {
+    "downs.0.0": 1,
+    "downs.0.1": 1,
+    "downs.0.2.fn.fn": 1,
+    "downs.1.0": 1,
+    "downs.1.1": 1,
+    "downs.1.2.fn.fn": 1,
+    "downs.2.0": 1,
+    "downs.2.1": 1,
+    "downs.2.2.fn.fn": 1,
+    "downs.3.0": 1,
+    "downs.3.1": 1,
+    "downs.3.2.fn.fn": 1,
+    "mid_block1": 1,
+    "mid_attn.fn.fn": 1,
+    "mid_block2": 1,
+    "ups.0.0": 1,
+    "ups.0.1": 1,
+    "ups.0.2.fn.fn": 1,
+    "ups.1.0": 1,
+    "ups.1.1": 1,
+    "ups.1.2.fn.fn": 1,
+    "ups.2.0": 1,
+    "ups.2.1": 1,
+    "ups.2.2.fn.fn": 1,
+    "ups.3.0": 1,
+    "ups.3.1": 1,
+    "ups.3.2.fn.fn": 1,
+    "final_res_block": 1
+  },
+  "attention_grad_norm": {
+    "downs.0.2.fn.fn": 0.28483386173483183,
+    "downs.1.2.fn.fn": 0.04170308586299143,
+    "downs.2.2.fn.fn": 0.00974279769388886,
+    "downs.3.2.fn.fn": 0.003410208781588153,
+    "ups.0.2.fn.fn": 0.006887639976639548,
+    "ups.1.2.fn.fn": 0.030059336100293876,
+    "ups.2.2.fn.fn": 0.1427104894180502,
+    "ups.3.2.fn.fn": 1.0138566407463259,
+    "mid_attn.fn.fn": 0.0030110849911579862
+  },
+  "forward_b2_1x512_pass": true,
+  "backward_finite": true,
+  "timestep_sensitivity": 0.004553233273327351,
+  "condition_sensitivity": 0.04546685144305229,
+  "peak_vram_bytes": 19895569920,
+  "L506_access_count": 0,
+  "synthetic_only": true
+}

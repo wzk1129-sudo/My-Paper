@@ -1,0 +1,20 @@
+{
+  "official_backbone_slice_sha256": "73bcd7894a5224649d24c95b28faedfea2c1c6ab64febe63aba24f26d58db159",
+  "official_unet_ast_equal": true,
+  "matched_unetres_ast_equal": true,
+  "matched_diffusion_ast_equal": true,
+  "control_resnet_blocks": 10,
+  "candidate_resnet_blocks": 19,
+  "control_resblock_internal_conv_blocks": 1,
+  "candidate_resblock_internal_conv_blocks": 2,
+  "control_encoder_resblocks_per_stage": 1,
+  "candidate_encoder_resblocks_per_stage": 2,
+  "control_decoder_resblocks_per_stage": 1,
+  "candidate_decoder_resblocks_per_stage": 2,
+  "control_encoder_skip_pushes_per_stage": 1,
+  "candidate_encoder_skip_pushes_per_stage": 2,
+  "control_linear_attention": 0,
+  "candidate_linear_attention": 8,
+  "control_middle_full_attention": 0,
+  "candidate_middle_full_attention": 1
+}
