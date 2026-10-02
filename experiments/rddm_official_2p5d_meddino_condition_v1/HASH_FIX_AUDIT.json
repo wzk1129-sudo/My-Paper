@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "reason": "BF16 state bytes cannot be converted directly to NumPy; hash the contiguous uint8 byte view instead",
+  "legacy_compatible_dtype_hash_unchanged": true,
+  "scalar_hash_supported": true,
+  "bf16_hash_supported": true,
+  "bf16_changed_value_changes_hash": true,
+  "actual_meddino_state_hash": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+  "actual_meddino_state_dtypes": {
+    "torch.float32": 163,
+    "torch.bfloat16": 1
+  },
+  "meddino_frozen": true,
+  "hash_does_not_change_rng": true,
+  "train_main_ast_unchanged": true,
+  "candidate_shared_initial_hash": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+  "matches_completed_control_initial_hash": true,
+  "readiness_model_dependencies_unchanged": true,
+  "medical_data_opens": 0,
+  "L506_opens": 0,
+  "external_memory_opens": 0,
+  "neighbor_NDCT_opens": 0
+}

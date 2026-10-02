@@ -1,0 +1,359 @@
+{
+  "result": "PASS",
+  "scope": {
+    "patients": [
+      "L067",
+      "L143",
+      "L333"
+    ],
+    "doses": [
+      "full_1mm",
+      "quarter_1mm"
+    ],
+    "pixels_read": false,
+    "npy_pixels_read": false,
+    "test_patient_files_accessed": 0,
+    "external_memory_files_accessed": 0
+  },
+  "method": "pydicom.dcmread(stop_before_pixels=True,specific_tags=...) on explicitly scoped patient/dose directories; natsort identical to prep_mayo2016.py; normal=cross(IOP row,IOP column); coordinate=dot(IPP,normal)",
+  "thresholds": {
+    "orientation_component": 0.0001,
+    "pair_position_mm": 0.1,
+    "spacing_deviation_mm": 0.05
+  },
+  "npy_index_basis": "prep_mayo2016.py independently natsorts each dose's *.IMA and enumerate() assigns patient_view_index_img.npy; audit verifies all expected exact NPY paths exist without opening their pixels. Binary NPY provenance cannot be independently proven without comparing pixel content, which this task prohibits.",
+  "doses": [
+    {
+      "patient": "L067",
+      "dose": "full_1mm",
+      "view": "target",
+      "dicom_files": 560,
+      "expected_files": 560,
+      "series_uid_sha256": [
+        "ffae7a3c449a54d57211371eff0fcd63e4f1ac090c77a4d8b3a90fd5d738ad12"
+      ],
+      "series_count": 1,
+      "orientation_first": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "normal_first": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_orientation_component_deviation": 0.0,
+      "filename_order_vs_spatial": "decreasing",
+      "instance_number_first_last": [
+        1,
+        560
+      ],
+      "instance_number_monotonic": true,
+      "coordinate_first_last_mm": [
+        -67.0,
+        -514.2
+      ],
+      "median_adjacent_spacing_mm": 0.8000000000000114,
+      "max_adjacent_spacing_deviation_mm": 5.684341886080802e-14,
+      "slice_thickness_mm": {
+        "present_count": 560,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "spacing_between_slices_mm": {
+        "present_count": 0,
+        "min": null,
+        "max": null
+      },
+      "expected_npy_indices_present": 560,
+      "missing_npy_indices": [],
+      "pass": true,
+      "errors": []
+    },
+    {
+      "patient": "L067",
+      "dose": "quarter_1mm",
+      "view": "25",
+      "dicom_files": 560,
+      "expected_files": 560,
+      "series_uid_sha256": [
+        "bb148e9a69c46551b2a3108c5217bc15f4e6433e321827d9744f9335cad1d5c5"
+      ],
+      "series_count": 1,
+      "orientation_first": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "normal_first": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_orientation_component_deviation": 0.0,
+      "filename_order_vs_spatial": "decreasing",
+      "instance_number_first_last": [
+        1,
+        560
+      ],
+      "instance_number_monotonic": true,
+      "coordinate_first_last_mm": [
+        -67.0,
+        -514.2
+      ],
+      "median_adjacent_spacing_mm": 0.8000000000000114,
+      "max_adjacent_spacing_deviation_mm": 5.684341886080802e-14,
+      "slice_thickness_mm": {
+        "present_count": 560,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "spacing_between_slices_mm": {
+        "present_count": 0,
+        "min": null,
+        "max": null
+      },
+      "expected_npy_indices_present": 560,
+      "missing_npy_indices": [],
+      "pass": true,
+      "errors": []
+    },
+    {
+      "patient": "L143",
+      "dose": "full_1mm",
+      "view": "target",
+      "dicom_files": 585,
+      "expected_files": 585,
+      "series_uid_sha256": [
+        "c1926efdde726306afcff83fb044668896665fc62ff8a6f62ff10016186b11cf"
+      ],
+      "series_count": 1,
+      "orientation_first": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "normal_first": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_orientation_component_deviation": 0.0,
+      "filename_order_vs_spatial": "decreasing",
+      "instance_number_first_last": [
+        1,
+        585
+      ],
+      "instance_number_monotonic": true,
+      "coordinate_first_last_mm": [
+        -22.9,
+        -490.1
+      ],
+      "median_adjacent_spacing_mm": 0.8000000000000114,
+      "max_adjacent_spacing_deviation_mm": 5.684341886080802e-14,
+      "slice_thickness_mm": {
+        "present_count": 585,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "spacing_between_slices_mm": {
+        "present_count": 0,
+        "min": null,
+        "max": null
+      },
+      "expected_npy_indices_present": 585,
+      "missing_npy_indices": [],
+      "pass": true,
+      "errors": []
+    },
+    {
+      "patient": "L143",
+      "dose": "quarter_1mm",
+      "view": "25",
+      "dicom_files": 585,
+      "expected_files": 585,
+      "series_uid_sha256": [
+        "68ef47a71ccf7c54a77bb5d1fd04db48f19c9d1892c2cba84e09ef09c1c01131"
+      ],
+      "series_count": 1,
+      "orientation_first": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "normal_first": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_orientation_component_deviation": 0.0,
+      "filename_order_vs_spatial": "decreasing",
+      "instance_number_first_last": [
+        1,
+        585
+      ],
+      "instance_number_monotonic": true,
+      "coordinate_first_last_mm": [
+        -22.9,
+        -490.1
+      ],
+      "median_adjacent_spacing_mm": 0.8000000000000114,
+      "max_adjacent_spacing_deviation_mm": 5.684341886080802e-14,
+      "slice_thickness_mm": {
+        "present_count": 585,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "spacing_between_slices_mm": {
+        "present_count": 0,
+        "min": null,
+        "max": null
+      },
+      "expected_npy_indices_present": 585,
+      "missing_npy_indices": [],
+      "pass": true,
+      "errors": []
+    },
+    {
+      "patient": "L333",
+      "dose": "full_1mm",
+      "view": "target",
+      "dicom_files": 610,
+      "expected_files": 610,
+      "series_uid_sha256": [
+        "880d0bf2755cbd34dca7d8d88a58b07e123e5a210b6bca88cfed20be0eb13969"
+      ],
+      "series_count": 1,
+      "orientation_first": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "normal_first": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_orientation_component_deviation": 0.0,
+      "filename_order_vs_spatial": "decreasing",
+      "instance_number_first_last": [
+        1,
+        610
+      ],
+      "instance_number_monotonic": true,
+      "coordinate_first_last_mm": [
+        -64.1,
+        -551.3
+      ],
+      "median_adjacent_spacing_mm": 0.8000000000000114,
+      "max_adjacent_spacing_deviation_mm": 5.684341886080802e-14,
+      "slice_thickness_mm": {
+        "present_count": 610,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "spacing_between_slices_mm": {
+        "present_count": 0,
+        "min": null,
+        "max": null
+      },
+      "expected_npy_indices_present": 610,
+      "missing_npy_indices": [],
+      "pass": true,
+      "errors": []
+    },
+    {
+      "patient": "L333",
+      "dose": "quarter_1mm",
+      "view": "25",
+      "dicom_files": 610,
+      "expected_files": 610,
+      "series_uid_sha256": [
+        "8a149a41dfea9a3f85b41d0254056bf563decdd7fdf931471a16fd75074dbfe7"
+      ],
+      "series_count": 1,
+      "orientation_first": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "normal_first": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_orientation_component_deviation": 0.0,
+      "filename_order_vs_spatial": "decreasing",
+      "instance_number_first_last": [
+        1,
+        610
+      ],
+      "instance_number_monotonic": true,
+      "coordinate_first_last_mm": [
+        -64.1,
+        -551.3
+      ],
+      "median_adjacent_spacing_mm": 0.8000000000000114,
+      "max_adjacent_spacing_deviation_mm": 5.684341886080802e-14,
+      "slice_thickness_mm": {
+        "present_count": 610,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "spacing_between_slices_mm": {
+        "present_count": 0,
+        "min": null,
+        "max": null
+      },
+      "expected_npy_indices_present": 610,
+      "missing_npy_indices": [],
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "dose_pairs": [
+    {
+      "patient": "L067",
+      "full_and_quarter_index_pairing_pass": true,
+      "matched_count": 560,
+      "max_position_delta_mm": 0.0,
+      "median_position_delta_mm": 0.0,
+      "errors": []
+    },
+    {
+      "patient": "L143",
+      "full_and_quarter_index_pairing_pass": true,
+      "matched_count": 585,
+      "max_position_delta_mm": 0.0,
+      "median_position_delta_mm": 0.0,
+      "errors": []
+    },
+    {
+      "patient": "L333",
+      "full_and_quarter_index_pairing_pass": true,
+      "matched_count": 610,
+      "max_position_delta_mm": 0.0,
+      "median_position_delta_mm": 0.0,
+      "errors": []
+    }
+  ]
+}

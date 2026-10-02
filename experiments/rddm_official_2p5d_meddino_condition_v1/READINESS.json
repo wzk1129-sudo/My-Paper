@@ -1,0 +1,312 @@
+{
+  "status": "PASS",
+  "batch": 2,
+  "accum": 1,
+  "effective_batch": 2,
+  "data_access_audit": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 2,
+    "total_opens": 8,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  },
+  "first_samples": [
+    {
+      "patient_id": "L143",
+      "slice_index": 573,
+      "prev_index": 572,
+      "next_index": 574,
+      "horizontal_flip": true,
+      "rotation_degrees": 270
+    },
+    {
+      "patient_id": "L143",
+      "slice_index": 50,
+      "prev_index": 49,
+      "next_index": 51,
+      "horizontal_flip": false,
+      "rotation_degrees": 270
+    }
+  ],
+  "timestep": [
+    102,
+    842
+  ],
+  "feature_shapes": [
+    [
+      2,
+      768,
+      32,
+      32
+    ],
+    [
+      2,
+      768,
+      32,
+      32
+    ],
+    [
+      2,
+      768,
+      32,
+      32
+    ],
+    [
+      2,
+      768,
+      32,
+      32
+    ]
+  ],
+  "fused_anatomy_shape": [
+    2,
+    128,
+    32,
+    32
+  ],
+  "condition_shapes": {
+    "E0": [
+      2,
+      64,
+      512,
+      512
+    ],
+    "E1": [
+      2,
+      64,
+      256,
+      256
+    ],
+    "E2": [
+      2,
+      128,
+      128,
+      128
+    ],
+    "E3": [
+      2,
+      256,
+      64,
+      64
+    ],
+    "MID": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "D0": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "D1": [
+      2,
+      256,
+      128,
+      128
+    ],
+    "D2": [
+      2,
+      128,
+      256,
+      256
+    ],
+    "D3": [
+      2,
+      64,
+      512,
+      512
+    ]
+  },
+  "native_attention_forward_calls": {
+    "downs.0.2.fn.fn": 3,
+    "downs.1.2.fn.fn": 3,
+    "downs.2.2.fn.fn": 3,
+    "downs.3.2.fn.fn": 3,
+    "ups.0.2.fn.fn": 3,
+    "ups.1.2.fn.fn": 3,
+    "ups.2.2.fn.fn": 3,
+    "ups.3.2.fn.fn": 3,
+    "mid_attn.fn.fn": 3
+  },
+  "condition_forward_calls": {
+    "E0": 3,
+    "E1": 3,
+    "E2": 3,
+    "E3": 3,
+    "MID": 3,
+    "D0": 3,
+    "D1": 3,
+    "D2": 3,
+    "D3": 3
+  },
+  "attention_receives_condition_output": {
+    "E0": 3,
+    "E1": 3,
+    "E2": 3,
+    "E3": 3,
+    "MID": 3,
+    "D0": 3,
+    "D1": 3,
+    "D2": 3,
+    "D3": 3
+  },
+  "condition_step0": {
+    "E0": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9049890041351318,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "E1": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9851987361907959,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "E2": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9812729954719543,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "E3": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 1.1099704504013062,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "MID": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.8640597462654114,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D0": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 1.0179461240768433,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D1": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9894016981124878,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D2": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.8360026478767395,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D3": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9993798732757568,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    }
+  },
+  "two_dimensional_vs_two_point_five_max_abs_diff": 0.0,
+  "control_vs_candidate_step0_max_abs_diff": 0.0,
+  "first_backward_projection_gradient_norms": {
+    "E0": 1.3250941037767916e-06,
+    "E1": 9.868452934824745e-07,
+    "E2": 3.323694954815437e-07,
+    "E3": 8.827896635921206e-08,
+    "MID": 6.497261750837424e-08,
+    "D0": 1.499340243071856e-07,
+    "D1": 4.74014825613267e-07,
+    "D2": 6.983241860325506e-07,
+    "D3": 1.8827774965757271e-06
+  },
+  "first_backward_anatomy_gradient_norms": {
+    "layer_adapters.0.weight": 0.0,
+    "layer_adapters.0.bias": 0.0,
+    "layer_adapters.1.weight": 0.0,
+    "layer_adapters.1.bias": 0.0,
+    "layer_adapters.2.weight": 0.0,
+    "layer_adapters.2.bias": 0.0,
+    "layer_adapters.3.weight": 0.0,
+    "layer_adapters.3.bias": 0.0,
+    "fusion.0.weight": 0.0,
+    "fusion.0.bias": 0.0
+  },
+  "second_backward_anatomy_gradient_norms": {
+    "layer_0": 6.026626124366885e-06,
+    "layer_1": 3.43563851856743e-06,
+    "layer_2": 1.4444847238337388e-06,
+    "layer_3": 7.114018671927624e-07,
+    "fusion": 3.5284335808682954e-06,
+    "E0": 2.3190210640677833e-07,
+    "E1": 9.643480325394194e-08,
+    "E2": 1.564927742947475e-08,
+    "E3": 1.738978627763288e-09,
+    "MID": 5.04349451091457e-10,
+    "D0": 3.901129197458886e-09,
+    "D1": 6.829592535950724e-08,
+    "D2": 3.9564156395499595e-08,
+    "D3": 9.68367089626554e-07
+  },
+  "attention_gradient_norms_first": {
+    "downs.0.2.fn.fn": 7.78936555434484e-06,
+    "downs.1.2.fn.fn": 8.421970051131211e-06,
+    "downs.2.2.fn.fn": 1.910330638565938e-06,
+    "downs.3.2.fn.fn": 5.233249567027087e-07,
+    "ups.0.2.fn.fn": 1.072739564733638e-06,
+    "ups.1.2.fn.fn": 3.7951556350890314e-06,
+    "ups.2.2.fn.fn": 9.755854080140125e-07,
+    "ups.3.2.fn.fn": 1.403006990585709e-05,
+    "mid_attn.fn.fn": 3.67336411954966e-07
+  },
+  "attention_gradient_norms_second": {
+    "downs.0.2.fn.fn": 0.0007256731623783708,
+    "downs.1.2.fn.fn": 0.00023701055033598095,
+    "downs.2.2.fn.fn": 4.7244106099242344e-05,
+    "downs.3.2.fn.fn": 1.2426954526745249e-05,
+    "ups.0.2.fn.fn": 2.8584561732714064e-05,
+    "ups.1.2.fn.fn": 0.00011435652413638309,
+    "ups.2.2.fn.fn": 0.0004809053207281977,
+    "ups.3.2.fn.fn": 0.004780308809131384,
+    "mid_attn.fn.fn": 7.759064828860573e-06
+  },
+  "meddino_frozen": true,
+  "meddino_grad_none": true,
+  "peak_allocated_bytes": 18997277696,
+  "peak_reserved_bytes": 20359151616,
+  "parameters_total": 123590337,
+  "parameters_trainable": 37948353,
+  "loss_first": 0.0001330246013822034,
+  "loss_second": 0.0018750149756669998,
+  "official_source_commit": "524caea34cedb3733aa5bf6c27dc1cd6e0469216",
+  "meddino_source_commit": "a2460c2547899283446e520b84523454f7e25608",
+  "meddino_checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "fallback": null,
+  "checks_passed": 20
+}

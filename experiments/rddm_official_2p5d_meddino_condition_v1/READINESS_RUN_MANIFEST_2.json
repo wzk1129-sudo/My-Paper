@@ -1,0 +1,13 @@
+{
+  "stage": "readiness",
+  "session": "official_2p5d_med_readiness_20261001b",
+  "command": "cd /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1 && CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 /home/xujian/miniconda3/envs/flexict/bin/python -u readiness.py > /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/logs/readiness2.log 2>&1",
+  "environment": "/home/xujian/miniconda3/envs/flexict",
+  "gpu": 0,
+  "git_commit": "0f78f3956d40442da1f2a63119cfd64c405febff",
+  "git_status": "",
+  "log": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/logs/readiness2.log",
+  "output": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1",
+  "started_at": "2026-10-01T23:41:26.464898+08:00",
+  "termination": "readiness PASS; B1/accum2 only on B2 OOM; all other failures stop"
+}

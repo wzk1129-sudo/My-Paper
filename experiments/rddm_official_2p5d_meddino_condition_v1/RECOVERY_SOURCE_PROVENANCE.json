@@ -1,0 +1,22 @@
+{
+  "reason": "Recover candidate before its first training step after BF16 byte-hash failure",
+  "control_completed_steps": 8000,
+  "failed_candidate_completed_steps": 0,
+  "control_original_trainer_sha256": "1cf7720dd5f57779cfb12c1cf87500fd491f619b258eec67fa0a7f837cf4a4c1",
+  "recovered_source_hashes": {
+    "model.py": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+    "med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+    "context_data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+    "readiness.py": "4a034eedba937623da8627e2904cff3657e5eea3934a4a5c38c0c5f6eaa19c19",
+    "src/official_rddm_ct.py": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72",
+    "train.py": "18ceb3fca621add35d7681b078e8011836656b5ea849e74cbe8d39498d83d410",
+    "postprocess.py": "7c70b8774d1b06db1f9283ff888600b8976276b92ce75e373d86aad3c8710ee4",
+    "audit_hash_fix.py": "d22cc73ba4e4a1bc22585093549afd61fcc33f0720d606f4e89edeba21fd64b6",
+    "recover_candidate_queue.py": "bf20bce18d6c1991ff873c20bbb7326aa79fc811202f4647ae0fc1eb98f923d9"
+  },
+  "model_readiness_dependencies_unchanged": true,
+  "train_main_ast_unchanged": true,
+  "candidate_from_same_parent_ema_and_fresh_adam": true,
+  "preserved_failure_log": "logs/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION.log",
+  "preserved_failure_status": "QUEUE_STATUS_FAILED_20261002.json"
+}

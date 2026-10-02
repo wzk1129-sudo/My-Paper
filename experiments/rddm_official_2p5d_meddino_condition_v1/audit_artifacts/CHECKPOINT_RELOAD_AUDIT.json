@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "candidate_checkpoint_step": 8000,
+  "ema_updates": 8000,
+  "slices": 64,
+  "max_abs_per_slice_metric_diff": {
+    "psnr": 0.0,
+    "ssim": 0.0,
+    "rmse_hu": 0.0,
+    "mae_hu": 0.0,
+    "validation_loss": 0.0
+  },
+  "all_sampling_seeds_match": true,
+  "training_metrics_file": "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION/validation_step_8000.json",
+  "reload_metrics_file": "../DIAGNOSTIC_NORMAL_PER_SLICE.json",
+  "cpu_threads_training_and_reload": 2,
+  "original_consistency_assertion_preserved": true,
+  "thread_root_cause_audit": "../POSTPROCESS_THREAD_AUDIT.json"
+}

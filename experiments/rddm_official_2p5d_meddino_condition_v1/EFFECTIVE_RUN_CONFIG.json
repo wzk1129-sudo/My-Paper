@@ -1,0 +1,237 @@
+{
+  "status": "VERIFIED_FROM_SOURCE_AND_RUN_RECORDS",
+  "config_resolution": {
+    "configs/rddm_fast_dev.json": "Frozen matched data/diffusion/optimizer/evaluator protocol. Historical experiment_name/model metadata describe the donor simplified baseline; build_model() and runtime INITIAL_STATE determine the actually trained official backbone.",
+    "EXPERIMENT_CONFIG.json": "This task's stem, anatomy stages, continuation nodes and promotion gate.",
+    "BATCH_CONFIG.json": "Actual batch=2, accum=1; fallback unused."
+  },
+  "actual_arms": [
+    "OFFICIAL_RDDM_2P5D",
+    "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION"
+  ],
+  "actual_model": {
+    "official_topology": "19 ResnetBlock; 8 LinearAttention; 1 full Attention; complete dual skip topology",
+    "width": 64,
+    "dim_mults": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "stem_channels": [
+      "x_t",
+      "prev_LDCT",
+      "center_LDCT",
+      "next_LDCT"
+    ],
+    "output_channels": 1,
+    "parameter_counts": {
+      "OFFICIAL_RDDM_2P5D": {
+        "trainable": 36254785,
+        "total": 36254785
+      },
+      "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION": {
+        "trainable": 37948353,
+        "total": 123590337
+      }
+    }
+  },
+  "data": {
+    "root": "/home/xujian/projects/CoreDiff/data_preprocess/gen_data/mayo_2016_npy",
+    "dose_label": "25",
+    "train_patients": [
+      "L067",
+      "L143"
+    ],
+    "validation_patients": [
+      "L333"
+    ],
+    "image_size": 512,
+    "stored_value_offset_hu": -1024.0,
+    "hu_min": -1024.0,
+    "hu_max": 3072.0,
+    "normalization": "linear_zero_one"
+  },
+  "augmentation": {
+    "horizontal_flip_probability": 0.5,
+    "rotation_degrees": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "paired": true,
+    "crop": false
+  },
+  "diffusion": {
+    "objective": "pred_res",
+    "loss_type": "l2",
+    "timesteps": 1000,
+    "sampling_timesteps": 2,
+    "condition": true,
+    "sum_scale": 0.01
+  },
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.0002,
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "weight_decay": 1e-09,
+    "batch_size": 2,
+    "gradient_accumulation": 1,
+    "effective_batch": 2,
+    "max_optimizer_steps": 8000,
+    "amp": false,
+    "gradient_clip": 1.0,
+    "scheduler": null,
+    "num_workers": 0,
+    "cpu_threads": 2,
+    "validation_every": 2000,
+    "recovery_checkpoint_every": 1000,
+    "matched_checkpoint_steps": [
+      2000,
+      4000,
+      6000,
+      8000
+    ],
+    "log_every": 1,
+    "console_every": 100
+  },
+  "actual_validation_steps": [
+    0,
+    1000,
+    2000,
+    4000,
+    6000,
+    8000
+  ],
+  "ema": {
+    "decay": 0.995,
+    "update_every": 1,
+    "warmup_steps": 0,
+    "initialization": "copy model at step 0",
+    "dtype": "float32",
+    "validation_weights": "ema"
+  },
+  "evaluation": {
+    "hu_window": [
+      -1000.0,
+      1000.0
+    ],
+    "metrics": [
+      "psnr",
+      "ssim",
+      "rmse_hu",
+      "mae_hu"
+    ],
+    "protocol_version": "RDDM_CT_MAIN_EVAL_V1_2026-09-04",
+    "patients": [
+      "L333"
+    ],
+    "expected_slices": 64,
+    "stride": 1,
+    "validation_seed": 20260829,
+    "initial_noise": "seed+slice_index; batch=1; RNG isolated/restored",
+    "loss_seed_offset": 1000000,
+    "best_metric": "psnr",
+    "best_weights": "ema",
+    "save_images": false,
+    "validation_mode": "FAST",
+    "indices_file": "splits/L333_fast64.txt"
+  },
+  "seed": 20260829,
+  "initialization": "Prior official 2D 8k EMA, copied center/x_t stem weights and bias, zero neighboring stem weights, zero gamma/beta projections; fresh Adam and fresh EMA counter.",
+  "anatomy": {
+    "name": "Official RDDM + 2.5D + MedDINOv3 Anatomy Condition V1",
+    "parent_ema_checkpoint": "/home/xujian/projects/CoreDiff_official_rddm_ct_adapt_v1/experiments/rddm_official_ct_adapt_v1/runs/candidate_8k_20261001/checkpoints/step_8000.pt",
+    "batch": 2,
+    "accum": 1,
+    "effective_batch": 2,
+    "steps": [
+      0,
+      1000,
+      2000,
+      4000,
+      6000,
+      8000
+    ],
+    "input_channels": [
+      "x_t",
+      "prev_LDCT",
+      "center_LDCT",
+      "next_LDCT"
+    ],
+    "neighbor_stem_zero_init": true,
+    "meddino_layers": [
+      2,
+      5,
+      8,
+      11
+    ],
+    "meddino_frozen": true,
+    "meddino_center_only": true,
+    "mean_hu": 65.1084213256836,
+    "std_hu": 178.01663208007812,
+    "global_stages": [
+      "E0",
+      "E1",
+      "D2",
+      "D3"
+    ],
+    "spatial_stages": [
+      "E2",
+      "E3",
+      "MID",
+      "D0",
+      "D1"
+    ],
+    "condition_formula": "F + delta_gamma * GN(F) + delta_beta",
+    "condition_before_native_attention": true,
+    "diffusion_protocol": "configs/rddm_fast_dev.json",
+    "fresh_adam": true,
+    "amp": false,
+    "seed": 20260829,
+    "full_l333_gate": {
+      "delta_psnr_min": 0.03,
+      "improved_slice_fraction_min": 0.6
+    },
+    "data_access": {
+      "train": [
+        "L067",
+        "L143"
+      ],
+      "validation": "L333-fast64",
+      "L506": false,
+      "external_memory": false,
+      "neighbor_NDCT": false
+    }
+  },
+  "environment": {
+    "python": "3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]",
+    "executable": "/home/xujian/miniconda3/envs/flexict/bin/python",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.3.2",
+    "einops": "0.8.1",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "environment": "/home/xujian/miniconda3/envs/flexict",
+    "tf32": false,
+    "amp": false,
+    "cublas_workspace_config": ":4096:8",
+    "cuda_visible_devices": "0"
+  },
+  "reproduction_dependencies": {
+    "private_mayo_arrays_not_published": true,
+    "parent_ema_checkpoint_not_published": true,
+    "meddino_checkpoint_not_published": true,
+    "source_path_bindings": [
+      "configs/rddm_fast_dev.json:data.root",
+      "model.py:PARENT_CHECKPOINT",
+      "med_loader.py:MED_ROOT and MED_CK",
+      "provenance.py:canonical verification paths"
+    ],
+    "requirements": "Python 3.11, PyTorch 2.8.0+cu128, CUDA-compatible GPU, numpy 2.3.2, einops 0.8.1, scikit-image and other imports in shipped code. Exact private weights must satisfy recorded hashes."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "session": "official_2p5d_med_postprocess_20261002",
+  "command": "cd /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1 && CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 /home/xujian/miniconda3/envs/flexict/bin/python -u finish_postprocess_queue.py > /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/logs/finish_postprocess_threads2.log 2>&1",
+  "git_commit": "70ac9fbb5339bfc218ea8aed9e5bb55370a8cff3",
+  "git_status": "?? experiments/rddm_official_2p5d_meddino_condition_v1/CONDITION_ACTIVITY.csv\n?? experiments/rddm_official_2p5d_meddino_condition_v1/DIAGNOSTIC_CONDITION_OFF.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/DIAGNOSTIC_CONDITION_OFF_PER_SLICE.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/DIAGNOSTIC_NORMAL.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/DIAGNOSTIC_NORMAL_PER_SLICE.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/DIAGNOSTIC_SHUFFLED_MEDDINO.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/DIAGNOSTIC_SHUFFLED_MEDDINO_PER_SLICE.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/PER_SLICE_DELTA.csv\n?? experiments/rddm_official_2p5d_meddino_condition_v1/QUEUE_STATUS.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/RECOVERY_RUN_MANIFEST.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/RUN_MANIFEST.json\n?? experiments/rddm_official_2p5d_meddino_condition_v1/TRAINING_DIAGNOSTICS.csv\n?? experiments/rddm_official_2p5d_meddino_condition_v1/VALIDATION_HISTORY.csv\n",
+  "environment": "/home/xujian/miniconda3/envs/flexict",
+  "gpu": 0,
+  "log": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/logs/finish_postprocess_threads2.log",
+  "output": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1",
+  "started_at": "2026-10-02T13:09:22.534643+08:00",
+  "termination": "Use completed 8k checkpoints only; Fast64 NORMAL/OFF/SHUFFLED with training CPU threads; original consistency assertion; report/audit/result Git commit; stop on failure",
+  "training_restarted": false,
+  "cpu_threads": 2
+}

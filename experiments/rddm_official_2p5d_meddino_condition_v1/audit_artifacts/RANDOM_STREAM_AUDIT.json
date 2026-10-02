@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "steps_per_arm": 8000,
+  "all_step_stream_hashes_equal": true,
+  "mismatch_steps": [],
+  "hash_coverage": "Each chained SHA256 includes previous digest, all normalized augmented prev/center/next/target float32 batch bytes, sample and augmentation metadata, timesteps, and diffusion noise bytes. Equality is verified on actual logs.",
+  "per_step_hash_evidence": "../TRAINING_DIAGNOSTICS.csv",
+  "final_stream_sha256": "efa00ad4e18b7c44b26e6d58cb60e0ed238bf7b4cb95b1a4d5052808807e35f2",
+  "first_batch_by_arm": {
+    "OFFICIAL_RDDM_2P5D": {
+      "samples": [
+        {
+          "patient_id": "L143",
+          "slice_index": 573,
+          "prev_index": 572,
+          "next_index": 574,
+          "horizontal_flip": true,
+          "rotation_degrees": 270
+        },
+        {
+          "patient_id": "L143",
+          "slice_index": 50,
+          "prev_index": 49,
+          "next_index": 51,
+          "horizontal_flip": false,
+          "rotation_degrees": 270
+        }
+      ],
+      "timesteps": [
+        102,
+        842
+      ],
+      "noise_sha256": "b757934c1a879c54a87ff260f8997acb10d2dd785ce32e1635971ae0d210255c",
+      "microbatch_noise_sha256": [
+        "b757934c1a879c54a87ff260f8997acb10d2dd785ce32e1635971ae0d210255c"
+      ],
+      "pre_step_rng_sha256": "89aa818c8b27dcab4ac88c8dbd93bf596071505e28cfa7b31581e83fa251e1f8",
+      "post_step_rng_sha256": "f854d1ac631517749ac841cfe31592d0f228559a29722a26564cc39c39749e30"
+    },
+    "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION": {
+      "samples": [
+        {
+          "patient_id": "L143",
+          "slice_index": 573,
+          "prev_index": 572,
+          "next_index": 574,
+          "horizontal_flip": true,
+          "rotation_degrees": 270
+        },
+        {
+          "patient_id": "L143",
+          "slice_index": 50,
+          "prev_index": 49,
+          "next_index": 51,
+          "horizontal_flip": false,
+          "rotation_degrees": 270
+        }
+      ],
+      "timesteps": [
+        102,
+        842
+      ],
+      "noise_sha256": "b757934c1a879c54a87ff260f8997acb10d2dd785ce32e1635971ae0d210255c",
+      "microbatch_noise_sha256": [
+        "b757934c1a879c54a87ff260f8997acb10d2dd785ce32e1635971ae0d210255c"
+      ],
+      "pre_step_rng_sha256": "89aa818c8b27dcab4ac88c8dbd93bf596071505e28cfa7b31581e83fa251e1f8",
+      "post_step_rng_sha256": "f854d1ac631517749ac841cfe31592d0f228559a29722a26564cc39c39749e30"
+    }
+  }
+}

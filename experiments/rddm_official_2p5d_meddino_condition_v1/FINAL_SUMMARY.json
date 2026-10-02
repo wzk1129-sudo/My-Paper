@@ -1,0 +1,101 @@
+{
+  "status": "COMPLETE",
+  "arms": [
+    "OFFICIAL_RDDM_2P5D",
+    "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION"
+  ],
+  "continuation_steps": 8000,
+  "parent_2d_8k": {
+    "psnr": 40.623374459570655,
+    "ssim": 0.9460555638291376,
+    "rmse_hu": 18.719123484067644,
+    "mae_hu": 12.301865071058273
+  },
+  "batch_config": {
+    "batch": 2,
+    "accum": 1,
+    "effective_batch": 2
+  },
+  "control_8k": {
+    "psnr": 40.88994586452555,
+    "ssim": 0.94866734098133,
+    "rmse_hu": 18.156011973362347,
+    "mae_hu": 11.984496176242828
+  },
+  "candidate_8k": {
+    "psnr": 40.908237245382026,
+    "ssim": 0.9488474637550007,
+    "rmse_hu": 18.11923421427757,
+    "mae_hu": 11.986736714839935
+  },
+  "delta_8k": {
+    "psnr": 0.01829138085647486,
+    "ssim": 0.00018012277367074336,
+    "rmse_hu": -0.03677775908477798,
+    "mae_hu": 0.0022405385971069336
+  },
+  "improved_psnr_slices": 64,
+  "total_fast_slices": 64,
+  "improved_psnr_fraction": 1.0,
+  "promotion_gate_passed": false,
+  "full_l333_executed": false,
+  "full_l333": null,
+  "inference_diagnostics": {
+    "NORMAL": {
+      "psnr": 40.908237245382026,
+      "ssim": 0.9488474637550007,
+      "rmse_hu": 18.11923421427757,
+      "mae_hu": 11.986736714839935,
+      "validation_loss": 8.572010551688436e-05,
+      "slices": 64,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_mode": "FAST",
+      "condition_mode": "NORMAL",
+      "validation_seconds": 38.37494120502379
+    },
+    "CONDITION_OFF": {
+      "psnr": 40.762978645687056,
+      "ssim": 0.9474285397978758,
+      "rmse_hu": 18.415428107133685,
+      "mae_hu": 12.080989062786102,
+      "validation_loss": 8.8654938849686e-05,
+      "slices": 64,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_mode": "FAST",
+      "condition_mode": "CONDITION_OFF",
+      "validation_seconds": 39.34262567397673
+    },
+    "SHUFFLED_MEDDINO": {
+      "psnr": 40.90273132548175,
+      "ssim": 0.9488004914408024,
+      "rmse_hu": 18.130868994623448,
+      "mae_hu": 11.997593998908997,
+      "validation_loss": 8.585669581862021e-05,
+      "slices": 64,
+      "patient": "L333",
+      "weights": "ema",
+      "validation_mode": "FAST",
+      "condition_mode": "SHUFFLED_MEDDINO",
+      "validation_seconds": 39.584830924053676
+    }
+  },
+  "meddino_frozen": true,
+  "meddino_weights_unchanged": true,
+  "native_attention_forward_backward_verified": true,
+  "matched_all_8000_streams": true,
+  "L506_access": 0,
+  "external_memory_access": 0,
+  "neighbor_NDCT_access": 0,
+  "official_rddm_source_sha": "524caea34cedb3733aa5bf6c27dc1cd6e0469216",
+  "meddino_source_sha": "a2460c2547899283446e520b84523454f7e25608",
+  "meddino_checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "peak_vram_bytes": {
+    "OFFICIAL_RDDM_2P5D": 17497921536,
+    "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION": 19150547456
+  },
+  "postprocess_cpu_threads": 2,
+  "checkpoint_reload_metrics_match_training": true,
+  "postprocess_thread_audit": "POSTPROCESS_THREAD_AUDIT.json"
+}

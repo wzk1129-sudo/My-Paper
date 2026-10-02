@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "initial_state_sha256": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+  "checkpoint_reload_frozen_state_sha256": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+  "readiness_requires_grad_false_eval": true,
+  "readiness_grad_none": true,
+  "final_training_unchanged_hash_assertion_passed": true,
+  "evidence": "train.py asserts all frozen grads=None each step and equality to the initial state hash after step 8000; FINAL_STATE.json records assertion success. Frozen weights are not saved in run checkpoints; reload uses the pinned official MedDINO checkpoint."
+}

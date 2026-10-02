@@ -1,0 +1,14 @@
+{
+  "session": "official_2p5d_meddino_condition_8k_20261001",
+  "command": "cd /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1 && CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 /home/xujian/miniconda3/envs/flexict/bin/python -u run_queue.py > /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/logs/queue.log 2>&1",
+  "environment": "/home/xujian/miniconda3/envs/flexict",
+  "gpu": 0,
+  "git_commit": "abe51fe38d46bd3634b250a870c3617195f91944",
+  "git_status": "",
+  "log": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/logs/queue.log",
+  "output": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/runs",
+  "started_at": "2026-10-01T23:52:58.812600+08:00",
+  "batch": 2,
+  "accum": 1,
+  "termination": "Both arms finish 8000 steps; Full-L333 only if delta_PSNR >=0.03 and improved >=60% Fast64 slices; positive-gain Fast64 condition diagnostics; result report and commit. Stop on OOM/nonfinite/leak/audit failure."
+}

@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "actual_source_files_by_arm": {
+    "OFFICIAL_RDDM_2P5D": {
+      "context_data.py": {
+        "sha256": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+        "published_path": "context_data.py"
+      },
+      "evaluate.py": {
+        "sha256": "103e414e9fb85e83919856240ac0ce7add208798fba28bb9d6d53048fefdba3b",
+        "published_path": "evaluate.py"
+      },
+      "fast_dev/__init__.py": {
+        "sha256": "84e568c3cd795f454e147a96dc9059379503268e0f82c342bf252bdc939acd5c",
+        "published_path": "fast_dev/__init__.py"
+      },
+      "fast_dev/check_protocol.py": {
+        "sha256": "52f262e45407a1ee07808435b35064c02738b53246f5abbaff33fde1aee803b3",
+        "published_path": "fast_dev/check_protocol.py"
+      },
+      "fast_dev/data.py": {
+        "sha256": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+        "published_path": "fast_dev/data.py"
+      },
+      "fast_dev/evaluate.py": {
+        "sha256": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+        "published_path": "fast_dev/evaluate.py"
+      },
+      "fast_dev/protocol.py": {
+        "sha256": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+        "published_path": "fast_dev/protocol.py"
+      },
+      "fast_dev/reporting.py": {
+        "sha256": "33600b91749a458cb7946eb5005fb62e13bbc7393af7c4f7ddad0062db6a5238",
+        "published_path": "fast_dev/reporting.py"
+      },
+      "fast_dev/runtime.py": {
+        "sha256": "736a8bea8a1b77783d3181dd70bbbe85c013975b2ba04e17828294cb6be0f1c3",
+        "published_path": "fast_dev/runtime.py"
+      },
+      "fast_dev/train.py": {
+        "sha256": "bfe7b7c185429332618723160661654a827667a6974b03369fd81fe8e25e2e69",
+        "published_path": "fast_dev/train.py"
+      },
+      "mayo2016_smallset_v1/__init__.py": {
+        "sha256": "6d7ff225d825e2b023e0796a22ee495f247a4bec415e10913efb3f408b046a7e",
+        "published_path": "mayo2016_smallset_v1/__init__.py"
+      },
+      "mayo2016_smallset_v1/acceptance.py": {
+        "sha256": "21df0aeec36a06c361ea75a69cf458ed6685d13c70de48f2f5494898d5edda92",
+        "published_path": "mayo2016_smallset_v1/acceptance.py"
+      },
+      "mayo2016_smallset_v1/data.py": {
+        "sha256": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+        "published_path": "mayo2016_smallset_v1/data.py"
+      },
+      "mayo2016_smallset_v1/frozen_protocol.py": {
+        "sha256": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+        "published_path": "mayo2016_smallset_v1/frozen_protocol.py"
+      },
+      "mayo2016_smallset_v1/runtime.py": {
+        "sha256": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+        "published_path": "mayo2016_smallset_v1/runtime.py"
+      },
+      "mayo2016_smallset_v1/train.py": {
+        "sha256": "b995dede786995684de6529297ba96fe6aa3bcc0ea0cfa72ef04b9af140cec34",
+        "published_path": "mayo2016_smallset_v1/train.py"
+      },
+      "med_loader.py": {
+        "sha256": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+        "published_path": "med_loader.py"
+      },
+      "model.py": {
+        "sha256": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+        "published_path": "model.py"
+      },
+      "postprocess.py": {
+        "sha256": "f70435d89bea9578f233844504e13f0be2f06d4da76c3fe84cf554b8260b889c",
+        "published_path": "source_snapshots/OFFICIAL_RDDM_2P5D/postprocess.py",
+        "original_git_commit": "abe51fe38d46bd3634b250a870c3617195f91944"
+      },
+      "provenance.py": {
+        "sha256": "4e8b12f44c6d58c9467957a20dcf1ed1431abb8e4bf27dbc538e8b8ec5a65bd0",
+        "published_path": "provenance.py"
+      },
+      "readiness.py": {
+        "sha256": "4a034eedba937623da8627e2904cff3657e5eea3934a4a5c38c0c5f6eaa19c19",
+        "published_path": "readiness.py"
+      },
+      "run_queue.py": {
+        "sha256": "11f068ec4a63d40145c5ba113763ca3a3cae3be704ec39707479d1d91d6d3270",
+        "published_path": "run_queue.py"
+      },
+      "smoke_rddm_rleb.py": {
+        "sha256": "df7326eacd55f1a1ced5a14bc1e64e8053eeba1c678781ceeae68dbb9ee8d379",
+        "published_path": "smoke_rddm_rleb.py"
+      },
+      "src/__init__.py": {
+        "sha256": "cd131b9c188192743c94036d75362e9727664ebb381e206146926cdd6c9ad04c",
+        "published_path": "src/__init__.py"
+      },
+      "src/official_rddm_ct.py": {
+        "sha256": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72",
+        "published_path": "src/official_rddm_ct.py"
+      },
+      "src/rddm_rleb.py": {
+        "sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+        "published_path": "src/rddm_rleb.py"
+      },
+      "train.py": {
+        "sha256": "1cf7720dd5f57779cfb12c1cf87500fd491f619b258eec67fa0a7f837cf4a4c1",
+        "published_path": "source_snapshots/OFFICIAL_RDDM_2P5D/train.py",
+        "original_git_commit": "abe51fe38d46bd3634b250a870c3617195f91944"
+      },
+      "train_rddm_rleb.py": {
+        "sha256": "6d3d24f691bccf710e3dc5d98a2f313ceef1a49d5cc2e7029bf0b9c3b7263fc9",
+        "published_path": "train_rddm_rleb.py"
+      }
+    },
+    "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION": {
+      "audit_hash_fix.py": {
+        "sha256": "d22cc73ba4e4a1bc22585093549afd61fcc33f0720d606f4e89edeba21fd64b6",
+        "published_path": "audit_hash_fix.py"
+      },
+      "context_data.py": {
+        "sha256": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+        "published_path": "context_data.py"
+      },
+      "evaluate.py": {
+        "sha256": "103e414e9fb85e83919856240ac0ce7add208798fba28bb9d6d53048fefdba3b",
+        "published_path": "evaluate.py"
+      },
+      "fast_dev/__init__.py": {
+        "sha256": "84e568c3cd795f454e147a96dc9059379503268e0f82c342bf252bdc939acd5c",
+        "published_path": "fast_dev/__init__.py"
+      },
+      "fast_dev/check_protocol.py": {
+        "sha256": "52f262e45407a1ee07808435b35064c02738b53246f5abbaff33fde1aee803b3",
+        "published_path": "fast_dev/check_protocol.py"
+      },
+      "fast_dev/data.py": {
+        "sha256": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+        "published_path": "fast_dev/data.py"
+      },
+      "fast_dev/evaluate.py": {
+        "sha256": "864405f2fe3ab1b2907773e85f26ddd9c4dd7495d88f6f1e26db724fa2763f8b",
+        "published_path": "fast_dev/evaluate.py"
+      },
+      "fast_dev/protocol.py": {
+        "sha256": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+        "published_path": "fast_dev/protocol.py"
+      },
+      "fast_dev/reporting.py": {
+        "sha256": "33600b91749a458cb7946eb5005fb62e13bbc7393af7c4f7ddad0062db6a5238",
+        "published_path": "fast_dev/reporting.py"
+      },
+      "fast_dev/runtime.py": {
+        "sha256": "736a8bea8a1b77783d3181dd70bbbe85c013975b2ba04e17828294cb6be0f1c3",
+        "published_path": "fast_dev/runtime.py"
+      },
+      "fast_dev/train.py": {
+        "sha256": "bfe7b7c185429332618723160661654a827667a6974b03369fd81fe8e25e2e69",
+        "published_path": "fast_dev/train.py"
+      },
+      "mayo2016_smallset_v1/__init__.py": {
+        "sha256": "6d7ff225d825e2b023e0796a22ee495f247a4bec415e10913efb3f408b046a7e",
+        "published_path": "mayo2016_smallset_v1/__init__.py"
+      },
+      "mayo2016_smallset_v1/acceptance.py": {
+        "sha256": "21df0aeec36a06c361ea75a69cf458ed6685d13c70de48f2f5494898d5edda92",
+        "published_path": "mayo2016_smallset_v1/acceptance.py"
+      },
+      "mayo2016_smallset_v1/data.py": {
+        "sha256": "9b64d313242c6167c2f57dfa404d7676258a3afde677954feede7c148d31ece1",
+        "published_path": "mayo2016_smallset_v1/data.py"
+      },
+      "mayo2016_smallset_v1/frozen_protocol.py": {
+        "sha256": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+        "published_path": "mayo2016_smallset_v1/frozen_protocol.py"
+      },
+      "mayo2016_smallset_v1/runtime.py": {
+        "sha256": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+        "published_path": "mayo2016_smallset_v1/runtime.py"
+      },
+      "mayo2016_smallset_v1/train.py": {
+        "sha256": "b995dede786995684de6529297ba96fe6aa3bcc0ea0cfa72ef04b9af140cec34",
+        "published_path": "mayo2016_smallset_v1/train.py"
+      },
+      "med_loader.py": {
+        "sha256": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+        "published_path": "med_loader.py"
+      },
+      "model.py": {
+        "sha256": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+        "published_path": "model.py"
+      },
+      "postprocess.py": {
+        "sha256": "7c70b8774d1b06db1f9283ff888600b8976276b92ce75e373d86aad3c8710ee4",
+        "published_path": "source_snapshots/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION/postprocess.py",
+        "original_git_commit": "f870fabf79b17abc1589a3bacdbda39412722116"
+      },
+      "provenance.py": {
+        "sha256": "4e8b12f44c6d58c9467957a20dcf1ed1431abb8e4bf27dbc538e8b8ec5a65bd0",
+        "published_path": "provenance.py"
+      },
+      "readiness.py": {
+        "sha256": "4a034eedba937623da8627e2904cff3657e5eea3934a4a5c38c0c5f6eaa19c19",
+        "published_path": "readiness.py"
+      },
+      "recover_candidate_queue.py": {
+        "sha256": "bf20bce18d6c1991ff873c20bbb7326aa79fc811202f4647ae0fc1eb98f923d9",
+        "published_path": "recover_candidate_queue.py"
+      },
+      "run_queue.py": {
+        "sha256": "11f068ec4a63d40145c5ba113763ca3a3cae3be704ec39707479d1d91d6d3270",
+        "published_path": "run_queue.py"
+      },
+      "smoke_rddm_rleb.py": {
+        "sha256": "df7326eacd55f1a1ced5a14bc1e64e8053eeba1c678781ceeae68dbb9ee8d379",
+        "published_path": "smoke_rddm_rleb.py"
+      },
+      "src/__init__.py": {
+        "sha256": "cd131b9c188192743c94036d75362e9727664ebb381e206146926cdd6c9ad04c",
+        "published_path": "src/__init__.py"
+      },
+      "src/official_rddm_ct.py": {
+        "sha256": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72",
+        "published_path": "src/official_rddm_ct.py"
+      },
+      "src/rddm_rleb.py": {
+        "sha256": "e8ed93223fbdf4a0e2521f73c7a4f213561f6a191a1a7b2a5f95934b85ebf574",
+        "published_path": "src/rddm_rleb.py"
+      },
+      "train.py": {
+        "sha256": "18ceb3fca621add35d7681b078e8011836656b5ea849e74cbe8d39498d83d410",
+        "published_path": "train.py"
+      },
+      "train_rddm_rleb.py": {
+        "sha256": "6d3d24f691bccf710e3dc5d98a2f313ceef1a49d5cc2e7029bf0b9c3b7263fc9",
+        "published_path": "train_rddm_rleb.py"
+      }
+    }
+  },
+  "control_commit": "abe51fe38d46bd3634b250a870c3617195f91944",
+  "candidate_commit": "f870fabf79b17abc1589a3bacdbda39412722116",
+  "control_vs_candidate_difference": "Only tensor_state_hash byte extraction differs in the actual trainers; main training AST equality audited in HASH_FIX_AUDIT.json. Model/data/diffusion/evaluator source hashes are identical.",
+  "training_source_hashes_recorded_in": {
+    "OFFICIAL_RDDM_2P5D": "OFFICIAL_RDDM_2P5D/FINAL_STATE.json",
+    "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION": "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION/FINAL_STATE.json"
+  }
+}

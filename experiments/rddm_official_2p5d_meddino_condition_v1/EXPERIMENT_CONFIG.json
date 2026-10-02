@@ -1,0 +1,65 @@
+{
+  "name": "Official RDDM + 2.5D + MedDINOv3 Anatomy Condition V1",
+  "parent_ema_checkpoint": "/home/xujian/projects/CoreDiff_official_rddm_ct_adapt_v1/experiments/rddm_official_ct_adapt_v1/runs/candidate_8k_20261001/checkpoints/step_8000.pt",
+  "batch": 2,
+  "accum": 1,
+  "effective_batch": 2,
+  "steps": [
+    0,
+    1000,
+    2000,
+    4000,
+    6000,
+    8000
+  ],
+  "input_channels": [
+    "x_t",
+    "prev_LDCT",
+    "center_LDCT",
+    "next_LDCT"
+  ],
+  "neighbor_stem_zero_init": true,
+  "meddino_layers": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "meddino_frozen": true,
+  "meddino_center_only": true,
+  "mean_hu": 65.1084213256836,
+  "std_hu": 178.01663208007812,
+  "global_stages": [
+    "E0",
+    "E1",
+    "D2",
+    "D3"
+  ],
+  "spatial_stages": [
+    "E2",
+    "E3",
+    "MID",
+    "D0",
+    "D1"
+  ],
+  "condition_formula": "F + delta_gamma * GN(F) + delta_beta",
+  "condition_before_native_attention": true,
+  "diffusion_protocol": "configs/rddm_fast_dev.json",
+  "fresh_adam": true,
+  "amp": false,
+  "seed": 20260829,
+  "full_l333_gate": {
+    "delta_psnr_min": 0.03,
+    "improved_slice_fraction_min": 0.6
+  },
+  "data_access": {
+    "train": [
+      "L067",
+      "L143"
+    ],
+    "validation": "L333-fast64",
+    "L506": false,
+    "external_memory": false,
+    "neighbor_NDCT": false
+  }
+}
