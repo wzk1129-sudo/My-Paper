@@ -1,0 +1,49 @@
+{
+  "official_commit": "9bc31dc1d6184a880bd6334db34c466569a3642a",
+  "official_source_sha256": {
+    "models/corediff/corediff_wrapper.py": "66d990371119e1448ebe2deb1eb3b85bfaf9b003f4000fc4bb65d452829979d6",
+    "models/corediff/diffusion_modules.py": "89e6976883fb74e3d69176aeac4e0f74fbac9eb74af5bb662b6a59bbd8ff42f7",
+    "models/corediff/corediff.py": "c0937a8a08ed48938f6ca50cc0cfb8c2dbaed31e035b940256c7d20581f96470",
+    "models/basic_template.py": "659986cbd22001c109e1b30c71960ef2cf411663ef970faee7708094f00d95a5",
+    "utils/dataset.py": "760647fbaf541e868597da0e1d6aa78eff1995b8ed534e3df00013f9f75c29a7",
+    "utils/measure.py": "edb53bfc4f282492808db27e7d93fb61ed024e56a2393ccb0cb16929b0a5f585",
+    "utils/ops.py": "b8cf018335ea2b29ae510b80dbd776e1c71aac0847ff0982eaa929a6bcd956d6",
+    "data_preprocess/prep_mayo2016.py": "ce2cb391a1e2b778dbf000f2208c33c8124fd2cd9355c8f390128bce8d80f9eb"
+  },
+  "official_checkpoint_sha256": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+  "official_checkpoint_url": "https://drive.usercontent.google.com/download?id=1yle6GbmsGEVJ8vREGvagnYDo5PQVdIq8&export=download&authuser=0&confirm=t",
+  "official_checkpoint_folder": "https://drive.google.com/drive/folders/1rGb34H_6ktP79vMYYJOLSoCE3579TDZ5",
+  "checkpoint_verification": "Existing candidates searched before network verification. Official folder names ema_model-150000, 19337897 bytes. Public payload read into memory solely for SHA256 comparison on control host; exact match to existing official-test directory file. No local checkpoint file saved; existing verified remote file reused.",
+  "search_scope": [
+    "D:/ShuJuSHEN",
+    "C:/Users/14027/Downloads",
+    "/home/xujian/models",
+    "/home/xujian/projects"
+  ],
+  "candidates": [
+    {
+      "path": "/home/xujian/projects/CoreDiff/reproduction/corediff_mayo25_final/ema_model-150000",
+      "bytes": 19337897,
+      "sha256": "10c0e3925273acc7bce51e48abadf2d449c87cef7dbd0fc8539610b708f1857d",
+      "selected": false,
+      "provenance": "local reproduction training; rejected"
+    },
+    {
+      "path": "/home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016_reproduce/save_models/ema_model-150000",
+      "bytes": 19337897,
+      "sha256": "10c0e3925273acc7bce51e48abadf2d449c87cef7dbd0fc8539610b708f1857d",
+      "selected": false,
+      "provenance": "local reproduction training; rejected"
+    },
+    {
+      "path": "/home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016/save_models/ema_model-150000",
+      "bytes": 19337897,
+      "sha256": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+      "selected": true,
+      "provenance": "official released file: exact public payload SHA match"
+    }
+  ],
+  "command": "CUDA_VISIBLE_DEVICES=0 /home/xujian/miniconda3/envs/corediff/bin/python -u /home/xujian/projects/CoreDiff/evaluate_official_checkpoint_dual_protocol.py --checkpoint /home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016/save_models/ema_model-150000 --output /home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval",
+  "tmux_session": "corediff_official_dual_eval_20261002",
+  "git_status_before": "?? .aris/\n?? configs/\n?? data_preprocess/lits/canonicalize_lits_ras.py\n?? data_preprocess/lits/make_lits_splits.py\n?? data_preprocess/lits/select_lits_pilot_cases.py\n?? evaluate_official_checkpoint_dual_protocol.py\n?? experiments/\n?? research/\n?? tests/\n"
+}

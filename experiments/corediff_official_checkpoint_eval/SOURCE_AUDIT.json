@@ -1,0 +1,39 @@
+{
+  "official_commit": "9bc31dc1d6184a880bd6334db34c466569a3642a",
+  "project_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+  "files": {
+    "models/corediff/corediff_wrapper.py": {
+      "sha256": "66d990371119e1448ebe2deb1eb3b85bfaf9b003f4000fc4bb65d452829979d6",
+      "official_byte_match": true
+    },
+    "models/corediff/diffusion_modules.py": {
+      "sha256": "89e6976883fb74e3d69176aeac4e0f74fbac9eb74af5bb662b6a59bbd8ff42f7",
+      "official_byte_match": true
+    },
+    "models/corediff/corediff.py": {
+      "sha256": "c0937a8a08ed48938f6ca50cc0cfb8c2dbaed31e035b940256c7d20581f96470",
+      "official_byte_match": true
+    },
+    "models/basic_template.py": {
+      "sha256": "659986cbd22001c109e1b30c71960ef2cf411663ef970faee7708094f00d95a5",
+      "official_byte_match": true
+    },
+    "utils/dataset.py": {
+      "sha256": "760647fbaf541e868597da0e1d6aa78eff1995b8ed534e3df00013f9f75c29a7",
+      "official_byte_match": true
+    },
+    "utils/measure.py": {
+      "sha256": "edb53bfc4f282492808db27e7d93fb61ed024e56a2393ccb0cb16929b0a5f585",
+      "official_byte_match": true
+    },
+    "utils/ops.py": {
+      "sha256": "b8cf018335ea2b29ae510b80dbd776e1c71aac0847ff0982eaa929a6bcd956d6",
+      "official_byte_match": true
+    },
+    "data_preprocess/prep_mayo2016.py": {
+      "sha256": "ce2cb391a1e2b778dbf000f2208c33c8124fd2cd9355c8f390128bce8d80f9eb",
+      "official_byte_match": true
+    }
+  },
+  "evaluator_sha256": "81342fb1429d4a8f295cce9f0ce66ff900c6b8423810d6ecf466a4a0e7edac4e"
+}

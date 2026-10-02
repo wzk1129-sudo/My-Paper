@@ -1,0 +1,43 @@
+{
+  "selected_path": "/home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016/save_models/ema_model-150000",
+  "bytes": 19337897,
+  "sha256_before": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+  "official_public_sha256": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+  "official_public_byte_match": true,
+  "source_url": "https://drive.usercontent.google.com/download?id=1yle6GbmsGEVJ8vREGvagnYDo5PQVdIq8&export=download&authuser=0&confirm=t",
+  "source_folder": "https://drive.google.com/drive/folders/1rGb34H_6ktP79vMYYJOLSoCE3579TDZ5",
+  "verification": "Existing candidates searched before network verification. Official folder names ema_model-150000, 19337897 bytes. Public payload read into memory solely for SHA256 comparison on control host; exact match to existing official-test directory file. No local checkpoint file saved; existing verified remote file reused.",
+  "candidates": [
+    {
+      "path": "/home/xujian/projects/CoreDiff/reproduction/corediff_mayo25_final/ema_model-150000",
+      "bytes": 19337897,
+      "sha256": "10c0e3925273acc7bce51e48abadf2d449c87cef7dbd0fc8539610b708f1857d",
+      "selected": false,
+      "provenance": "local reproduction training; rejected"
+    },
+    {
+      "path": "/home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016_reproduce/save_models/ema_model-150000",
+      "bytes": 19337897,
+      "sha256": "10c0e3925273acc7bce51e48abadf2d449c87cef7dbd0fc8539610b708f1857d",
+      "selected": false,
+      "provenance": "local reproduction training; rejected"
+    },
+    {
+      "path": "/home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016/save_models/ema_model-150000",
+      "bytes": 19337897,
+      "sha256": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+      "selected": true,
+      "provenance": "official released file: exact public payload SHA match"
+    }
+  ],
+  "loader": "utils.ops.load_network -> Diffusion.load_state_dict(strict=True)",
+  "weight_format": "official standalone EMA state_dict",
+  "key_count": 84,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "finite": true,
+  "parameter_count": 4825953,
+  "checkpoint_step": 150000,
+  "EMA": true,
+  "checkpoint_modified": false
+}

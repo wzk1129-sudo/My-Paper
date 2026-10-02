@@ -1,0 +1,23 @@
+{
+  "verified_at": "2026-10-02T15:06:56+0800",
+  "exit_code": 0,
+  "official_csv_rows": 524,
+  "unified_csv_rows": 524,
+  "identical_prediction_hashes_and_slice_order": true,
+  "summary_means_recomputed": true,
+  "official_dynamic_range_values_255": [
+    255.00001525878906
+  ],
+  "unified_minus_official": {
+    "psnr": -1.2025303135487775e-06,
+    "ssim": -0.0006963162713016224,
+    "rmse_hu": -3.7861223027846336e-06
+  },
+  "checkpoint_sha256_after": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+  "checkpoint_unchanged": true,
+  "model_state_unchanged": true,
+  "git_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+  "git_status": "?? .aris/\n?? configs/\n?? data_preprocess/lits/canonicalize_lits_ras.py\n?? data_preprocess/lits/make_lits_splits.py\n?? data_preprocess/lits/select_lits_pilot_cases.py\n?? evaluate_official_checkpoint_dual_protocol.py\n?? experiments/\n?? research/\n?? tests/\n",
+  "tracked_diff": "",
+  "staged_diff": ""
+}

@@ -1,0 +1,52 @@
+mayo_2016
+524
+524
+{"completed": 25, "total": 524, "elapsed_seconds": 7.623520135879517, "official_psnr_running": 42.6213285446167, "unified_psnr_running": 42.621327105451535}
+{"completed": 50, "total": 524, "elapsed_seconds": 14.079628944396973, "official_psnr_running": 41.64927415847778, "unified_psnr_running": 41.6492728814018}
+{"completed": 75, "total": 524, "elapsed_seconds": 20.490497827529907, "official_psnr_running": 40.43598979314168, "unified_psnr_running": 40.43598855339348}
+{"completed": 100, "total": 524, "elapsed_seconds": 27.23821711540222, "official_psnr_running": 39.814599537849425, "unified_psnr_running": 39.81459827572012}
+{"completed": 125, "total": 524, "elapsed_seconds": 35.769912004470825, "official_psnr_running": 39.704375381469724, "unified_psnr_running": 39.70437407391283}
+{"completed": 150, "total": 524, "elapsed_seconds": 42.59855604171753, "official_psnr_running": 39.80004040400187, "unified_psnr_running": 39.80003912436407}
+{"completed": 175, "total": 524, "elapsed_seconds": 48.99184775352478, "official_psnr_running": 39.99771074567522, "unified_psnr_running": 39.99770945196326}
+{"completed": 200, "total": 524, "elapsed_seconds": 55.829519271850586, "official_psnr_running": 40.26269648075104, "unified_psnr_running": 40.26269517506923}
+{"completed": 225, "total": 524, "elapsed_seconds": 62.47848200798035, "official_psnr_running": 40.55137960645887, "unified_psnr_running": 40.55137826656297}
+{"completed": 250, "total": 524, "elapsed_seconds": 71.12793684005737, "official_psnr_running": 40.75793483734131, "unified_psnr_running": 40.757933525417876}
+{"completed": 275, "total": 524, "elapsed_seconds": 78.012211561203, "official_psnr_running": 40.85629081726074, "unified_psnr_running": 40.85628959837231}
+{"completed": 300, "total": 524, "elapsed_seconds": 84.81822872161865, "official_psnr_running": 40.91599100430806, "unified_psnr_running": 40.91598982879264}
+{"completed": 325, "total": 524, "elapsed_seconds": 91.31403017044067, "official_psnr_running": 40.978299140930176, "unified_psnr_running": 40.97829796143198}
+{"completed": 350, "total": 524, "elapsed_seconds": 98.02329659461975, "official_psnr_running": 41.06944442476545, "unified_psnr_running": 41.06944322494078}
+{"completed": 375, "total": 524, "elapsed_seconds": 106.76675415039062, "official_psnr_running": 41.15324433644613, "unified_psnr_running": 41.15324313216073}
+{"completed": 400, "total": 524, "elapsed_seconds": 113.48442888259888, "official_psnr_running": 41.20787945985794, "unified_psnr_running": 41.20787824630024}
+{"completed": 425, "total": 524, "elapsed_seconds": 120.0819878578186, "official_psnr_running": 41.24781875610351, "unified_psnr_running": 41.24781751762718}
+{"completed": 450, "total": 524, "elapsed_seconds": 126.63391709327698, "official_psnr_running": 41.325567881266274, "unified_psnr_running": 41.325566682526286}
+{"completed": 475, "total": 524, "elapsed_seconds": 133.0154688358307, "official_psnr_running": 41.416902893467956, "unified_psnr_running": 41.416901676517554}
+{"completed": 500, "total": 524, "elapsed_seconds": 142.35164999961853, "official_psnr_running": 41.52625086784363, "unified_psnr_running": 41.526249655270526}
+{"completed": 524, "total": 524, "elapsed_seconds": 149.3093695640564, "official_psnr_running": 41.609372664953916, "unified_psnr_running": 41.6093714624236}
+{
+  "patient": "L506",
+  "dose": 25,
+  "checkpoint_step": 150000,
+  "slice_count": 524,
+  "official_psnr": 41.609372664953916,
+  "official_ssim": 0.9565044518645484,
+  "official_rmse_hu": 16.915368986493757,
+  "unified_psnr": 41.6093714624236,
+  "unified_ssim": 0.9558081355932467,
+  "unified_rmse_hu": 16.915365200371454,
+  "unified_mae_hu": 11.236898460305023,
+  "checkpoint_sha256": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+  "git_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+  "official_source_commit": "9bc31dc1d6184a880bd6334db34c466569a3642a",
+  "sample_calls": 524,
+  "denoiser_forward_calls": 5240,
+  "same_prediction_all_slices": true,
+  "prediction_stream_sha256": "f5dbab3f1c9d08d40698e9b7462a2a939bb99d116f3f17622ae1ab6246997a02",
+  "checkpoint_sha256_after": "16e09d7b13a01e360e064194c3c5c334b558c4b12ce260d4c39f5ff4ad865b39",
+  "model_state_sha256_before": "9e6062f674378089f06dafbe97c110933633dac1167606d73ca99efe92aac344",
+  "model_state_sha256_after": "9e6062f674378089f06dafbe97c110933633dac1167606d73ca99efe92aac344",
+  "elapsed_seconds": 149.33718919754028,
+  "peak_vram_allocated_bytes": 462227968,
+  "peak_vram_reserved_bytes": 545259520,
+  "finished_at": "2026-10-02T15:04:25+0800",
+  "status": "COMPLETE"
+}

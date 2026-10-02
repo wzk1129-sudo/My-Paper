@@ -1,0 +1,20 @@
+{
+  "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+  "python_executable": "/home/xujian/miniconda3/envs/corediff/bin/python",
+  "pytorch": "1.10.1+cu111",
+  "cuda_runtime": "11.1",
+  "cudnn": 8005,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "hostname": "DESKTOP-0044",
+  "user": "xujian",
+  "packages": {
+    "numpy": "1.23.1",
+    "torchvision": "0.11.2+cu111",
+    "scikit-image": "0.21.0",
+    "pydicom": "2.3.1",
+    "natsort": "8.2.0"
+  },
+  "cuda_visible_devices": "0",
+  "nvidia_smi": "Fri Oct  2 15:01:24 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 590.57                 Driver Version: 591.86         CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 3090        On  |   00000000:01:00.0  On |                  N/A |\n| 47%   69C    P0            134W /  350W |     624MiB /  24576MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+  "started_at": "2026-10-02T15:01:24+0800"
+}

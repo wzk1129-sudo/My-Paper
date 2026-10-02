@@ -1,0 +1,89 @@
+{
+  "evaluator": {
+    "path": "/home/xujian/projects/CoreDiff/evaluate_official_checkpoint_dual_protocol.py",
+    "bytes": 18224,
+    "sha256": "81342fb1429d4a8f295cce9f0ce66ff900c6b8423810d6ecf466a4a0e7edac4e"
+  },
+  "files": [
+    {
+      "path": "CHECKPOINT_AUDIT.json",
+      "bytes": 2246,
+      "sha256": "f17a8249bfec09b44f0a04d1a56bcb642e043b22541b3a5fa2352a226de0a732"
+    },
+    {
+      "path": "DATA_PROTOCOL_AUDIT.json",
+      "bytes": 1887,
+      "sha256": "36b0fdb8819a0ff1873c1fa980589f52b66d8fcb566643024f60c30cc389b343"
+    },
+    {
+      "path": "ENVIRONMENT.json",
+      "bytes": 2265,
+      "sha256": "3f7e012832adea6c28d33d67eb27a0e8cf408e8928ce31532251f2840d7ccf97"
+    },
+    {
+      "path": "EXIT_STATUS.json",
+      "bytes": 65,
+      "sha256": "9e88ddd7fd000c8e86fe74dd60c7ee8d18c00eb73a57752fb4b1dc0f4c60b7c5"
+    },
+    {
+      "path": "FINAL_VALIDATION.json",
+      "bytes": 975,
+      "sha256": "5f486efaad4378c4ea89eea0e54e2c78c392461fde7a002166dd5f83df4bb8d8"
+    },
+    {
+      "path": "LAUNCH_AUDIT.json",
+      "bytes": 1103,
+      "sha256": "f55f22ba4836559d4bda19db130110416f48e5f454721b36eec59f0ca2e63b07"
+    },
+    {
+      "path": "OFFICIAL_METRICS.csv",
+      "bytes": 98930,
+      "sha256": "7ee88645cf9963fdda7a64cb854f5c86cc000f28dd6734153150235aea893567"
+    },
+    {
+      "path": "PRECHECK_PROVENANCE.json",
+      "bytes": 3444,
+      "sha256": "58659515d283de66ce8588d79f7df7948034c8604b6fa141e05998bd7473d60f"
+    },
+    {
+      "path": "READ_ONLY_AUDIT.json",
+      "bytes": 34132,
+      "sha256": "357c2f4272e4ae6fb7f05d8bb7b8473a9da4a86e9e561cb523004be2a3556d54"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 5596,
+      "sha256": "f47562b3376eed8e7670fc4be131ad554ff070783584dddded316792a217bef1"
+    },
+    {
+      "path": "RUN_CONFIG.json",
+      "bytes": 2337,
+      "sha256": "accbcc3eded6a2a6a8acaf4af93f00aa686f9470973793364fdf60685429413b"
+    },
+    {
+      "path": "RUN_LAUNCHER.py",
+      "bytes": 739,
+      "sha256": "911085bb5a8b4775ede753df634cbe6e22009ab06916ead039ddaa3f537754a5"
+    },
+    {
+      "path": "SOURCE_AUDIT.json",
+      "bytes": 1516,
+      "sha256": "b0c95075e7e74675dd17c561b7ea0386d272ead6a3de6d4e746b46f47c70e079"
+    },
+    {
+      "path": "SUMMARY.json",
+      "bytes": 1266,
+      "sha256": "73ca702ee69332dc1ec6f5cd8f3e4a8f4af27fd8b35e4c6b547d9e36b1af5a0c"
+    },
+    {
+      "path": "UNIFIED_METRICS.csv",
+      "bytes": 98601,
+      "sha256": "5477ffa4aac99335d08401e92a91dc041aafa7ff22f6d44f0cd4acb4626f63f8"
+    },
+    {
+      "path": "run.log",
+      "bytes": 4614,
+      "sha256": "20aa587112410802844947fd447e0e9f825c187542de034b258d11b87c79dda3"
+    }
+  ]
+}

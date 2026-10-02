@@ -1,0 +1,254 @@
+{
+  "repository": "wzk1129-sudo/My-Paper",
+  "branch": "evaluation/corediff-official-checkpoint-dual-protocol",
+  "evaluated_project_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+  "official_source_commit": "9bc31dc1d6184a880bd6334db34c466569a3642a",
+  "created_at": "2026-10-02T15:25:03+0800",
+  "files": [
+    {
+      "path": "evaluate_official_checkpoint_dual_protocol.py",
+      "source_path": "/home/xujian/projects/CoreDiff/evaluate_official_checkpoint_dual_protocol.py",
+      "bytes": 18224,
+      "sha256": "81342fb1429d4a8f295cce9f0ce66ff900c6b8423810d6ecf466a4a0e7edac4e",
+      "git_blob_sha1": "991f26d99f495016d77becbbd730f8a0d5bf1606"
+    },
+    {
+      "path": "main.py",
+      "source_path": "/home/xujian/projects/CoreDiff/main.py",
+      "bytes": 704,
+      "sha256": "57963e839817408c204890db5ad06c40fd0fcb0ee57a5fb7a521c1b6f47f3c1f",
+      "git_blob_sha1": "b6c10366d41288bf5dd888fd521cb94607519b86"
+    },
+    {
+      "path": "test_mayo2016.sh",
+      "source_path": "/home/xujian/projects/CoreDiff/test_mayo2016.sh",
+      "bytes": 295,
+      "sha256": "bbf6332d04aa3e7555b660b6260e5081feabd0af0bca8f50827230c0f9a3d117",
+      "git_blob_sha1": "d29bc28f695b864546d714eefdb69e2f01c9b049"
+    },
+    {
+      "path": "data_preprocess/prep_mayo2016.py",
+      "source_path": "/home/xujian/projects/CoreDiff/data_preprocess/prep_mayo2016.py",
+      "bytes": 1869,
+      "sha256": "ce2cb391a1e2b778dbf000f2208c33c8124fd2cd9355c8f390128bce8d80f9eb",
+      "git_blob_sha1": "a9d560d308c3edad7942b466b73831d6276010a0"
+    },
+    {
+      "path": "models/__init__.py",
+      "source_path": "/home/xujian/projects/CoreDiff/models/__init__.py",
+      "bytes": 128,
+      "sha256": "8dca9bdecd95f72b72ff8944bf7b7c85e4d7af722d6b3f4a806e49cc05cf61d9",
+      "git_blob_sha1": "b1272d08d25ef07c46171c3b91b8014447c78434"
+    },
+    {
+      "path": "models/basic_template.py",
+      "source_path": "/home/xujian/projects/CoreDiff/models/basic_template.py",
+      "bytes": 7968,
+      "sha256": "659986cbd22001c109e1b30c71960ef2cf411663ef970faee7708094f00d95a5",
+      "git_blob_sha1": "f3e16a5eb7c1820f440243cd712f2e85cd6c7188"
+    },
+    {
+      "path": "models/corediff/corediff.py",
+      "source_path": "/home/xujian/projects/CoreDiff/models/corediff/corediff.py",
+      "bytes": 12834,
+      "sha256": "c0937a8a08ed48938f6ca50cc0cfb8c2dbaed31e035b940256c7d20581f96470",
+      "git_blob_sha1": "042de3fe3389ccaa15ea77e29fb4cece3cbaeaa4"
+    },
+    {
+      "path": "models/corediff/corediff_wrapper.py",
+      "source_path": "/home/xujian/projects/CoreDiff/models/corediff/corediff_wrapper.py",
+      "bytes": 7272,
+      "sha256": "66d990371119e1448ebe2deb1eb3b85bfaf9b003f4000fc4bb65d452829979d6",
+      "git_blob_sha1": "835258f682890901c800d30d86af9a94acf94214"
+    },
+    {
+      "path": "models/corediff/diffusion_modules.py",
+      "source_path": "/home/xujian/projects/CoreDiff/models/corediff/diffusion_modules.py",
+      "bytes": 6591,
+      "sha256": "89e6976883fb74e3d69176aeac4e0f74fbac9eb74af5bb662b6a59bbd8ff42f7",
+      "git_blob_sha1": "64e27f3e7d563a3f4efe8318cd7f96d3e9f23406"
+    },
+    {
+      "path": "utils/dataset.py",
+      "source_path": "/home/xujian/projects/CoreDiff/utils/dataset.py",
+      "bytes": 7003,
+      "sha256": "760647fbaf541e868597da0e1d6aa78eff1995b8ed534e3df00013f9f75c29a7",
+      "git_blob_sha1": "ed8fe33fd5b0e9d9897540ba535aeb8c2621a4f0"
+    },
+    {
+      "path": "utils/ema.py",
+      "source_path": "/home/xujian/projects/CoreDiff/utils/ema.py",
+      "bytes": 540,
+      "sha256": "4184fa478c2de51a14e873924282dfd4186b93907d072f07a1346f5fc8e61e34",
+      "git_blob_sha1": "316941dffd1db17540a8d8e8571c9a6b9093b2d9"
+    },
+    {
+      "path": "utils/loggerx.py",
+      "source_path": "/home/xujian/projects/CoreDiff/utils/loggerx.py",
+      "bytes": 3271,
+      "sha256": "b27f40b7bc06fcbd5ae4c757ed0b60a05da47dd3d95216a65b219f7db085cea1",
+      "git_blob_sha1": "f5e95f07ab24f89e63ca215322598c3a78738ed5"
+    },
+    {
+      "path": "utils/loss_function.py",
+      "source_path": "/home/xujian/projects/CoreDiff/utils/loss_function.py",
+      "bytes": 1063,
+      "sha256": "89f34bdfffbbe2bd1ba08f429673766cf15e87e8ddad02876b0b998feaefb0c7",
+      "git_blob_sha1": "70db586cc1d0f5e354f8c04101cf866299d33519"
+    },
+    {
+      "path": "utils/measure.py",
+      "source_path": "/home/xujian/projects/CoreDiff/utils/measure.py",
+      "bytes": 2852,
+      "sha256": "edb53bfc4f282492808db27e7d93fb61ed024e56a2393ccb0cb16929b0a5f585",
+      "git_blob_sha1": "fece14ffa7d98061f290cc1e66da689a4aa34ef3"
+    },
+    {
+      "path": "utils/ops.py",
+      "source_path": "/home/xujian/projects/CoreDiff/utils/ops.py",
+      "bytes": 1764,
+      "sha256": "b8cf018335ea2b29ae510b80dbd776e1c71aac0847ff0982eaa929a6bcd956d6",
+      "git_blob_sha1": "c05c64c9d2e32a5cadcf57fbb3220742c50525d9"
+    },
+    {
+      "path": "utils/sampler.py",
+      "source_path": "/home/xujian/projects/CoreDiff/utils/sampler.py",
+      "bytes": 1857,
+      "sha256": "96b35d0a2bdab6c0058f09495c758dc406bfda7053f06f6ed4ddd5c92da6477c",
+      "git_blob_sha1": "abc05037c9f3e3de211ee4ca607c9e3528c22e3a"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/ARTIFACT_MANIFEST.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/ARTIFACT_MANIFEST.json",
+      "bytes": 2666,
+      "sha256": "ad2efc04786c3b0bc99d00752e72a0384b2bd0ae5adb636d57a66330cccb7b65",
+      "git_blob_sha1": "215001548e3397bf956b2f67a8971a37aed3e680"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/CHECKPOINT_AUDIT.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/CHECKPOINT_AUDIT.json",
+      "bytes": 2246,
+      "sha256": "f17a8249bfec09b44f0a04d1a56bcb642e043b22541b3a5fa2352a226de0a732",
+      "git_blob_sha1": "35144183713d1abd8c99e21af5720321fb409313"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/DATA_PROTOCOL_AUDIT.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/DATA_PROTOCOL_AUDIT.json",
+      "bytes": 1887,
+      "sha256": "36b0fdb8819a0ff1873c1fa980589f52b66d8fcb566643024f60c30cc389b343",
+      "git_blob_sha1": "8decea7936663d6e89671a2dfb0b0d80bea5a3fd"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/ENVIRONMENT.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/ENVIRONMENT.json",
+      "bytes": 2265,
+      "sha256": "3f7e012832adea6c28d33d67eb27a0e8cf408e8928ce31532251f2840d7ccf97",
+      "git_blob_sha1": "e3374ef24a4cea13da7658745bfe4495815613a4"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/EXIT_STATUS.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/EXIT_STATUS.json",
+      "bytes": 65,
+      "sha256": "9e88ddd7fd000c8e86fe74dd60c7ee8d18c00eb73a57752fb4b1dc0f4c60b7c5",
+      "git_blob_sha1": "2a9b896de2fdabf43069c1b3647bc4b1bd384ff5"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/FINAL_VALIDATION.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/FINAL_VALIDATION.json",
+      "bytes": 975,
+      "sha256": "5f486efaad4378c4ea89eea0e54e2c78c392461fde7a002166dd5f83df4bb8d8",
+      "git_blob_sha1": "f358eb00075ec1c9984412d99d3b00e378d084d8"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/LAUNCH_AUDIT.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/LAUNCH_AUDIT.json",
+      "bytes": 1103,
+      "sha256": "f55f22ba4836559d4bda19db130110416f48e5f454721b36eec59f0ca2e63b07",
+      "git_blob_sha1": "7236fc1ec0fe56bf49ba9a8e0c4c3c6569ad9f07"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/OFFICIAL_METRICS.csv",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/OFFICIAL_METRICS.csv",
+      "bytes": 98930,
+      "sha256": "7ee88645cf9963fdda7a64cb854f5c86cc000f28dd6734153150235aea893567",
+      "git_blob_sha1": "76e24a851b442f348fcd971f9b06ba313f315aa8"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/PRECHECK_PROVENANCE.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/PRECHECK_PROVENANCE.json",
+      "bytes": 3444,
+      "sha256": "58659515d283de66ce8588d79f7df7948034c8604b6fa141e05998bd7473d60f",
+      "git_blob_sha1": "bb66bed3768026ea9119a3a24cea732890ff8fb6"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/READ_ONLY_AUDIT.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/READ_ONLY_AUDIT.json",
+      "bytes": 34132,
+      "sha256": "357c2f4272e4ae6fb7f05d8bb7b8473a9da4a86e9e561cb523004be2a3556d54",
+      "git_blob_sha1": "24cb1494fcc11dc88ad47f597d2dc519593e62cc"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/REPORT.md",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/REPORT.md",
+      "bytes": 5596,
+      "sha256": "f47562b3376eed8e7670fc4be131ad554ff070783584dddded316792a217bef1",
+      "git_blob_sha1": "b5f8fb242bfef6610c8c91540003391ceeebcc25"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/RUN_CONFIG.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/RUN_CONFIG.json",
+      "bytes": 2337,
+      "sha256": "accbcc3eded6a2a6a8acaf4af93f00aa686f9470973793364fdf60685429413b",
+      "git_blob_sha1": "4162ea94d746607920946f495507b334efb3a231"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/RUN_LAUNCHER.py",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/RUN_LAUNCHER.py",
+      "bytes": 739,
+      "sha256": "911085bb5a8b4775ede753df634cbe6e22009ab06916ead039ddaa3f537754a5",
+      "git_blob_sha1": "35392b0f83f1aaf839fcc3b28f5d94c0aa15fcc4"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/SOURCE_AUDIT.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/SOURCE_AUDIT.json",
+      "bytes": 1516,
+      "sha256": "b0c95075e7e74675dd17c561b7ea0386d272ead6a3de6d4e746b46f47c70e079",
+      "git_blob_sha1": "adfbb9dabe759dd4a2f9d0eb5d0060cb8f55a382"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/SUMMARY.json",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/SUMMARY.json",
+      "bytes": 1266,
+      "sha256": "73ca702ee69332dc1ec6f5cd8f3e4a8f4af27fd8b35e4c6b547d9e36b1af5a0c",
+      "git_blob_sha1": "b80f8e3429caea42e951d82184d502e489746903"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/UNIFIED_METRICS.csv",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/UNIFIED_METRICS.csv",
+      "bytes": 98601,
+      "sha256": "5477ffa4aac99335d08401e92a91dc041aafa7ff22f6d44f0cd4acb4626f63f8",
+      "git_blob_sha1": "d31603746c605bd71c5a40ec08118c137039eccf"
+    },
+    {
+      "path": "experiments/corediff_official_checkpoint_eval/run.log",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/run.log",
+      "bytes": 4614,
+      "sha256": "20aa587112410802844947fd447e0e9f825c187542de034b258d11b87c79dda3",
+      "git_blob_sha1": "64c1d0a421478128380fe9eaf9ff22a3a54bac9c"
+    },
+    {
+      "path": "README.md",
+      "source_path": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/GITHUB_README.md",
+      "bytes": 6857,
+      "sha256": "eca0c75b468edd777ef7dac3f306d3269dad546887419e4979c4c9ff7460261d",
+      "git_blob_sha1": "4bfd55a0e1675a51a0410eeddab327d80232bf43"
+    },
+    {
+      "path": "docs/OFFICIAL_COREDIFF_README.md",
+      "source_path": "/home/xujian/projects/CoreDiff/README.md",
+      "bytes": 3168,
+      "sha256": "9217aac0cda25c66fd0d6703359a33a016612de3d83e792652a7f432e66e9ca9",
+      "git_blob_sha1": "80626b50f608001323b933fc8204cbf6c1f219fc"
+    }
+  ]
+}

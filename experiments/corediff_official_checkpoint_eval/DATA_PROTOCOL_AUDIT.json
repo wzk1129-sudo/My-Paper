@@ -1,0 +1,81 @@
+{
+  "patient": "L506",
+  "raw_ldct_slices": 526,
+  "raw_ndct_slices": 526,
+  "valid_center_slices": 524,
+  "excluded_center_first": "L506_25_000_img.npy",
+  "excluded_center_last": "L506_25_525_img.npy",
+  "first_evaluated_center": "L506_25_001_img.npy",
+  "last_evaluated_center": "L506_25_524_img.npy",
+  "boundary_note": "First and last slices are excluded as centers, but used as neighbors for the first/last valid centers.",
+  "original_dicom_checks": [
+    {
+      "series": "quarter_1mm",
+      "sorted_index": 0,
+      "npy": "L506_25_000_img.npy",
+      "dicom_to_npy_exact": true,
+      "npy_dtype": "uint16",
+      "shape": [
+        512,
+        512
+      ]
+    },
+    {
+      "series": "quarter_1mm",
+      "sorted_index": 263,
+      "npy": "L506_25_263_img.npy",
+      "dicom_to_npy_exact": true,
+      "npy_dtype": "uint16",
+      "shape": [
+        512,
+        512
+      ]
+    },
+    {
+      "series": "quarter_1mm",
+      "sorted_index": 525,
+      "npy": "L506_25_525_img.npy",
+      "dicom_to_npy_exact": true,
+      "npy_dtype": "uint16",
+      "shape": [
+        512,
+        512
+      ]
+    },
+    {
+      "series": "full_1mm",
+      "sorted_index": 0,
+      "npy": "L506_target_000_img.npy",
+      "dicom_to_npy_exact": true,
+      "npy_dtype": "uint16",
+      "shape": [
+        512,
+        512
+      ]
+    },
+    {
+      "series": "full_1mm",
+      "sorted_index": 263,
+      "npy": "L506_target_263_img.npy",
+      "dicom_to_npy_exact": true,
+      "npy_dtype": "uint16",
+      "shape": [
+        512,
+        512
+      ]
+    },
+    {
+      "series": "full_1mm",
+      "sorted_index": 525,
+      "npy": "L506_target_525_img.npy",
+      "dicom_to_npy_exact": true,
+      "npy_dtype": "uint16",
+      "shape": [
+        512,
+        512
+      ]
+    }
+  ],
+  "test_split_unmodified": true,
+  "normalization_implementation": "utils.dataset.CTDataset.normalize_"
+}

@@ -1,0 +1,66 @@
+{
+  "patient": "L506",
+  "dataset": "mayo_2016",
+  "dose": 25,
+  "test_id": 9,
+  "checkpoint_step": 150000,
+  "context": true,
+  "context_order": [
+    "prev",
+    "center",
+    "next"
+  ],
+  "T": 10,
+  "sampling_routine": "ddim",
+  "only_adjust_two_step": true,
+  "only_adjust_two_step_note": "Official flag controls training forward only; official sample has no such argument. Inference uses unmodified official sample.",
+  "start_adjust_iter": 1,
+  "n_iter": 150000,
+  "test_batch_size": 1,
+  "loader_shuffle": false,
+  "loader_num_workers": 0,
+  "loader_note": "Direct official CTDataset iteration in official sorted order; worker count affects IO only.",
+  "normalization": "stored pixel -> subtract 1024 -> clip [-1024,3072] HU -> (HU+1024)/4096",
+  "official_metrics": {
+    "window_hu": [
+      -1000,
+      1000
+    ],
+    "map_to": [
+      0,
+      255
+    ],
+    "data_range": "target.max()-target.min() per slice",
+    "implementation": "utils.measure.compute_measure",
+    "ssim_window": 11,
+    "ssim_gaussian_sigma": 1.5,
+    "ssim_padding": 5,
+    "rmse_units": "HU"
+  },
+  "unified_metrics": {
+    "window_hu": [
+      -1000,
+      1000
+    ],
+    "data_range": 2000,
+    "ssim": "skimage.metrics.structural_similarity",
+    "win_size": 7,
+    "gaussian_weights": false,
+    "use_sample_covariance": true,
+    "K1": 0.01,
+    "K2": 0.03,
+    "numeric_dtype": "float64 after same float32 HU conversion and clipping"
+  },
+  "checkpoint": "/home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016/save_models/ema_model-150000",
+  "output": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval",
+  "git_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+  "training": false,
+  "OSL": false,
+  "amp": false,
+  "device": "cuda:0",
+  "full_command": "CUDA_VISIBLE_DEVICES=0 /home/xujian/miniconda3/envs/corediff/bin/python -u /home/xujian/projects/CoreDiff/evaluate_official_checkpoint_dual_protocol.py --checkpoint /home/xujian/projects/CoreDiff/output/corediff_dose25_mayo_2016/save_models/ema_model-150000 --output /home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval",
+  "tmux_session": "corediff_official_dual_eval_20261002",
+  "conda_environment": "corediff",
+  "seed": 20261002,
+  "prediction_persistence": "memory only; per-slice SHA256 saved, no image files"
+}

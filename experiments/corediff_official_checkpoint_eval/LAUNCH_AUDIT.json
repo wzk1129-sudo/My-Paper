@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-10-02T15:01:21+0800",
+  "git_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+  "git_status": "?? .aris/\n?? configs/\n?? data_preprocess/lits/canonicalize_lits_ras.py\n?? data_preprocess/lits/make_lits_splits.py\n?? data_preprocess/lits/select_lits_pilot_cases.py\n?? evaluate_official_checkpoint_dual_protocol.py\n?? experiments/\n?? research/\n?? tests/\n",
+  "tracked_diff": "",
+  "staged_diff": "",
+  "new_evaluator_sha256": "81342fb1429d4a8f295cce9f0ce66ff900c6b8423810d6ecf466a4a0e7edac4e",
+  "gpu": "name, memory.used [MiB], memory.free [MiB], utilization.gpu [%]\nNVIDIA GeForce RTX 3090, 624 MiB, 23699 MiB, 0 %\n",
+  "compute_processes": "pid, process_name, used_gpu_memory [MiB]\n",
+  "tmux_session": "corediff_official_dual_eval_20261002",
+  "conda": "corediff",
+  "gpu_id": 0,
+  "log": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval/run.log",
+  "output": "/home/xujian/projects/CoreDiff/experiments/corediff_official_checkpoint_eval",
+  "stop_condition": "one official sampling pass over all 524 valid L506 centers; no training"
+}
