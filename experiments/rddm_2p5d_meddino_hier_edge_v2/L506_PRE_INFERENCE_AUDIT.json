@@ -1,0 +1,16 @@
+{
+  "training_pipeline_status": "COMPLETE",
+  "gpu_memory_used_mib": 624,
+  "gpu_memory_total_mib": 24576,
+  "evaluator_sha256": "ff72002a799629b216e599fd0f8938e019259ef698429a11ea6e84f898359a9b",
+  "command": [
+    "/home/xujian/miniconda3/envs/flexict/bin/python",
+    "-u",
+    "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/evaluate_l506_final_v2.py"
+  ],
+  "checkpoint": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/checkpoints/step_8000.pt",
+  "output": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K",
+  "started_at": "2026-10-02T22:02:04+0800",
+  "gpu_index": 0,
+  "conda_environment": "flexict"
+}

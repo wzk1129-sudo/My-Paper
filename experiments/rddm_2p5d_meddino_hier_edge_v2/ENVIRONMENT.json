@@ -1,0 +1,14 @@
+{
+  "python": "3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]",
+  "executable": "/home/xujian/miniconda3/envs/flexict/bin/python",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "numpy": "2.3.2",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "cudnn": 91002,
+  "cudnn_deterministic": true,
+  "cudnn_benchmark": false,
+  "tf32": false,
+  "amp": false,
+  "cublas_workspace_config": ":4096:8"
+}

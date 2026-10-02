@@ -1,0 +1,74 @@
+{
+  "E0": {
+    "delta_feature_rms": 0.04248044503037818,
+    "base_feature_rms": 0.8672923389822245,
+    "delta_base_ratio": 0.04898065189666846,
+    "gamma_rms": 0.02075914351735264,
+    "beta_rms": 0.029181570193031803,
+    "observations": 128
+  },
+  "E1": {
+    "delta_feature_rms": 0.07433396432315931,
+    "base_feature_rms": 0.9564729928970337,
+    "delta_base_ratio": 0.07777282598050515,
+    "gamma_rms": 0.038773154257796705,
+    "beta_rms": 0.045415583706926554,
+    "observations": 128
+  },
+  "E2": {
+    "delta_feature_rms": 0.021928013462456875,
+    "base_feature_rms": 0.9918229663744569,
+    "delta_base_ratio": 0.02211275260734101,
+    "gamma_rms": 0.00951065331173595,
+    "beta_rms": 0.01671642452129163,
+    "observations": 128
+  },
+  "E3": {
+    "delta_feature_rms": 0.0069357148531707935,
+    "base_feature_rms": 1.045279267244041,
+    "delta_base_ratio": 0.006635463154386782,
+    "gamma_rms": 0.0028163113893242553,
+    "beta_rms": 0.005659410679072607,
+    "observations": 128
+  },
+  "MID": {
+    "delta_feature_rms": 0.003390102583580301,
+    "base_feature_rms": 0.7527247588150203,
+    "delta_base_ratio": 0.004504145592866108,
+    "gamma_rms": 0.003091666065301979,
+    "beta_rms": 0.0009338919498986797,
+    "observations": 128
+  },
+  "D0": {
+    "delta_feature_rms": 0.0038375146832549945,
+    "base_feature_rms": 0.9764510593377054,
+    "delta_base_ratio": 0.0039301345246079,
+    "gamma_rms": 0.0033649603465164546,
+    "beta_rms": 0.0020678893852164038,
+    "observations": 128
+  },
+  "D1": {
+    "delta_feature_rms": 0.007927795413706917,
+    "base_feature_rms": 0.9991733347997069,
+    "delta_base_ratio": 0.007937792402098595,
+    "gamma_rms": 0.006955277880479116,
+    "beta_rms": 0.005289862441713922,
+    "observations": 128
+  },
+  "D2": {
+    "delta_feature_rms": 0.01893544284394011,
+    "base_feature_rms": 0.8634716090746224,
+    "delta_base_ratio": 0.02192829682289541,
+    "gamma_rms": 0.017251582496101037,
+    "beta_rms": 0.011657627517706715,
+    "observations": 128
+  },
+  "D3": {
+    "delta_feature_rms": 0.015779104236571584,
+    "base_feature_rms": 0.9899643384851515,
+    "delta_base_ratio": 0.015938622156459168,
+    "gamma_rms": 0.016222529840888456,
+    "beta_rms": 0.008338022307725623,
+    "observations": 128
+  }
+}

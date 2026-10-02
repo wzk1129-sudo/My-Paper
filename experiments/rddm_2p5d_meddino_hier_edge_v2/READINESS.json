@@ -1,0 +1,600 @@
+{
+  "status": "PASS",
+  "batch": 2,
+  "accum": 1,
+  "shape_test": {
+    "A_local": [
+      2,
+      128,
+      32,
+      32
+    ],
+    "A_semantic": [
+      2,
+      128,
+      32,
+      32
+    ],
+    "E_local": [
+      2,
+      128,
+      32,
+      32
+    ],
+    "E_semantic": [
+      2,
+      128,
+      32,
+      32
+    ],
+    "S_local": [
+      2,
+      128,
+      32,
+      32
+    ],
+    "S_semantic": [
+      2,
+      128,
+      32,
+      32
+    ],
+    "S_mid": [
+      2,
+      128,
+      32,
+      32
+    ]
+  },
+  "edge_full_shape": [
+    2,
+    128,
+    512,
+    512
+  ],
+  "core_forward_ast_identical": true,
+  "official_topology": {
+    "ResnetBlock": 19,
+    "LinearAttention": 8,
+    "Attention": 1
+  },
+  "stage_map": {
+    "E0": "S_local",
+    "E1": "S_local",
+    "E2": "S_mid",
+    "E3": "S_semantic",
+    "MID": "S_semantic",
+    "D0": "S_semantic",
+    "D1": "S_semantic",
+    "D2": "S_local",
+    "D3": "S_local"
+  },
+  "stage_shapes": {
+    "E0": {
+      "feature": [
+        2,
+        64,
+        512,
+        512
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        512,
+        512
+      ]
+    },
+    "E1": {
+      "feature": [
+        2,
+        64,
+        256,
+        256
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        256,
+        256
+      ]
+    },
+    "E2": {
+      "feature": [
+        2,
+        128,
+        128,
+        128
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        128,
+        128
+      ]
+    },
+    "E3": {
+      "feature": [
+        2,
+        256,
+        64,
+        64
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        64,
+        64
+      ]
+    },
+    "MID": {
+      "feature": [
+        2,
+        512,
+        64,
+        64
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        64,
+        64
+      ]
+    },
+    "D0": {
+      "feature": [
+        2,
+        512,
+        64,
+        64
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        64,
+        64
+      ]
+    },
+    "D1": {
+      "feature": [
+        2,
+        256,
+        128,
+        128
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        128,
+        128
+      ]
+    },
+    "D2": {
+      "feature": [
+        2,
+        128,
+        256,
+        256
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        256,
+        256
+      ]
+    },
+    "D3": {
+      "feature": [
+        2,
+        64,
+        512,
+        512
+      ],
+      "source": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "resized_source": [
+        2,
+        128,
+        512,
+        512
+      ]
+    }
+  },
+  "condition_calls": {
+    "E0": 1,
+    "E1": 1,
+    "E2": 1,
+    "E3": 1,
+    "MID": 1,
+    "D0": 1,
+    "D1": 1,
+    "D2": 1,
+    "D3": 1
+  },
+  "native_attention_receives_condition_output": {
+    "E0": 1,
+    "E1": 1,
+    "E2": 1,
+    "E3": 1,
+    "MID": 1,
+    "D0": 1,
+    "D1": 1,
+    "D2": 1,
+    "D3": 1
+  },
+  "spatial_preservation": true,
+  "fixed_kernels": {
+    "gaussian_0": {
+      "shape": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "requires_grad": false,
+      "sum": 1.0,
+      "sha256": "cf848b480a14772038192d12ab411bb1f4737890008f24600047775b7a86835e"
+    },
+    "gaussian_1": {
+      "shape": [
+        1,
+        1,
+        1,
+        11
+      ],
+      "requires_grad": false,
+      "sum": 1.0,
+      "sha256": "70eff73a20a2ff564fae18275da8e6a108b7efd75351919f53328fc8fa1f3922"
+    },
+    "gaussian_2": {
+      "shape": [
+        1,
+        1,
+        1,
+        21
+      ],
+      "requires_grad": false,
+      "sum": 1.0,
+      "sha256": "a073b2472e3c9a6be9f33856814cf89d57835d73e0871eb8b534d5d41bf46e53"
+    },
+    "scharr_x": {
+      "shape": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "requires_grad": false,
+      "sum": 0.0,
+      "sha256": "e7293c75f8aafd616b3e98943839c3879de670e800d5f4685ffadaed01e92a0a"
+    },
+    "scharr_y": {
+      "shape": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "requires_grad": false,
+      "sum": 0.0,
+      "sha256": "f2308090694477181ef4900ef677fc8744c2b24ea63f6bbe2f2663c186a1f70e"
+    },
+    "laplacian": {
+      "shape": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "requires_grad": false,
+      "sum": 0.0,
+      "sha256": "a8171ae2f908005bfd95d94a6d96d1415559f661341cad3af1c55065803a3f95"
+    }
+  },
+  "zero_init": {
+    "E0": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9049890041351318,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "E1": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9851987361907959,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "E2": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9812729954719543,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "E3": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 1.1099704504013062,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "MID": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.8640597462654114,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D0": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 1.0179461240768433,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D1": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9894016981124878,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D2": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.8360026478767395,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    },
+    "D3": {
+      "delta_feature_rms": 0.0,
+      "base_feature_rms": 0.9993798732757568,
+      "delta_base_ratio": 0.0,
+      "gamma_rms": 0.0,
+      "beta_rms": 0.0
+    }
+  },
+  "step0_max_abs_difference": 0.0,
+  "numerical_statistics": {
+    "A_local": {
+      "shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "mean": 0.1419551521539688,
+      "std": 0.4327632188796997,
+      "max_abs": 3.6254167556762695,
+      "rms": 0.4554506242275238,
+      "finite": true
+    },
+    "A_semantic": {
+      "shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "mean": 0.014455442316830158,
+      "std": 0.12871088087558746,
+      "max_abs": 0.8483520746231079,
+      "rms": 0.12952008843421936,
+      "finite": true
+    },
+    "E_local": {
+      "shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "mean": 2.561137080192566e-09,
+      "std": 0.9999606609344482,
+      "max_abs": 12.224624633789062,
+      "rms": 0.999960720539093,
+      "finite": true
+    },
+    "E_semantic": {
+      "shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "mean": -3.4924596548080444e-09,
+      "std": 0.9999663233757019,
+      "max_abs": 12.712377548217773,
+      "rms": 0.9999663233757019,
+      "finite": true
+    },
+    "S_local": {
+      "shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "mean": 0.0014069071039557457,
+      "std": 0.03678392618894577,
+      "max_abs": 1.24270498752594,
+      "rms": 0.036810822784900665,
+      "finite": true
+    },
+    "S_semantic": {
+      "shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "mean": 2.7026129828300327e-05,
+      "std": 0.014526912942528725,
+      "max_abs": 0.6657644510269165,
+      "rms": 0.01452693808823824,
+      "finite": true
+    },
+    "S_mid": {
+      "shape": [
+        2,
+        128,
+        32,
+        32
+      ],
+      "mean": 0.0007169665768742561,
+      "std": 0.0199733953922987,
+      "max_abs": 0.6352603435516357,
+      "rms": 0.019986258819699287,
+      "finite": true
+    }
+  },
+  "loss_first": 0.0001330246013822034,
+  "loss_second": 0.001874198904260993,
+  "grad_norm_first": 0.001997060142457485,
+  "projection_gradient_norm_first": {
+    "E0": 9.511162286331486e-07,
+    "E1": 6.768631991581666e-07,
+    "E2": 2.0866619859130224e-07,
+    "E3": 5.935257425399124e-08,
+    "MID": 4.0366013563161224e-08,
+    "D0": 8.866663883034887e-08,
+    "D1": 3.1495828565079223e-07,
+    "D2": 5.004993500116965e-07,
+    "D3": 1.248207284721798e-06
+  },
+  "feature_gradient_norm_second": {
+    "layer_0": 2.045875946800475e-07,
+    "layer_1": 1.3840186466902398e-07,
+    "layer_2": 1.0145397288957995e-10,
+    "layer_3": 6.142412139812862e-11,
+    "local": 1.0595186589919696e-07,
+    "semantic": 4.6012958284168826e-11,
+    "edge_branch_0": 1.4533726586451705e-08,
+    "edge_branch_1": 1.725046575156468e-08,
+    "edge_branch_2": 1.4105536294853137e-08,
+    "edge_branch_3": 8.452048720355304e-09,
+    "edge_fusion": 2.3676761666315578e-07,
+    "edge_local": 8.296141832860649e-08,
+    "edge_semantic": 4.642125493938596e-11
+  },
+  "native_attention_gradient_norm_first": {
+    "downs.0.2.fn.fn": 7.78936555434484e-06,
+    "downs.1.2.fn.fn": 8.421970051131211e-06,
+    "downs.2.2.fn.fn": 1.910330638565938e-06,
+    "downs.3.2.fn.fn": 5.233249567027087e-07,
+    "ups.0.2.fn.fn": 1.072739564733638e-06,
+    "ups.1.2.fn.fn": 3.7951556350890314e-06,
+    "ups.2.2.fn.fn": 9.755854080140125e-07,
+    "ups.3.2.fn.fn": 1.403006990585709e-05,
+    "mid_attn.fn.fn": 3.67336411954966e-07
+  },
+  "native_attention_gradient_norm_second": {
+    "downs.0.2.fn.fn": 0.0007260612910613418,
+    "downs.1.2.fn.fn": 0.00023548450553789735,
+    "downs.2.2.fn.fn": 4.7012214054120705e-05,
+    "downs.3.2.fn.fn": 1.237710330315167e-05,
+    "ups.0.2.fn.fn": 2.8478374588303268e-05,
+    "ups.1.2.fn.fn": 0.00011387492850190029,
+    "ups.2.2.fn.fn": 0.000480181653983891,
+    "ups.3.2.fn.fn": 0.0047718677669763565,
+    "mid_attn.fn.fn": 7.72006023908034e-06
+  },
+  "meddino_hash_before": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+  "meddino_hash_after": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+  "meddino_frozen": true,
+  "meddino_grad_none": true,
+  "fixed_kernel_grad_none": true,
+  "parameters_finite": true,
+  "data_access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L143"
+    ],
+    "validation_center_indices_opened": [
+      309
+    ],
+    "validation_ldct_indices_opened": [
+      308,
+      309,
+      310
+    ],
+    "center_target_opens": 1,
+    "center_ldct_opens": 1,
+    "neighbor_ldct_opens": 2,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 2,
+    "total_opens": 12,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  },
+  "shared_initial_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+  "baseline_shared_initial_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+  "peak_allocated_bytes": 18234574848,
+  "peak_reserved_bytes": 20382220288,
+  "parameters_trainable": 38131393,
+  "parameters_total": 123773377,
+  "diagnostic_patient": "L333",
+  "diagnostic_slice": 309,
+  "visualization": "visualizations/L333_fast64_309_edges.png",
+  "visual_review_status": "PENDING",
+  "nonfinite_count": 0
+}

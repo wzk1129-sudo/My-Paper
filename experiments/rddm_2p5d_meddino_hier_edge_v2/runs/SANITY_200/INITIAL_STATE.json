@@ -1,0 +1,13 @@
+{
+  "shared_initial_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+  "initial_rng_sha256": "89aa818c8b27dcab4ac88c8dbd93bf596071505e28cfa7b31581e83fa251e1f8",
+  "train_manifest_sha256": "fb38499e662a6df2f3cd4884ab6362fe023787627cd421fc7eb471dcbfb10d26",
+  "validation_manifest_sha256": "90993b7c1359f066ebaf8e31173330c41306c23b124c47eb6167a3f8a02adc28",
+  "meddino_initial_weights_sha256": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+  "fresh_optimizer": true,
+  "ema_updates": 0,
+  "batch": 2,
+  "accum": 1,
+  "trainable_parameters": 38131393,
+  "total_parameters": 123773377
+}

@@ -1,0 +1,30 @@
+{
+  "arm": "V2",
+  "checkpoint": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/checkpoints/step_8000.pt",
+  "checkpoint_sha256": "c8c291a8b78f87f6809565ea00808ff28ff8e3182f9a3206c6acfc4ab7a38684",
+  "checkpoint_optimizer_step": 8000,
+  "slices": 64,
+  "means": {
+    "psnr": 40.8992786434328,
+    "ssim": 0.9487580754705933,
+    "rmse_hu": 18.137594015158342,
+    "mae_hu": 11.976009547710419,
+    "edge_rmse_hu": 22.164134830236435,
+    "edge_mae_hu": 15.902724757790565,
+    "flat_rmse_hu": 17.847207605838776,
+    "flat_mae_hu": 11.731520012021065
+  },
+  "prediction_tensor_stream_sha256": "69b5d96e60d487554989b3f9980f4fff1cf6d3d9f07d58babb9ccbf144957bcb",
+  "mask_stream_sha256": "7bc151f917008e7ded563e4fe2a2bc1ac0d595bbceab9fb6b1e214a77a6ba35f",
+  "reload_metric_differences": {
+    "psnr": 0.0,
+    "ssim": 0.0,
+    "rmse_hu": 0.0,
+    "mae_hu": 0.0
+  },
+  "reload_metric_match": true,
+  "meddino_hash": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+  "meddino_frozen_eval": true,
+  "seconds": 33.68375823402312,
+  "peak_allocated_bytes": 1978535424
+}

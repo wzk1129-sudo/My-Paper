@@ -1,0 +1,21 @@
+{
+  "session": "meddino_hier_edge_v2_l506_final_20261002",
+  "launch_time": "2026-10-02T21:39:33+0800",
+  "git_branch": "experiment/rddm-2p5d-meddino-hier-edge-v2",
+  "git_base_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+  "git_status": "?? experiments/rddm_2p5d_meddino_hier_edge_v2/\n",
+  "launcher": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/l506_final_launcher.py",
+  "command": [
+    "/home/xujian/miniconda3/envs/flexict/bin/python",
+    "-u",
+    "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/evaluate_l506_final_v2.py"
+  ],
+  "gpu_index": 0,
+  "environment": "/home/xujian/miniconda3/envs/flexict",
+  "log": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/logs/l506_final_8k.log",
+  "output": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K",
+  "checkpoint": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/checkpoints/step_8000.pt",
+  "evaluator_source_sha256": "ff72002a799629b216e599fd0f8938e019259ef698429a11ea6e84f898359a9b",
+  "launch_gate": "wait until V2 training+8k region report PIPELINE_STATUS=COMPLETE and GPU used<4096MiB, free>18000MiB; cancel if prior pipeline fails",
+  "termination": "one 524-center L506 inference pass, two post-hoc HU evaluations; no training or follow-up selection"
+}

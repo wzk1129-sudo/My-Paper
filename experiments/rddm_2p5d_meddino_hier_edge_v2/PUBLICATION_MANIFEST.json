@@ -1,0 +1,632 @@
+{
+  "publication_repository": "wzk1129-sudo/My-Paper",
+  "publication_branch": "experiment/rddm-2p5d-meddino-hier-edge-v2",
+  "parent_publication_branch": "experiment/rddm-official-2p5d-meddino-condition-v1",
+  "parent_publication_commit": "dfe04270c570f64a3a8eaadd5410320642789d65",
+  "actual_experiment_source_base_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+  "selected_file_count": 87,
+  "selected_total_bytes": 876826,
+  "excluded_private_or_large": [
+    "*.pt",
+    "*.npy",
+    "*.npz",
+    "*.dcm",
+    "*.dicom",
+    "*.png",
+    "CT image arrays",
+    "pretrained weights",
+    "prediction arrays",
+    "full 8000-step JSONL log"
+  ],
+  "files": [
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/.gitignore",
+      "relative_path": ".gitignore",
+      "bytes": 76,
+      "sha256": "5cfc880f13d1cea0696fce0b5506378e228edfd6c99918722d38a7afee00bd59",
+      "git_blob_sha1": "d6a85e09119e7aff8ae96682008172f4a9f98989"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/README.md",
+      "relative_path": "README.md",
+      "bytes": 7962,
+      "sha256": "2c4ca5f201b86c32915e6ff411a09fa001f8d45d48ff74dea42b608a773351c2",
+      "git_blob_sha1": "28ae295e9cd78b594391b413327cea13952ac437"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/REPORT.md",
+      "relative_path": "REPORT.md",
+      "bytes": 9212,
+      "sha256": "bbc7c4ad77e0b45a0878b8c46d3b30d3104be95c321493bd506048012fec9f14",
+      "git_blob_sha1": "c37495b53b947d34801246a2caa1c621fc2fa3fd"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/CONFIG.json",
+      "relative_path": "CONFIG.json",
+      "bytes": 2834,
+      "sha256": "cc44c6f18a74e052d8a38d841cebbbe1027a34a5b32084347db40fd7afe5d6e4",
+      "git_blob_sha1": "a55e98a8cc7fc8a720912a11a9478c64478e940b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/BASELINE_PROVENANCE.json",
+      "relative_path": "BASELINE_PROVENANCE.json",
+      "bytes": 2910,
+      "sha256": "a01763362ff531cfa7dbdd9328b3d505f72443b33ff900a6fbb96557c6cb9569",
+      "git_blob_sha1": "777b43b8c07cee5553c1962efa531ab6838b7226"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/ENVIRONMENT.json",
+      "relative_path": "ENVIRONMENT.json",
+      "bytes": 386,
+      "sha256": "465d05e84cb4d5b109229f5fa07be18cd5fd7cad81ee3310de5c901527798319",
+      "git_blob_sha1": "f11e66977784dacaa362df9e9cb1c3a3f959f887"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/READINESS.json",
+      "relative_path": "READINESS.json",
+      "bytes": 11832,
+      "sha256": "026a9fb8fe0f7c8db621d8eb74c854915b56126f7ddfd6443004f28604513185",
+      "git_blob_sha1": "19bd8c712cb2a42ce3169cb953efa05b9495068b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/READINESS_SOURCE_MANIFEST.json",
+      "relative_path": "READINESS_SOURCE_MANIFEST.json",
+      "bytes": 3469,
+      "sha256": "177a0e7ab5b2f1c9e8e6f16652094daa6769f5036b11fe332bc373ba55d5a660",
+      "git_blob_sha1": "0ee9b53f40d962621f7a8109a57a1aacd9d9571f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/VISUAL_REVIEW.json",
+      "relative_path": "VISUAL_REVIEW.json",
+      "bytes": 697,
+      "sha256": "da7091ff4e96a9282e53843c77510f330256ddd7c25072b789b9dc06d20db16b",
+      "git_blob_sha1": "b8e4257683175b03b6aed54f081883bd3c696cf8"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/SANITY_SUMMARY.json",
+      "relative_path": "SANITY_SUMMARY.json",
+      "bytes": 9180,
+      "sha256": "d98c00b35a74d8a71b4247f2bc06d5e2d0ed9af181d1e3f3389edb435065e879",
+      "git_blob_sha1": "cea9ece2dc98b854c6172970f24f8b8f4bfe417a"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/TRAINING_SUMMARY.json",
+      "relative_path": "TRAINING_SUMMARY.json",
+      "bytes": 12265,
+      "sha256": "345d54937a6b7a3d8344c94cec704309cfb8506aef8f496607b32e529c8bf8eb",
+      "git_blob_sha1": "f6287538046e421aabadae6f96cc7b6d0c16f695"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/SUMMARY.json",
+      "relative_path": "SUMMARY.json",
+      "bytes": 21044,
+      "sha256": "f5e6e31a831b9c663b4e32b3b7e965e4038ff904263eb82ee911bf031099d7a7",
+      "git_blob_sha1": "1e1c3bcf33bc82dabc4f47cf4d67a69e4d16072e"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/REGION_SUMMARY.json",
+      "relative_path": "REGION_SUMMARY.json",
+      "bytes": 3577,
+      "sha256": "c6a3cf4a88d32a95974339404936803cc37760102b14c8e637a71adfb0bd39f1",
+      "git_blob_sha1": "480a3e90e2a59bb3b3b88701b20065a7c9eda85c"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/REGION_DATA_ACCESS_AUDIT.json",
+      "relative_path": "REGION_DATA_ACCESS_AUDIT.json",
+      "bytes": 2695,
+      "sha256": "ddc90413e4a1afae74d7a19489d21bd7cc1a226eafe0e1a515453550390c68ec",
+      "git_blob_sha1": "1b33d2f64c70e5cb42afeda1972afc9965827ba9"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/BASELINE_RELOAD_AUDIT.json",
+      "relative_path": "BASELINE_RELOAD_AUDIT.json",
+      "bytes": 1208,
+      "sha256": "35988dcf6b7af4a49c6a12e160d097fe574d61a76ea0a726e4c0102dfc284554",
+      "git_blob_sha1": "79a8de97c5a1cd723c03dc4b85dc13a50b78fb92"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/V2_RELOAD_AUDIT.json",
+      "relative_path": "V2_RELOAD_AUDIT.json",
+      "bytes": 1166,
+      "sha256": "e6812347db6287bc482dc5afc7053519dee78e1f8fd5a3d2e5293d90580e5865",
+      "git_blob_sha1": "e8ccf0ce868f473cd6cc6d91ab6033b982913c34"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/FINAL_SOURCE_MANIFEST.json",
+      "relative_path": "FINAL_SOURCE_MANIFEST.json",
+      "bytes": 6674,
+      "sha256": "ce6f96974ae44ad6988a8c867868f24fc956a7531720310971eb4cd70e794247",
+      "git_blob_sha1": "04ba22f054a511e1d724a4519e33240ee0918e1b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/RUN_PROVENANCE.json",
+      "relative_path": "RUN_PROVENANCE.json",
+      "bytes": 8278,
+      "sha256": "a0f91488f6d3cdb2504ae472cca20327ce7bf3908e9090225f28f9824ef192d2",
+      "git_blob_sha1": "249c8d97a20fcead18212e1d6b1db5edf24cf91b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/VALIDATION_METRICS.csv",
+      "relative_path": "VALIDATION_METRICS.csv",
+      "bytes": 1780,
+      "sha256": "874063d15764fa55ce9ced850e7bf052d01d56af82a56f033c6b4abd35567061",
+      "git_blob_sha1": "fb6cb0d73999b247346fdcda6c997aed6ac1ce14"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/CONDITION_STRENGTH.csv",
+      "relative_path": "CONDITION_STRENGTH.csv",
+      "bytes": 4622,
+      "sha256": "ed999821aa5de37214eed28343fe3f211ea2db09ff02c641d4aed528ebc741be",
+      "git_blob_sha1": "ed501187b7aef3ae933000842b750bf51b470889"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/PAIRED_REGION_DELTAS.csv",
+      "relative_path": "PAIRED_REGION_DELTAS.csv",
+      "bytes": 5638,
+      "sha256": "5b6ec6d0892842f4b7b46c72555c35dd81bbcc8fc8e4005c8c1036aec18fd75a",
+      "git_blob_sha1": "548bcd160b3286f8daa1d10b6e0f163b0f0ec54d"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/V2_REGION_METRICS.csv",
+      "relative_path": "V2_REGION_METRICS.csv",
+      "bytes": 11257,
+      "sha256": "c18d8708c57f03cac1dcadb61702c9f1eda87ca89aa7afc198cbd0b6d9160673",
+      "git_blob_sha1": "91394f3a9ecc32df9100d8516e9988fcdeec062e"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/BASELINE_REGION_METRICS.csv",
+      "relative_path": "BASELINE_REGION_METRICS.csv",
+      "bytes": 11669,
+      "sha256": "266d773f1b66dbb3267c8052c8cbbc64fb7f88ebd4ccce0d34e8e92dd895e741",
+      "git_blob_sha1": "d7d9a420877f09ebce8579508cedd0f8cc822c11"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/TRAIN_LOG_100STEP.csv",
+      "relative_path": "TRAIN_LOG_100STEP.csv",
+      "bytes": 14637,
+      "sha256": "23f835e30d9258e18d0b309bd17ce2fd919faba3ac0a7e40a9ba04b86ebec498",
+      "git_blob_sha1": "b1fcf556414d5de6a4b310fa3bf27ded73fcbf80"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/FORMAL_LAUNCH_AUDIT.json",
+      "relative_path": "FORMAL_LAUNCH_AUDIT.json",
+      "bytes": 2585,
+      "sha256": "793663206f7a1a47ff308d0c0cf6aa3287e70c55050d5fff7e9f8fa34bc9e7e9",
+      "git_blob_sha1": "0861356ec253d649469c38f149800a7d4d8ab73f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/SANITY_LAUNCH_AUDIT.json",
+      "relative_path": "SANITY_LAUNCH_AUDIT.json",
+      "bytes": 1241,
+      "sha256": "03f907fb600850c74a7b1599c5b2733ef8d0becd953e5f10fdc4c0915415ed2e",
+      "git_blob_sha1": "22b9349a9d21909a83cb45870d51b99ac4365cc0"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/READINESS_LAUNCH_AUDIT_ATTEMPT2.json",
+      "relative_path": "READINESS_LAUNCH_AUDIT_ATTEMPT2.json",
+      "bytes": 1187,
+      "sha256": "70a81c4320b7a4c006cde897dc486c46540aeb5166a7d18ec384347fdea8502d",
+      "git_blob_sha1": "ae7a1b12f7a863723c51017466509f92b171f3ca"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_LAUNCH_AUDIT.json",
+      "relative_path": "L506_LAUNCH_AUDIT.json",
+      "bytes": 1523,
+      "sha256": "1c35a035ede1805e16e92c00029788c90c23ed3e093d2bb919f6f79e7eead7e0",
+      "git_blob_sha1": "f0fe40ae2d6f63692b9351c5baff64ed8b3521c7"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_PRE_INFERENCE_AUDIT.json",
+      "relative_path": "L506_PRE_INFERENCE_AUDIT.json",
+      "bytes": 808,
+      "sha256": "230883f60194593bf37bbf1a29b0faf9c6d747cb27aced0356a5dfe5559a0998",
+      "git_blob_sha1": "6a5450bd6bb8cbcf3af9105ebeda608b1ff20a9f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/READINESS_EXIT_STATUS_ATTEMPT2.json",
+      "relative_path": "READINESS_EXIT_STATUS_ATTEMPT2.json",
+      "bytes": 65,
+      "sha256": "e1e5792f1d3c001f4220e1385ca083e1899ae9f3558ebaf19217bbfc6424f6fe",
+      "git_blob_sha1": "e6dae7c73bfdd2bb9c8cc3d70eb9c3f64065db9a"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/SANITY_EXIT_STATUS.json",
+      "relative_path": "SANITY_EXIT_STATUS.json",
+      "bytes": 65,
+      "sha256": "0db8b4e7750030236f68054ef23ed0a8c20fbf7eee196bcf90f616658f4e1c58",
+      "git_blob_sha1": "edbed13d0dffd044850b113e4629ace072cc06f1"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/PIPELINE_STATUS.json",
+      "relative_path": "PIPELINE_STATUS.json",
+      "bytes": 95,
+      "sha256": "604a62e2f0256fc20a6b66547148a2dc72b11d73fe3b8728cd5229dbca28628a",
+      "git_blob_sha1": "4a6a37d551b2de3c2b127eec4712b991c87702de"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/PIPELINE_EXIT_STATUS.json",
+      "relative_path": "PIPELINE_EXIT_STATUS.json",
+      "bytes": 219,
+      "sha256": "d8977664600420fe4041d03bc220e114b64de2ff5d3fdba24bffb64593d1e213",
+      "git_blob_sha1": "8a581620ab896cbca79febf926564451c1e9de7b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_PIPELINE_STATUS.json",
+      "relative_path": "L506_PIPELINE_STATUS.json",
+      "bytes": 215,
+      "sha256": "e021ed2352020221ebd11e1b5b797875e33dd2a10f3b1cac709ab2df868e7674",
+      "git_blob_sha1": "e0191d57a5396285f142a8e08cc74beefc20c2c9"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_PIPELINE_EXIT_STATUS.json",
+      "relative_path": "L506_PIPELINE_EXIT_STATUS.json",
+      "bytes": 66,
+      "sha256": "2afc4bda4ba7678085a65ade18a8a13a6713c4b2156145b95270401d9fb1dafc",
+      "git_blob_sha1": "014dedf3b98d1ea53ca3917be25047d0cf13a582"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/bootstrap.py",
+      "relative_path": "bootstrap.py",
+      "bytes": 190,
+      "sha256": "5f66c3f9ffb6d7c8e8e153b8f491aec73bcd2c6e756dfc782196e4c64193f957",
+      "git_blob_sha1": "7da41354b4e0ac8498f772ac77a5f9875b660adb"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/model_v2.py",
+      "relative_path": "model_v2.py",
+      "bytes": 8625,
+      "sha256": "e5e133bc9d3a0876e60dedf66d1eb98383a47058d909e7748e2332a3fe50ed90",
+      "git_blob_sha1": "55efb5feedfe3c0aa1aa29f05e35fd8b264d1838"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/readiness_v2.py",
+      "relative_path": "readiness_v2.py",
+      "bytes": 12784,
+      "sha256": "61f1294943f3f8a4feb203601c95d8cb3054730a102f2b84d4e2c23dd41725a0",
+      "git_blob_sha1": "d06e8ed85feeb00de15635946c5d6a8cbe02839f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/train_v2.py",
+      "relative_path": "train_v2.py",
+      "bytes": 12044,
+      "sha256": "7bfc1da59a0d99e34a4e5a704154941254bbb0d5283a0669dafa0a8b904ec2a2",
+      "git_blob_sha1": "3794da5e26c3b2d0a7a704c1f35be0cdc470f518"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/finalize_v2.py",
+      "relative_path": "finalize_v2.py",
+      "bytes": 17832,
+      "sha256": "c234b8a6bbeb07b9e299cc3ee1d0c40faaa6ae0fbdc6b5c10e0edebc24e3c379",
+      "git_blob_sha1": "d2f141698eec8db4a1628aadeead4790fb8b5cef"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/evaluate_l506_final_v2.py",
+      "relative_path": "evaluate_l506_final_v2.py",
+      "bytes": 20276,
+      "sha256": "ff72002a799629b216e599fd0f8938e019259ef698429a11ea6e84f898359a9b",
+      "git_blob_sha1": "95b60d160cad005095dee84fa0716fb083b9eb12"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/sanity_launcher.py",
+      "relative_path": "sanity_launcher.py",
+      "bytes": 859,
+      "sha256": "b03e6f12eea12ae29273d0603ac647ac4465a35f01c55c650fdb05dd39ff9e09",
+      "git_blob_sha1": "6aaea1811020009c415278a4add5284a7b89af56"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/formal_pipeline_launcher.py",
+      "relative_path": "formal_pipeline_launcher.py",
+      "bytes": 2589,
+      "sha256": "2a3fa67d65099d99c452459778a44ce236321ddd4a3b7b422553e8b76c43ca8d",
+      "git_blob_sha1": "35cfe3098a7a4294e61fdbd62f4eae7119df370e"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/l506_final_launcher.py",
+      "relative_path": "l506_final_launcher.py",
+      "bytes": 2937,
+      "sha256": "8bcef8a80033cb995745bd69bb58187aab9dfb4413e11e5014f62bff63b3a090",
+      "git_blob_sha1": "5a2b3a6b781cf431339c62b922d2857565055892"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/readiness_launcher_attempt2.py",
+      "relative_path": "readiness_launcher_attempt2.py",
+      "bytes": 641,
+      "sha256": "a667318b19c12a86df5865c9b5f3ecee8c77a12336307dab2ae589b6cb277152",
+      "git_blob_sha1": "ccd599350abada7e6960fc401ebb98497402fa33"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/EFFECTIVE_CONFIG.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/EFFECTIVE_CONFIG.json",
+      "bytes": 6559,
+      "sha256": "d4bfdbb671cf40f2076723bd96c59dca6a1d4aa644ceac8c74c9f7788ed98af0",
+      "git_blob_sha1": "62ab9f477742f508f2a460bb0dce68e38af4715c"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/INITIAL_STATE.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/INITIAL_STATE.json",
+      "bytes": 644,
+      "sha256": "75383272bac98e7fec99cd29284706fda29b06c83fda89937c5eed48e8747cd9",
+      "git_blob_sha1": "e25d99405780e6c134ed74a73e8923a484ecea56"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/SOURCE_MANIFEST.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/SOURCE_MANIFEST.json",
+      "bytes": 3469,
+      "sha256": "177a0e7ab5b2f1c9e8e6f16652094daa6769f5036b11fe332bc373ba55d5a660",
+      "git_blob_sha1": "0ee9b53f40d962621f7a8109a57a1aacd9d9571f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/RANDOM_STREAM_AUDIT.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/RANDOM_STREAM_AUDIT.json",
+      "bytes": 361,
+      "sha256": "61086a8c8736d5639f3293f6411d0dbaf4cc43502c609f1db1e809daf2c7fec7",
+      "git_blob_sha1": "00902ea67f046577618fd84d7239ccd749bd1e9b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/DATA_ACCESS_AUDIT.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/DATA_ACCESS_AUDIT.json",
+      "bytes": 2753,
+      "sha256": "b49e72149a8af8b787458d09cd39469b5c467c2c0e55e66930efe364054bb406",
+      "git_blob_sha1": "f30fb7a661441f0097904b7a45b478fe6ab07c24"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/MEDDINO_FROZEN_AUDIT.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/MEDDINO_FROZEN_AUDIT.json",
+      "bytes": 229,
+      "sha256": "76735692a7bcaff37e11069c78931af2ae2a43535e6626bace39bf81b6f65e6c",
+      "git_blob_sha1": "066efba0215325807ab0f505739cf0c5dcdcb4b5"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/FEATURE_STATISTICS.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/FEATURE_STATISTICS.json",
+      "bytes": 166164,
+      "sha256": "ffca6b9d5292b7a6fef02f8a86669c53cb020581b320bf375d5719178875e2ec",
+      "git_blob_sha1": "738cb96fea2688248a2655fd6492c1b6d8c0b904"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/train_condition_strength.csv",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/train_condition_strength.csv",
+      "bytes": 80408,
+      "sha256": "5029f824da2293015a33b75d43d686eb98c2aa9ecb8eb800680e1b4b1670d8aa",
+      "git_blob_sha1": "076da01fb04f61e85648b5d07f7d1a031f9a093f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_metrics.csv",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_metrics.csv",
+      "bytes": 1780,
+      "sha256": "874063d15764fa55ce9ced850e7bf052d01d56af82a56f033c6b4abd35567061",
+      "git_blob_sha1": "fb6cb0d73999b247346fdcda6c997aed6ac1ce14"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_0_metrics.csv",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_0_metrics.csv",
+      "bytes": 7909,
+      "sha256": "8cb14660a95fe9c6fb75ba4b0528ffcf6e126aa33d01b00e5db5e661b253a513",
+      "git_blob_sha1": "4c9c469ccbb30631580ae36d63ea6477bebfb397"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_0.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_0.json",
+      "bytes": 19972,
+      "sha256": "cfd34e05c6e5bb10732853196dec25bf2a097189005fef54226ac7217ec401a4",
+      "git_blob_sha1": "7c51719cab4502771749bbd8ed209654c046e384"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_0.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_0.json",
+      "bytes": 1667,
+      "sha256": "5b2a031d9a300e4b4d8ad6f91ee439197bee885ee2c49af4583e2a221d9a1789",
+      "git_blob_sha1": "b1506fe730e68103f1d0cc007be0c38197011001"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_2000_metrics.csv",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_2000_metrics.csv",
+      "bytes": 7911,
+      "sha256": "c637bee5e519d9a00171a6112ae63d6cb28d88656d895b8c2f5982a6ef1eff30",
+      "git_blob_sha1": "0720ed5d18edc3355655032b4707a71a3075f850"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_2000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_2000.json",
+      "bytes": 19974,
+      "sha256": "48b2c86af2700872bbd121cfe3099358e5d62fc8f3a8bdd880669a569e371ae2",
+      "git_blob_sha1": "7833518136621f9b78265a5c9a58a51fa36f982b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_2000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_2000.json",
+      "bytes": 2286,
+      "sha256": "9626f435b49aca6a3b25d8ebab8f424c6af62333f289f4cddfb71eade6123eae",
+      "git_blob_sha1": "44c93c50114ad521ea8afbea55e241a9c046a180"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_4000_metrics.csv",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_4000_metrics.csv",
+      "bytes": 7902,
+      "sha256": "febffdbb07b7d86c372d98ea9be636ee6fe4d0c154b92a50fd00c4983dbff21a",
+      "git_blob_sha1": "3bdd9ffc5a21ff112195020a9500d8b074fce6fc"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_4000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_4000.json",
+      "bytes": 19965,
+      "sha256": "44743b5c85ecb830c269b003d5f8c253af84ee0f05d3e0cc6d868ad0e2839470",
+      "git_blob_sha1": "44ae3f5de75413c73f287cc76605c3da3b411860"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_4000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_4000.json",
+      "bytes": 2277,
+      "sha256": "212c3bed0a31cf9c67376cca06dbea89927839f87d5ec397c29430946ffa5d48",
+      "git_blob_sha1": "55d3383b31c3f808c4e0d8142ddcc8a6eec86ea7"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_6000_metrics.csv",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_6000_metrics.csv",
+      "bytes": 7898,
+      "sha256": "3c45755b7e1540eb423e21a2933acb07b55e1a368b4b8ac2d61da7bbca7187db",
+      "git_blob_sha1": "c9f90d439121a0e65f68600df62e899c5dbecbfc"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_6000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_6000.json",
+      "bytes": 19961,
+      "sha256": "79a82caff24754d5ae91c1d58db71923a050b1ce59adb2c59abff07c9d685cfe",
+      "git_blob_sha1": "8026939614db67bf16e9a9b06e88738182451cb1"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_6000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_6000.json",
+      "bytes": 2274,
+      "sha256": "521929dd123b6abcf788a97396a644b0fb6a1798da84560edea0daecad15c138",
+      "git_blob_sha1": "42da0990bf06c922d5da76c246ce6008fc34b594"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_8000_metrics.csv",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/L333_fast64_step_8000_metrics.csv",
+      "bytes": 7894,
+      "sha256": "926962bb62c8acdf9df4bce4803aee50f79a6e1e46e740e90a3d87e002ea3650",
+      "git_blob_sha1": "a16ea9f91e38f7f6cb0280356ed6e7e9bbc443c6"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_8000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/validation_step_8000.json",
+      "bytes": 19957,
+      "sha256": "41800ac405315cac155c1ecd6f9651413e389fb2915cc440d7a19711bc7f8751",
+      "git_blob_sha1": "73f6e949137c4dced3a2c2b3b38197b022321124"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_8000.json",
+      "relative_path": "runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/condition_activity_step_8000.json",
+      "bytes": 2275,
+      "sha256": "0d154c92a8eeb367abefd989a77fafe3f02d4f7690377bc0f62b2bdd1cd95044",
+      "git_blob_sha1": "851b14c0fab69422caca1ac2de562326c159bff1"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/EFFECTIVE_CONFIG.json",
+      "relative_path": "runs/SANITY_200/EFFECTIVE_CONFIG.json",
+      "bytes": 6559,
+      "sha256": "84adb4f8131071f7a260f7fae7fbd6265dbad5e6764819221dc1eddd9984aa87",
+      "git_blob_sha1": "7526323eb7918c57dcc524b732f01070b438214d"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/INITIAL_STATE.json",
+      "relative_path": "runs/SANITY_200/INITIAL_STATE.json",
+      "bytes": 644,
+      "sha256": "75383272bac98e7fec99cd29284706fda29b06c83fda89937c5eed48e8747cd9",
+      "git_blob_sha1": "e25d99405780e6c134ed74a73e8923a484ecea56"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/SOURCE_MANIFEST.json",
+      "relative_path": "runs/SANITY_200/SOURCE_MANIFEST.json",
+      "bytes": 3469,
+      "sha256": "177a0e7ab5b2f1c9e8e6f16652094daa6769f5036b11fe332bc373ba55d5a660",
+      "git_blob_sha1": "0ee9b53f40d962621f7a8109a57a1aacd9d9571f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/RANDOM_STREAM_AUDIT.json",
+      "relative_path": "runs/SANITY_200/RANDOM_STREAM_AUDIT.json",
+      "bytes": 360,
+      "sha256": "2f499725dba1bd8174eb2beb62d725b76804aba8445b57a0235f881aa3877150",
+      "git_blob_sha1": "118550d0e31c6e9b218479715153a4b4a022e75f"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/DATA_ACCESS_AUDIT.json",
+      "relative_path": "runs/SANITY_200/DATA_ACCESS_AUDIT.json",
+      "bytes": 2748,
+      "sha256": "ae9a17bfb171200424471ab0e5c687d2f6cbbe64e865207a3f618bed2f2b0d48",
+      "git_blob_sha1": "46c0b5d4a2d81c88147e43520d65cccb1b8003c5"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/MEDDINO_FROZEN_AUDIT.json",
+      "relative_path": "runs/SANITY_200/MEDDINO_FROZEN_AUDIT.json",
+      "bytes": 229,
+      "sha256": "76735692a7bcaff37e11069c78931af2ae2a43535e6626bace39bf81b6f65e6c",
+      "git_blob_sha1": "066efba0215325807ab0f505739cf0c5dcdcb4b5"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/FEATURE_STATISTICS.json",
+      "relative_path": "runs/SANITY_200/FEATURE_STATISTICS.json",
+      "bytes": 6157,
+      "sha256": "ddc0185f220fbf70612c997740d80ba7665b2a97aaf9012da9582c480fc0e8fc",
+      "git_blob_sha1": "1080e0b3c75f1d5bb3732a6dd6a0add9eddff95b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/train_condition_strength.csv",
+      "relative_path": "runs/SANITY_200/train_condition_strength.csv",
+      "bytes": 2467,
+      "sha256": "7cb01da03db3bc148f872135779d864aa3ab90194c89d2a8879d7e93edaa6f85",
+      "git_blob_sha1": "eed14a12dbd43588c2ca3af90bd9bef7be74a0f5"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/validation_metrics.csv",
+      "relative_path": "runs/SANITY_200/validation_metrics.csv",
+      "bytes": 567,
+      "sha256": "123571822b0f5590c5931e9f6566d1546e80efa1b99fe89257fe02fba152b9f8",
+      "git_blob_sha1": "7cf5a9fe4f3ada723965b5891c7ac22743e93cc7"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/L333_fast64_step_200_metrics.csv",
+      "relative_path": "runs/SANITY_200/L333_fast64_step_200_metrics.csv",
+      "bytes": 7909,
+      "sha256": "92c1a879764c53d031611543422d1811a2edf78ebf49b985eaa1c5e6233fd5d8",
+      "git_blob_sha1": "07d1a080f9505e79f781071659e3d52063207be7"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200/condition_activity_step_200.json",
+      "relative_path": "runs/SANITY_200/condition_activity_step_200.json",
+      "bytes": 2308,
+      "sha256": "03362e268e9be74b2f233b64a6ddfd20710b7669f280b01439d54962b48fe5a7",
+      "git_blob_sha1": "b6f9d65915a952e152c1c59142c1b1a5657f867b"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K/REPORT.md",
+      "relative_path": "L506_FINAL_EVAL_8K/REPORT.md",
+      "bytes": 3752,
+      "sha256": "f7c086b51eceae43429d44d9b40d841f7ad9a207ce8d1c2af53378616e5d0c26",
+      "git_blob_sha1": "535ed015f71fd2e31dcfc91769163d57173c24fe"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K/SUMMARY.json",
+      "relative_path": "L506_FINAL_EVAL_8K/SUMMARY.json",
+      "bytes": 9218,
+      "sha256": "ab689c5890a4d06fef7fbbb18feed6d9b78f19d773e9bf42ce9c052e54f2d39d",
+      "git_blob_sha1": "ebe2067f5bd417e7f25d60a993323f874bcaecb7"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K/EVALUATION_CONFIG.json",
+      "relative_path": "L506_FINAL_EVAL_8K/EVALUATION_CONFIG.json",
+      "bytes": 5983,
+      "sha256": "271760c3a0d35297a3b1162d7adf58f65a26bfd35ce4ca1ef0455b06587c2166",
+      "git_blob_sha1": "9ae49d414e5dfe854494b88b0eef1f79e05df9d2"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K/ENVIRONMENT.json",
+      "relative_path": "L506_FINAL_EVAL_8K/ENVIRONMENT.json",
+      "bytes": 339,
+      "sha256": "41c44c696829292f97cd58d14f031a3e29cb3a403254f3ab27ccb6e94aa6cfbb",
+      "git_blob_sha1": "f080212bdd35c255c453778ba5818539e03d4ab4"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K/DATA_ACCESS_AUDIT.json",
+      "relative_path": "L506_FINAL_EVAL_8K/DATA_ACCESS_AUDIT.json",
+      "bytes": 5017,
+      "sha256": "1aa30c42e3fe9a509615455a5f472ab8594b9e04a62f2ad1d051572eb76e7964",
+      "git_blob_sha1": "687f12c752b08bfe5eac59bd2a1a1c351424fa13"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K/MAIN_1000_METRICS.csv",
+      "relative_path": "L506_FINAL_EVAL_8K/MAIN_1000_METRICS.csv",
+      "bytes": 82348,
+      "sha256": "1ea04c1a47d81bffabc46a639574f4c35ccbf18def1f44eb1b8fd4b8b46743e7",
+      "git_blob_sha1": "f5f373533283671620d00b7130e652d449ad9bbb"
+    },
+    {
+      "path": "experiments/rddm_2p5d_meddino_hier_edge_v2/L506_FINAL_EVAL_8K/SOFT_TISSUE_160_240_METRICS.csv",
+      "relative_path": "L506_FINAL_EVAL_8K/SOFT_TISSUE_160_240_METRICS.csv",
+      "bytes": 82349,
+      "sha256": "3e0cddae867599cacae6007f6df2613efd877a1fbbb4208b3bad290c2efc663b",
+      "git_blob_sha1": "a4a28e3fe354a744198fe1c724b8ba253e78bfb6"
+    }
+  ]
+}

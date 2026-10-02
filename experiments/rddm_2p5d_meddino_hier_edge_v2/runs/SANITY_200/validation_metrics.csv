@@ -1,0 +1,2 @@
+step,psnr,ssim,rmse_hu,mae_hu,validation_loss,slices,patient,weights,validation_mode,condition_mode,validation_seconds,delta_psnr_vs_baseline_8k,delta_ssim_vs_baseline_8k,delta_rmse_hu_vs_baseline_8k,delta_mae_hu_vs_baseline_8k,train_stream_sha256,peak_vram_bytes
+200,40.60845446530949,0.9460604065609031,18.748688271562493,12.284832268953323,9.141181328686798e-05,64,L333,ema,FAST,NORMAL,50.003926056902856,-0.29978278007253323,-0.002787057194097664,0.6294540572849243,0.29809555411338806,490569466052091c34507ae9e7c32721c624fefdaf6c58c4c8b1ca0ac49edfcc,18377305600

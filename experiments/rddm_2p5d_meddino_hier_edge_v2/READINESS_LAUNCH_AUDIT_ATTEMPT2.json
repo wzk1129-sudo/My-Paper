@@ -1,0 +1,19 @@
+{
+  "session": "meddino_hier_edge_v2_readiness2_20261002",
+  "attempt": 2,
+  "command": "CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 /home/xujian/miniconda3/envs/flexict/bin/python -u /home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/readiness_v2.py",
+  "started_at": "2026-10-02T18:21:31+0800",
+  "source_sha256": {
+    "readiness_launcher_attempt2.py": "a667318b19c12a86df5865c9b5f3ecee8c77a12336307dab2ae589b6cb277152",
+    "bootstrap.py": "5f66c3f9ffb6d7c8e8e153b8f491aec73bcd2c6e756dfc782196e4c64193f957",
+    "readiness_v2.py": "61f1294943f3f8a4feb203601c95d8cb3054730a102f2b84d4e2c23dd41725a0",
+    "readiness_launcher.py": "81d6793b0104b1890e314eb07d367ee95a69538dd96bfac14295fc33cc4fb03a",
+    "model_v2.py": "e5e133bc9d3a0876e60dedf66d1eb98383a47058d909e7748e2332a3fe50ed90"
+  },
+  "log": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/logs/readiness_attempt2.log",
+  "environment": "flexict",
+  "gpu": 0,
+  "git_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+  "git_status": "?? ./\n",
+  "stop_condition": "readiness only; no fallback batch or precision changes"
+}

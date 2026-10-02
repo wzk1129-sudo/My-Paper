@@ -1,0 +1,93 @@
+{
+  "mask": {
+    "source": "center LDCT only",
+    "operator": "same fixed sigma0.8 Gaussian + Scharr RMS-normalized magnitude",
+    "threshold": 2.0,
+    "definition": "edge normalized magnitude >=2; non-edge complement; threshold fixed before training",
+    "region_metrics_hu_window": [
+      -1000,
+      1000
+    ]
+  },
+  "aggregation": "arithmetic mean of 64 per-slice region RMSE and MAE",
+  "slice_count": 64,
+  "baseline": {
+    "arm": "BASELINE",
+    "checkpoint": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/runs/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION_retry1/checkpoints/step_8000.pt",
+    "checkpoint_sha256": "1ea09e9d0a4f2d56a636a62dc4a02afe80ff6342f506628077dd0003af748ce1",
+    "checkpoint_optimizer_step": 8000,
+    "slices": 64,
+    "means": {
+      "psnr": 40.908237245382026,
+      "ssim": 0.9488474637550007,
+      "rmse_hu": 18.11923421427757,
+      "mae_hu": 11.986736714839935,
+      "edge_rmse_hu": 22.13784611225128,
+      "edge_mae_hu": 15.89182785153389,
+      "flat_rmse_hu": 17.82947212457657,
+      "flat_mae_hu": 11.743595644831657
+    },
+    "prediction_tensor_stream_sha256": "1e5d70b85b61949c6e9d2b53320bede8e42eeffac9c16e8a7037be0caec869eb",
+    "mask_stream_sha256": "7bc151f917008e7ded563e4fe2a2bc1ac0d595bbceab9fb6b1e214a77a6ba35f",
+    "reload_metric_differences": {
+      "psnr": 0.0,
+      "ssim": 0.0,
+      "rmse_hu": 0.0,
+      "mae_hu": 0.0
+    },
+    "reload_metric_match": true,
+    "meddino_hash": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+    "meddino_frozen_eval": true,
+    "seconds": 28.34347536205314,
+    "peak_allocated_bytes": 1972551168
+  },
+  "candidate": {
+    "arm": "V2",
+    "checkpoint": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K/checkpoints/step_8000.pt",
+    "checkpoint_sha256": "c8c291a8b78f87f6809565ea00808ff28ff8e3182f9a3206c6acfc4ab7a38684",
+    "checkpoint_optimizer_step": 8000,
+    "slices": 64,
+    "means": {
+      "psnr": 40.8992786434328,
+      "ssim": 0.9487580754705933,
+      "rmse_hu": 18.137594015158342,
+      "mae_hu": 11.976009547710419,
+      "edge_rmse_hu": 22.164134830236435,
+      "edge_mae_hu": 15.902724757790565,
+      "flat_rmse_hu": 17.847207605838776,
+      "flat_mae_hu": 11.731520012021065
+    },
+    "prediction_tensor_stream_sha256": "69b5d96e60d487554989b3f9980f4fff1cf6d3d9f07d58babb9ccbf144957bcb",
+    "mask_stream_sha256": "7bc151f917008e7ded563e4fe2a2bc1ac0d595bbceab9fb6b1e214a77a6ba35f",
+    "reload_metric_differences": {
+      "psnr": 0.0,
+      "ssim": 0.0,
+      "rmse_hu": 0.0,
+      "mae_hu": 0.0
+    },
+    "reload_metric_match": true,
+    "meddino_hash": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+    "meddino_frozen_eval": true,
+    "seconds": 33.68375823402312,
+    "peak_allocated_bytes": 1978535424
+  },
+  "candidate_minus_baseline": {
+    "psnr": -0.008958601949224487,
+    "ssim": -8.938828440741009e-05,
+    "rmse_hu": 0.01835980088077349,
+    "mae_hu": -0.010727167129516602,
+    "edge_rmse_hu": 0.026288717985153198,
+    "edge_mae_hu": 0.01089690625667572,
+    "flat_rmse_hu": 0.01773548126220703,
+    "flat_mae_hu": -0.012075632810592651
+  },
+  "same_mask_hash": true,
+  "edge_rmse_baseline_minus_v2_mean": -0.026288717985153198,
+  "edge_rmse_improvement_bootstrap95_ci": [
+    -0.04197300598025322,
+    -0.010507071018218994
+  ],
+  "bootstrap_seed": 20260829,
+  "bootstrap_replicates": 10000,
+  "clear_edge_rmse_improvement": false
+}

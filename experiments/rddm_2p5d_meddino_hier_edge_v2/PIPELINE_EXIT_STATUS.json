@@ -1,0 +1,12 @@
+[
+  {
+    "stage": "training",
+    "exit_code": 0,
+    "finished_at": "2026-10-02T22:00:26+0800"
+  },
+  {
+    "stage": "region_diagnostics_report",
+    "exit_code": 0,
+    "finished_at": "2026-10-02T22:01:38+0800"
+  }
+]

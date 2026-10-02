@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "matched_steps": 8000,
+  "all_steps_match": true,
+  "baseline_log": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/runs/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION_retry1/train.jsonl",
+  "final_digest": "efa00ad4e18b7c44b26e6d58cb60e0ed238bf7b4cb95b1a4d5052808807e35f2"
+}

@@ -1,0 +1,22 @@
+{
+  "session": "meddino_hier_edge_v2_sanity_20261002",
+  "command": [
+    "/home/xujian/miniconda3/envs/flexict/bin/python",
+    "-u",
+    "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/train_v2.py",
+    "--phase",
+    "sanity",
+    "--output",
+    "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200"
+  ],
+  "launcher": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/sanity_launcher.py",
+  "git_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+  "branch": "experiment/rddm-2p5d-meddino-hier-edge-v2",
+  "git_status": "?? experiments/rddm_2p5d_meddino_hier_edge_v2/\n",
+  "conda_environment": "flexict",
+  "gpu": "0",
+  "log": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/logs/sanity_200.log",
+  "output": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200",
+  "launch_time": "2026-10-02T18:35:58+0800",
+  "termination": "200 optimizer steps + EMA L333-fast64 validation + all gates PASS; fail on audit mismatch or nonfinite; no formal training from this launcher"
+}

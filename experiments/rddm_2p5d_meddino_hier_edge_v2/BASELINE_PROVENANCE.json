@@ -1,0 +1,45 @@
+{
+  "branch": "experiment/rddm-2p5d-meddino-hier-edge-v2",
+  "worktree": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2",
+  "base_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+  "baseline_experiment": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1",
+  "baseline_run": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/runs/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION_retry1",
+  "baseline_8k_checkpoint": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/runs/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION_retry1/checkpoints/step_8000.pt",
+  "baseline_candidate_metrics": {
+    "psnr": 40.908237245382026,
+    "ssim": 0.9488474637550007,
+    "rmse_hu": 18.11923421427757,
+    "mae_hu": 11.986736714839935
+  },
+  "baseline_initial_state": {
+    "arm": "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION",
+    "shared_initial_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+    "initial_rng_sha256": "89aa818c8b27dcab4ac88c8dbd93bf596071505e28cfa7b31581e83fa251e1f8",
+    "train_manifest_sha256": "fb38499e662a6df2f3cd4884ab6362fe023787627cd421fc7eb471dcbfb10d26",
+    "validation_manifest_sha256": "90993b7c1359f066ebaf8e31173330c41306c23b124c47eb6167a3f8a02adc28",
+    "batch_config": {
+      "batch": 2,
+      "accum": 1,
+      "effective_batch": 2
+    },
+    "trainable_parameters": 37948353,
+    "total_parameters": 123590337,
+    "meddino_initial_weights_sha256": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+    "fresh_optimizer": true,
+    "ema_updates": 0
+  },
+  "baseline_final_stream_sha256": "efa00ad4e18b7c44b26e6d58cb60e0ed238bf7b4cb95b1a4d5052808807e35f2",
+  "parent_checkpoint": "/home/xujian/projects/CoreDiff_official_rddm_ct_adapt_v1/experiments/rddm_official_ct_adapt_v1/runs/candidate_8k_20261001/checkpoints/step_8000.pt",
+  "parent_checkpoint_sha256": "2cc1d6aeb785bd0b7a5786801e3fa9e0e3ba4427bf3a43c86fc894f3486ad669",
+  "baseline_source_sha256": {
+    "model.py": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+    "train.py": "18ceb3fca621add35d7681b078e8011836656b5ea849e74cbe8d39498d83d410",
+    "evaluate.py": "103e414e9fb85e83919856240ac0ce7add208798fba28bb9d6d53048fefdba3b",
+    "context_data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+    "med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+    "src/official_rddm_ct.py": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895"
+  },
+  "created_at": "2026-10-02T18:06:32+0800"
+}

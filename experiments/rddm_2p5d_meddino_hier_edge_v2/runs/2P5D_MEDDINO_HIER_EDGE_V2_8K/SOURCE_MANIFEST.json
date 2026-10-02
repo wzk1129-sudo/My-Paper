@@ -1,0 +1,20 @@
+{
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/BASELINE_PROVENANCE.json": "a01763362ff531cfa7dbdd9328b3d505f72443b33ff900a6fbb96557c6cb9569",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/CONFIG.json": "cc44c6f18a74e052d8a38d841cebbbe1027a34a5b32084347db40fd7afe5d6e4",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/bootstrap.py": "5f66c3f9ffb6d7c8e8e153b8f491aec73bcd2c6e756dfc782196e4c64193f957",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/model_v2.py": "e5e133bc9d3a0876e60dedf66d1eb98383a47058d909e7748e2332a3fe50ed90",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/readiness_v2.py": "61f1294943f3f8a4feb203601c95d8cb3054730a102f2b84d4e2c23dd41725a0",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/train_v2.py": "7bfc1da59a0d99e34a4e5a704154941254bbb0d5283a0669dafa0a8b904ec2a2",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/context_data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/evaluate.py": "103e414e9fb85e83919856240ac0ce7add208798fba28bb9d6d53048fefdba3b",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/fast_dev/data.py": "f2c5304294a9034bd11c40d04588d1a98126822d9bbf6aaec5fdd954a982c976",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/mayo2016_smallset_v1/frozen_protocol.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/mayo2016_smallset_v1/runtime.py": "066ebdc3f18528bc0bb4c11972f44caa27ea3e93d525fdacf9cbb69fe290ecb0",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/model.py": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/src/official_rddm_ct.py": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72",
+  "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_official_2p5d_meddino_condition_v1/train.py": "18ceb3fca621add35d7681b078e8011836656b5ea849e74cbe8d39498d83d410"
+}

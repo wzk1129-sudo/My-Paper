@@ -1,0 +1,10 @@
+runs/
+logs/
+visualizations/
+__pycache__/
+*.pt
+*.pth
+*.npy
+*.npz
+*.png
+*.pdf

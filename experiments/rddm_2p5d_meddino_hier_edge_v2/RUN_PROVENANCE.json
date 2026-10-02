@@ -1,0 +1,131 @@
+{
+  "formal_launch": {
+    "session": "meddino_hier_edge_v2_8k_20261002",
+    "commands": [
+      [
+        "env",
+        "CUDA_VISIBLE_DEVICES=0",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "/home/xujian/miniconda3/envs/flexict/bin/python",
+        "-u",
+        "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/train_v2.py",
+        "--phase",
+        "formal",
+        "--output",
+        "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K"
+      ],
+      [
+        "env",
+        "CUDA_VISIBLE_DEVICES=0",
+        "CUBLAS_WORKSPACE_CONFIG=:4096:8",
+        "/home/xujian/miniconda3/envs/flexict/bin/python",
+        "-u",
+        "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/finalize_v2.py"
+      ]
+    ],
+    "launcher": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/formal_pipeline_launcher.py",
+    "git_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+    "branch": "experiment/rddm-2p5d-meddino-hier-edge-v2",
+    "git_status": "?? experiments/rddm_2p5d_meddino_hier_edge_v2/\n",
+    "source_sha256": {
+      "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/train_v2.py": "7bfc1da59a0d99e34a4e5a704154941254bbb0d5283a0669dafa0a8b904ec2a2",
+      "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/model_v2.py": "e5e133bc9d3a0876e60dedf66d1eb98383a47058d909e7748e2332a3fe50ed90",
+      "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/finalize_v2.py": "c234b8a6bbeb07b9e299cc3ee1d0c40faaa6ae0fbdc6b5c10e0edebc24e3c379",
+      "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/CONFIG.json": "cc44c6f18a74e052d8a38d841cebbbe1027a34a5b32084347db40fd7afe5d6e4"
+    },
+    "conda_environment": "/home/xujian/miniconda3/envs/flexict",
+    "gpu": "0",
+    "log": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/logs/formal_8k.log",
+    "finalize_log": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/logs/finalize_8k.log",
+    "output": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/2P5D_MEDDINO_HIER_EDGE_V2_8K",
+    "launch_time": "2026-10-02T18:44:19+0800",
+    "termination": "8000 optimizer steps + EMA Fast64@0/2k/4k/6k/8k + fixed region diagnostics and report; halt on failure; no 10k/12k/Full-L333"
+  },
+  "readiness": {
+    "session": "meddino_hier_edge_v2_readiness2_20261002",
+    "attempt": 2,
+    "command": "CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 /home/xujian/miniconda3/envs/flexict/bin/python -u /home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/readiness_v2.py",
+    "started_at": "2026-10-02T18:21:31+0800",
+    "source_sha256": {
+      "readiness_launcher_attempt2.py": "a667318b19c12a86df5865c9b5f3ecee8c77a12336307dab2ae589b6cb277152",
+      "bootstrap.py": "5f66c3f9ffb6d7c8e8e153b8f491aec73bcd2c6e756dfc782196e4c64193f957",
+      "readiness_v2.py": "61f1294943f3f8a4feb203601c95d8cb3054730a102f2b84d4e2c23dd41725a0",
+      "readiness_launcher.py": "81d6793b0104b1890e314eb07d367ee95a69538dd96bfac14295fc33cc4fb03a",
+      "model_v2.py": "e5e133bc9d3a0876e60dedf66d1eb98383a47058d909e7748e2332a3fe50ed90"
+    },
+    "log": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/logs/readiness_attempt2.log",
+    "environment": "flexict",
+    "gpu": 0,
+    "git_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+    "git_status": "?? ./\n",
+    "stop_condition": "readiness only; no fallback batch or precision changes"
+  },
+  "sanity": {
+    "session": "meddino_hier_edge_v2_sanity_20261002",
+    "command": [
+      "/home/xujian/miniconda3/envs/flexict/bin/python",
+      "-u",
+      "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/train_v2.py",
+      "--phase",
+      "sanity",
+      "--output",
+      "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200"
+    ],
+    "launcher": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/sanity_launcher.py",
+    "git_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+    "branch": "experiment/rddm-2p5d-meddino-hier-edge-v2",
+    "git_status": "?? experiments/rddm_2p5d_meddino_hier_edge_v2/\n",
+    "conda_environment": "flexict",
+    "gpu": "0",
+    "log": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/logs/sanity_200.log",
+    "output": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2/experiments/rddm_2p5d_meddino_hier_edge_v2/runs/SANITY_200",
+    "launch_time": "2026-10-02T18:35:58+0800",
+    "termination": "200 optimizer steps + EMA L333-fast64 validation + all gates PASS; fail on audit mismatch or nonfinite; no formal training from this launcher"
+  },
+  "baseline": {
+    "branch": "experiment/rddm-2p5d-meddino-hier-edge-v2",
+    "worktree": "/home/xujian/projects/CoreDiff_meddino_hier_edge_v2",
+    "base_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+    "baseline_experiment": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1",
+    "baseline_run": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/runs/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION_retry1",
+    "baseline_8k_checkpoint": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/rddm_official_2p5d_meddino_condition_v1/runs/OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION_retry1/checkpoints/step_8000.pt",
+    "baseline_candidate_metrics": {
+      "psnr": 40.908237245382026,
+      "ssim": 0.9488474637550007,
+      "rmse_hu": 18.11923421427757,
+      "mae_hu": 11.986736714839935
+    },
+    "baseline_initial_state": {
+      "arm": "OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION",
+      "shared_initial_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+      "initial_rng_sha256": "89aa818c8b27dcab4ac88c8dbd93bf596071505e28cfa7b31581e83fa251e1f8",
+      "train_manifest_sha256": "fb38499e662a6df2f3cd4884ab6362fe023787627cd421fc7eb471dcbfb10d26",
+      "validation_manifest_sha256": "90993b7c1359f066ebaf8e31173330c41306c23b124c47eb6167a3f8a02adc28",
+      "batch_config": {
+        "batch": 2,
+        "accum": 1,
+        "effective_batch": 2
+      },
+      "trainable_parameters": 37948353,
+      "total_parameters": 123590337,
+      "meddino_initial_weights_sha256": "a614e65a580989fd83255ce74e4064af4e96863d8766afd74ce94d56b576232f",
+      "fresh_optimizer": true,
+      "ema_updates": 0
+    },
+    "baseline_final_stream_sha256": "efa00ad4e18b7c44b26e6d58cb60e0ed238bf7b4cb95b1a4d5052808807e35f2",
+    "parent_checkpoint": "/home/xujian/projects/CoreDiff_official_rddm_ct_adapt_v1/experiments/rddm_official_ct_adapt_v1/runs/candidate_8k_20261001/checkpoints/step_8000.pt",
+    "parent_checkpoint_sha256": "2cc1d6aeb785bd0b7a5786801e3fa9e0e3ba4427bf3a43c86fc894f3486ad669",
+    "baseline_source_sha256": {
+      "model.py": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+      "train.py": "18ceb3fca621add35d7681b078e8011836656b5ea849e74cbe8d39498d83d410",
+      "evaluate.py": "103e414e9fb85e83919856240ac0ce7add208798fba28bb9d6d53048fefdba3b",
+      "context_data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+      "med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+      "src/official_rddm_ct.py": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72",
+      "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223",
+      "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895"
+    },
+    "created_at": "2026-10-02T18:06:32+0800"
+  },
+  "private_outputs_not_uploaded": true
+}
