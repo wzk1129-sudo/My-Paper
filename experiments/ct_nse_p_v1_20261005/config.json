@@ -1,0 +1,105 @@
+{
+  "experiment": "CT_NSE_P_V1",
+  "paper": "Ma et al., Structure-Preserving Image Super-Resolution, TPAMI 2021, arXiv:2109.12530",
+  "paper_url": "https://arxiv.org/html/2109.12530",
+  "project_root": "/home/xujian/projects/CoreDiff",
+  "data_root": "/home/xujian/projects/CoreDiff/data_preprocess/gen_data/mayo_2016_npy",
+  "train_patients": [
+    "L067",
+    "L143"
+  ],
+  "val_patients": [
+    "L333"
+  ],
+  "expected_ndct_counts": {
+    "L067": 560,
+    "L143": 585,
+    "L333": 610
+  },
+  "input_view": "target NDCT only",
+  "stored_value_offset_hu": -1024,
+  "hu_clip": [
+    -1024,
+    3072
+  ],
+  "normalization": "(clip(raw.float32-1024,-1024,3072)+1024)/4096",
+  "input_size": 512,
+  "crop_size": 420,
+  "augmentation": {
+    "horizontal_flip_probability": 0.5
+  },
+  "network": {
+    "conv_channels": 32,
+    "output_channels": 32,
+    "output_stride": 4,
+    "receptive_field": 31,
+    "conv_strides": [
+      2,
+      1,
+      1,
+      2,
+      1,
+      1
+    ],
+    "residual_skips": 2,
+    "predictor_widths": [
+      64,
+      128,
+      64,
+      32
+    ]
+  },
+  "contrastive": {
+    "context": "horizontal",
+    "context_distance_grid": 8,
+    "anchors_per_image": 16,
+    "negative_source": "same feature map",
+    "negative_overlap_exclusion_grid_radius": 7,
+    "positive_index": 0,
+    "cosine_logit_scale": 64,
+    "loss": "CrossEntropy",
+    "valid_rf_only": true
+  },
+  "training": {
+    "epochs": 60,
+    "batch_size": 48,
+    "allowed_oom_fallback_batch_size": 32,
+    "drop_last": true,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0,
+    "lr_milestones_epochs": [
+      20,
+      40
+    ],
+    "lr_gamma": 0.2,
+    "amp": false,
+    "seed": 20260829,
+    "cublas_workspace_config": ":4096:8",
+    "deterministic": true
+  },
+  "validation": {
+    "every_epochs": 5,
+    "batch_size": 16,
+    "all_L333_slices": true,
+    "fixed_crop_and_anchors": true,
+    "collapse_global_std_threshold": 0.0001
+  },
+  "checkpoint_epochs": [
+    20,
+    40,
+    60
+  ],
+  "forbidden": {
+    "LDCT": true,
+    "L506": true,
+    "external_memory": true,
+    "RDDM": true,
+    "MedDINO": true,
+    "edge_operators": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "seed": 20260829,
+  "slices": 610,
+  "input": [
+    1,
+    1,
+    512,
+    512
+  ],
+  "feature_shape": [
+    32,
+    128,
+    128
+  ],
+  "valid_feature_bounds_inclusive": [
+    4,
+    124
+  ],
+  "valid_locations_per_slice": 14641,
+  "spatial_negative": "one deterministic uniform non-overlapping NDCT location per valid query",
+  "cross_slice_negative": "one uniform NDCT location in slice (i+305)%610",
+  "hard_gallery": "all 14641 full-RF locations of query slice plus slices (i+122/244/366/488)%610",
+  "hard_anchors_per_slice": 16,
+  "hard_anchor_strata": "8 uniform full-RF and 8 uniform body; plus 16 visual anchors",
+  "reference": "NDCT identity paired view: same deterministic input, no perturbation; upper bound, not independent sample",
+  "testA": "every full-RF feature location; gallery excludes padded-RF boundary only",
+  "tie_rule": "cosine within 1e-6 treated as tie, lowest gallery index wins",
+  "visual_query_selection": "NDCT intensity/patch-statistic proxies only, before feature extraction/retrieval",
+  "preprocessing": "raw.float32-1024 -> clip [-1024,3072] -> (HU+1024)/4096",
+  "no_training": true,
+  "no_parameter_update": true,
+  "checkpoint": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/checkpoints/best_val_loss.pt",
+  "query_chunk": 512
+}

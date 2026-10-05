@@ -1,0 +1,106 @@
+{
+  "files": {
+    "experiments/ct_nse_p_v1_20261005/ct_nse.py": {
+      "bytes": 4909,
+      "sha256": "1b571812fffb84be3091e72f7309c2017374c987f3b526c80a8cbfb6aa6ace48",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/ct_nse.py"
+    },
+    "experiments/ct_nse_p_v1_20261005/dataset_ct_nse.py": {
+      "bytes": 5985,
+      "sha256": "79ebbb71fe9b4449b3de42d0af6a6210a1d0a50d2202be3bc1ad1ea4beb1062a",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/dataset_ct_nse.py"
+    },
+    "experiments/ct_nse_p_v1_20261005/train_ct_nse.py": {
+      "bytes": 14538,
+      "sha256": "2c7332021e8b39eaccd931e3983e1ae1dfb2dc0366f1c569e011abe1468e4086",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/train_ct_nse.py"
+    },
+    "experiments/ct_nse_p_v1_20261005/diagnostics_ct_nse.py": {
+      "bytes": 10201,
+      "sha256": "d50eba138a06040660055769419a3c9960928835e6f25b79971df7f3bc2b2270",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/diagnostics_ct_nse.py"
+    },
+    "experiments/ct_nse_p_v1_20261005/test_ct_nse.py": {
+      "bytes": 3359,
+      "sha256": "59248093cb47d565e96f786c257659c57dcbb6259c50f7fe35b1680e8fba57fe",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/test_ct_nse.py"
+    },
+    "experiments/ct_nse_p_v1_20261005/config.json": {
+      "bytes": 2200,
+      "sha256": "b0007d38a8455d6b0ef670fcb837cb1cbde6f556674e226248364152165ac395",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/config.json"
+    },
+    "experiments/ct_nse_p_v1_20261005/EFFECTIVE_CONFIG.json": {
+      "bytes": 2418,
+      "sha256": "2e0e556acd2d67bee9155872d2784c2f6e599f10f0321b61f2f0adbbc7abf46c",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/EFFECTIVE_CONFIG.json"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/common.py": {
+      "bytes": 5640,
+      "sha256": "be16f9a85f4f12a6d51f411469eacee31b06585708f238b1ad28790a4e860841",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/common.py"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/pairing.py": {
+      "bytes": 3605,
+      "sha256": "0b6d036c8a04d6c083e734c697779dce7bb238f5c6beafb4a1f38e16f746fe9f",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/pairing.py"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/evaluate_crossdose.py": {
+      "bytes": 18201,
+      "sha256": "f4fbcf7f73794f3c28d0f715355091db8dee0a4e05aa79a085df94083b71e23d",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/evaluate_crossdose.py"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/visualize.py": {
+      "bytes": 8486,
+      "sha256": "732f59232712212a88ea77203891078e56d6caef97c889c3d41fcfbaf3e94f05",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/visualize.py"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/test_eval.py": {
+      "bytes": 1860,
+      "sha256": "ecb9137933acff58b737a15874a164e7ff2330fd699cc065acb9174504835fa7",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/test_eval.py"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/finalize_review.py": {
+      "bytes": 10278,
+      "sha256": "584cfe8d43efd7b70d9dba82f676c9c3cbf76b663879ee3173d92af358904428",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/finalize_review.py"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/launch.sh": {
+      "bytes": 526,
+      "sha256": "5037fdb3b1d22825af9b981b1ead36237b941695f8abb88ec639276c3992e282",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/launch.sh"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/README.md": {
+      "bytes": 3219,
+      "sha256": "263e9ee80938f3d9ec5b9ccfe0ac6aebdbcc9805fdba41f318516ba166331305",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/publication_light_v1/README.md"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/KEY_RESULTS.png": {
+      "bytes": 78919,
+      "sha256": "1b273725e7c52a0a91739a33c981790de8f5b3c0a303c50986275a1bc54091cc",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/publication_light_v1/KEY_RESULTS.png"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/effective_config.json": {
+      "bytes": 1296,
+      "sha256": "8ddae31b19e14e8aa109756905c7e5e21783807494b076d112f65a8b59a0ac61",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/publication_light_v1/effective_config.json"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/metrics.json": {
+      "bytes": 21797,
+      "sha256": "4fe7818b8b4b6a299e22cfccba7e8a1057b3316d0151acf74937849dd047195d",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/publication_light_v1/metrics.json"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/AUDIT_SUMMARY.json": {
+      "bytes": 5021,
+      "sha256": "4d22e8c6b65cc4eb0e7d076bb420aa2e60e439b8cf50f6172322f97d4fbbbdc8",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/publication_light_v1/AUDIT_SUMMARY.json"
+    },
+    "experiments/ct_nse_p_v1_crossdose_eval_20261005/PROVENANCE.json": {
+      "bytes": 2781,
+      "sha256": "b8f526ab2dd629168683fd8055b757a65f066930f9f09ea2f431a6e5501655e8",
+      "remote_source": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/publication_light_v1/PROVENANCE.json"
+    }
+  },
+  "include_policy": "explicit allowlist; exactly one PNG; no weights, medical images, arrays/features, large logs",
+  "key_figure_sha256": "1b273725e7c52a0a91739a33c981790de8f5b3c0a303c50986275a1bc54091cc"
+}

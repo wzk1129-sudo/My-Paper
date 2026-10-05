@@ -1,0 +1,113 @@
+{
+  "final_integrity": {
+    "status": "PASS",
+    "slice_count": 610,
+    "full_RF_query_count": 8931010,
+    "body_query_count": 4492418,
+    "hard_queries": 9776,
+    "hard_result_rows_both_protocols": 19552,
+    "per_slice_rows": 2440,
+    "all_pairing_physical_and_DICOM_NPY_checks": true,
+    "source_config_checkpoint_unchanged": true,
+    "model_frozen_and_no_parameter_update": true,
+    "per_slice_weighted_aggregate_reconciles": true,
+    "rank_flags_reconcile": true,
+    "all_reported_numbers_finite": true,
+    "feature_NaN_Inf": 0,
+    "L506_access": 0,
+    "L067_L143_access": 0,
+    "external_memory_access": 0,
+    "decision": "CONDITIONAL PASS",
+    "medical_copy": "one explicitly authorized contact sheet PNG; no arrays/features",
+    "completion_time": "2026-10-05T16:10:30.810884+08:00"
+  },
+  "pairing": {
+    "status": "PASS",
+    "slice_count": 610,
+    "index_range": [
+      0,
+      609
+    ],
+    "physical_z_unique": 610,
+    "physical_z_step": -0.8000000000000114,
+    "preprocessing": "raw.float32-1024 -> clip [-1024,3072] HU -> (HU+1024)/4096",
+    "UID_note": "Anonymized full/quarter series can have distinct study/frame UIDs. Pairing is proved by common patient folder/header, instance, physical grid and exact DICOM-NPY pixels.",
+    "access_audit": {
+      "opens": {
+        "DICOM_LDCT": 1830,
+        "DICOM_NDCT": 1830,
+        "NPY_25": 1830,
+        "NPY_target": 1830
+      },
+      "unique_files": 2440,
+      "blocked_attempts": 0,
+      "L506_access": 0,
+      "L067_L143_access": 0,
+      "external_memory_access": 0,
+      "medical_data_modified": false
+    }
+  },
+  "frozen_model": {
+    "eval": true,
+    "requires_grad_all_false": true,
+    "no_parameter_gradient": true,
+    "state_sha256_before": "4d139921775e046b24139e1705e8bb6d7f090e43d590c5cab6b074dae67b71f3",
+    "state_sha256_after": "4d139921775e046b24139e1705e8bb6d7f090e43d590c5cab6b074dae67b71f3",
+    "checkpoint_sha256_before": "d684820c2af7ef9f54930fde8f5fe443e4c70062186d7f8e399175d8e12d71b7",
+    "checkpoint_sha256_after": "d684820c2af7ef9f54930fde8f5fe443e4c70062186d7f8e399175d8e12d71b7",
+    "source_sha256_before": "1b571812fffb84be3091e72f7309c2017374c987f3b526c80a8cbfb6aa6ace48",
+    "source_sha256_after": "1b571812fffb84be3091e72f7309c2017374c987f3b526c80a8cbfb6aa6ace48",
+    "optimizer_created": false,
+    "backward_called": false
+  },
+  "access": {
+    "opens": {
+      "NPY_25": 1220,
+      "NPY_target": 1220
+    },
+    "unique_files": 1220,
+    "blocked_attempts": 0,
+    "L506_access": 0,
+    "L067_L143_access": 0,
+    "external_memory_access": 0,
+    "medical_data_modified": false,
+    "visualization_reader_cache_unique_NPY": {
+      "LDCT": 4,
+      "NDCT": 18
+    },
+    "visualization_count_note": "Recorded event counts in this object precede visualization. Additional cache reads are reconstructed from saved query/match metadata and the reader code, one np.load per unique (slice,dose). The same allowlist guard stayed active through visualization."
+  },
+  "pairing_access": {
+    "opens": {
+      "DICOM_LDCT": 1830,
+      "DICOM_NDCT": 1830,
+      "NPY_25": 1830,
+      "NPY_target": 1830
+    },
+    "unique_files": 2440,
+    "blocked_attempts": 0,
+    "L506_access": 0,
+    "L067_L143_access": 0,
+    "external_memory_access": 0,
+    "medical_data_modified": false
+  },
+  "visual_review_text_only": {
+    "status": "COMPLETE",
+    "review_type": "visual inspection of 16-query contact sheet; qualitative, not a radiologist annotation",
+    "contact_sheet_sha256": "6ae1f3066fc72c321fb48b940dc2252c1429f25ff2292e8e1d313fd0057f47dc",
+    "exact_top1_among_visual_queries": 7,
+    "visual_query_count": 16,
+    "observations": [
+      "Several high-contrast contours and tissue boundaries retrieve the exact patch or similar coarse geometry across slices.",
+      "For S100 (32,48) and S200 (35,92), non-coordinate Top1 still has similar boundary layout; demeaned patch correlations are 0.877 and 0.825.",
+      "Flat/proxy-flat queries S100 (46,50), S200 (96,54) and S300 (89,29) have Top1 demeaned correlations 0.060, -0.082 and 0.062. High NSE cosine does not establish fine texture identity.",
+      "S100 tissue-boundary proxy (72,73) also has an incorrect Top1 with weak patch correlation; category labels are image-statistic proxies, not expert anatomical labels.",
+      "S300 small-scale proxy (80,46) retrieves a different slice with only moderate geometric agreement (demeaned correlation 0.399).",
+      "NSE is not a guaranteed fine-grained anatomical identity matcher. Mean-HU-only hard retrieval is much weaker, so the features are not explained by scalar mean HU alone, but density/coarse-layout dependence remains."
+    ],
+    "final_decision": "CONDITIONAL PASS",
+    "reason": "Cross-dose same-position consistency and coarse discrimination are strong without collapse; exact retrieval degrades substantially and some weak-texture/boundary queries are ambiguous."
+  },
+  "checkpoint_not_uploaded": true,
+  "medical_images_arrays_not_uploaded": true
+}

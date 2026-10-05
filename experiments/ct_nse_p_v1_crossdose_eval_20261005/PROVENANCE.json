@@ -1,0 +1,47 @@
+{
+  "experiment": "CT_NSE_P_V1_crossdose_eval_20261005",
+  "decision": "CONDITIONAL PASS",
+  "remote_source_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+  "checkpoint_path": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/checkpoints/best_val_loss.pt",
+  "checkpoint_sha256": "d684820c2af7ef9f54930fde8f5fe443e4c70062186d7f8e399175d8e12d71b7",
+  "epoch": 60,
+  "launch": {
+    "session": "ct_nse_p_v1_crossdose_retry1_20261005",
+    "command": "bash /home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/launch.sh",
+    "environment": "flexict",
+    "GPU": 0,
+    "checkpoint": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_20261005/checkpoints/best_val_loss.pt",
+    "checkpoint_sha256": "d684820c2af7ef9f54930fde8f5fe443e4c70062186d7f8e399175d8e12d71b7",
+    "git_commit": "b754bcbb384ba087a15db4f4f4f9c54fbb4bfc6d",
+    "git_status": "?? .aris/\n?? configs/\n?? data_preprocess/lits/canonicalize_lits_ras.py\n?? data_preprocess/lits/make_lits_splits.py\n?? data_preprocess/lits/select_lits_pilot_cases.py\n?? evaluate_official_checkpoint_dual_protocol.py\n?? evaluate_official_checkpoint_soft_tissue.py\n?? experiments/\n?? research/\n?? tests/\n",
+    "log": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/logs/eval_retry1.log",
+    "output": "/home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005",
+    "start_time": "2026-10-05T16:02:52.808095+08:00",
+    "stop_condition": "610 slices complete; stop on pairing/finite/hash failure; no training",
+    "env": {
+      "python": "3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]",
+      "executable": "/home/xujian/miniconda3/envs/flexict/bin/python",
+      "torch": "2.8.0+cu128",
+      "cuda": "12.8",
+      "numpy": "2.3.2",
+      "GPU": "NVIDIA GeForce RTX 3090"
+    },
+    "pairing_environment": "corediff (existing pydicom 2.3.1)",
+    "retry_reason": "flexict lacks pydicom; split existing environments, no dependency install",
+    "inference_environment": "flexict"
+  },
+  "pairing_environment": {
+    "python": "3.8.13 (default, Oct 21 2022, 23:50:54) \n[GCC 11.2.0]",
+    "executable": "/home/xujian/miniconda3/envs/corediff/bin/python",
+    "numpy": "1.23.1",
+    "pydicom": "2.3.1"
+  },
+  "commands": [
+    "export CUBLAS_WORKSPACE_CONFIG=:4096:8",
+    "/home/xujian/miniconda3/envs/flexict/bin/python experiments/ct_nse_p_v1_crossdose_eval_20261005/test_eval.py",
+    "bash /home/xujian/projects/CoreDiff/experiments/ct_nse_p_v1_crossdose_eval_20261005/launch.sh"
+  ],
+  "code_bytes_unchanged": true,
+  "publication_figure": "new plot from saved metrics/histograms, no inference",
+  "scope_note": "Diagnostic of selected checkpoint on previous validation patient, not unseen-patient testing."
+}
