@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-09",
+  "scope": "read-only source/log/config and existing checkpoint CPU scalar/hash audit",
+  "new_training": false,
+  "new_inference": false,
+  "L333_validation": false,
+  "L506_access": false,
+  "original_experiment_modified": false,
+  "conclusion": "NO-GO",
+  "verified_functional_disconnects": [],
+  "verified_audit_defects": [
+    "Control resume checkpoint omits Python random state, while RESUME_AUDIT_6K claims default_RNG_exact",
+    "METRIC_CONFIG retains stale 8k schedule/checkpoint metadata; actual effective run is CONFIG_6K 6k"
+  ],
+  "preflight_contract_deviation": "Global/spatial condition gradients zero on first backward due serial zero initializations; nonzero on 5999 subsequent steps",
+  "provisional_fresh_agent_review": "Attempted same-family review; partial preliminary findings only; reviewer exhausted credits before full trace/report. Not independent cross-validation.",
+  "evidence": [
+    "CODE_AUDIT.md",
+    "TRAINING_GRADIENT_SUMMARY.json",
+    "PARAMETER_UPDATE_AND_GATE_PROXY_STATS.json",
+    "TRAIN_STREAM_ALIGNMENT_SUMMARY.json",
+    "CONDITION_OFF_AGGREGATED_SLICE_SUMMARY.json",
+    "CHECKPOINT_CPU_READ_AUDIT.json"
+  ]
+}

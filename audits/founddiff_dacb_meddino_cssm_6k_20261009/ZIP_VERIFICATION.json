@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "zip_path": "/home/xujian/projects/CoreDiff/experiments/founddiff_dacb_meddino_cssm_readonly_audit_20261009/founddiff_dacb_meddino_cssm_6k_readonly_audit_20261009.zip",
+  "zip_sha256": "5862f1bd4f35546f905e31e869018f50a20a6d0d895d94c405daf8b352b1e508",
+  "zip_bytes": 3325386,
+  "entries": 378,
+  "source_files_byte_exact": 361,
+  "medical_arrays_or_images_in_zip": false
+}
