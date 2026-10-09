@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source_sha_match_launch_record": true,
+  "rows": {
+    "FEATURE_CROSSDOSE": 960,
+    "SPATIAL_MATCHING": 640,
+    "CONDITION_INTERVENTIONS": 7,
+    "PER_SLICE_INTERVENTIONS": 448
+  },
+  "all_64_manifest_indices_per_condition": true,
+  "fixed_seed_per_slice": true,
+  "C0_exact_zero_delta": true,
+  "C1_nine_FiLM_updates_zero": true,
+  "C6_only_E2_condition_changed": true,
+  "C2_C3_donor_rules_exact": true,
+  "checkpoint_and_all_parameters_unchanged": true,
+  "L506_external_training_opens": 0,
+  "medical_arrays_or_images_written": false
+}

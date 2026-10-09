@@ -1,0 +1,16 @@
+{
+  "session": "meddino_feature_audit_v1_20261009",
+  "full_command": "bash /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/meddino_feature_audit_v1/launch.sh > /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/meddino_feature_audit_v1/audit.log 2>&1",
+  "git_commit": "1c258e6706a1d0fe23c8319a3ffad18738594278",
+  "git_branch": "experiment/rddm-official-2p5d-meddino-condition-v1",
+  "git_status_short": "?? experiments/meddino_feature_audit_v1/",
+  "git_diff_stat": "",
+  "conda_env": "/home/xujian/miniconda3/envs/flexict",
+  "GPU": "0 RTX 3090",
+  "log": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/meddino_feature_audit_v1/audit.log",
+  "output_dir": "/home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1/experiments/meddino_feature_audit_v1",
+  "start_time": "2026-10-09T05:29:39.347406+00:00",
+  "termination": "AUDIT_COMPLETE all or first assertion/exception; no training",
+  "run_audit_sha256": "912f352f9eb10e6b370d38bb39e1e43c82534872ac0465c71dc5e4a4bc9730f5",
+  "test_audit_sha256": "f9bfdc1684ef71bc41f348d62d4194c26976134e8a7006c743b485fcf059f74e"
+}
