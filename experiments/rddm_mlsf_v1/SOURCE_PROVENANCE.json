@@ -1,0 +1,27 @@
+{
+  "parent_checkpoint": "/home/xujian/projects/CoreDiff_official_rddm_ct_adapt_v1/experiments/rddm_official_ct_adapt_v1/runs/candidate_8k_20261001/checkpoints/step_8000.pt",
+  "parent_checkpoint_sha256": "2cc1d6aeb785bd0b7a5786801e3fa9e0e3ba4427bf3a43c86fc894f3486ad669",
+  "meddino_checkpoint_sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+  "v1_step0_shared_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+  "new_source_hashes": {
+    "mlsf_model.py": "3b48da8536cb7475610eee2f51ef02018849b3faa73175cac16b322eb88b14f5",
+    "local_detail_encoder.py": "a427c7093478475255cc7815d9ca45130de23d0bf93df835f097a4f9ad3a950e",
+    "local_cross_attention.py": "7f517391aac4d8a03e2a6e1f4ac7f71072c8362cb6c2c560ad861ab346b772b6",
+    "train_mlsf.py": "fef45aabd835d214a08c51d39163a19dd8c17a9612fd6261e102ba0f8c11b26b",
+    "evaluate_mlsf.py": "7fd4926e68ba06ea4a07495918adfe361fe549b5b1fb99907a0f8a2be11f925a",
+    "readiness.py": "baa2a0487437e856d15403d0a5de91b2b73755f511e5ca2c0272a2551edfe9dc",
+    "test_mlsf.py": "f0fc61dbe21de4d4844724bca1a33b5a4ead89ee393d65c60661329e9356159c"
+  },
+  "v1_source_hashes": {
+    "model.py": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+    "med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+    "context_data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+    "evaluate.py": "103e414e9fb85e83919856240ac0ce7add208798fba28bb9d6d53048fefdba3b",
+    "train.py": "18ceb3fca621add35d7681b078e8011836656b5ea849e74cbe8d39498d83d410",
+    "src/official_rddm_ct.py": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72",
+    "fast_dev/protocol.py": "2148e45aae54bd1113f99b2efe5287bee58f6b64d7907ffd4cedff4ea114fb0b",
+    "configs/rddm_fast_dev.json": "146e9724a61d1a88a8b6b9a2246b649c847c1ae8bd7733b2a47bb0f88ece3223"
+  },
+  "v1_validation_history_sha256": "da7e8ac340327c9ecf58f529c33787da5deacd2e811815f9b79b6d7b01688817",
+  "v1_stream_reference_sha256": "2615ab9ede4975187a6d5ffea64f3f569a76ca86486558c58fb35beb78e17966"
+}

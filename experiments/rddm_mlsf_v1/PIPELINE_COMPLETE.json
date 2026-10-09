@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "full_l333_gate": {
+    "eligible": true,
+    "delta_psnr": 0.031444759188119065,
+    "delta_ssim": 0.0001807149468427971,
+    "improved_fraction": 0.96875
+  },
+  "full_l333_metrics": {
+    "psnr": 40.94690935800388,
+    "ssim": 0.9490963330284679,
+    "rmse_hu": 18.037720600754334,
+    "mae_hu": 11.94906183930694,
+    "slices": 610
+  }
+}

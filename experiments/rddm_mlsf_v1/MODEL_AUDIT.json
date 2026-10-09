@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "common_state_tensors_exact_equal": 498,
+  "common_state_sha256": "27dfc79f69781b84a6257cb7b9099e696dece50eff60ccd78a8004059dca6bba",
+  "cpu_rng_after_initialization_exact_equal": true,
+  "v1_trainable_parameters": 37948353,
+  "mlsf_trainable_parameters": 38284385,
+  "native_attention_count": 9,
+  "original_film_count": 9,
+  "zero_correction_stages": [
+    "E1",
+    "E2",
+    "D1",
+    "D2"
+  ],
+  "meddino_frozen": true,
+  "stem_channels": 4,
+  "sampling_steps": 2,
+  "objective": "pred_res",
+  "sum_scale": 0.01,
+  "added_trainable_parameters": 336032
+}

@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "shared_initial_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+  "meddino_frozen_hash_unchanged": true,
+  "batch": 2,
+  "accum": 1,
+  "training_steps_in_readiness": 2,
+  "isolated_model_discarded": true,
+  "steps": [
+    {
+      "step": 1,
+      "loss": 0.00013333660899661481,
+      "gradient_before_clip": 0.0008371539879590273,
+      "native_attention_gradients": {
+        "downs.0.2.fn.fn": 8.593837264925241e-06,
+        "downs.1.2.fn.fn": 7.720463145233225e-06,
+        "downs.2.2.fn.fn": 1.9068586425419198e-06,
+        "downs.3.2.fn.fn": 5.283730502014805e-07,
+        "ups.0.2.fn.fn": 1.0958885923173511e-06,
+        "ups.1.2.fn.fn": 3.640638169599697e-06,
+        "ups.2.2.fn.fn": 1.660700945649296e-06,
+        "ups.3.2.fn.fn": 1.9618724763859063e-05,
+        "mid_attn.fn.fn": 3.752081454422296e-07
+      },
+      "new_module_gradients": {
+        "local_encoder": 0.0,
+        "med_l8": 0.0,
+        "med_l11": 0.0,
+        "cross_attention": 0.0,
+        "up_projection": 0.0,
+        "merge": 0.0,
+        "E1": 5.199748051097172e-06,
+        "E2": 2.7773361955081158e-06,
+        "D1": 3.7540744406390023e-06,
+        "D2": 3.428673402649172e-06
+      },
+      "samples": [
+        {
+          "patient_id": "L143",
+          "slice_index": 573,
+          "prev_index": 572,
+          "next_index": 574,
+          "horizontal_flip": true,
+          "rotation_degrees": 270
+        },
+        {
+          "patient_id": "L143",
+          "slice_index": 50,
+          "prev_index": 49,
+          "next_index": 51,
+          "horizontal_flip": false,
+          "rotation_degrees": 270
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "loss": 0.0018372724298387766,
+      "gradient_before_clip": 0.5163333415985107,
+      "native_attention_gradients": {
+        "downs.0.2.fn.fn": 0.0007168698939494789,
+        "downs.1.2.fn.fn": 0.000138304298161529,
+        "downs.2.2.fn.fn": 2.865081660274882e-05,
+        "downs.3.2.fn.fn": 7.094869488355471e-06,
+        "ups.0.2.fn.fn": 1.8245129467686638e-05,
+        "ups.1.2.fn.fn": 9.139291069004685e-05,
+        "ups.2.2.fn.fn": 0.0005204808549024165,
+        "ups.3.2.fn.fn": 0.005919159390032291,
+        "mid_attn.fn.fn": 4.878090294369031e-06
+      },
+      "new_module_gradients": {
+        "local_encoder": 7.586223765599755e-06,
+        "med_l8": 1.2279414836721942e-07,
+        "med_l11": 6.246820211037884e-08,
+        "cross_attention": 7.103387032350857e-08,
+        "up_projection": 4.531464926593855e-07,
+        "merge": 2.5436292714787575e-06,
+        "E1": 7.091158776085814e-05,
+        "E2": 2.5146858843889215e-05,
+        "D1": 7.620125633688704e-05,
+        "D2": 0.00021827249044604514
+      },
+      "samples": [
+        {
+          "patient_id": "L143",
+          "slice_index": 250,
+          "prev_index": 249,
+          "next_index": 251,
+          "horizontal_flip": true,
+          "rotation_degrees": 270
+        },
+        {
+          "patient_id": "L067",
+          "slice_index": 60,
+          "prev_index": 59,
+          "next_index": 61,
+          "horizontal_flip": false,
+          "rotation_degrees": 180
+        }
+      ]
+    }
+  ],
+  "peak_allocated_gib": 18.263508319854736,
+  "peak_reserved_gib": 19.51171875,
+  "elapsed_seconds": 13.808592753019184,
+  "python": "3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "access": {
+    "mode": "FAST",
+    "allowed_train_patients": [
+      "L067",
+      "L143"
+    ],
+    "training_patients_opened": [
+      "L067",
+      "L143"
+    ],
+    "validation_center_indices_opened": [],
+    "validation_ldct_indices_opened": [],
+    "center_target_opens": 0,
+    "center_ldct_opens": 0,
+    "neighbor_ldct_opens": 0,
+    "neighbor_target_opens": 0,
+    "training_target_opens": 4,
+    "total_opens": 16,
+    "L506_opens": 0,
+    "external_memory_opens": 0,
+    "blocked_attempts": 0,
+    "data_directory_enumeration": false
+  }
+}

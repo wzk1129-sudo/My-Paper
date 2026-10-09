@@ -1,0 +1,30 @@
+{
+  "arm": "MLSF_RDDM",
+  "optimizer_step": 8000,
+  "ema_updates": 8000,
+  "batch_config": {
+    "batch": 2,
+    "accum": 1,
+    "effective_batch": 2
+  },
+  "shared_initial_parameters_sha256": "16d20db7edb42cafc5c5aee755218337f0aeefa45f300b41001002bc2be631f2",
+  "train_stream_sha256": "efa00ad4e18b7c44b26e6d58cb60e0ed238bf7b4cb95b1a4d5052808807e35f2",
+  "parameters_finite": true,
+  "meddino_weights_unchanged": true,
+  "peak_vram_bytes": 19762983424,
+  "peak_reserved_bytes": 20566769664,
+  "source_hashes": {
+    "new/mlsf_model.py": "3b48da8536cb7475610eee2f51ef02018849b3faa73175cac16b322eb88b14f5",
+    "new/local_detail_encoder.py": "a427c7093478475255cc7815d9ca45130de23d0bf93df835f097a4f9ad3a950e",
+    "new/local_cross_attention.py": "7f517391aac4d8a03e2a6e1f4ac7f71072c8362cb6c2c560ad861ab346b772b6",
+    "new/train_mlsf.py": "fef45aabd835d214a08c51d39163a19dd8c17a9612fd6261e102ba0f8c11b26b",
+    "new/evaluate_mlsf.py": "7fd4926e68ba06ea4a07495918adfe361fe549b5b1fb99907a0f8a2be11f925a",
+    "new/readiness.py": "baa2a0487437e856d15403d0a5de91b2b73755f511e5ca2c0272a2551edfe9dc",
+    "new/test_mlsf.py": "f0fc61dbe21de4d4844724bca1a33b5a4ead89ee393d65c60661329e9356159c",
+    "v1/model.py": "23cd93c95cd3434d40ce16e367148b9c5540d387ece0647e594b53cf5ba30eb7",
+    "v1/med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+    "v1/context_data.py": "a83442bdd6353edf830c021ea7421320ae83c80e37103382331ee760beb55687",
+    "v1/evaluate.py": "103e414e9fb85e83919856240ac0ce7add208798fba28bb9d6d53048fefdba3b",
+    "v1/src/official_rddm_ct.py": "c0daf15d250727882e5868e559c1b6c40486a4b02eb5063e881a72df97b79f72"
+  }
+}

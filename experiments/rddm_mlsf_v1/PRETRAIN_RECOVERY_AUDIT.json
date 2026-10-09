@@ -1,0 +1,20 @@
+{
+  "status": "RESOLVED_BEFORE_FORMAL_TRAINING",
+  "events": [
+    {
+      "phase": "readiness",
+      "observed": "metadata key patient was absent; V1 ContextBatchStream uses patient_id",
+      "fix": "changed only new readiness.py assertion to patient_id",
+      "evidence": "subsequent READINESS.json status PASS; first attempt never completed an optimizer step"
+    },
+    {
+      "phase": "step0_launch",
+      "observed": "first tmux shell exited before validation because last launcher line had a CR byte",
+      "fix": "normalized only new launch_step0.sh to LF",
+      "evidence": "subsequent STEP0_AUDIT.json has exact four-metric V1 identity and 64 slices"
+    }
+  ],
+  "formal_training_started_after_all_gates": true,
+  "v1_source_modified": false,
+  "checkpoints_modified": false
+}

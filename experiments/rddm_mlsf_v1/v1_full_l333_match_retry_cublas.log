@@ -1,0 +1,8 @@
+RUN_START 2026-10-09T19:27:00+08:00
+PROJECT /home/xujian/projects/CoreDiff_official_2p5d_meddino_condition_v1
+GIT_HEAD 1c258e6706a1d0fe23c8319a3ffad18738594278
+PYTHON /home/xujian/miniconda3/envs/flexict/bin/python
+GPU 0
+EVAL_CALL eval_checkpoint("OFFICIAL_RDDM_2P5D_MEDDINO_CONDITION","FULL","FULL_L333_V1_8K_MLSF_MATCH")
+POST_EVALUATION {"name": "FULL_L333_V1_8K_MLSF_MATCH", "psnr": 40.91584407892847, "ssim": 0.9489196381973882, "rmse_hu": 18.101864711287732, "mae_hu": 11.9757851663183, "validation_loss": 8.529704137486749e-05, "slices": 610, "patient": "L333", "weights": "ema", "validation_mode": "FULL", "condition_mode": "NORMAL", "validation_seconds": 389.2151537949685}
+RUN_FINISH 2026-10-09T19:34:43+08:00
