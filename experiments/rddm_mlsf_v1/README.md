@@ -41,6 +41,26 @@ MODEL_AUDIT.json 核对 498 个共有状态张量、9 个原生 Attention 和 st
 
 607/610 张切片 PSNR 提升，中位配对差值 +0.029790 dB。Fast64 的 +0.031445 dB 与 Full 的 +0.031065 dB 方向一致。精确数值和方法见 FULL_L333_MATCHED_COMPARISON.csv / .md。两套原始标量结果分别在相邻 V1 目录的 FULL_L333_V1_8K_MLSF_MATCH.json 和本目录的 FULL_L333_RESULT.json；两套逐切片评价指标文件也保留，不含像素数组。
 
+## Full-L333 模块消融（后续补充）
+
+以下是随后完成的 A2、A3、A4 三组**独立 8k 训练**及 L333 全部 610 张切片的 EMA 评价结果。V1 和完整 MLSF 使用已有的匹配 8k EMA 结果，不重新训练；评价沿用相同的 [-1000,1000] HU 窗口、PSNR data_range=2000、SSIM/RMSE/MAE 函数与每张切片固定采样 seed。
+
+| 模型 | PSNR (dB) | SSIM | RMSE (HU) | MAE (HU) | PSNR 相对完整 MLSF (dB) |
+|---|---:|---:|---:|---:|---:|
+| MedDINO V1 | 40.915844 | 0.948920 | 18.101865 | 11.975785 | −0.031065 |
+| **完整 MLSF** | **40.946909** | **0.949096** | **18.037721** | 11.949062 | — |
+| A2：无局部 Attention | 40.942867 | 0.949043 | 18.045929 | 11.951393 | −0.004043 |
+| A3：仅 F128 注入 | 40.922897 | 0.948931 | 18.087386 | 11.971644 | −0.024013 |
+| A4：仅 F256 注入 | 40.943912 | 0.949069 | 18.043838 | **11.945893** | −0.002997 |
+
+- **A2（无局部 Attention）**：令 F128=L128，移除 MLSF 新增的 3×3 MedDINO Local Cross-Attention，但保留局部编码器、F256 融合及四处新增 FiLM 修正；原 V1 Attention/MedDINO FiLM 不变。
+- **A3（仅 F128 注入）**：只在 E2、D1 使用新增 F128 FiLM 修正，E1、D2 保留原 V1 调制。
+- **A4（仅 F256 注入）**：只在 E1、D2 使用新增 F256 FiLM 修正，E2、D1 保留原 V1 调制。**F256 的构建依然依赖 F128**，因此 A4 不等于移除 F128 特征。
+
+观察：完整 MLSF 的 PSNR、SSIM、RMSE 最优；A4 的 MAE 最低。去掉新增 Local Attention 后，PSNR 相对完整 MLSF 下降约 0.004 dB；仅保留 F256 直接注入时下降约 0.003 dB。A3/A4 同时改变了条件特征和注入位置，不能把差异直接归因于特征分辨率。小幅增益仍需跨训练种子/患者验证，当前**仅为同一 L333 患者内的消融结果**。
+
+新增 A2/A3/A4 的原始消融报告与完整结果表目前保存在远程项目的 `experiments/rddm_mlsf_ablation_v1/ABLATION_REPORT.md`、`ABLATION_RESULTS.csv`；这次只在 GitHub 补充数值和说明，**没有上传新组的源码、逐切片文件或 checkpoint**。
+
 ## 阅读顺序与边界
 
 先读本文件、REPORT.md、FULL_L333_MATCHED_COMPARISON.md；再看 mlsf_model.py、local_detail_encoder.py、local_cross_attention.py、train_mlsf.py、evaluate_mlsf.py、postprocess_mlsf.py。原 V1 的 model.py、med_loader.py、context_data.py、evaluate.py 在相邻 V1 目录。write_full_l333_match.py 是只读配对汇总脚本。
