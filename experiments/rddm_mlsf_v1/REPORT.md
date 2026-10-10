@@ -35,3 +35,23 @@ The conclusion is limited to one L333 patient's fixed Fast64 slices. More freque
 ## Full-L333 gated validation
 
 A single authorized Full-L333 evaluation (610 slices) gave PSNR 40.946909 dB, SSIM 0.949096, RMSE 18.0377 HU, MAE 11.9491 HU. No L506 or external-memory data were opened.
+
+## Follow-up MLSF module ablations (Full-L333, 610 slices)
+
+Subsequent independently trained 8k EMA arms A2/A3/A4 were evaluated on the same L333 validation patient and fixed evaluation protocol. V1 and full MLSF are reused from the matched evaluations above; these values are an addendum to the original MLSF experiment, not a rerun of the original model.
+
+| 模型 | PSNR (dB) | SSIM | RMSE (HU) | MAE (HU) | PSNR 相对完整 MLSF (dB) |
+|---|---:|---:|---:|---:|---:|
+| MedDINO V1 | 40.915844 | 0.948920 | 18.101865 | 11.975785 | −0.031065 |
+| **完整 MLSF** | **40.946909** | **0.949096** | **18.037721** | 11.949062 | — |
+| A2：无局部 Attention | 40.942867 | 0.949043 | 18.045929 | 11.951393 | −0.004043 |
+| A3：仅 F128 注入 | 40.922897 | 0.948931 | 18.087386 | 11.971644 | −0.024013 |
+| A4：仅 F256 注入 | 40.943912 | 0.949069 | 18.043838 | **11.945893** | −0.002997 |
+
+- **A2 / no Local Attention**: F128 = L128; remove only the new 3x3 MedDINO local cross-attention, while retaining LocalDetailEncoder, F256 fusion and all four MLSF FiLM corrections.
+- **A3 / F128-only injection**: retain new MLSF FiLM corrections at E2/D1 only; E1/D2 use the original V1 modulation.
+- **A4 / F256-only injection**: retain new MLSF FiLM corrections at E1/D2 only; E2/D1 use the original V1 modulation. F256 still depends on F128, so this is **not** a removal of the F128 feature path.
+
+Full MLSF has the highest PSNR/SSIM and lowest RMSE; A4 has the lowest MAE. The observed Local Attention difference is about +0.004 dB relative to A2, while full MLSF exceeds A4 by about +0.003 dB. A3 versus A4 changes both the conditioning features and injection locations and does not isolate feature resolution. All comparisons are from one validation patient, not an independent cross-patient generalization test.
+
+The complete follow-up run records are retained remotely under `experiments/rddm_mlsf_ablation_v1/` (`ABLATION_REPORT.md`, `ABLATION_RESULTS.csv`, checkpoints). This GitHub addendum records the supplied final metrics only; the ablation source, per-slice metrics, and model weights are not included here. No retraining or checkpoint modifications were made as part of this documentation update.
