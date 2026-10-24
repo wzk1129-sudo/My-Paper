@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "training_rows": 8000,
+  "checkpoint_audits": [
+    {
+      "step": 2000,
+      "ema_updates": 2000,
+      "optimizer_steps": [
+        2000
+      ],
+      "model_and_ema_finite": true,
+      "csv_rows": 64,
+      "metric_means_verified": true
+    },
+    {
+      "step": 4000,
+      "ema_updates": 4000,
+      "optimizer_steps": [
+        4000
+      ],
+      "model_and_ema_finite": true,
+      "csv_rows": 64,
+      "metric_means_verified": true
+    },
+    {
+      "step": 6000,
+      "ema_updates": 6000,
+      "optimizer_steps": [
+        6000
+      ],
+      "model_and_ema_finite": true,
+      "csv_rows": 64,
+      "metric_means_verified": true
+    },
+    {
+      "step": 8000,
+      "ema_updates": 8000,
+      "optimizer_steps": [
+        8000
+      ],
+      "model_and_ema_finite": true,
+      "csv_rows": 64,
+      "metric_means_verified": true
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "training_patients": [
+    "L067",
+    "L096",
+    "L109",
+    "L143",
+    "L192",
+    "L286",
+    "L291",
+    "L310"
+  ],
+  "no_failure_file": true,
+  "L506_opens": 0
+}

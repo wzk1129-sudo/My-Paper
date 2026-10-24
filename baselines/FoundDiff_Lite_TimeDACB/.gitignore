@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.npy
+*.npz
+*.dcm
+*.nii*
+train.log
+train.jsonl
