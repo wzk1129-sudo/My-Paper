@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "step": 16000,
+  "checks": [
+    {
+      "step": 2000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    },
+    {
+      "step": 4000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    },
+    {
+      "step": 6000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    },
+    {
+      "step": 8000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    },
+    {
+      "step": 10000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    },
+    {
+      "step": 12000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    },
+    {
+      "step": 14000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    },
+    {
+      "step": 16000,
+      "checkpoint_csv_optimizer_ema": "PASS"
+    }
+  ],
+  "resume_all_states_verified": true,
+  "source_hashes_unchanged": true
+}

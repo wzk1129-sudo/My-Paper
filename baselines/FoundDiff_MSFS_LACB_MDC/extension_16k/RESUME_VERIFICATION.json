@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "resumed_step": 8000,
+  "model_ema_exact_equal_to_checkpoint": true,
+  "optimizer_steps": 8000,
+  "ema_updates": 8000,
+  "rng_restored": true,
+  "stream_cursor": 3200,
+  "stream_epoch": 6,
+  "train_stream_sha256": "f09799f69814ab03b6a596c40c6a0c0a67920fffca075ade8827e741c0e87652",
+  "parent_source_hashes": {
+    "L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "config.json": "6f0f4ff6edb5f401941457e744b3d659f3da1710761b2f51b09fcc0e069a2e8c",
+    "finalize.py": "d305c2e985692464c7caa69090c6012b77000442d83ec40881320c3daea515ac",
+    "frozen_metrics.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "mayo_data.py": "102fea228f8bd0e3bb42496547b202d530beabe0e2c0861d63c64640338257bd",
+    "med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+    "model.py": "a631cb7774eea4b4dd982099930c41f59c0cdedd9c6c715c5a90d164b66790c4",
+    "preflight.py": "afda1d15216266a1a0ae9304cea6f537f4f844874a3641c9415d6e41883dcbea",
+    "reference/ACL_layers.py": "f4b93d1f05b99da3ff43e3a00b5ceeb4888f4aef4f0d66ec624c5a5622969150",
+    "src/DADiff.py": "f464d7dbb3bbbe798d6e7f9394f15d8e6306691377c7afce410d5f7dfc7835ff",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "train.py": "386dec02538d018f79dac3b2e269e9afe8a2d08d02279b060e2b1ddb76ccea90"
+  }
+}

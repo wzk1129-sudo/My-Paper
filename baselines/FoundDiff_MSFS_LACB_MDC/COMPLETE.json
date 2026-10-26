@@ -1,0 +1,118 @@
+{
+  "step": 16000,
+  "ema_updates": 16000,
+  "history": [
+    {
+      "step": 2000,
+      "psnr": 39.86870050310264,
+      "ssim": 0.9390145530692513,
+      "rmse_hu": 20.410440917879946,
+      "mae_hu": 13.779050037264824,
+      "soft_psnr": 27.728708788879004,
+      "soft_ssim": 0.8348335647645191,
+      "soft_rmse_hu": 16.555469692719836,
+      "slices": 64
+    },
+    {
+      "step": 4000,
+      "psnr": 40.74317238202941,
+      "ssim": 0.9476305623951029,
+      "rmse_hu": 18.463755162925494,
+      "mae_hu": 12.539462745189667,
+      "soft_psnr": 28.444531100195093,
+      "soft_ssim": 0.8420033059076302,
+      "soft_rmse_hu": 15.25659443504154,
+      "slices": 64
+    },
+    {
+      "step": 6000,
+      "psnr": 40.85308429007591,
+      "ssim": 0.9483964517287052,
+      "rmse_hu": 18.232076685271956,
+      "mae_hu": 12.33213023841381,
+      "soft_psnr": 28.526906807210622,
+      "soft_ssim": 0.8428861733693982,
+      "soft_rmse_hu": 15.11464555642508,
+      "slices": 64
+    },
+    {
+      "step": 8000,
+      "psnr": 40.897351728066624,
+      "ssim": 0.9487361802853989,
+      "rmse_hu": 18.141146118092966,
+      "mae_hu": 12.295436456799507,
+      "soft_psnr": 28.559930708074553,
+      "soft_ssim": 0.8431397203580729,
+      "soft_rmse_hu": 15.059328671785877,
+      "slices": 64
+    },
+    {
+      "step": 10000,
+      "psnr": 40.907781124683524,
+      "ssim": 0.9488280990330662,
+      "rmse_hu": 18.120389608303434,
+      "mae_hu": 12.262950614094734,
+      "soft_psnr": 28.565876072743464,
+      "soft_ssim": 0.8431537071710857,
+      "soft_rmse_hu": 15.050550327579082,
+      "slices": 64
+    },
+    {
+      "step": 12000,
+      "psnr": 40.89968605719806,
+      "ssim": 0.9487388915452408,
+      "rmse_hu": 18.137933246464982,
+      "mae_hu": 12.280603930354118,
+      "soft_psnr": 28.554977726390792,
+      "soft_ssim": 0.8428970095499655,
+      "soft_rmse_hu": 15.07016622366513,
+      "slices": 64
+    },
+    {
+      "step": 14000,
+      "psnr": 40.865831748846475,
+      "ssim": 0.94845916160525,
+      "rmse_hu": 18.20980849350898,
+      "mae_hu": 12.28202398121357,
+      "soft_psnr": 28.519319402943914,
+      "soft_ssim": 0.8423211380544182,
+      "soft_rmse_hu": 15.133825524153659,
+      "slices": 64
+    },
+    {
+      "step": 16000,
+      "psnr": 40.82448189076709,
+      "ssim": 0.9481272842780897,
+      "rmse_hu": 18.29894454717903,
+      "mae_hu": 12.323682054877281,
+      "soft_psnr": 28.477594819338556,
+      "soft_ssim": 0.8417859668677325,
+      "soft_rmse_hu": 15.209239048127953,
+      "slices": 64
+    }
+  ],
+  "seconds": 32446.11077012797,
+  "extension_seconds": 16140.782560769003,
+  "peak_allocated": 8597671424,
+  "peak_reserved": 11771314176,
+  "parameters_trainable": 24945089,
+  "parameters_total": 110587073,
+  "source_hashes": {
+    "L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895",
+    "config.json": "6f0f4ff6edb5f401941457e744b3d659f3da1710761b2f51b09fcc0e069a2e8c",
+    "finalize.py": "d305c2e985692464c7caa69090c6012b77000442d83ec40881320c3daea515ac",
+    "frozen_metrics.py": "89d39020ea31e6119e058ed6c4708cee934a961e683ce25800cfbfa770883442",
+    "mayo_data.py": "102fea228f8bd0e3bb42496547b202d530beabe0e2c0861d63c64640338257bd",
+    "med_loader.py": "b2f77677ded12cf695264f876674b11e1bf26e5da584ba3e429e1c1a0e2c9213",
+    "model.py": "a631cb7774eea4b4dd982099930c41f59c0cdedd9c6c715c5a90d164b66790c4",
+    "preflight.py": "afda1d15216266a1a0ae9304cea6f537f4f844874a3641c9415d6e41883dcbea",
+    "reference/ACL_layers.py": "f4b93d1f05b99da3ff43e3a00b5ceeb4888f4aef4f0d66ec624c5a5622969150",
+    "src/DADiff.py": "f464d7dbb3bbbe798d6e7f9394f15d8e6306691377c7afce410d5f7dfc7835ff",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "train.py": "386dec02538d018f79dac3b2e269e9afe8a2d08d02279b060e2b1ddb76ccea90",
+    "extension_16k/finalize_extended.py": "a55d18fdc205e39bd6cc14382258feb032eb0fbc1f4b2a0e38b7a4e1f33bcdac",
+    "extension_16k/train_continue.py": "cf7ac15828cab018693efc2de1123cef6cafc950e400b88fad3dd1e945292e50",
+    "extension_16k/config.json": "8798a19a89b090e88d778f926855468328e42f23b942770b0ccabc47fc8309b9"
+  },
+  "train_stream_sha256": "33f942d3dcc3dc7027683cf1c22a2b8c56bda97a5edcfbe51779b45296b3db00"
+}

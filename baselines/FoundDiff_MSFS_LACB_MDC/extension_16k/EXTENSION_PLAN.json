@@ -1,0 +1,12 @@
+{
+  "requested_total_steps": 16000,
+  "additional_validation_steps": [
+    10000,
+    12000,
+    14000,
+    16000
+  ],
+  "method": "Wait for complete8k, resume exact model/EMA/optimizer/RNG/stream into extension_16k",
+  "original_sources_unchanged": true,
+  "created_utc": "2026-10-25T19:02:09.292433+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "session": "founddiff_msfs_lacb_mdc_20261026",
+  "command": "cd /home/xujian/projects/FoundDiff_Lite_TimeDACB && bash experiments/FoundDiff_MSFS_LACB_MDC_8k/run.sh",
+  "environment": "flexict",
+  "gpu": 0,
+  "created_utc": "2026-10-25T18:58:18.217486+00:00",
+  "git_branch": "main",
+  "git_commit": "c85a3a0e87ae2e4587650f0fb7efc15f3311d8e2",
+  "git_status": " M src/DADiff.py\n M train.py\n?? .gitignore\n?? experiments/\n?? frozen_metrics.py\n?? mayo_data.py\n?? preflight.py\n",
+  "output": "/home/xujian/projects/FoundDiff_Lite_TimeDACB/experiments/FoundDiff_MSFS_LACB_MDC_8k",
+  "log": "/home/xujian/projects/FoundDiff_Lite_TimeDACB/experiments/FoundDiff_MSFS_LACB_MDC_8k/train.log",
+  "initialization": "seed10 fresh random backbone/trainable modules; frozen verified MedDINO pretrained only",
+  "termination": "8000 optimizer steps, four fixed64 EMA validations, final audit/report and text-only export; stop on any error",
+  "archive_branch": "experiment/founddiff-msfs-lacb-mdc-8k-20261026",
+  "archive_method": "Local Windows helper waits for successful completion, transfers explicit text-only export and pushes branch; no main modification"
+}

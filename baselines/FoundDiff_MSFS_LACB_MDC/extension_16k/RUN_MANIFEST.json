@@ -1,0 +1,21 @@
+{
+  "session": "founddiff_msfs_lacb_mdc_16k_20261026",
+  "environment": "flexict",
+  "gpu": 0,
+  "command": "cd /home/xujian/projects/FoundDiff_Lite_TimeDACB && bash experiments/FoundDiff_MSFS_LACB_MDC_8k/extension_16k/run_wait.sh",
+  "parent_checkpoint": "/home/xujian/projects/FoundDiff_Lite_TimeDACB/experiments/FoundDiff_MSFS_LACB_MDC_8k/checkpoints/step_8000.pt",
+  "state_restoration": "model, EMA, Adam, global RNG, stream RNG/order/cursor/epoch, metric history",
+  "extra_validations": [
+    10000,
+    12000,
+    14000,
+    16000
+  ],
+  "termination": "total16k and8EMA validations; fail closed; report/export",
+  "output": "/home/xujian/projects/FoundDiff_Lite_TimeDACB/experiments/FoundDiff_MSFS_LACB_MDC_8k/extension_16k",
+  "log": "/home/xujian/projects/FoundDiff_Lite_TimeDACB/experiments/FoundDiff_MSFS_LACB_MDC_8k/extension_16k/train.log",
+  "created_utc": "2026-10-25T19:04:05.451447+00:00",
+  "git_commit": "c85a3a0e87ae2e4587650f0fb7efc15f3311d8e2",
+  "git_status": " M src/DADiff.py\n M train.py\n?? .gitignore\n?? experiments/\n?? frozen_metrics.py\n?? mayo_data.py\n?? preflight.py\n",
+  "archive_branch": "experiment/founddiff-msfs-lacb-mdc-16k-20261026"
+}
