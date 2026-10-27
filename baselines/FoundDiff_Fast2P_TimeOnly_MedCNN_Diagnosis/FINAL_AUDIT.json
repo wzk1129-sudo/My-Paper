@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "both_steps": 8000,
+  "validation_count": 8,
+  "common_step0_equal": true,
+  "all_sample_and_rng_sequences_equal": true,
+  "slice_psnr_counts": {
+    "improved": 64,
+    "declined": 0,
+    "equal": 0
+  },
+  "delta_psnr_8k": 0.27449288342942424
+}
