@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "steps": 8000,
+  "validations": 4,
+  "validation_slices": 64,
+  "L506_opens": 0,
+  "source_hashes_unchanged": true,
+  "meddino_frozen_unchanged": true,
+  "all_training_samples_and_augmentations_replayed": true,
+  "patient_center_counts": {
+    "L067": 3725,
+    "L096": 5481,
+    "L109": 2117,
+    "L143": 3895,
+    "L192": 4009,
+    "L286": 3498,
+    "L291": 5728,
+    "L310": 3547
+  },
+  "augmentation_counts": {
+    "(False, 0)": 3999,
+    "(True, 90)": 3973,
+    "(False, 90)": 3980,
+    "(True, 0)": 4054,
+    "(True, 180)": 3944,
+    "(False, 180)": 3977,
+    "(True, 270)": 4076,
+    "(False, 270)": 3997
+  },
+  "best": {
+    "step": 8000,
+    "psnr": 40.74921300084834,
+    "path": "/home/xujian/research/My-Paper/baselines/FoundDiff_MedCNN_8patient_Aug_8k/experiments/MedCNN_8patient_Aug_8k/checkpoints/step_8000.pt",
+    "weights_key": "ema_state_dict"
+  }
+}

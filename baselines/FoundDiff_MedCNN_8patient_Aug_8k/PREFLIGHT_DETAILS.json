@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "augmentation_all_8_combinations_exact": true,
+  "augmentation_actual_batch_synchronized": true,
+  "augmentation_resume_rng_exact": true,
+  "validation_unaugmented": true,
+  "original_medcnn_step0_exact": true,
+  "initial_state_sha256": "1f3935b55c3abbdaa201ab8b9d7e81f73a839a9328b39740b45c36c7d3f5a260",
+  "time_dacb_count": 9,
+  "rleb_count": 10,
+  "adapter_count": 9,
+  "adapter_calls": {
+    "E0": 4,
+    "E1": 4,
+    "E2": 4,
+    "E3": 4,
+    "MID": 4,
+    "D0": 4,
+    "D1": 4,
+    "D2": 4,
+    "D3": 4
+  },
+  "checks": [
+    {
+      "update": 1,
+      "loss": 0.16677677631378174,
+      "gradient_norm": 15.528294563293457,
+      "groups": {
+        "cnn": 0.0,
+        "projections": 0.0,
+        "med_fuse": 0.0,
+        "fuse64": 0.0,
+        "fuse128": 0.0,
+        "fuse256": 0.0,
+        "fuse512": 0.0,
+        "adapter_E0": 9.275948375463486,
+        "adapter_E1": 4.28897887468338,
+        "adapter_E2": 19.66227236390114,
+        "adapter_E3": 22.019910037517548,
+        "adapter_MID": 15.217693835496902,
+        "adapter_D0": 18.711280465126038,
+        "adapter_D1": 20.38780951499939,
+        "adapter_D2": 3.4658447951078415,
+        "adapter_D3": 8.423158407211304
+      }
+    },
+    {
+      "update": 2,
+      "loss": 0.9462780952453613,
+      "gradient_norm": 37.270694732666016,
+      "groups": {
+        "cnn": 12.774135982006555,
+        "projections": 0.05902192627399927,
+        "med_fuse": 0.02334690598945599,
+        "fuse64": 0.014898021226696707,
+        "fuse128": 0.049414853648289764,
+        "fuse256": 0.13961494421891985,
+        "fuse512": 0.6997127836220898,
+        "adapter_E0": 14.828398653975455,
+        "adapter_E1": 3.959757459771936,
+        "adapter_E2": 11.451236578868702,
+        "adapter_E3": 8.404316341329832,
+        "adapter_MID": 8.130812597111799,
+        "adapter_D0": 13.950814381591044,
+        "adapter_D1": 25.057973053772002,
+        "adapter_D2": 4.640117084869416,
+        "adapter_D3": 14.911487432662398
+      }
+    }
+  ],
+  "meddino": {
+    "path": "/home/xujian/research/My-Paper/baselines/FoundDiff_MedCNN_8patient_Aug_8k/pretrained/MedDINOv3_ViTB16_CT3M_model.pth",
+    "sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+    "strict": true,
+    "missing": [],
+    "unexpected": [],
+    "layers_zero_based": [
+      2,
+      5,
+      8,
+      11
+    ]
+  },
+  "meddino_frozen_unchanged": true,
+  "peak_allocated": 6304858112,
+  "seconds": 19.705557287001284,
+  "parameters": {
+    "B": {
+      "total": 101426285,
+      "trainable": 15784301
+    }
+  },
+  "data_access": {
+    "reads": {
+      "L291_25": 12,
+      "L291_target": 4,
+      "L310_25": 6,
+      "L310_target": 2,
+      "L286_25": 6,
+      "L286_target": 2,
+      "L333_25": 6,
+      "L333_target": 2
+    },
+    "L506_opens": 0,
+    "augmentation": true,
+    "augmentation_training_only": true,
+    "augmentation_counts": {
+      "(False, 0)": 1,
+      "(True, 90)": 1,
+      "(False, 90)": 4
+    }
+  },
+  "environment": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.3.2"
+  }
+}

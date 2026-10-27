@@ -1,0 +1,184 @@
+{
+  "experiment_name": "MedCNN_8patient_Aug_8k",
+  "description": "Actual archived MedCNN model with eight training patients and synchronized flip/rot90 augmentation",
+  "mode": "eight_patient_synchronized_flip_rot90",
+  "seed": 10,
+  "data": {
+    "root": "/home/xujian/data/mayo_2016_npy",
+    "dose_label": "25",
+    "train_patients": [
+      "L067",
+      "L096",
+      "L109",
+      "L143",
+      "L192",
+      "L286",
+      "L291",
+      "L310"
+    ],
+    "validation_patients": [
+      "L333"
+    ],
+    "image_size": 512,
+    "stored_value_offset_hu": -1024.0,
+    "hu_min": -1000.0,
+    "hu_max": 1000.0,
+    "normalization": "linear_zero_one"
+  },
+  "allowed_slice_counts": {
+    "L067": 560,
+    "L096": 823,
+    "L109": 318,
+    "L143": 585,
+    "L192": 600,
+    "L286": 525,
+    "L291": 856,
+    "L310": 533,
+    "L333": 610
+  },
+  "model": {
+    "dim": 64,
+    "dim_mults": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "channels": 1,
+    "num_unet": 1,
+    "rleb_count": 10,
+    "input": "[I_t,LDCT_previous,LDCT_center,LDCT_next]",
+    "time_dim": 256
+  },
+  "diffusion": {
+    "objective": "pred_res",
+    "loss_type": "l2",
+    "timesteps": 1000,
+    "sampling_timesteps": 2,
+    "condition": true,
+    "sum_scale": 0.01,
+    "schedule": "official convert_to_ddim=True linear beta 0.0001..0.02"
+  },
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.0002,
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "weight_decay": 0.0,
+    "batch_size": 2,
+    "gradient_accumulation": 2,
+    "effective_batch": 4,
+    "max_optimizer_steps": 8000,
+    "amp": false,
+    "gradient_clip": 1.0,
+    "scheduler": null,
+    "num_workers": 0,
+    "cpu_threads": 2,
+    "validation_every": 2000,
+    "recovery_checkpoint_every": 2000,
+    "matched_checkpoint_steps": [
+      2000,
+      4000,
+      6000,
+      8000
+    ],
+    "log_every": 1,
+    "console_every": 100
+  },
+  "ema": {
+    "decay": 0.995,
+    "update_every": 1,
+    "warmup_steps": 0,
+    "initialization": "copy model at step 0",
+    "dtype": "float32",
+    "validation_weights": "ema"
+  },
+  "augmentation": {
+    "enabled": true,
+    "horizontal_flip_probability": 0.5,
+    "rotation_degrees": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "paired": true,
+    "synchronize": [
+      "previous_LDCT",
+      "center_LDCT",
+      "next_LDCT",
+      "center_NDCT"
+    ],
+    "crop": false,
+    "resize": false,
+    "interpolation": false,
+    "filtering": false,
+    "training_only": true,
+    "rng": "private RandomState(seed10), independent of center order and diffusion"
+  },
+  "evaluation": {
+    "hu_window": [
+      -1000.0,
+      1000.0
+    ],
+    "metrics": [
+      "psnr",
+      "ssim",
+      "rmse_hu",
+      "mae_hu"
+    ],
+    "protocol_version": "RDDM_CT_MAIN_EVAL_V1_2026-09-04",
+    "patients": [
+      "L333"
+    ],
+    "expected_slices": 64,
+    "stride": 1,
+    "validation_seed": 20260829,
+    "initial_noise": "seed+slice_index; batch=1; RNG isolated/restored",
+    "loss_seed_offset": 1000000,
+    "best_metric": "psnr",
+    "best_weights": "ema",
+    "save_images": false,
+    "validation_mode": "FAST",
+    "indices_file": "L333_fast64.txt"
+  },
+  "safety": {
+    "train_validation_only": true,
+    "automatic_extension": false,
+    "maximum_steps": 8000,
+    "fresh_output_dir_required": true,
+    "network_access": false
+  },
+  "official_commit": "c85a3a0e87ae2e4587650f0fb7efc15f3311d8e2",
+  "pairing": {
+    "common_backbone_initialization": "original A untrained step0; never trained checkpoint",
+    "training_noise_seed": 10,
+    "reset_diffusion_rng_after_model_construction": true,
+    "historical_reference": "two-patient MedCNN without augmentation; not a one-variable augmentation comparison"
+  },
+  "runtime_environment": "founddiff",
+  "meddino": {
+    "weights": "/home/xujian/research/My-Paper/baselines/FoundDiff_MedCNN_8patient_Aug_8k/pretrained/MedDINOv3_ViTB16_CT3M_model.pth",
+    "required": "MedDINOv3 ViT-B/16 pretrained",
+    "frozen": true,
+    "layers_zero_based": [
+      2,
+      5,
+      8,
+      11
+    ],
+    "expected_features": [
+      768,
+      32,
+      32
+    ],
+    "sha256": "492b2b96c00e9d3b93ba3b07a8d387aa2196b5e04698378fcc23049b447966d2",
+    "preprocessing": "official CT demo: clamp HU[-1000,1000], (HU-65.1084213256836)/(178.01663208007812+1e-8), repeat 3 channels; retain512",
+    "rope_dtype": "fp32",
+    "official_source_commit": "a2460c2547899283446e520b84523454f7e25608"
+  },
+  "variant": "medcnn",
+  "paired_control_dir": "/home/xujian/research/FoundDiff_TimeOnly_PairedFastDev/experiments/Fast2P_TimeOnly_Control_8k"
+}
