@@ -1,0 +1,192 @@
+DATA_OK {'L067': 560, 'L096': 823, 'L109': 318, 'L143': 585, 'L192': 600, 'L286': 525, 'L291': 856, 'L310': 533} {'L333': 610}
+/home/xujian/research/My-Paper/baselines/RDDM_SingleResBlock_2p5D/preflight.py:59: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  initial_loss=float(loss),gradient_norm=float(norm),gradient_checks=gradients,
+{
+  "passed": true,
+  "environment": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.3.2",
+    "einops": "0.8.1",
+    "skimage": "0.25.2",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "tf32": false,
+    "amp": false,
+    "cpu_threads": 2
+  },
+  "counts": {
+    "resblocks": 10,
+    "linear_attention": 8,
+    "global_attention": 1
+  },
+  "trace": {
+    "input": [
+      2,
+      4,
+      512,
+      512
+    ],
+    "encoder": [
+      {
+        "skip": [
+          2,
+          64,
+          512,
+          512
+        ],
+        "out": [
+          2,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "skip": [
+          2,
+          64,
+          256,
+          256
+        ],
+        "out": [
+          2,
+          128,
+          128,
+          128
+        ]
+      },
+      {
+        "skip": [
+          2,
+          128,
+          128,
+          128
+        ],
+        "out": [
+          2,
+          256,
+          64,
+          64
+        ]
+      },
+      {
+        "skip": [
+          2,
+          256,
+          64,
+          64
+        ],
+        "out": [
+          2,
+          512,
+          64,
+          64
+        ]
+      }
+    ],
+    "decoder": [
+      {
+        "concat": [
+          2,
+          768,
+          64,
+          64
+        ],
+        "out": [
+          2,
+          256,
+          128,
+          128
+        ]
+      },
+      {
+        "concat": [
+          2,
+          384,
+          128,
+          128
+        ],
+        "out": [
+          2,
+          128,
+          256,
+          256
+        ]
+      },
+      {
+        "concat": [
+          2,
+          192,
+          256,
+          256
+        ],
+        "out": [
+          2,
+          64,
+          512,
+          512
+        ]
+      },
+      {
+        "concat": [
+          2,
+          128,
+          512,
+          512
+        ],
+        "out": [
+          2,
+          64,
+          512,
+          512
+        ]
+      }
+    ],
+    "bottleneck": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "output": [
+      2,
+      1,
+      512,
+      512
+    ],
+    "long_skips_saved": 4,
+    "long_skips_consumed": 4,
+    "stem_skips": 1
+  },
+  "parameters": 20505217,
+  "trainable_parameters": 20505217,
+  "initial_loss": 0.11073136329650879,
+  "gradient_norm": 15.252080917358398,
+  "sampling_range": [
+    -1.0,
+    -0.42790520191192627
+  ],
+  "peak_gpu_allocated_bytes": 13406678528,
+  "peak_gpu_reserved_bytes": 15034482688,
+  "train_pairs": 4800,
+  "validation_pairs": 610,
+  "train_patient_counts": {
+    "L067": 560,
+    "L096": 823,
+    "L109": 318,
+    "L143": 585,
+    "L192": 600,
+    "L286": 525,
+    "L291": 856,
+    "L310": 533
+  },
+  "L506_accesses": 0,
+  "official_blocks_ast_identical": true,
+  "A999": 0.9936471581459045,
+  "B999": 0.9999797940254211,
+  "A499": 0.7196658849716187,
+  "inference_noise_std": 0.1,
+  "elapsed_seconds": 88.21395529000438
+}

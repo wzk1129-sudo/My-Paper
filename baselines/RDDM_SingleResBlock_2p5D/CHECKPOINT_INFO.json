@@ -1,0 +1,9 @@
+{
+  "optimizer_step": 8000,
+  "ema_key": "ema_state_dict",
+  "remote_path": "/home/xujian/research/My-Paper/baselines/RDDM_SingleResBlock_2p5D/experiments/RDDM_SingleResBlock_2p5D_8P_8K/checkpoints/step_8000.pt",
+  "bytes": 328454395,
+  "sha256": "279c9c7d2087a251a09c0365ca88688701c077a401e8839040512500ffddbb16",
+  "included_in_git": false,
+  "reason": "Large full optimizer/RNG checkpoint retained on research server; no weight tensors or patient images are published."
+}

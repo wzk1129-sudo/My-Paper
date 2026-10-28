@@ -1,0 +1,20 @@
+{
+  "optimizer_steps": 8000,
+  "ema_updates": 8000,
+  "validation_steps": [
+    2000,
+    4000,
+    6000,
+    8000
+  ],
+  "best_ema_checkpoint": "/home/xujian/research/My-Paper/baselines/RDDM_SingleResBlock_2p5D/experiments/RDDM_SingleResBlock_2p5D_8P_8K/checkpoints/step_8000.pt",
+  "best_psnr": 40.655351524105214,
+  "parameters": 20505217,
+  "training_seconds": 4450.051704063837,
+  "total_elapsed_seconds": 4535.470330620999,
+  "peak_gpu_allocated_bytes": 13695909376,
+  "peak_gpu_reserved_bytes": 15124660224,
+  "L506_accesses": 0,
+  "completed_utc": "2026-10-28T10:00:13.211951+00:00",
+  "source_commit": "524caea34cedb3733aa5bf6c27dc1cd6e0469216"
+}

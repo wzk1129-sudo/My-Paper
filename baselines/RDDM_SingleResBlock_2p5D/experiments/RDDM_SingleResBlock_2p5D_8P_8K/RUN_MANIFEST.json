@@ -1,0 +1,28 @@
+{
+  "session": "rddm_single_8p8k_20261028",
+  "project": "/home/xujian/research/My-Paper",
+  "working_directory": "/home/xujian/research/My-Paper/baselines/RDDM_SingleResBlock_2p5D",
+  "git_commit": "adc8f138e1e02a1ac567177d6508436c2b5c6f36",
+  "git_status": "?? baselines/FoundDiff_Lite_MLSF_TimeDACB/\n?? baselines/FoundDiff_Lite_MLSF_TimeDACB_continue16k/\n?? baselines/FoundDiff_Lite_TimeDACB_2patient_8k/\n?? baselines/FoundDiff_Lite_TimeDACB_8patient_rerun_8k/\n?? baselines/FoundDiff_Lite_TimeDACB_8patient_rerun_8k_retry1/\n?? baselines/FoundDiff_MedCNN_8patient_Aug_8k/\n?? baselines/FoundDiff_NoDualCond_RDDMAttn_8P_8K_seed20261029/\n?? baselines/RDDM_SingleResBlock_2p5D/\n?? data_audit/\n",
+  "environment": "founddiff",
+  "gpu": 0,
+  "command": "CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8 /home/xujian/miniforge3/bin/conda run --no-capture-output -n founddiff python -B -u train.py",
+  "log": "/home/xujian/research/My-Paper/baselines/RDDM_SingleResBlock_2p5D/experiments/RDDM_SingleResBlock_2p5D_8P_8K/logs/train_console.log",
+  "output": "/home/xujian/research/My-Paper/baselines/RDDM_SingleResBlock_2p5D/experiments/RDDM_SingleResBlock_2p5D_8P_8K",
+  "recorded_utc": "2026-10-28T08:39:48.532219+00:00",
+  "termination": "8000 optimizer steps plus EMA validation at 2000/4000/6000/8000 and final report; stop on NaN/Inf; no automatic resume",
+  "source_sha256": {
+    "mayo_data.py": "34b353805d2da759426f6f4b905689c06b1cc1444c0505b9a692275d023e20e8",
+    "common.py": "db325a989a1ab940648db0e6edb17486e062ef75f7e5ac3ce11b35db4a28ca44",
+    "train.py": "7083cc200b4f08d2791e9813e9ce03da50af1ade8dc1bf04e8ea2de7d17ba861",
+    "preflight.py": "9b5db93a1abddb5290023dae27892992e8c5ff8be98046370643c5fe403dc11b",
+    "metrics.py": "1a1f5d75282456a33c67d5cf593259aac722374051d09800c9498a2bab1c67e1",
+    "evaluate.py": "6d042adeb807888603d15466e57e6ba02dc6494d6a5cc4a060fe0675e58fd372",
+    "src/residual_diffusion.py": "264ac7d65c9207ac80023225b03bdc63a4bde61a44da35aa49fbd70026458b5e",
+    "src/single_resblock_unet.py": "7ad139bc614c43391363f16a0796bac906ba026291be61bec4675a554bb4f5ea",
+    "src/official_rddm_original.py": "b7c41d56313a5073a88c85cedd9ae2b65167515f6294f42288bba52831ea5c3c",
+    "src/rddm_blocks.py": "b23977741fcc24e16c11191f29204a20e85beb3ebc35fb8146d5c9c506b5a18b",
+    "config.json": "559f9fd69473f57ec13400d69ee3dd1219f2c1db2061fce6ba472cef45e551d4",
+    "splits/L333_fast64.txt": "0d3170fd2462c7b19d1cc0f187b12e03bac2c9b15babca7c1d881568adde6895"
+  }
+}

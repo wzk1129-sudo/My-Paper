@@ -1,0 +1,99 @@
+{
+  "name": "RDDM_SingleResBlock_2p5D_8P_8K",
+  "data_root": "/home/xujian/data/mayo_2016_npy",
+  "train_patients": [
+    "L067",
+    "L096",
+    "L109",
+    "L143",
+    "L192",
+    "L286",
+    "L291",
+    "L310"
+  ],
+  "validation_patient": "L333",
+  "dim": 64,
+  "dim_mults": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "channels": 1,
+  "input_channels": 4,
+  "num_unet": 1,
+  "self_condition": false,
+  "resnet_block_groups": 8,
+  "learned_variance": false,
+  "learned_sinusoidal_cond": false,
+  "random_fourier_features": false,
+  "objective": "pred_res",
+  "test_res_or_noise": "res",
+  "loss_type": "l2",
+  "condition": true,
+  "input_condition": false,
+  "timesteps": 1000,
+  "sampling_timesteps": 2,
+  "sum_scale": 0.01,
+  "ddim_sampling_eta": 0.0,
+  "beta_start": 0.0001,
+  "beta_end": 0.02,
+  "time_condition": "A_t * 1000",
+  "sample_times": [
+    999,
+    499
+  ],
+  "initial_noise_std": 0.1,
+  "seed": 20260829,
+  "optimizer": "Adam",
+  "lr": 0.0002,
+  "betas": [
+    0.9,
+    0.99
+  ],
+  "weight_decay": 1e-09,
+  "batch_size": 2,
+  "gradient_accumulation": 1,
+  "optimizer_steps": 8000,
+  "ema_decay": 0.995,
+  "ema_update_every": 1,
+  "ema_warmup": 0,
+  "gradient_clip_norm": 1.0,
+  "AMP": false,
+  "FP32": true,
+  "scheduler": null,
+  "num_workers": 0,
+  "cpu_threads": 2,
+  "tf32": false,
+  "cudnn_benchmark": false,
+  "augmentation_seed": 10,
+  "horizontal_flip_probability": 0.5,
+  "rotations": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "crop": false,
+  "stored_to_hu_offset": -1024,
+  "hu_clip": [
+    -1024,
+    3072
+  ],
+  "validation_steps": [
+    2000,
+    4000,
+    6000,
+    8000
+  ],
+  "validation_noise_seed": "20260829 + slice_index",
+  "validation_batch_size": 1,
+  "main_window": [
+    -1000,
+    1000
+  ],
+  "soft_window": [
+    -160,
+    240
+  ]
+}

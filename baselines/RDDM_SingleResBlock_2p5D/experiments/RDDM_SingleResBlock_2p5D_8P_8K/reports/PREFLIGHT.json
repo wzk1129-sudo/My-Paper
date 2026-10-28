@@ -1,0 +1,249 @@
+{
+  "passed": true,
+  "environment": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "numpy": "2.3.2",
+    "einops": "0.8.1",
+    "skimage": "0.25.2",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "tf32": false,
+    "amp": false,
+    "cpu_threads": 2
+  },
+  "counts": {
+    "resblocks": 10,
+    "linear_attention": 8,
+    "global_attention": 1
+  },
+  "trace": {
+    "input": [
+      2,
+      4,
+      512,
+      512
+    ],
+    "encoder": [
+      {
+        "skip": [
+          2,
+          64,
+          512,
+          512
+        ],
+        "out": [
+          2,
+          64,
+          256,
+          256
+        ]
+      },
+      {
+        "skip": [
+          2,
+          64,
+          256,
+          256
+        ],
+        "out": [
+          2,
+          128,
+          128,
+          128
+        ]
+      },
+      {
+        "skip": [
+          2,
+          128,
+          128,
+          128
+        ],
+        "out": [
+          2,
+          256,
+          64,
+          64
+        ]
+      },
+      {
+        "skip": [
+          2,
+          256,
+          64,
+          64
+        ],
+        "out": [
+          2,
+          512,
+          64,
+          64
+        ]
+      }
+    ],
+    "decoder": [
+      {
+        "concat": [
+          2,
+          768,
+          64,
+          64
+        ],
+        "out": [
+          2,
+          256,
+          128,
+          128
+        ]
+      },
+      {
+        "concat": [
+          2,
+          384,
+          128,
+          128
+        ],
+        "out": [
+          2,
+          128,
+          256,
+          256
+        ]
+      },
+      {
+        "concat": [
+          2,
+          192,
+          256,
+          256
+        ],
+        "out": [
+          2,
+          64,
+          512,
+          512
+        ]
+      },
+      {
+        "concat": [
+          2,
+          128,
+          512,
+          512
+        ],
+        "out": [
+          2,
+          64,
+          512,
+          512
+        ]
+      }
+    ],
+    "bottleneck": [
+      2,
+      512,
+      64,
+      64
+    ],
+    "output": [
+      2,
+      1,
+      512,
+      512
+    ],
+    "long_skips_saved": 4,
+    "long_skips_consumed": 4,
+    "stem_skips": 1
+  },
+  "parameters": 20505217,
+  "trainable_parameters": 20505217,
+  "initial_loss": 0.11073136329650879,
+  "gradient_norm": 15.252080917358398,
+  "gradient_checks": {
+    "model.time_mlp.1.weight": 0.11558765918016434,
+    "model.time_mlp.1.bias": 0.025191396474838257,
+    "model.time_mlp.3.weight": 0.24939744174480438,
+    "model.time_mlp.3.bias": 0.0874718427658081,
+    "model.downs.0.0.mlp.1.weight": 0.05878239497542381,
+    "model.downs.0.0.mlp.1.bias": 0.06335042417049408,
+    "model.downs.0.1.fn.fn.to_qkv.weight": 4.708637334260857e-06,
+    "model.downs.0.1.fn.fn.to_out.0.weight": 7.485984497179743e-06,
+    "model.downs.0.1.fn.fn.to_out.0.bias": 1.9214916229248047,
+    "model.downs.0.1.fn.fn.to_out.1.g": 0.08599591255187988,
+    "model.downs.1.0.mlp.1.weight": 0.01678054966032505,
+    "model.downs.1.0.mlp.1.bias": 0.018002521246671677,
+    "model.downs.1.1.fn.fn.to_qkv.weight": 4.576117135002278e-06,
+    "model.downs.1.1.fn.fn.to_out.0.weight": 6.88852924213279e-06,
+    "model.downs.1.1.fn.fn.to_out.0.bias": 0.4180474877357483,
+    "model.downs.1.1.fn.fn.to_out.1.g": 0.01825910061597824,
+    "model.downs.2.0.mlp.1.weight": 0.007431230042129755,
+    "model.downs.2.0.mlp.1.bias": 0.00800566840916872,
+    "model.downs.2.1.fn.fn.to_qkv.weight": 1.0119350008608308e-05,
+    "model.downs.2.1.fn.fn.to_out.0.weight": 1.0213609130005352e-05,
+    "model.downs.2.1.fn.fn.to_out.0.bias": 0.15791377425193787,
+    "model.downs.2.1.fn.fn.to_out.1.g": 0.007758899126201868,
+    "model.downs.3.0.mlp.1.weight": 0.0033824786078184843,
+    "model.downs.3.0.mlp.1.bias": 0.003601433476433158,
+    "model.downs.3.1.fn.fn.to_qkv.weight": 2.861003486032132e-05,
+    "model.downs.3.1.fn.fn.to_out.0.weight": 2.4093778847600333e-05,
+    "model.downs.3.1.fn.fn.to_out.0.bias": 0.0829867571592331,
+    "model.downs.3.1.fn.fn.to_out.1.g": 0.0046721529215574265,
+    "model.mid_block.mlp.1.weight": 0.0043256948702037334,
+    "model.mid_block.mlp.1.bias": 0.00468820845708251,
+    "model.mid_attn.fn.fn.to_qkv.weight": 0.057196155190467834,
+    "model.mid_attn.fn.fn.to_out.weight": 0.02303682081401348,
+    "model.mid_attn.fn.fn.to_out.bias": 0.0041335769928991795,
+    "model.ups.0.0.mlp.1.weight": 0.005109620746225119,
+    "model.ups.0.0.mlp.1.bias": 0.005499270278960466,
+    "model.ups.0.1.fn.fn.to_qkv.weight": 6.699417281197384e-05,
+    "model.ups.0.1.fn.fn.to_out.0.weight": 3.232829840271734e-05,
+    "model.ups.0.1.fn.fn.to_out.0.bias": 0.12363628298044205,
+    "model.ups.0.1.fn.fn.to_out.1.g": 0.005748722702264786,
+    "model.ups.1.0.mlp.1.weight": 0.013005917891860008,
+    "model.ups.1.0.mlp.1.bias": 0.014186038635671139,
+    "model.ups.1.1.fn.fn.to_qkv.weight": 2.826143281708937e-05,
+    "model.ups.1.1.fn.fn.to_out.0.weight": 1.9055791199207306e-05,
+    "model.ups.1.1.fn.fn.to_out.0.bias": 0.2909233272075653,
+    "model.ups.1.1.fn.fn.to_out.1.g": 0.014194964431226254,
+    "model.ups.2.0.mlp.1.weight": 0.03520728275179863,
+    "model.ups.2.0.mlp.1.bias": 0.038539327681064606,
+    "model.ups.2.1.fn.fn.to_qkv.weight": 1.336261811957229e-05,
+    "model.ups.2.1.fn.fn.to_out.0.weight": 1.301640168094309e-05,
+    "model.ups.2.1.fn.fn.to_out.0.bias": 0.8144761323928833,
+    "model.ups.2.1.fn.fn.to_out.1.g": 0.04234560951590538,
+    "model.ups.3.0.mlp.1.weight": 0.10299511253833771,
+    "model.ups.3.0.mlp.1.bias": 0.11394052952528,
+    "model.ups.3.1.fn.fn.to_qkv.weight": 7.64400465413928e-06,
+    "model.ups.3.1.fn.fn.to_out.0.weight": 8.52784069138579e-06,
+    "model.ups.3.1.fn.fn.to_out.0.bias": 2.6572065353393555,
+    "model.ups.3.1.fn.fn.to_out.1.g": 0.12380396574735641,
+    "model.final_res_block.mlp.1.weight": 0.2284499853849411,
+    "model.final_res_block.mlp.1.bias": 0.2541992664337158
+  },
+  "sampling_range": [
+    -1.0,
+    -0.42790520191192627
+  ],
+  "peak_gpu_allocated_bytes": 13406678528,
+  "peak_gpu_reserved_bytes": 15034482688,
+  "train_pairs": 4800,
+  "validation_pairs": 610,
+  "train_patient_counts": {
+    "L067": 560,
+    "L096": 823,
+    "L109": 318,
+    "L143": 585,
+    "L192": 600,
+    "L286": 525,
+    "L291": 856,
+    "L310": 533
+  },
+  "L506_accesses": 0,
+  "official_blocks_ast_identical": true,
+  "A999": 0.9936471581459045,
+  "B999": 0.9999797940254211,
+  "A499": 0.7196658849716187,
+  "inference_noise_std": 0.1,
+  "elapsed_seconds": 88.21395529000438
+}

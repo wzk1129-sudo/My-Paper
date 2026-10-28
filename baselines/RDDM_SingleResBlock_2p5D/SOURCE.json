@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/nachifur/RDDM",
+  "commit": "524caea34cedb3733aa5bf6c27dc1cd6e0469216",
+  "path": "experiments/2_Image_Restoration_deraing_raindrop_noise1/src/residual_denoising_diffusion_pytorch.py",
+  "sha256": "b7c41d56313a5073a88c85cedd9ae2b65167515f6294f42288bba52831ea5c3c",
+  "project_commit": "adc8f138e1e02a1ac567177d6508436c2b5c6f36",
+  "initial_git_status": "?? baselines/FoundDiff_Lite_MLSF_TimeDACB/\n?? baselines/FoundDiff_Lite_MLSF_TimeDACB_continue16k/\n?? baselines/FoundDiff_Lite_TimeDACB_2patient_8k/\n?? baselines/FoundDiff_Lite_TimeDACB_8patient_rerun_8k/\n?? baselines/FoundDiff_Lite_TimeDACB_8patient_rerun_8k_retry1/\n?? baselines/FoundDiff_MedCNN_8patient_Aug_8k/\n?? baselines/FoundDiff_NoDualCond_RDDMAttn_8P_8K_seed20261029/\n?? data_audit/\n"
+}
